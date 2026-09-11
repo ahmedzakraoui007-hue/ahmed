@@ -942,40 +942,13 @@ h1 {
   color: var(--lime);
 }
 
-.work-dashboard {
-  display: grid;
-  align-content: center;
-  padding: clamp(26px, 5vw, 52px);
-  background:
-    linear-gradient(135deg, rgba(22, 217, 255, 0.16), transparent 56%),
-    linear-gradient(180deg, rgba(255, 90, 20, 0.12), rgba(255, 255, 255, 0.04));
+.work-card-dark .work-visual {
+  min-height: 460px;
+  background: var(--white);
 }
 
-.work-dashboard div {
-  display: flex;
-  justify-content: space-between;
-  gap: 18px;
-  padding: 22px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
-}
-
-.work-dashboard div:last-child {
-  border-bottom: 0;
-}
-
-.work-dashboard span {
-  color: var(--orange);
-  font-size: 0.78rem;
-  font-weight: 950;
-  text-transform: uppercase;
-}
-
-.work-dashboard strong {
-  color: var(--white);
-  font-family: "Space Grotesk", sans-serif;
-  font-size: clamp(1.4rem, 3vw, 2.8rem);
-  line-height: 1;
-  text-align: right;
+.work-visual-para img {
+  object-position: left top;
 }
 
 .training {
@@ -1659,21 +1632,6 @@ h1 {
 
   .work-content p {
     font-size: 1rem;
-  }
-
-  .work-dashboard {
-    padding: 24px;
-  }
-
-  .work-dashboard div {
-    display: grid;
-    gap: 6px;
-    padding: 18px 0;
-  }
-
-  .work-dashboard strong {
-    font-size: 1.8rem;
-    text-align: left;
   }
 
   .contact-button {
