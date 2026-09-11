@@ -27,6 +27,17 @@ nav?.querySelectorAll("a").forEach((link) => {
 
 const languageCodes = ["en", "fr", "ar"];
 const serviceKeys = ["strategy", "automation", "content", "growth", "training", "wordpress", "ugc"];
+const siteBaseUrl = "https://site-personnel-premium.ahmedzakraoui8.chatgpt.site";
+const languagePaths = {
+  en: "/",
+  fr: "/fr/",
+  ar: "/ar/",
+};
+const languageLocales = {
+  en: "en_US",
+  fr: "fr_FR",
+  ar: "ar_AR",
+};
 
 const translations = {
   en: {
@@ -498,14 +509,14 @@ const translations = {
     dir: "rtl",
     name: "العربية",
     meta: {
-      homeTitle: "أحمد زكراوي | استراتيجية التسويق بالذكاء الاصطناعي",
+      homeTitle: "أحمد زكراوي | خبير تسويق رقمي وذكاء اصطناعي في تونس",
       homeDescription:
-        "يساعد أحمد زكراوي الشركات الصغيرة والمتوسطة والناشئة والمؤسسات في شمال أفريقيا ومنطقة MENA على بناء أنظمة تسويق مدعومة بالذكاء الاصطناعي، مواقع تجارة إلكترونية، SEO/GEO، فيديوهات UGC وحملات paid social.",
+        "أساعد الشركات في تونس، شمال أفريقيا ومنطقة MENA على بناء أنظمة تسويق رقمية مدعومة بالذكاء الاصطناعي تشمل SEO/GEO، الإعلانات الممولة، محتوى UGC، تطوير WordPress ونمو التجارة الإلكترونية.",
       thanksTitle: "تم إرسال الرسالة | أحمد زكراوي",
       thanksDescription:
-        "شكرا لتواصلك مع أحمد زكراوي حول استراتيجية التسويق بالذكاء الاصطناعي، الأتمتة، أنظمة المحتوى، فيديو UGC، تدريب الفرق أو WordPress.",
+        "شكرا لتواصلك مع أحمد زكراوي حول التسويق الرقمي، الذكاء الاصطناعي، SEO/GEO، الإعلانات الممولة، فيديو UGC، تدريب الفرق أو تطوير WordPress.",
     },
-    brandSmall: "أنظمة تسويق بالذكاء الاصطناعي",
+    brandSmall: "تسويق رقمي + ذكاء اصطناعي",
     aria: {
       home: "الرئيسية أحمد زكراوي",
       menuOpen: "فتح القائمة",
@@ -523,8 +534,8 @@ const translations = {
     },
     nav: {
       services: "الخدمات",
-      ugc: "UGC",
-      sprint: "Sprint",
+      ugc: "فيديو UGC",
+      sprint: "Sprint النمو",
       proof: "الأعمال",
       work: "المشاريع",
       training: "التدريب",
@@ -535,20 +546,20 @@ const translations = {
       eyebrow: "متخصص في التسويق الرقمي + شغوف بالذكاء الاصطناعي",
       title: ["أحمد", "زكراوي"],
       statement:
-        "أبني أنظمة تسويق مدعومة بالذكاء الاصطناعي للشركات الصغيرة والمتوسطة والناشئة والمؤسسات التي تريد استراتيجية أوضح، تنفيذا أسرع، ونموا يربط بين الموقع، SEO/GEO، الإعلانات المدفوعة والمحتوى.",
-      signals: ["SEO/GEO", "Paid Social", "فيديو UGC", "WordPress"],
-      primary: "ابن نظامك التسويقي بالذكاء الاصطناعي",
+        "أبني أنظمة تسويق رقمية مدعومة بالذكاء الاصطناعي للشركات الصغيرة والمتوسطة، الشركات الناشئة والمؤسسات التي تريد استراتيجية أوضح، تنفيذا أسرع ونموا يربط بين الموقع الإلكتروني، SEO/GEO، الإعلانات الممولة والمحتوى.",
+      signals: ["SEO/GEO", "إعلانات ممولة", "فيديو UGC", "WordPress"],
+      primary: "ابن نظامك التسويقي الذكي",
       secondary: "شاهد طريقة عملي",
       availability: "متاح لمشاريع النمو في منطقة MENA",
       cards: [
-        ["خارطة طريق IA", "الاستراتيجية قبل الأدوات"],
-        ["Marketing Ops", "أتمتة تستخدمها الفرق فعلا"],
+        ["خارطة طريق الذكاء الاصطناعي", "الاستراتيجية قبل الأدوات"],
+        ["عمليات التسويق", "أتمتة تستخدمها الفرق فعلا"],
       ],
-      proof: ["استراتيجية IA", "إعداد الأتمتة", "أنظمة المحتوى", "مواقع WordPress", "فيديو UGC", "SEO/GEO + Ads"],
+      proof: ["استراتيجية الذكاء الاصطناعي", "إعداد الأتمتة", "أنظمة المحتوى", "مواقع WordPress", "فيديو UGC", "SEO/GEO + إعلانات"],
     },
     marquee: [
-      "PME",
-      "Startups",
+      "الشركات الصغيرة والمتوسطة",
+      "الشركات الناشئة",
       "المؤسسات",
       "فرق التسويق",
       "نمو التجارة الإلكترونية",
@@ -557,16 +568,16 @@ const translations = {
       "شمال أفريقيا",
       "منطقة MENA",
     ],
-    belief: "التسويق يحتاج إلى أنظمة. الذكاء الاصطناعي يجعلها أسرع. والفرق تجعلها تعمل فعلا.",
+    belief: "التسويق القوي يحتاج إلى أنظمة. الذكاء الاصطناعي يسرعها. والفِرق تجعلها تحقق نتائج.",
     servicesHead: {
       eyebrow: "ماذا أقدم",
       title: "من فكرة الذكاء الاصطناعي إلى تنفيذ تسويقي يومي.",
     },
     serviceTabs: {
-      strategy: "استراتيجية IA",
+      strategy: "استراتيجية الذكاء الاصطناعي",
       automation: "الأتمتة",
       content: "المحتوى",
-      growth: "SEO/GEO + Ads",
+      growth: "SEO/GEO + إعلانات",
       training: "التدريب",
       wordpress: "WordPress",
       ugc: "فيديو UGC",
@@ -575,72 +586,72 @@ const translations = {
       strategy: {
         index: "01",
         title: "استراتيجية التسويق بالذكاء الاصطناعي",
-        text: "بناء خارطة طريق لإدماج الذكاء الاصطناعي في التسويق بدون إضاعة الوقت في أدوات عشوائية.",
-        items: ["تدقيق فرص الذكاء الاصطناعي", "رسم workflows وحالات الاستخدام", "خارطة تنفيذ مرتبة حسب الأولوية"],
+        text: "بناء خارطة طريق واضحة لإدماج الذكاء الاصطناعي في التسويق بدون تشتيت أو أدوات لا تخدم أهدافك.",
+        items: ["تدقيق فرص الذكاء الاصطناعي", "رسم تدفقات العمل وحالات الاستخدام", "خارطة تنفيذ مرتبة حسب الأولوية"],
       },
       automation: {
         index: "02",
-        title: "أتمتة التسويق وإعداد أدوات IA",
-        text: "إعداد الأدوات المناسبة، أنظمة prompts وworkflows قابلة للتكرار لتوفير الوقت والتوسع بشكل أسرع.",
-        items: ["اختيار وإعداد الأدوات", "مكتبات prompts وSOP", "أتمتة المحتوى والمتابعة"],
+        title: "أتمتة التسويق وإعداد أدوات الذكاء الاصطناعي",
+        text: "إعداد الأدوات المناسبة، قوالب التعليمات وتدفقات عمل قابلة للتكرار حتى يوفر الفريق الوقت ويتوسع بشكل أسرع.",
+        items: ["اختيار وإعداد الأدوات", "مكتبات Prompts وإجراءات عمل واضحة", "أتمتة المحتوى والمتابعة"],
       },
       content: {
         index: "03",
-        title: "استراتيجية Social Media والمحتوى",
-        text: "إنشاء نظام ثابت للأفكار، التخطيط، الإنتاج، إعادة الاستخدام ومراقبة الجودة.",
-        items: ["محاور المحتوى والرزنامة", "إنتاج محتوى بمساعدة IA", "صوت العلامة ونظام المراجعة"],
+        title: "استراتيجية السوشيال ميديا والمحتوى",
+        text: "إنشاء نظام واضح للأفكار، التخطيط، الإنتاج، إعادة الاستخدام ومراقبة الجودة.",
+        items: ["محاور المحتوى والرزنامة", "إنتاج محتوى بمساعدة الذكاء الاصطناعي", "صوت العلامة ونظام المراجعة"],
       },
       growth: {
         index: "04",
-        title: "SEO/GEO وMedia Buying",
-        text: "بناء قنوات اكتساب عبر البحث، الظهور في أدوات IA، الحملات المدفوعة والسوشيال مع نظام قياس واضح.",
-        items: ["SEO والظهور في البحث التوليدي", "إعداد حملات Meta وpaid social", "تحسين المحتوى وصفحات الهبوط"],
+        title: "SEO/GEO والإعلانات الممولة",
+        text: "بناء قنوات اكتساب عبر البحث، الظهور في إجابات الذكاء الاصطناعي، الحملات المدفوعة والسوشيال مع نظام قياس واضح.",
+        items: ["SEO والظهور في البحث التوليدي", "إعداد حملات Meta وPaid Social", "تحسين المحتوى وصفحات الهبوط"],
       },
       training: {
         index: "05",
         title: "تدريب الفرق",
         text: "رفع كفاءة فريق التسويق عبر جلسات عملية يمكن تطبيقها مباشرة في العمل اليومي.",
-        items: ["أساسيات prompting", "Workflows محتوى IA", "روتينات الأتمتة والتحليلات"],
+        items: ["أساسيات Prompting", "تدفقات محتوى بالذكاء الاصطناعي", "روتينات الأتمتة والتحليلات"],
       },
       wordpress: {
         index: "06",
         title: "تطوير WordPress",
         text: "إنشاء مواقع وصفحات هبوط قوية تعزز المصداقية، الاكتساب والتحويل.",
-        items: ["مواقع أعمال وشخصية", "Landing pages وجمع leads", "هيكلة جاهزة للـ SEO"],
+        items: ["مواقع أعمال وشخصية", "صفحات هبوط وجمع عملاء محتملين", "بنية جاهزة لمحركات البحث"],
       },
       ugc: {
         index: "07",
         title: "إنتاج فيديو UGC",
         text: "تخطيط وإنتاج فيديوهات قصيرة أصيلة مع شركائنا من صناع محتوى UGC للإطلاقات، الإعلانات والدليل الاجتماعي.",
-        items: ["Brief creator وتوجيه السكريبت", "تنسيق مع شركاء UGC", "فيديوهات جاهزة للأورغانيك وpaid social"],
+        items: ["Brief واضح لصانع المحتوى وتوجيه السكريبت", "تنسيق مع شركاء UGC", "فيديوهات جاهزة للنشر العضوي والإعلانات"],
       },
     },
     ugcSection: {
       eyebrow: "شركاء فيديو UGC",
-      title: "فيديوهات creators حقيقية للعلامات التي تحتاج إلى بناء الثقة بسرعة.",
+      title: "فيديوهات UGC حقيقية للعلامات التي تحتاج إلى بناء الثقة بسرعة.",
       text:
-        "مع شركائنا في صناعة محتوى UGC، نخطط ونكتب brief وننسق ونقدم فيديوهات قصيرة للإطلاقات، paid social، عروض المنتجات، الشهادات والمحتوى العضوي.",
+        "مع شركائنا من صناع محتوى UGC، نخطط للرسائل، نكتب الـ brief، ننسق الإنتاج ونقدم فيديوهات قصيرة للإطلاقات، الإعلانات الممولة، عروض المنتجات، الشهادات والمحتوى العضوي.",
       cta: "ابدأ مشروع فيديو UGC",
-      featureLabel: "شبكة شركاء creators",
+      featureLabel: "شبكة صناع محتوى شركاء",
       featureTitle: "محتوى يبدو طبيعيا ومبنيا حول عرضك وجمهورك.",
       featureText:
-        "Hooks، scripts، توجيه creators، زوايا تصوير، ملاحظات استخدام وassets جاهزة للنشر على Reels وTikTok وYouTube Shorts وMeta Ads.",
+        "زوايا افتتاحية، سكريبتات، توجيه لصناع المحتوى، زوايا تصوير، ملاحظات استخدام وملفات جاهزة للنشر على Reels وTikTok وYouTube Shorts وMeta Ads.",
       steps: [
-        ["01", "Brief", "تحديد hooks، claims، scripts، زوايا العرض وguidelines العلامة."],
-        ["02", "إنشاء", "تنسيق مع creators شركاء لإنتاج فيديوهات قصيرة موثوقة."],
-        ["03", "إطلاق", "تسليم assets جاهزة للنشر العضوي واختبار الإعلانات المدفوعة."],
+        ["01", "التخطيط", "تحديد الزوايا الافتتاحية، الوعود التسويقية، السكريبتات، زوايا العرض وإرشادات العلامة."],
+        ["02", "الإنتاج", "تنسيق العمل مع صناع محتوى شركاء لإنتاج فيديوهات قصيرة موثوقة."],
+        ["03", "الإطلاق", "تسليم ملفات جاهزة للنشر العضوي واختبار الإعلانات الممولة."],
       ],
     },
     sprint: {
-      eyebrow: "النظام signature",
-      title: "AI Growth Sprint",
-      text: "مسار عملي لتحويل فوضى التسويق اليدوي إلى نظام تشغيل قابل للتكرار يفهمه فريقك، يشغله ويطوره.",
+      eyebrow: "النظام الخاص",
+      title: "Sprint نمو بالذكاء الاصطناعي",
+      text: "مسار عملي لتحويل فوضى التسويق اليدوي إلى نظام تشغيل قابل للتكرار يفهمه فريقك، يستخدمه ويطوره.",
       steps: [
         ["اليوم 01", "تشخيص", "رسم الأهداف، الجمهور، العروض، تدفق المحتوى، الأدوات والعوائق."],
-        ["اليوم 02", "تصميم", "تصميم خارطة طريق IA، خريطة الأتمتة ونموذج تشغيل المحتوى."],
-        ["اليوم 03", "بناء", "إعداد prompts، أتمتة، dashboards، صفحات، ads وassets قابلة لإعادة الاستخدام."],
-        ["اليوم 04", "تدريب", "تعليم الفريق كيف يستخدم النظام بثقة في العمل الحقيقي."],
-        ["اليوم 05", "إطلاق", "إطلاق أول workflows وتحديد إيقاع التحسين."],
+        ["اليوم 02", "تصميم", "تصميم خارطة طريق الذكاء الاصطناعي، خريطة الأتمتة ونموذج تشغيل المحتوى."],
+        ["اليوم 03", "بناء", "إعداد Prompts، أتمتة، لوحات متابعة، صفحات، إعلانات وملفات قابلة لإعادة الاستخدام."],
+        ["اليوم 04", "تدريب", "تعليم الفريق كيف يستخدم النظام بثقة في العمل اليومي."],
+        ["اليوم 05", "إطلاق", "إطلاق أول تدفقات عمل وتحديد إيقاع التحسين."],
       ],
     },
     proof: {
@@ -649,24 +660,24 @@ const translations = {
       cards: [
         ["مدرب", "GoMyCode", "تدريب في التسويق الرقمي مع تركيز على التنفيذ العملي والثقة في استخدام الأدوات."],
         ["مؤسس", "Alpha Tech", "بناء عند تقاطع أنظمة التسويق، التكنولوجيا ونمو الأعمال."],
-        ["Creator", "DAY30 Bootcamp", "تجارب تعلم منظمة للأشخاص الذين يريدون التنفيذ، وليس استهلاك الأفكار فقط."],
+        ["صانع محتوى", "DAY30 Bootcamp", "تجارب تعلم منظمة للأشخاص الذين يريدون التنفيذ، وليس استهلاك الأفكار فقط."],
       ],
     },
     work: {
       eyebrow: "مشاريع مختارة",
       title: "مشاريع تجارة إلكترونية حقيقية، تم بناؤها وتنميتها من الداخل.",
       text:
-        "أجمع بين إنشاء المواقع، SEO/GEO، media buying وإدارة السوشيال ميديا حتى تنتقل العلامات من الإطلاق إلى اكتساب قابل للتكرار.",
+        "أجمع بين إنشاء المواقع، SEO/GEO، الإعلانات الممولة وإدارة السوشيال ميديا حتى تنتقل العلامات من الإطلاق إلى اكتساب قابل للتكرار.",
       cards: [
         {
-          title: "إطلاق منصة e-commerce ونظام نمو.",
-          text: "إنشاء الموقع وإدارة محرك النمو عبر SEO/GEO، media buying والسوشيال ميديا.",
-          tags: ["إنشاء الموقع", "SEO/GEO", "Media buying", "Social media"],
+          title: "إطلاق منصة تجارة إلكترونية ونظام نمو.",
+          text: "إنشاء الموقع وإدارة محرك النمو عبر SEO/GEO، الإعلانات الممولة والسوشيال ميديا.",
+          tags: ["إنشاء الموقع", "SEO/GEO", "إعلانات ممولة", "إدارة السوشيال ميديا"],
         },
         {
-          title: "ظهور واكتساب e-commerce لقطاع parapharmacy.",
-          text: "إنشاء وإدارة نظام نمو الموقع عبر SEO/GEO، تنفيذ paid media وإدارة مستمرة للمحتوى الاجتماعي.",
-          tags: ["موقع e-commerce", "SEO/GEO", "Paid ads", "محتوى اجتماعي"],
+          title: "ظهور واكتساب لمتجر بارافارماسي.",
+          text: "إنشاء وإدارة نظام نمو الموقع عبر SEO/GEO، تنفيذ الحملات الإعلانية وإدارة مستمرة للمحتوى الاجتماعي.",
+          tags: ["موقع تجارة إلكترونية", "SEO/GEO", "إعلانات ممولة", "محتوى اجتماعي"],
         },
       ],
     },
@@ -674,47 +685,47 @@ const translations = {
       eyebrow: "تدريب الفرق",
       title: "جعل الذكاء الاصطناعي مفيدا لمن يقومون بالعمل.",
       text:
-        "جلسات عملية لفرق التسويق حول prompting، workflows محتوى IA، الأتمتة، أنظمة social media، SEO/GEO، أساسيات WordPress وقواعد analytics.",
+        "جلسات عملية لفرق التسويق حول Prompting، تدفقات إنتاج المحتوى بالذكاء الاصطناعي، الأتمتة، أنظمة السوشيال ميديا، SEO/GEO، أساسيات WordPress وقواعد التحليلات.",
       stack: [
-        "مكتبات prompts",
-        "Workflows محتوى",
+        "مكتبات Prompts",
+        "تدفقات محتوى",
         "أدوات أتمتة",
-        "أنظمة social media",
+        "أنظمة السوشيال ميديا",
         "روتينات SEO/GEO",
         "Briefs فيديو UGC",
         "صفحات WordPress",
-        "روتينات analytics",
-        "Playbooks للفريق",
-        "حوكمة IA",
+        "روتينات التحليلات",
+        "Playbooks للفِرق",
+        "حوكمة الذكاء الاصطناعي",
       ],
     },
     contact: {
       eyebrow: "اعمل مع أحمد",
       title: "جاهز لتحويل تسويقك إلى نظام أذكى؟",
       text:
-        "أخبرني بما تريد تحسينه: استراتيجية IA، أتمتة التسويق، انتظام المحتوى، تدريب الفريق، فيديو UGC، SEO/GEO، paid media أو حضور أقوى على WordPress.",
+        "أخبرني بما تريد تحسينه: استراتيجية الذكاء الاصطناعي، أتمتة التسويق، انتظام المحتوى، تدريب الفريق، فيديو UGC، SEO/GEO، الإعلانات الممولة أو حضور أقوى على WordPress.",
       labels: ["الاسم", "البريد الإلكتروني", "الشركة", "الخدمة", "الرسالة"],
       servicePlaceholder: "اختر خدمة",
       serviceOptions: [
-        "استراتيجية التسويق IA",
+        "استراتيجية التسويق بالذكاء الاصطناعي",
         "أتمتة التسويق",
         "استراتيجية المحتوى",
-        "SEO/GEO وMedia Buying",
+        "SEO/GEO والإعلانات الممولة",
         "تدريب الفريق",
         "تطوير WordPress",
         "إنتاج فيديو UGC",
       ],
       placeholder: "ما الذي تريد تحسينه؟",
       submit: "إرسال الطلب",
-      note: "تفضل ردا سريعا؟ WhatsApp متاح أسفله.",
+      note: "تفضل ردا أسرع؟ WhatsApp متاح أسفله.",
       linkedin: "الملف الشخصي",
     },
     footer: {
-      text: "أنظمة تسويق IA، مواقع e-commerce، SEO/GEO، paid social، فيديو UGC وWordPress لمنطقة MENA.",
-      nav: ["الخدمات", "فيديو UGC", "المشاريع", "AI Growth Sprint", "التدريب", "التواصل"],
+      text: "أنظمة تسويق بالذكاء الاصطناعي، مواقع تجارة إلكترونية، SEO/GEO، إعلانات ممولة، فيديو UGC وWordPress لمنطقة MENA.",
+      nav: ["الخدمات", "فيديو UGC", "المشاريع", "Sprint النمو", "التدريب", "التواصل"],
       whatsapp: "WhatsApp: +216 54 302 654",
       linkedin: "ملف LinkedIn",
-      bottom: ["تونس", "استراتيجية IA - SEO/GEO - Media Buying - فيديو UGC - WordPress"],
+      bottom: ["تونس", "استراتيجية الذكاء الاصطناعي - SEO/GEO - الإعلانات الممولة - فيديو UGC - WordPress"],
       floating: "WhatsApp",
     },
     thanks: {
@@ -729,10 +740,24 @@ const translations = {
 
 const getInitialLanguage = () => {
   const urlLanguage = new URLSearchParams(window.location.search).get("lang");
+  const pageLanguage = document.body.dataset.defaultLang;
+  const pathLanguage = window.location.pathname.startsWith("/fr/")
+    ? "fr"
+    : window.location.pathname.startsWith("/ar/")
+      ? "ar"
+      : "";
   const savedLanguage = window.localStorage.getItem("ahmed-site-language");
 
   if (languageCodes.includes(urlLanguage)) {
     return urlLanguage;
+  }
+
+  if (languageCodes.includes(pageLanguage)) {
+    return pageLanguage;
+  }
+
+  if (languageCodes.includes(pathLanguage)) {
+    return pathLanguage;
   }
 
   if (languageCodes.includes(savedLanguage)) {
@@ -752,8 +777,226 @@ const serviceText = document.querySelector("#serviceText");
 const serviceList = document.querySelector("#serviceList");
 const formLanguage = document.querySelector("#formLanguage");
 const metaDescription = document.querySelector('meta[name="description"]');
+const seoImageUrl = `${siteBaseUrl}/assets/ahmed-hero.jpg`;
+const localizedImageAlt = {
+  en: {
+    portrait: "Ahmed Zakraoui, digital marketing and AI marketing specialist in Tunisia",
+    profile: "Ahmed Zakraoui portrait",
+    dropy: "Dropy.store e-commerce website homepage created and grown by Ahmed Zakraoui",
+    parahealth: "ParaHealth.tn parapharmacy e-commerce homepage managed for SEO, media buying, and social media",
+  },
+  fr: {
+    portrait: "Ahmed Zakraoui, spécialiste marketing digital et marketing IA en Tunisie",
+    profile: "Portrait d'Ahmed Zakraoui",
+    dropy: "Page d'accueil du site e-commerce Dropy.store créé et développé par Ahmed Zakraoui",
+    parahealth: "Page d'accueil ParaHealth.tn optimisée en SEO, media buying et social media",
+  },
+  ar: {
+    portrait: "أحمد زكراوي، متخصص في التسويق الرقمي والذكاء الاصطناعي في تونس",
+    profile: "صورة أحمد زكراوي",
+    dropy: "واجهة موقع Dropy.store للتجارة الإلكترونية الذي أنشأه وطوره أحمد زكراوي",
+    parahealth: "واجهة موقع ParaHealth.tn مع إدارة SEO والإعلانات والسوشيال ميديا",
+  },
+};
 
 const getCopy = () => translations[currentLanguage] || translations.en;
+
+const getLanguageHref = (language, isThanksPage = false) => {
+  if (isThanksPage) {
+    return language === "en" ? "/thanks.html" : `/thanks.html?lang=${language}`;
+  }
+
+  return languagePaths[language] || "/";
+};
+
+const upsertMetaName = (name, content) => {
+  let element = document.querySelector(`meta[name="${name}"]`);
+  if (!element) {
+    element = document.createElement("meta");
+    element.setAttribute("name", name);
+    document.head.append(element);
+  }
+  element.setAttribute("content", content);
+};
+
+const upsertMetaProperty = (property, content) => {
+  let element = document.querySelector(`meta[property="${property}"]`);
+  if (!element) {
+    element = document.createElement("meta");
+    element.setAttribute("property", property);
+    document.head.append(element);
+  }
+  element.setAttribute("content", content);
+};
+
+const upsertLink = (key, attributes) => {
+  let element = document.querySelector(`link[data-seo="${key}"]`);
+  if (!element) {
+    element = document.createElement("link");
+    element.dataset.seo = key;
+    document.head.append(element);
+  }
+
+  Object.entries(attributes).forEach(([attribute, value]) => {
+    element.setAttribute(attribute, value);
+  });
+};
+
+const applySeo = (copy, isThanksPage) => {
+  const title = isThanksPage ? copy.meta.thanksTitle : copy.meta.homeTitle;
+  const description = isThanksPage ? copy.meta.thanksDescription : copy.meta.homeDescription;
+  const canonicalPath = isThanksPage ? getLanguageHref(currentLanguage, true) : getLanguageHref(currentLanguage);
+  const canonicalUrl = `${siteBaseUrl}${canonicalPath}`;
+  const locale = languageLocales[currentLanguage] || languageLocales.en;
+
+  upsertMetaName("robots", isThanksPage ? "noindex, follow" : "index, follow");
+  upsertLink("canonical", { rel: "canonical", href: canonicalUrl });
+
+  languageCodes.forEach((language) => {
+    if (!isThanksPage) {
+      upsertLink(`alternate-${language}`, {
+        rel: "alternate",
+        hreflang: language,
+        href: `${siteBaseUrl}${getLanguageHref(language)}`,
+      });
+    }
+  });
+
+  if (!isThanksPage) {
+    upsertLink("alternate-default", {
+      rel: "alternate",
+      hreflang: "x-default",
+      href: `${siteBaseUrl}/`,
+    });
+  }
+
+  upsertMetaProperty("og:type", "website");
+  upsertMetaProperty("og:site_name", "Ahmed Zakraoui");
+  upsertMetaProperty("og:title", title);
+  upsertMetaProperty("og:description", description);
+  upsertMetaProperty("og:url", canonicalUrl);
+  upsertMetaProperty("og:image", seoImageUrl);
+  upsertMetaProperty("og:locale", locale);
+
+  Object.entries(languageLocales).forEach(([language, alternateLocale]) => {
+    const key = `og-locale-${language}`;
+    const existing = document.querySelector(`meta[data-seo="${key}"]`);
+
+    if (alternateLocale === locale) {
+      existing?.remove();
+      return;
+    }
+
+    let element = existing;
+    if (!element) {
+      element = document.createElement("meta");
+      element.dataset.seo = key;
+      element.setAttribute("property", "og:locale:alternate");
+      document.head.append(element);
+    }
+    element.setAttribute("content", alternateLocale);
+  });
+
+  upsertMetaName("twitter:card", "summary_large_image");
+  upsertMetaName("twitter:title", title);
+  upsertMetaName("twitter:description", description);
+  upsertMetaName("twitter:image", seoImageUrl);
+
+  let schema = document.querySelector('script[type="application/ld+json"][data-schema="identity"]');
+  if (!schema) {
+    schema = document.createElement("script");
+    schema.type = "application/ld+json";
+    schema.dataset.schema = "identity";
+    document.head.append(schema);
+  }
+
+  const serviceNames = copy.contact.serviceOptions.filter(Boolean);
+  const knowsAbout = currentLanguage === "ar"
+    ? [
+        "التسويق الرقمي",
+        "الذكاء الاصطناعي في التسويق",
+        "SEO/GEO",
+        "الإعلانات الممولة",
+        "إنتاج فيديو UGC",
+        "تطوير WordPress",
+        "نمو التجارة الإلكترونية",
+      ]
+    : currentLanguage === "fr"
+      ? [
+          "Marketing digital",
+          "Intelligence artificielle appliquée au marketing",
+          "SEO/GEO",
+          "Media buying",
+          "Production vidéo UGC",
+          "Développement WordPress",
+          "Croissance e-commerce",
+        ]
+      : [
+          "Digital marketing",
+          "AI marketing strategy",
+          "SEO/GEO",
+          "Media buying",
+          "UGC video production",
+          "WordPress development",
+          "E-commerce growth",
+        ];
+
+  schema.textContent = JSON.stringify({
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": `${siteBaseUrl}/#website`,
+        url: siteBaseUrl,
+        name: "Ahmed Zakraoui",
+        inLanguage: currentLanguage,
+      },
+      {
+        "@type": "WebPage",
+        "@id": `${canonicalUrl}#webpage`,
+        url: canonicalUrl,
+        name: title,
+        description,
+        inLanguage: currentLanguage,
+        isPartOf: { "@id": `${siteBaseUrl}/#website` },
+        about: { "@id": `${siteBaseUrl}/#person` },
+      },
+      {
+        "@type": "Person",
+        "@id": `${siteBaseUrl}/#person`,
+        name: currentLanguage === "ar" ? "أحمد زكراوي" : "Ahmed Zakraoui",
+        alternateName: ["Ahmed Zakraoui", "أحمد زكراوي"],
+        url: canonicalUrl,
+        image: seoImageUrl,
+        jobTitle: copy.hero.eyebrow,
+        sameAs: ["https://www.linkedin.com/in/ahmedzakrawi/"],
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: currentLanguage === "ar" ? "تونس" : currentLanguage === "fr" ? "Tunis" : "Tunis",
+          addressCountry: "TN",
+        },
+        knowsAbout,
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": `${siteBaseUrl}/#services`,
+        name: currentLanguage === "ar" ? "خدمات أحمد زكراوي للتسويق الرقمي والذكاء الاصطناعي" : "Ahmed Zakraoui AI Marketing Systems",
+        url: canonicalUrl,
+        image: seoImageUrl,
+        areaServed: ["Tunisia", "North Africa", "MENA"],
+        founder: { "@id": `${siteBaseUrl}/#person` },
+        serviceType: serviceNames,
+        makesOffer: serviceNames.map((serviceName) => ({
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: serviceName,
+          },
+        })),
+      },
+    ],
+  });
+};
 
 const setText = (selector, value) => {
   const element = document.querySelector(selector);
@@ -878,6 +1121,8 @@ const applyLanguage = (language, shouldPersist = true) => {
     metaDescription.setAttribute("content", isThanksPage ? copy.meta.thanksDescription : copy.meta.homeDescription);
   }
 
+  applySeo(copy, isThanksPage);
+
   if (shouldPersist) {
     window.localStorage.setItem("ahmed-site-language", language);
   }
@@ -885,11 +1130,21 @@ const applyLanguage = (language, shouldPersist = true) => {
   document.querySelectorAll(".language-option").forEach((button) => {
     const isActive = button.dataset.lang === language;
     button.classList.toggle("is-active", isActive);
-    button.setAttribute("aria-pressed", String(isActive));
+    button.setAttribute("href", getLanguageHref(button.dataset.lang, isThanksPage));
+    if (isActive) {
+      button.setAttribute("aria-current", "true");
+    } else {
+      button.removeAttribute("aria-current");
+    }
   });
 
   if (formLanguage) {
     formLanguage.value = copy.name;
+  }
+
+  const nextInput = document.querySelector('input[name="_next"]');
+  if (nextInput) {
+    nextInput.value = `${siteBaseUrl}/thanks.html${language === "en" ? "" : `?lang=${language}`}`;
   }
 
   setText(".brand-copy small", copy.brandSmall);
@@ -922,6 +1177,7 @@ const applyLanguage = (language, shouldPersist = true) => {
   setText(".hero-copy .eyebrow", copy.hero.eyebrow);
   setAllText(".hero-title span", copy.hero.title);
   setText(".hero-statement", copy.hero.statement);
+  setAttribute(".portrait-frame img", "alt", localizedImageAlt[language].portrait);
   setAllText(".signal-bar span", copy.hero.signals);
   setAttribute(".signal-bar", "aria-label", copy.aria.signal);
   setText(".hero-actions .primary", copy.hero.primary);
@@ -982,14 +1238,17 @@ const applyLanguage = (language, shouldPersist = true) => {
   setText(".selected-work .section-head p:not(.eyebrow)", copy.work.text);
   setText(".work-card-feature .work-content h3", copy.work.cards[0].title);
   setText(".work-card-feature .work-content p", copy.work.cards[0].text);
+  setAttribute(".work-card-feature .work-visual img", "alt", localizedImageAlt[language].dropy);
   setAllText(".work-card-feature .work-tags span", copy.work.cards[0].tags);
   setAttribute(".work-card-feature .work-tags", "aria-label", copy.aria.dropyScope);
   setText(".work-card-dark .work-content h3", copy.work.cards[1].title);
   setText(".work-card-dark .work-content p", copy.work.cards[1].text);
+  setAttribute(".work-card-dark .work-visual img", "alt", localizedImageAlt[language].parahealth);
   setAllText(".work-card-dark .work-tags span", copy.work.cards[1].tags);
   setAttribute(".work-card-dark .work-tags", "aria-label", copy.aria.paraScope);
 
   setText(".training-card .eyebrow", copy.training.eyebrow);
+  setAttribute(".training-card img", "alt", localizedImageAlt[language].profile);
   setText(".training-card h2", copy.training.title);
   setText(".training-card p:not(.eyebrow)", copy.training.text);
   setAllText(".tool-stack span", copy.training.stack);
@@ -1037,8 +1296,26 @@ document.querySelectorAll(".service-tab").forEach((tab) => {
 });
 
 document.querySelectorAll(".language-option").forEach((button) => {
-  button.addEventListener("click", () => {
-    applyLanguage(button.dataset.lang);
+  button.addEventListener("click", (event) => {
+    const language = button.dataset.lang;
+
+    if (!languageCodes.includes(language)) {
+      return;
+    }
+
+    window.localStorage.setItem("ahmed-site-language", language);
+
+    if (button.tagName.toLowerCase() === "a") {
+      event.preventDefault();
+      const destination = new URL(button.getAttribute("href"), window.location.origin);
+      if (document.body.dataset.page !== "thanks") {
+        destination.hash = window.location.hash;
+      }
+      window.location.assign(destination.href);
+      return;
+    }
+
+    applyLanguage(language);
   });
 });
 

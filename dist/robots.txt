@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://site-personnel-premium.ahmedzakraoui8.chatgpt.site/sitemap.xml
