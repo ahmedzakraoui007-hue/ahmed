@@ -12,12 +12,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@600;700;800&family=Tajawal:wght@400;500;700;800;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="thanks-body">
+  <body class="thanks-body" data-page="thanks">
     <header class="site-header thanks-header">
       <a class="brand" href="index.html" aria-label="Ahmed Zakraoui home">
         <span class="brand-mark">AZ</span>
@@ -26,6 +26,11 @@
           <small>AI Marketing Systems</small>
         </span>
       </a>
+      <div class="language-switch header-language" role="group" aria-label="Language selector">
+        <button class="language-option is-active" type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button class="language-option" type="button" data-lang="fr" aria-pressed="false">FR</button>
+        <button class="language-option" type="button" data-lang="ar" aria-pressed="false">AR</button>
+      </div>
     </header>
 
     <main class="thanks-main section-shell">
@@ -41,5 +46,6 @@
         </div>
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>

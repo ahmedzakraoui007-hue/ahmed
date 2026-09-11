@@ -12,13 +12,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@600;700;800&family=Tajawal:wght@400;500;700;800;900&display=swap"
       rel="stylesheet"
     />
     <link rel="icon" type="image/svg+xml" href='data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"%3E%3Crect width="64" height="64" rx="15" fill="%23080806"/%3E%3Cpath d="M12 49 29 13h7l16 36h-9l-3-7H25l-3 7h-10Zm16-15h9l-4-10-5 10Z" fill="%23ff5a14"/%3E%3Cpath d="M14 55h36" stroke="%2316d9ff" stroke-width="4" stroke-linecap="round"/%3E%3C/svg%3E' />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body data-page="home">
     <div class="scroll-progress" id="scrollProgress"></div>
     <div class="cursor-aura" id="cursorAura" aria-hidden="true"></div>
 
@@ -42,6 +42,11 @@
         <a href="#proof">Proof</a>
         <a href="#work">Work</a>
         <a href="#training">Training</a>
+        <div class="language-switch" role="group" aria-label="Language selector">
+          <button class="language-option is-active" type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button class="language-option" type="button" data-lang="fr" aria-pressed="false">FR</button>
+          <button class="language-option" type="button" data-lang="ar" aria-pressed="false">AR</button>
+        </div>
         <a href="#contact" class="nav-cta">Start a project</a>
       </nav>
     </header>
@@ -403,6 +408,7 @@
               <input type="hidden" name="_subject" value="New project inquiry from Ahmed Zakraoui website" />
               <input type="hidden" name="_template" value="table" />
               <input type="hidden" name="_next" value="https://site-personnel-premium.ahmedzakraoui8.chatgpt.site/thanks.html" />
+              <input type="hidden" name="language" id="formLanguage" value="English" />
 
               <div class="form-row">
                 <label class="form-field">
