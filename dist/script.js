@@ -59,6 +59,8 @@ const translations = {
       nav: "Primary navigation",
       languages: "Language selector",
       signal: "Growth system signals",
+      hook: "Marketing system map",
+      cockpit: "AI marketing growth cockpit",
       portrait: "Ahmed Zakraoui portrait",
       ugcWorkflow: "UGC video production workflow",
       trainingTopics: "Training topics",
@@ -103,7 +105,20 @@ const translations = {
       "North Africa",
       "MENA region",
     ],
-    belief: "Marketing needs systems. AI makes them faster. Teams make them work.",
+    hook: {
+      eyebrow: "Scroll the system",
+      title: "Less noise. More motion from signal to sale.",
+      text: "Your site, content, ads, and automations work as one loop.",
+      label: "Live growth cockpit",
+      summary: "4 connected layers",
+      layers: [
+        ["01", "Strategy", "Offers, audience, and priorities locked."],
+        ["02", "Content", "UGC, social, SEO, and landing pages aligned."],
+        ["03", "Automation", "Prompts, tools, and workflows saving time."],
+        ["04", "Growth", "Paid social, search, and analytics improving weekly."],
+      ],
+      metrics: ["Signal", "Content", "Acquisition", "Learning"],
+    },
     servicesHead: {
       eyebrow: "What I do",
       title: "From AI idea to daily marketing execution.",
@@ -121,99 +136,94 @@ const translations = {
       strategy: {
         index: "01",
         title: "AI Marketing Strategy",
-        text: "Build the roadmap for integrating AI into marketing without wasting time on random tools.",
-        items: ["AI opportunity audit", "Workflow and use-case mapping", "Prioritized implementation roadmap"],
+        text: "Turn AI from random tools into a focused growth roadmap.",
+        items: ["Opportunity audit", "Use-case map", "Prioritized roadmap"],
       },
       automation: {
         index: "02",
         title: "Marketing Automation & AI Tools Setup",
-        text: "Implement the right tools, prompt systems, and repeatable workflows so the team can save time and scale faster.",
-        items: ["Tool selection and setup", "Prompt libraries and SOPs", "Content and follow-up automations"],
+        text: "Set up tools, prompts, and repeatable workflows that teams actually use.",
+        items: ["Tool setup", "Prompt library", "Content automations"],
       },
       content: {
         index: "03",
         title: "Social Media & Content Strategy",
-        text: "Create a system for consistent content ideas, planning, production, repurposing, and quality control.",
-        items: ["Content pillars and calendars", "AI-assisted production flow", "Brand voice and review system"],
+        text: "Create a content machine for ideas, planning, production, and repurposing.",
+        items: ["Content pillars", "AI production flow", "Review system"],
       },
       growth: {
         index: "04",
         title: "SEO/GEO & Media Buying",
-        text: "Build acquisition across search, AI discovery, paid campaigns, and social channels with a clear measurement loop.",
-        items: ["SEO and generative search visibility", "Meta and paid social campaign setup", "Content and landing page optimization"],
+        text: "Connect search, AI discovery, paid campaigns, and landing pages.",
+        items: ["Search visibility", "Meta campaigns", "Landing page optimization"],
       },
       training: {
         index: "05",
         title: "Team Training",
-        text: "Upskill your marketing team with practical sessions they can apply immediately in daily work.",
-        items: ["Prompting foundations", "AI content workflows", "Automation and analytics routines"],
+        text: "Give your team practical AI workflows they can use immediately.",
+        items: ["Prompting foundations", "Content workflows", "Analytics routines"],
       },
       wordpress: {
         index: "06",
         title: "WordPress Development",
-        text: "Build clean websites and landing pages that strengthen credibility, acquisition, and conversion.",
-        items: ["Business and personal websites", "Landing pages and lead capture", "SEO-ready page structure"],
+        text: "Build clean websites and landing pages designed to convert.",
+        items: ["Business websites", "Lead capture", "SEO-ready structure"],
       },
       ugc: {
         index: "07",
         title: "UGC Video Production",
-        text: "Plan and produce authentic short-form videos with our UGC content creation partners for launches, ads, and social proof.",
-        items: ["Creator brief and script direction", "UGC partner coordination", "Videos ready for organic and paid social"],
+        text: "Produce short-form videos with UGC partners for launches, ads, and trust.",
+        items: ["Creator brief", "Partner coordination", "Ready-to-post videos"],
       },
     },
     ugcSection: {
       eyebrow: "UGC video partners",
       title: "Authentic creator videos for brands that need trust fast.",
-      text:
-        "With our UGC content creation partners, we plan, brief, coordinate, and deliver short-form videos for launches, paid social, product demos, testimonials, and organic content.",
+      text: "Plan, brief, coordinate, and deliver short-form videos for launches, ads, testimonials, and organic content.",
       cta: "Start a UGC video project",
       featureLabel: "Partner creator network",
       featureTitle: "Native-feeling content, built around your offer and audience.",
-      featureText:
-        "Hooks, scripts, creator guidance, filming angles, usage notes, and ready-to-post assets for Reels, TikTok, YouTube Shorts, and Meta Ads.",
+      featureText: "Hooks, scripts, creator guidance, filming angles, and ready-to-post assets for Reels, TikTok, Shorts, and Meta Ads.",
       steps: [
-        ["01", "Brief", "Define hooks, claims, scripts, offer angles, and brand guidelines."],
+        ["01", "Brief", "Define hooks, claims, scripts, and offer angles."],
         ["02", "Create", "Coordinate partner creators to produce credible short-form videos."],
-        ["03", "Deploy", "Deliver clean assets ready for organic posting and paid ad testing."],
+        ["03", "Deploy", "Deliver assets for organic and paid ad testing."],
       ],
     },
     sprint: {
       eyebrow: "Signature system",
       title: "The AI Growth Sprint",
-      text:
-        "A practical path for turning manual marketing chaos into a repeatable operating system your team can understand, run, and improve.",
+      text: "Turn manual marketing chaos into a repeatable system your team can run.",
       steps: [
-        ["Day 01", "Diagnose", "Map goals, audience, offers, content flow, tools, and blockers."],
-        ["Day 02", "Architect", "Design the AI roadmap, automation map, and content operating model."],
-        ["Day 03", "Build", "Set up prompts, automations, dashboards, pages, ads, and reusable assets."],
-        ["Day 04", "Train", "Teach the team how to use the system confidently in real work."],
-        ["Day 05", "Launch", "Ship the first workflows and define the improvement rhythm."],
+        ["Day 01", "Diagnose", "Map goals, offers, tools, and blockers."],
+        ["Day 02", "Architect", "Design the roadmap, automations, and content model."],
+        ["Day 03", "Build", "Set up prompts, pages, dashboards, ads, and assets."],
+        ["Day 04", "Train", "Teach the team to run the system with confidence."],
+        ["Day 05", "Launch", "Ship the first workflows and improvement rhythm."],
       ],
     },
     proof: {
       eyebrow: "Proof of work",
-      title: "Teaching, building, and creating around marketing, AI, and execution.",
+      title: "Teaching, building, and creating around AI-powered growth.",
       cards: [
-        ["Instructor", "GoMyCode", "Digital marketing instruction with a focus on practical execution and tool confidence."],
-        ["Founder", "Alpha Tech", "Building at the intersection of marketing systems, technology, and business growth."],
-        ["Creator", "DAY30 Bootcamp", "Structured learning experiences for people who want to execute, not just consume ideas."],
+        ["Instructor", "GoMyCode", "Practical digital marketing instruction built around execution."],
+        ["Founder", "Alpha Tech", "Marketing systems, technology, and business growth."],
+        ["Creator", "DAY30 Bootcamp", "Structured learning for people who want to execute."],
       ],
     },
     work: {
       eyebrow: "Selected work",
       title: "Real e-commerce projects, built and grown from the inside.",
-      text:
-        "I combine website creation, SEO/GEO, media buying, and social media management so brands can move from launch to repeatable acquisition.",
+      text: "Website creation, SEO/GEO, media buying, and social media working as one acquisition system.",
       cards: [
         {
           title: "E-commerce platform launch and growth system.",
-          text: "Created the website and managed the growth engine across SEO/GEO, media buying, and social media.",
+          text: "Created the website and managed the growth engine.",
           tags: ["Website creation", "SEO/GEO", "Media buying", "Social media"],
         },
         {
           title: "Parapharmacy e-commerce visibility and acquisition.",
-          text:
-            "Created and managed the website growth system, with SEO/GEO work, paid media execution, and ongoing social content management.",
+          text: "Managed website growth across SEO/GEO, paid media, and social content.",
           tags: ["E-commerce website", "SEO/GEO", "Paid ads", "Social content"],
         },
       ],
@@ -221,8 +231,7 @@ const translations = {
     training: {
       eyebrow: "Team training",
       title: "Make AI useful for the people doing the work.",
-      text:
-        "Practical sessions for marketing teams on prompting, AI content workflows, automation, social media systems, SEO/GEO, WordPress fundamentals, and analytics basics.",
+      text: "Practical sessions on prompts, content workflows, automation, SEO/GEO, WordPress, and analytics.",
       stack: [
         "Prompt libraries",
         "Content workflows",
@@ -239,8 +248,7 @@ const translations = {
     contact: {
       eyebrow: "Work with Ahmed",
       title: "Ready to turn your marketing into a smarter system?",
-      text:
-        "Tell me what you want to improve: AI strategy, marketing automation, content consistency, team training, UGC video production, SEO/GEO, paid media, or a stronger WordPress presence.",
+      text: "Tell me what you want to improve: AI strategy, automation, content, UGC, SEO/GEO, ads, or WordPress.",
       labels: ["Name", "Email", "Company", "Service", "Message"],
       servicePlaceholder: "Choose one",
       serviceOptions: [
@@ -292,6 +300,8 @@ const translations = {
       nav: "Navigation principale",
       languages: "Sélecteur de langue",
       signal: "Signaux du système de croissance",
+      hook: "Carte du système marketing",
+      cockpit: "Cockpit de croissance marketing IA",
       portrait: "Portrait d'Ahmed Zakraoui",
       ugcWorkflow: "Processus de production vidéo UGC",
       trainingTopics: "Sujets de formation",
@@ -336,7 +346,20 @@ const translations = {
       "Afrique du Nord",
       "Région MENA",
     ],
-    belief: "Le marketing a besoin de systèmes. L'IA les accélère. Les équipes les rendent performants.",
+    hook: {
+      eyebrow: "Le système visible",
+      title: "Moins de bruit. Plus de mouvement du signal à la vente.",
+      text: "Site, contenu, ads et automatisations avancent comme une seule boucle.",
+      label: "Cockpit de croissance",
+      summary: "4 couches connectées",
+      layers: [
+        ["01", "Stratégie", "Offre, audience et priorités clarifiées."],
+        ["02", "Contenu", "UGC, social, SEO et landing pages alignés."],
+        ["03", "Automatisation", "Prompts, outils et workflows qui gagnent du temps."],
+        ["04", "Croissance", "Paid social, search et analytics améliorés chaque semaine."],
+      ],
+      metrics: ["Signal", "Contenu", "Acquisition", "Apprentissage"],
+    },
     servicesHead: {
       eyebrow: "Ce que je fais",
       title: "De l'idée IA à l'exécution marketing quotidienne.",
@@ -354,98 +377,94 @@ const translations = {
       strategy: {
         index: "01",
         title: "Stratégie Marketing IA",
-        text: "Construire la roadmap pour intégrer l'IA dans votre marketing sans perdre du temps avec des outils choisis au hasard.",
-        items: ["Audit des opportunités IA", "Cartographie des workflows et cas d'usage", "Roadmap d'implémentation priorisée"],
+        text: "Transformer l'IA en roadmap de croissance claire.",
+        items: ["Audit opportunités", "Carte des cas d'usage", "Roadmap priorisée"],
       },
       automation: {
         index: "02",
         title: "Automatisation Marketing & Setup d'Outils IA",
-        text: "Mettre en place les bons outils, prompts et workflows répétables pour gagner du temps et scaler plus vite.",
-        items: ["Sélection et setup des outils", "Bibliothèques de prompts et SOP", "Automatisations de contenu et de suivi"],
+        text: "Installer outils, prompts et workflows que l'équipe utilise vraiment.",
+        items: ["Setup outils", "Bibliothèque prompts", "Automatisations contenu"],
       },
       content: {
         index: "03",
         title: "Stratégie Social Media & Contenu",
-        text: "Créer un système pour produire des idées, planifier, publier, recycler et garder une qualité constante.",
-        items: ["Piliers de contenu et calendriers", "Production assistée par l'IA", "Voix de marque et système de validation"],
+        text: "Créer une machine de contenu pour idées, planning, production et recyclage.",
+        items: ["Piliers de contenu", "Production assistée IA", "Système de validation"],
       },
       growth: {
         index: "04",
         title: "SEO/GEO & Media Buying",
-        text: "Construire l'acquisition via search, visibilité IA, campagnes paid et social avec une boucle de mesure claire.",
-        items: ["SEO et visibilité dans la recherche générative", "Setup campagnes Meta et paid social", "Optimisation contenu et landing pages"],
+        text: "Connecter search, visibilité IA, campagnes paid et landing pages.",
+        items: ["Visibilité search", "Campagnes Meta", "Optimisation landing pages"],
       },
       training: {
         index: "05",
         title: "Formation d'Équipe",
-        text: "Faire monter votre équipe marketing en compétence avec des sessions pratiques applicables immédiatement.",
-        items: ["Fondations du prompting", "Workflows de contenu IA", "Routines d'automatisation et analytics"],
+        text: "Donner à l'équipe des workflows IA utilisables immédiatement.",
+        items: ["Fondations prompting", "Workflows contenu", "Routines analytics"],
       },
       wordpress: {
         index: "06",
         title: "Développement WordPress",
-        text: "Créer des sites et landing pages propres qui renforcent la crédibilité, l'acquisition et la conversion.",
-        items: ["Sites business et personnels", "Landing pages et capture de leads", "Structure SEO-ready"],
+        text: "Créer des sites et landing pages propres, pensés pour convertir.",
+        items: ["Sites business", "Capture de leads", "Structure SEO-ready"],
       },
       ugc: {
         index: "07",
         title: "Production Vidéo UGC",
-        text: "Planifier et produire des vidéos short-form authentiques avec nos partenaires créateurs UGC pour les lancements, ads et preuves sociales.",
-        items: ["Brief créateur et direction script", "Coordination des partenaires UGC", "Vidéos prêtes pour organique et paid social"],
+        text: "Produire des vidéos courtes avec des créateurs UGC pour lancer, vendre et rassurer.",
+        items: ["Brief créateur", "Coordination UGC", "Vidéos prêtes à publier"],
       },
     },
     ugcSection: {
       eyebrow: "Partenaires vidéo UGC",
       title: "Des vidéos créateurs authentiques pour les marques qui doivent gagner la confiance vite.",
-      text:
-        "Avec nos partenaires créateurs UGC, nous planifions, briefons, coordonnons et livrons des vidéos courtes pour lancements, paid social, démos produit, témoignages et contenu organique.",
+      text: "Planifier, briefer, coordonner et livrer des vidéos courtes pour lancements, ads, témoignages et contenu organique.",
       cta: "Lancer un projet vidéo UGC",
       featureLabel: "Réseau de créateurs partenaires",
       featureTitle: "Un contenu naturel, construit autour de votre offre et de votre audience.",
-      featureText:
-        "Hooks, scripts, guidance créateur, angles de tournage, notes d'utilisation et assets prêts à publier pour Reels, TikTok, YouTube Shorts et Meta Ads.",
+      featureText: "Hooks, scripts, guidance créateur, angles de tournage et assets prêts pour Reels, TikTok, Shorts et Meta Ads.",
       steps: [
-        ["01", "Brief", "Définir hooks, promesses, scripts, angles d'offre et guidelines de marque."],
+        ["01", "Brief", "Définir hooks, promesses, scripts et angles d'offre."],
         ["02", "Créer", "Coordonner les créateurs partenaires pour produire des vidéos crédibles."],
-        ["03", "Déployer", "Livrer des assets propres pour l'organique et les tests paid ads."],
+        ["03", "Déployer", "Livrer des assets pour l'organique et les tests paid ads."],
       ],
     },
     sprint: {
       eyebrow: "Système signature",
       title: "Le AI Growth Sprint",
-      text:
-        "Un chemin pratique pour transformer le chaos marketing manuel en système opérationnel répétable que votre équipe comprend, utilise et améliore.",
+      text: "Transformer le chaos marketing manuel en système répétable que l'équipe peut piloter.",
       steps: [
-        ["Jour 01", "Diagnostiquer", "Cartographier objectifs, audience, offres, flux de contenu, outils et blocages."],
-        ["Jour 02", "Architecturer", "Concevoir la roadmap IA, la carte d'automatisation et le modèle opérationnel contenu."],
-        ["Jour 03", "Construire", "Mettre en place prompts, automatisations, dashboards, pages, ads et assets réutilisables."],
-        ["Jour 04", "Former", "Apprendre à l'équipe à utiliser le système avec confiance dans le vrai travail."],
-        ["Jour 05", "Lancer", "Déployer les premiers workflows et définir le rythme d'amélioration."],
+        ["Jour 01", "Diagnostiquer", "Cartographier objectifs, offres, outils et blocages."],
+        ["Jour 02", "Architecturer", "Concevoir roadmap, automatisations et modèle contenu."],
+        ["Jour 03", "Construire", "Mettre en place prompts, pages, dashboards, ads et assets."],
+        ["Jour 04", "Former", "Apprendre à l'équipe à piloter le système."],
+        ["Jour 05", "Lancer", "Déployer les premiers workflows et le rythme d'amélioration."],
       ],
     },
     proof: {
       eyebrow: "Preuves de travail",
-      title: "Former, construire et créer autour du marketing, de l'IA et de l'exécution.",
+      title: "Former, construire et créer autour de la croissance augmentée par l'IA.",
       cards: [
-        ["Instructeur", "GoMyCode", "Formation en marketing digital avec un focus sur l'exécution pratique et la maîtrise des outils."],
-        ["Fondateur", "Alpha Tech", "Construction à l'intersection des systèmes marketing, de la technologie et de la croissance business."],
-        ["Créateur", "DAY30 Bootcamp", "Expériences d'apprentissage structurées pour celles et ceux qui veulent exécuter, pas seulement consommer des idées."],
+        ["Instructeur", "GoMyCode", "Formation marketing digital centrée sur l'exécution."],
+        ["Fondateur", "Alpha Tech", "Systèmes marketing, technologie et croissance business."],
+        ["Créateur", "DAY30 Bootcamp", "Apprentissage structuré pour passer à l'exécution."],
       ],
     },
     work: {
       eyebrow: "Projets sélectionnés",
       title: "Des projets e-commerce réels, créés et développés de l'intérieur.",
-      text:
-        "Je combine création de site, SEO/GEO, media buying et gestion social media pour aider les marques à passer du lancement à une acquisition répétable.",
+      text: "Création de site, SEO/GEO, media buying et social media dans un même système d'acquisition.",
       cards: [
         {
           title: "Lancement d'une plateforme e-commerce et système de croissance.",
-          text: "Création du site et gestion du moteur de croissance via SEO/GEO, media buying et social media.",
+          text: "Création du site et pilotage du moteur de croissance.",
           tags: ["Création site web", "SEO/GEO", "Media buying", "Social media"],
         },
         {
           title: "Visibilité et acquisition e-commerce pour parapharmacie.",
-          text: "Création et pilotage du système de croissance du site avec SEO/GEO, campagnes paid media et gestion continue du contenu social.",
+          text: "Croissance pilotée via SEO/GEO, paid media et contenu social.",
           tags: ["Site e-commerce", "SEO/GEO", "Paid ads", "Contenu social"],
         },
       ],
@@ -453,8 +472,7 @@ const translations = {
     training: {
       eyebrow: "Formation d'équipe",
       title: "Rendre l'IA utile pour les personnes qui exécutent.",
-      text:
-        "Sessions pratiques pour équipes marketing sur prompting, workflows contenu IA, automatisation, systèmes social media, SEO/GEO, fondamentaux WordPress et bases analytics.",
+      text: "Sessions pratiques sur prompts, contenu IA, automation, SEO/GEO, WordPress et analytics.",
       stack: [
         "Bibliothèques de prompts",
         "Workflows contenu",
@@ -471,8 +489,7 @@ const translations = {
     contact: {
       eyebrow: "Travailler avec Ahmed",
       title: "Prêt à transformer votre marketing en système plus intelligent ?",
-      text:
-        "Dites-moi ce que vous voulez améliorer : stratégie IA, automatisation marketing, régularité du contenu, formation d'équipe, vidéo UGC, SEO/GEO, paid media ou présence WordPress plus forte.",
+      text: "Dites-moi quoi améliorer : stratégie IA, automation, contenu, UGC, SEO/GEO, ads ou WordPress.",
       labels: ["Nom", "Email", "Entreprise", "Service", "Message"],
       servicePlaceholder: "Choisir un service",
       serviceOptions: [
@@ -524,6 +541,8 @@ const translations = {
       nav: "التنقل الرئيسي",
       languages: "اختيار اللغة",
       signal: "إشارات نظام النمو",
+      hook: "خريطة النظام التسويقي",
+      cockpit: "لوحة نمو التسويق بالذكاء الاصطناعي",
       portrait: "صورة أحمد زكراوي",
       ugcWorkflow: "سير عمل إنتاج فيديو UGC",
       trainingTopics: "مواضيع التدريب",
@@ -568,7 +587,20 @@ const translations = {
       "شمال أفريقيا",
       "منطقة MENA",
     ],
-    belief: "التسويق القوي يحتاج إلى أنظمة. الذكاء الاصطناعي يسرعها. والفِرق تجعلها تحقق نتائج.",
+    hook: {
+      eyebrow: "النظام بشكل واضح",
+      title: "ضجيج أقل. حركة أوضح من الإشارة إلى البيع.",
+      text: "الموقع، المحتوى، الإعلانات والأتمتة تعمل كحلقة نمو واحدة.",
+      label: "لوحة نمو مباشرة",
+      summary: "4 طبقات مترابطة",
+      layers: [
+        ["01", "الاستراتيجية", "العرض، الجمهور والأولويات بوضوح."],
+        ["02", "المحتوى", "UGC، السوشيال، SEO وصفحات الهبوط في اتجاه واحد."],
+        ["03", "الأتمتة", "Prompts، أدوات وتدفقات عمل توفر الوقت."],
+        ["04", "النمو", "إعلانات، بحث وتحليلات تتحسن كل أسبوع."],
+      ],
+      metrics: ["إشارة", "محتوى", "اكتساب", "تعلم"],
+    },
     servicesHead: {
       eyebrow: "ماذا أقدم",
       title: "من فكرة الذكاء الاصطناعي إلى تنفيذ تسويقي يومي.",
@@ -586,97 +618,94 @@ const translations = {
       strategy: {
         index: "01",
         title: "استراتيجية التسويق بالذكاء الاصطناعي",
-        text: "بناء خارطة طريق واضحة لإدماج الذكاء الاصطناعي في التسويق بدون تشتيت أو أدوات لا تخدم أهدافك.",
-        items: ["تدقيق فرص الذكاء الاصطناعي", "رسم تدفقات العمل وحالات الاستخدام", "خارطة تنفيذ مرتبة حسب الأولوية"],
+        text: "تحويل الذكاء الاصطناعي من أدوات متفرقة إلى خارطة نمو واضحة.",
+        items: ["تدقيق الفرص", "خريطة حالات الاستخدام", "خارطة تنفيذ مرتبة"],
       },
       automation: {
         index: "02",
         title: "أتمتة التسويق وإعداد أدوات الذكاء الاصطناعي",
-        text: "إعداد الأدوات المناسبة، قوالب التعليمات وتدفقات عمل قابلة للتكرار حتى يوفر الفريق الوقت ويتوسع بشكل أسرع.",
-        items: ["اختيار وإعداد الأدوات", "مكتبات Prompts وإجراءات عمل واضحة", "أتمتة المحتوى والمتابعة"],
+        text: "إعداد أدوات، Prompts وتدفقات عمل يستخدمها الفريق فعلا.",
+        items: ["إعداد الأدوات", "مكتبة Prompts", "أتمتة المحتوى"],
       },
       content: {
         index: "03",
         title: "استراتيجية السوشيال ميديا والمحتوى",
-        text: "إنشاء نظام واضح للأفكار، التخطيط، الإنتاج، إعادة الاستخدام ومراقبة الجودة.",
-        items: ["محاور المحتوى والرزنامة", "إنتاج محتوى بمساعدة الذكاء الاصطناعي", "صوت العلامة ونظام المراجعة"],
+        text: "بناء آلة محتوى للأفكار، التخطيط، الإنتاج وإعادة الاستخدام.",
+        items: ["محاور المحتوى", "إنتاج بمساعدة الذكاء الاصطناعي", "نظام مراجعة"],
       },
       growth: {
         index: "04",
         title: "SEO/GEO والإعلانات الممولة",
-        text: "بناء قنوات اكتساب عبر البحث، الظهور في إجابات الذكاء الاصطناعي، الحملات المدفوعة والسوشيال مع نظام قياس واضح.",
-        items: ["SEO والظهور في البحث التوليدي", "إعداد حملات Meta وPaid Social", "تحسين المحتوى وصفحات الهبوط"],
+        text: "ربط البحث، الظهور في إجابات الذكاء الاصطناعي، الإعلانات وصفحات الهبوط.",
+        items: ["ظهور في البحث", "حملات Meta", "تحسين صفحات الهبوط"],
       },
       training: {
         index: "05",
         title: "تدريب الفرق",
-        text: "رفع كفاءة فريق التسويق عبر جلسات عملية يمكن تطبيقها مباشرة في العمل اليومي.",
-        items: ["أساسيات Prompting", "تدفقات محتوى بالذكاء الاصطناعي", "روتينات الأتمتة والتحليلات"],
+        text: "تدريب الفريق على تدفقات عمل بالذكاء الاصطناعي قابلة للتطبيق فورا.",
+        items: ["أساسيات Prompting", "تدفقات محتوى", "روتينات تحليل"],
       },
       wordpress: {
         index: "06",
         title: "تطوير WordPress",
-        text: "إنشاء مواقع وصفحات هبوط قوية تعزز المصداقية، الاكتساب والتحويل.",
-        items: ["مواقع أعمال وشخصية", "صفحات هبوط وجمع عملاء محتملين", "بنية جاهزة لمحركات البحث"],
+        text: "إنشاء مواقع وصفحات هبوط نظيفة ومبنية للتحويل.",
+        items: ["مواقع أعمال", "جمع عملاء محتملين", "بنية SEO جاهزة"],
       },
       ugc: {
         index: "07",
         title: "إنتاج فيديو UGC",
-        text: "تخطيط وإنتاج فيديوهات قصيرة أصيلة مع شركائنا من صناع محتوى UGC للإطلاقات، الإعلانات والدليل الاجتماعي.",
-        items: ["Brief واضح لصانع المحتوى وتوجيه السكريبت", "تنسيق مع شركاء UGC", "فيديوهات جاهزة للنشر العضوي والإعلانات"],
+        text: "إنتاج فيديوهات قصيرة مع صناع UGC للإطلاق، البيع وبناء الثقة.",
+        items: ["Brief واضح", "تنسيق مع شركاء UGC", "فيديوهات جاهزة للنشر"],
       },
     },
     ugcSection: {
       eyebrow: "شركاء فيديو UGC",
       title: "فيديوهات UGC حقيقية للعلامات التي تحتاج إلى بناء الثقة بسرعة.",
-      text:
-        "مع شركائنا من صناع محتوى UGC، نخطط للرسائل، نكتب الـ brief، ننسق الإنتاج ونقدم فيديوهات قصيرة للإطلاقات، الإعلانات الممولة، عروض المنتجات، الشهادات والمحتوى العضوي.",
+      text: "نخطط، نكتب الـ brief، ننسق ونقدم فيديوهات قصيرة للإطلاقات، الإعلانات، الشهادات والمحتوى العضوي.",
       cta: "ابدأ مشروع فيديو UGC",
       featureLabel: "شبكة صناع محتوى شركاء",
       featureTitle: "محتوى يبدو طبيعيا ومبنيا حول عرضك وجمهورك.",
-      featureText:
-        "زوايا افتتاحية، سكريبتات، توجيه لصناع المحتوى، زوايا تصوير، ملاحظات استخدام وملفات جاهزة للنشر على Reels وTikTok وYouTube Shorts وMeta Ads.",
+      featureText: "Hooks، سكريبتات، توجيه لصناع المحتوى وملفات جاهزة للنشر على Reels وTikTok وShorts وMeta Ads.",
       steps: [
-        ["01", "التخطيط", "تحديد الزوايا الافتتاحية، الوعود التسويقية، السكريبتات، زوايا العرض وإرشادات العلامة."],
+        ["01", "التخطيط", "تحديد الـ hooks، الوعود، السكريبتات وزوايا العرض."],
         ["02", "الإنتاج", "تنسيق العمل مع صناع محتوى شركاء لإنتاج فيديوهات قصيرة موثوقة."],
-        ["03", "الإطلاق", "تسليم ملفات جاهزة للنشر العضوي واختبار الإعلانات الممولة."],
+        ["03", "الإطلاق", "تسليم ملفات للنشر العضوي واختبار الإعلانات."],
       ],
     },
     sprint: {
       eyebrow: "النظام الخاص",
       title: "Sprint نمو بالذكاء الاصطناعي",
-      text: "مسار عملي لتحويل فوضى التسويق اليدوي إلى نظام تشغيل قابل للتكرار يفهمه فريقك، يستخدمه ويطوره.",
+      text: "تحويل فوضى التسويق اليدوي إلى نظام نمو قابل للتكرار.",
       steps: [
-        ["اليوم 01", "تشخيص", "رسم الأهداف، الجمهور، العروض، تدفق المحتوى، الأدوات والعوائق."],
-        ["اليوم 02", "تصميم", "تصميم خارطة طريق الذكاء الاصطناعي، خريطة الأتمتة ونموذج تشغيل المحتوى."],
-        ["اليوم 03", "بناء", "إعداد Prompts، أتمتة، لوحات متابعة، صفحات، إعلانات وملفات قابلة لإعادة الاستخدام."],
-        ["اليوم 04", "تدريب", "تعليم الفريق كيف يستخدم النظام بثقة في العمل اليومي."],
-        ["اليوم 05", "إطلاق", "إطلاق أول تدفقات عمل وتحديد إيقاع التحسين."],
+        ["اليوم 01", "تشخيص", "رسم الأهداف، العروض، الأدوات والعوائق."],
+        ["اليوم 02", "تصميم", "تصميم الخارطة، الأتمتة ونموذج المحتوى."],
+        ["اليوم 03", "بناء", "إعداد Prompts، صفحات، لوحات، إعلانات وملفات."],
+        ["اليوم 04", "تدريب", "تعليم الفريق كيف يقود النظام بثقة."],
+        ["اليوم 05", "إطلاق", "إطلاق أول تدفقات عمل وإيقاع التحسين."],
       ],
     },
     proof: {
       eyebrow: "دليل العمل",
-      title: "تدريب، بناء وصناعة محتوى حول التسويق، الذكاء الاصطناعي والتنفيذ.",
+      title: "تدريب، بناء وصناعة محتوى حول النمو المدعوم بالذكاء الاصطناعي.",
       cards: [
-        ["مدرب", "GoMyCode", "تدريب في التسويق الرقمي مع تركيز على التنفيذ العملي والثقة في استخدام الأدوات."],
-        ["مؤسس", "Alpha Tech", "بناء عند تقاطع أنظمة التسويق، التكنولوجيا ونمو الأعمال."],
-        ["صانع محتوى", "DAY30 Bootcamp", "تجارب تعلم منظمة للأشخاص الذين يريدون التنفيذ، وليس استهلاك الأفكار فقط."],
+        ["مدرب", "GoMyCode", "تدريب تسويق رقمي مبني حول التنفيذ."],
+        ["مؤسس", "Alpha Tech", "أنظمة تسويق، تكنولوجيا ونمو أعمال."],
+        ["صانع محتوى", "DAY30 Bootcamp", "تعلم منظم للأشخاص الذين يريدون التنفيذ."],
       ],
     },
     work: {
       eyebrow: "مشاريع مختارة",
       title: "مشاريع تجارة إلكترونية حقيقية، تم بناؤها وتنميتها من الداخل.",
-      text:
-        "أجمع بين إنشاء المواقع، SEO/GEO، الإعلانات الممولة وإدارة السوشيال ميديا حتى تنتقل العلامات من الإطلاق إلى اكتساب قابل للتكرار.",
+      text: "إنشاء مواقع، SEO/GEO، إعلانات وسوشيال ميديا ضمن نظام اكتساب واحد.",
       cards: [
         {
           title: "إطلاق منصة تجارة إلكترونية ونظام نمو.",
-          text: "إنشاء الموقع وإدارة محرك النمو عبر SEO/GEO، الإعلانات الممولة والسوشيال ميديا.",
+          text: "إنشاء الموقع وقيادة محرك النمو.",
           tags: ["إنشاء الموقع", "SEO/GEO", "إعلانات ممولة", "إدارة السوشيال ميديا"],
         },
         {
           title: "ظهور واكتساب لمتجر بارافارماسي.",
-          text: "إنشاء وإدارة نظام نمو الموقع عبر SEO/GEO، تنفيذ الحملات الإعلانية وإدارة مستمرة للمحتوى الاجتماعي.",
+          text: "نمو عبر SEO/GEO، الإعلانات والمحتوى الاجتماعي.",
           tags: ["موقع تجارة إلكترونية", "SEO/GEO", "إعلانات ممولة", "محتوى اجتماعي"],
         },
       ],
@@ -684,8 +713,7 @@ const translations = {
     training: {
       eyebrow: "تدريب الفرق",
       title: "جعل الذكاء الاصطناعي مفيدا لمن يقومون بالعمل.",
-      text:
-        "جلسات عملية لفرق التسويق حول Prompting، تدفقات إنتاج المحتوى بالذكاء الاصطناعي، الأتمتة، أنظمة السوشيال ميديا، SEO/GEO، أساسيات WordPress وقواعد التحليلات.",
+      text: "جلسات عملية حول Prompts، محتوى بالذكاء الاصطناعي، أتمتة، SEO/GEO، WordPress وتحليلات.",
       stack: [
         "مكتبات Prompts",
         "تدفقات محتوى",
@@ -702,8 +730,7 @@ const translations = {
     contact: {
       eyebrow: "اعمل مع أحمد",
       title: "جاهز لتحويل تسويقك إلى نظام أذكى؟",
-      text:
-        "أخبرني بما تريد تحسينه: استراتيجية الذكاء الاصطناعي، أتمتة التسويق، انتظام المحتوى، تدريب الفريق، فيديو UGC، SEO/GEO، الإعلانات الممولة أو حضور أقوى على WordPress.",
+      text: "أخبرني ما الذي تريد تحسينه: استراتيجية، أتمتة، محتوى، UGC، SEO/GEO، إعلانات أو WordPress.",
       labels: ["الاسم", "البريد الإلكتروني", "الشركة", "الخدمة", "الرسالة"],
       servicePlaceholder: "اختر خدمة",
       serviceOptions: [
@@ -1190,7 +1217,21 @@ const applyLanguage = (language, shouldPersist = true) => {
   setText(".system-card-b strong", copy.hero.cards[1][1]);
   setAllText(".hero-proof strong", copy.hero.proof);
   setAllText(".marquee span", copy.marquee);
-  setText(".belief p", copy.belief);
+
+  setAttribute(".scroll-hook", "aria-label", copy.aria.hook);
+  setText(".scroll-hook-copy .eyebrow", copy.hook.eyebrow);
+  setText(".scroll-hook-copy h2", copy.hook.title);
+  setText(".scroll-hook-copy p:not(.eyebrow)", copy.hook.text);
+  setAttribute(".growth-cockpit", "aria-label", copy.aria.cockpit);
+  setText(".cockpit-top span", copy.hook.label);
+  setText(".cockpit-top strong", copy.hook.summary);
+  copy.hook.layers.forEach((layer, index) => {
+    const layerNumber = index + 1;
+    setText(`.system-node:nth-child(${layerNumber}) span`, layer[0]);
+    setText(`.system-node:nth-child(${layerNumber}) strong`, layer[1]);
+    setText(`.system-node:nth-child(${layerNumber}) p`, layer[2]);
+  });
+  setAllText(".cockpit-metrics span", copy.hook.metrics);
 
   setText(".services .section-head .eyebrow", copy.servicesHead.eyebrow);
   setText(".services .section-head h2", copy.servicesHead.title);
