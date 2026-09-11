@@ -44,9 +44,9 @@ const translations = {
     dir: "ltr",
     name: "English",
     meta: {
-      homeTitle: "Ahmed Zakraoui | AI Marketing Strategist",
+      homeTitle: "Ahmed Zakraoui | AI Marketing Systems That Sell",
       homeDescription:
-        "Ahmed Zakraoui helps SMEs, startups, and corporations across North Africa and the MENA region build AI-powered marketing systems, e-commerce websites, SEO/GEO, UGC video campaigns, and paid social growth.",
+        "Ahmed Zakraoui builds AI marketing systems for SMEs, startups, and companies across Tunisia, North Africa, and MENA: SEO/GEO, paid media, UGC, automation, and WordPress.",
       thanksTitle: "Message sent | Ahmed Zakraoui",
       thanksDescription:
         "Thank you for contacting Ahmed Zakraoui about AI marketing strategy, automation, content systems, UGC video production, team training, or WordPress.",
@@ -80,17 +80,20 @@ const translations = {
     },
     hero: {
       rail: ["Tunis", "North Africa", "MENA"],
-      eyebrow: "Digital marketing specialist + AI enthusiast",
-      title: ["Ahmed", "Zakraoui"],
-      statement:
-        "I build AI-powered marketing systems for SMEs, startups, and corporations that want sharper strategy, faster execution, and growth work that connects websites, SEO/GEO, paid media, and content.",
+      eyebrow: "Ahmed Zakraoui - Digital marketing + AI",
+      title: ["AI marketing systems", "that sell."],
+      statement: {
+        before: "I help SMEs, startups, and companies connect ",
+        strong: "SEO/GEO, paid media, UGC, automation, and WordPress",
+        after: " into one clear growth system.",
+      },
       signals: ["SEO/GEO", "Paid Social", "UGC Video", "WordPress"],
-      primary: "Build your AI marketing system",
+      primary: "Build my AI marketing system",
       secondary: "See how I work",
       availability: "Available for MENA growth projects",
       cards: [
-        ["AI Roadmap", "Strategy before tools"],
-        ["Marketing Ops", "Automation that teams keep using"],
+        ["AI Roadmap", "Clear priorities"],
+        ["Marketing Ops", "Ready workflows"],
       ],
       proof: ["AI Strategy", "Automation Setup", "Content Systems", "WordPress Builds", "UGC Video", "SEO/GEO + Ads"],
     },
@@ -285,9 +288,9 @@ const translations = {
     dir: "ltr",
     name: "Français",
     meta: {
-      homeTitle: "Ahmed Zakraoui | Stratège Marketing IA",
+      homeTitle: "Ahmed Zakraoui | Systèmes Marketing IA qui vendent",
       homeDescription:
-        "Ahmed Zakraoui aide les PME, startups et entreprises en Afrique du Nord et dans la région MENA à construire des systèmes marketing propulsés par l'IA, des sites e-commerce, du SEO/GEO, des campagnes UGC et de la croissance paid social.",
+        "Ahmed Zakraoui construit des systèmes marketing IA pour PME, startups et entreprises en Tunisie, Afrique du Nord et MENA : SEO/GEO, paid media, UGC, automatisation et WordPress.",
       thanksTitle: "Message envoyé | Ahmed Zakraoui",
       thanksDescription:
         "Merci d'avoir contacté Ahmed Zakraoui pour une stratégie marketing IA, l'automatisation, les systèmes de contenu, la vidéo UGC, la formation d'équipe ou WordPress.",
@@ -321,17 +324,20 @@ const translations = {
     },
     hero: {
       rail: ["Tunis", "Afrique du Nord", "MENA"],
-      eyebrow: "Spécialiste marketing digital + passionné d'IA",
-      title: ["Ahmed", "Zakraoui"],
-      statement:
-        "Je construis des systèmes marketing propulsés par l'IA pour les PME, startups et entreprises qui veulent une stratégie plus claire, une exécution plus rapide et une croissance connectée entre site web, SEO/GEO, paid media et contenu.",
+      eyebrow: "Ahmed Zakraoui - Marketing digital + IA",
+      title: ["Systèmes marketing IA", "qui vendent."],
+      statement: {
+        before: "J'aide les PME, startups et entreprises à relier ",
+        strong: "SEO/GEO, paid media, UGC, automatisation et WordPress",
+        after: " dans un système de croissance clair et mesurable.",
+      },
       signals: ["SEO/GEO", "Paid Social", "Vidéo UGC", "WordPress"],
-      primary: "Construire mon système marketing IA",
+      primary: "Construire mon système IA",
       secondary: "Voir ma méthode",
       availability: "Disponible pour des projets de croissance MENA",
       cards: [
-        ["Roadmap IA", "La stratégie avant les outils"],
-        ["Marketing Ops", "Des automatisations que les équipes utilisent vraiment"],
+        ["Roadmap IA", "Priorités claires"],
+        ["Marketing Ops", "Workflows prêts"],
       ],
       proof: ["Stratégie IA", "Automatisation", "Systèmes de contenu", "Sites WordPress", "Vidéo UGC", "SEO/GEO + Ads"],
     },
@@ -526,9 +532,9 @@ const translations = {
     dir: "rtl",
     name: "العربية",
     meta: {
-      homeTitle: "أحمد زكراوي | خبير تسويق رقمي وذكاء اصطناعي في تونس",
+      homeTitle: "أحمد زكراوي | أنظمة تسويق ذكية تحول الاهتمام إلى نمو",
       homeDescription:
-        "أساعد الشركات في تونس، شمال أفريقيا ومنطقة MENA على بناء أنظمة تسويق رقمية مدعومة بالذكاء الاصطناعي تشمل SEO/GEO، الإعلانات الممولة، محتوى UGC، تطوير WordPress ونمو التجارة الإلكترونية.",
+        "أحمد زكراوي يبني أنظمة تسويق ذكية للشركات في تونس، شمال أفريقيا ومنطقة MENA تشمل SEO/GEO، الإعلانات الممولة، UGC، الأتمتة وWordPress.",
       thanksTitle: "تم إرسال الرسالة | أحمد زكراوي",
       thanksDescription:
         "شكرا لتواصلك مع أحمد زكراوي حول التسويق الرقمي، الذكاء الاصطناعي، SEO/GEO، الإعلانات الممولة، فيديو UGC، تدريب الفرق أو تطوير WordPress.",
@@ -562,17 +568,20 @@ const translations = {
     },
     hero: {
       rail: ["تونس", "شمال أفريقيا", "MENA"],
-      eyebrow: "متخصص في التسويق الرقمي + شغوف بالذكاء الاصطناعي",
-      title: ["أحمد", "زكراوي"],
-      statement:
-        "أبني أنظمة تسويق رقمية مدعومة بالذكاء الاصطناعي للشركات الصغيرة والمتوسطة، الشركات الناشئة والمؤسسات التي تريد استراتيجية أوضح، تنفيذا أسرع ونموا يربط بين الموقع الإلكتروني، SEO/GEO، الإعلانات الممولة والمحتوى.",
+      eyebrow: "أحمد زكراوي - تسويق رقمي + ذكاء اصطناعي",
+      title: ["أنظمة تسويق ذكية", "تحول الاهتمام إلى نمو."],
+      statement: {
+        before: "أساعد الشركات على ربط ",
+        strong: "SEO/GEO، الإعلانات الممولة، UGC، الأتمتة وWordPress",
+        after: " داخل نظام نمو واضح وقابل للقياس.",
+      },
       signals: ["SEO/GEO", "إعلانات ممولة", "فيديو UGC", "WordPress"],
       primary: "ابن نظامك التسويقي الذكي",
       secondary: "شاهد طريقة عملي",
       availability: "متاح لمشاريع النمو في منطقة MENA",
       cards: [
-        ["خارطة طريق الذكاء الاصطناعي", "الاستراتيجية قبل الأدوات"],
-        ["عمليات التسويق", "أتمتة تستخدمها الفرق فعلا"],
+        ["خارطة الذكاء الاصطناعي", "أولويات واضحة"],
+        ["عمليات التسويق", "تدفقات جاهزة"],
       ],
       proof: ["استراتيجية الذكاء الاصطناعي", "إعداد الأتمتة", "أنظمة المحتوى", "مواقع WordPress", "فيديو UGC", "SEO/GEO + إعلانات"],
     },
@@ -1034,6 +1043,49 @@ const setText = (selector, value) => {
   }
 };
 
+const setHeroTitle = (values) => {
+  const title = document.querySelector(".hero-title");
+  if (!title || !Array.isArray(values)) {
+    return;
+  }
+
+  title.textContent = "";
+  values.forEach((value) => {
+    const span = document.createElement("span");
+    span.textContent = value;
+    title.append(span);
+  });
+};
+
+const setRichText = (selector, value) => {
+  const element = document.querySelector(selector);
+  if (!element) {
+    return;
+  }
+
+  if (typeof value === "string") {
+    element.textContent = value;
+    return;
+  }
+
+  if (!value || typeof value !== "object") {
+    return;
+  }
+
+  element.textContent = "";
+  if (typeof value.before === "string") {
+    element.append(document.createTextNode(value.before));
+  }
+  if (typeof value.strong === "string") {
+    const strong = document.createElement("strong");
+    strong.textContent = value.strong;
+    element.append(strong);
+  }
+  if (typeof value.after === "string") {
+    element.append(document.createTextNode(value.after));
+  }
+};
+
 const setAllText = (selector, values) => {
   const elements = document.querySelectorAll(selector);
   elements.forEach((element, index) => {
@@ -1211,8 +1263,8 @@ const applyLanguage = (language, shouldPersist = true) => {
 
   setAllText(".hero-rail span", copy.hero.rail);
   setText(".hero-copy .eyebrow", copy.hero.eyebrow);
-  setAllText(".hero-title span", copy.hero.title);
-  setText(".hero-statement", copy.hero.statement);
+  setHeroTitle(copy.hero.title);
+  setRichText(".hero-statement", copy.hero.statement);
   setAttribute(".portrait-frame img", "alt", localizedImageAlt[language].portrait);
   setAllText(".signal-bar span", copy.hero.signals);
   setAttribute(".signal-bar", "aria-label", copy.aria.signal);
