@@ -25,12 +25,12 @@ nav?.querySelectorAll("a").forEach((link) => {
   });
 });
 
-const languageCodes = ["en", "fr", "ar"];
+const languageCodes = ["fr", "en", "ar"];
 const serviceKeys = ["strategy", "automation", "content", "growth", "training", "wordpress", "ugc"];
 const siteBaseUrl = "https://site-personnel-premium.ahmedzakraoui8.chatgpt.site";
 const languagePaths = {
-  en: "/",
-  fr: "/fr/",
+  fr: "/",
+  en: "/en/",
   ar: "/ar/",
 };
 const languageLocales = {
@@ -768,9 +768,11 @@ const translations = {
 const getInitialLanguage = () => {
   const urlLanguage = new URLSearchParams(window.location.search).get("lang");
   const pageLanguage = document.body.dataset.defaultLang;
-  const pathLanguage = window.location.pathname.startsWith("/fr/")
-    ? "fr"
-    : window.location.pathname.startsWith("/ar/")
+  const pathLanguage = window.location.pathname.startsWith("/en/")
+    ? "en"
+    : window.location.pathname.startsWith("/fr/")
+      ? "fr"
+      : window.location.pathname.startsWith("/ar/")
       ? "ar"
       : "";
   const savedLanguage = window.localStorage.getItem("ahmed-site-language");
@@ -791,7 +793,7 @@ const getInitialLanguage = () => {
     return savedLanguage;
   }
 
-  return "en";
+  return "fr";
 };
 
 let currentLanguage = getInitialLanguage();
@@ -826,11 +828,11 @@ const localizedImageAlt = {
   },
 };
 
-const getCopy = () => translations[currentLanguage] || translations.en;
+const getCopy = () => translations[currentLanguage] || translations.fr;
 
 const getLanguageHref = (language, isThanksPage = false) => {
   if (isThanksPage) {
-    return language === "en" ? "/thanks.html" : `/thanks.html?lang=${language}`;
+    return language === "fr" ? "/thanks.html" : `/thanks.html?lang=${language}`;
   }
 
   return languagePaths[language] || "/";
@@ -1165,13 +1167,20 @@ const applyLanguage = (language, shouldPersist = true) => {
     }
   });
 
+  document.querySelectorAll(".language-switch").forEach((switcher) => {
+    languageCodes
+      .map((code) => switcher.querySelector(`.language-option[data-lang="${code}"]`))
+      .filter(Boolean)
+      .forEach((button) => switcher.append(button));
+  });
+
   if (formLanguage) {
     formLanguage.value = copy.name;
   }
 
   const nextInput = document.querySelector('input[name="_next"]');
   if (nextInput) {
-    nextInput.value = `${siteBaseUrl}/thanks.html${language === "en" ? "" : `?lang=${language}`}`;
+    nextInput.value = `${siteBaseUrl}/thanks.html${language === "fr" ? "" : `?lang=${language}`}`;
   }
 
   setText(".brand-copy small", copy.brandSmall);
