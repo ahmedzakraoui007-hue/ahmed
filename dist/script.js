@@ -34,20 +34,26 @@ const services = {
     text: "Create a system for consistent content ideas, planning, production, repurposing, and quality control.",
     items: ["Content pillars and calendars", "AI-assisted production flow", "Brand voice and review system"],
   },
-  training: {
+  growth: {
     index: "04",
+    title: "SEO/GEO & Media Buying",
+    text: "Build acquisition across search, AI discovery, paid campaigns, and social channels with a clear measurement loop.",
+    items: ["SEO and generative search visibility", "Meta and paid social campaign setup", "Content and landing page optimization"],
+  },
+  training: {
+    index: "05",
     title: "Team Training",
     text: "Upskill your marketing team with practical sessions they can apply immediately in daily work.",
     items: ["Prompting foundations", "AI content workflows", "Automation and analytics routines"],
   },
   wordpress: {
-    index: "05",
+    index: "06",
     title: "WordPress Development",
     text: "Build clean websites and landing pages that strengthen credibility, acquisition, and conversion.",
     items: ["Business and personal websites", "Landing pages and lead capture", "SEO-ready page structure"],
   },
   ugc: {
-    index: "06",
+    index: "07",
     title: "UGC Video Production",
     text: "Plan and produce authentic short-form videos with our UGC content creation partners for launches, ads, and social proof.",
     items: ["Creator brief and script direction", "UGC partner coordination", "Videos ready for organic and paid social"],
