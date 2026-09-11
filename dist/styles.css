@@ -418,7 +418,7 @@ h1 {
 .hero-proof {
   grid-column: 2 / 4;
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 12px;
 }
 
@@ -619,6 +619,120 @@ h1 {
   background: rgba(255, 255, 255, 0.72);
   color: var(--ink);
   font-weight: 850;
+}
+
+.ugc {
+  position: relative;
+  overflow: hidden;
+  padding: 104px 0;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.055) 1px, transparent 1px),
+    linear-gradient(135deg, var(--ink) 0%, var(--panel) 58%, #111916 100%);
+  background-size: 42px 42px, 42px 42px, auto;
+  color: var(--white);
+}
+
+.ugc-layout {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 0.88fr) minmax(420px, 1.12fr);
+  gap: clamp(28px, 5vw, 56px);
+  align-items: center;
+}
+
+.ugc-copy {
+  min-width: 0;
+}
+
+.ugc-copy h2 {
+  max-width: 760px;
+  font-size: clamp(2.5rem, 5.2vw, 5.7rem);
+  line-height: 0.92;
+  text-wrap: balance;
+}
+
+.ugc-copy p:not(.eyebrow) {
+  max-width: 650px;
+  color: var(--muted-dark);
+  font-size: 1.08rem;
+  font-weight: 650;
+}
+
+.ugc-copy .button {
+  margin-top: 22px;
+}
+
+.ugc-board {
+  display: grid;
+  gap: 14px;
+  min-width: 0;
+}
+
+.ugc-feature {
+  min-height: 270px;
+  overflow: hidden;
+  padding: clamp(24px, 4vw, 36px);
+  border: 1px solid var(--line-dark);
+  border-radius: 30px;
+  background:
+    linear-gradient(135deg, rgba(255, 90, 20, 0.2), rgba(22, 217, 255, 0.08) 48%, rgba(216, 255, 62, 0.06)),
+    rgba(255, 255, 255, 0.075);
+  box-shadow: 0 26px 86px rgba(0, 0, 0, 0.28);
+}
+
+.ugc-feature span,
+.ugc-steps span {
+  color: var(--orange);
+  font-size: 0.8rem;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+.ugc-feature strong {
+  display: block;
+  max-width: 640px;
+  margin-top: 44px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(2rem, 4vw, 3.65rem);
+  line-height: 0.96;
+  text-wrap: balance;
+}
+
+.ugc-feature p {
+  max-width: 650px;
+  color: var(--muted-dark);
+  font-weight: 650;
+}
+
+.ugc-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.ugc-steps article {
+  min-height: 180px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--ink);
+}
+
+.ugc-steps strong {
+  display: block;
+  margin-top: 26px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.55rem;
+  line-height: 1;
+}
+
+.ugc-steps p {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.94rem;
+  font-weight: 680;
 }
 
 .sprint {
@@ -1172,6 +1286,7 @@ h1 {
   .service-console,
   .sprint-layout,
   .training-card,
+  .ugc-layout,
   .contact-layout {
     grid-template-columns: 1fr;
   }
@@ -1198,6 +1313,10 @@ h1 {
   }
 
   .proof-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ugc-steps {
     grid-template-columns: 1fr;
   }
 
@@ -1322,6 +1441,28 @@ h1 {
   .proof,
   .training {
     padding: 72px 0;
+  }
+
+  .ugc {
+    padding: 76px 0;
+  }
+
+  .ugc-copy h2 {
+    font-size: clamp(2.4rem, 12vw, 4rem);
+  }
+
+  .ugc-copy p:not(.eyebrow),
+  .ugc-feature p {
+    font-size: 1rem;
+  }
+
+  .ugc-feature {
+    min-height: 240px;
+    border-radius: 24px;
+  }
+
+  .ugc-feature strong {
+    margin-top: 36px;
   }
 
   .sprint,

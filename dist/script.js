@@ -46,6 +46,12 @@ const services = {
     text: "Build clean websites and landing pages that strengthen credibility, acquisition, and conversion.",
     items: ["Business and personal websites", "Landing pages and lead capture", "SEO-ready page structure"],
   },
+  ugc: {
+    index: "06",
+    title: "UGC Video Production",
+    text: "Plan and produce authentic short-form videos with our UGC content creation partners for launches, ads, and social proof.",
+    items: ["Creator brief and script direction", "UGC partner coordination", "Videos ready for organic and paid social"],
+  },
 };
 
 const serviceDetail = document.querySelector("#serviceDetail");
