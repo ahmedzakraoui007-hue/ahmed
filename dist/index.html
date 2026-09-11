@@ -20,6 +20,7 @@
   </head>
   <body>
     <div class="scroll-progress" id="scrollProgress"></div>
+    <div class="cursor-aura" id="cursorAura" aria-hidden="true"></div>
 
     <header class="site-header" id="siteHeader">
       <a class="brand" href="#top" aria-label="Ahmed Zakraoui home">
@@ -47,6 +48,8 @@
 
     <main id="top">
       <section class="hero">
+        <canvas class="neural-canvas" id="neuralCanvas" aria-hidden="true"></canvas>
+        <div class="hero-shine" aria-hidden="true"></div>
         <div class="hero-grid">
           <aside class="hero-rail" aria-label="Location and focus">
             <span>Tunis</span>
@@ -56,11 +59,23 @@
 
           <div class="hero-copy reveal">
             <p class="eyebrow">Digital marketing specialist + AI enthusiast</p>
-            <h1>Ahmed Zakraoui</h1>
+            <h1 class="hero-title">
+              <span>Ahmed</span>
+              <span>Zakraoui</span>
+            </h1>
             <p class="hero-statement">
               I build AI-powered marketing systems for SMEs, startups, and corporations that want sharper strategy,
               faster execution, and growth work that connects websites, SEO/GEO, paid media, and content.
             </p>
+            <div class="signal-bar reveal" aria-label="Growth system signals">
+              <span>SEO/GEO</span>
+              <i aria-hidden="true"></i>
+              <span>Paid Social</span>
+              <i aria-hidden="true"></i>
+              <span>UGC Video</span>
+              <i aria-hidden="true"></i>
+              <span>WordPress</span>
+            </div>
             <div class="hero-actions">
               <a class="button primary" href="#contact">Build your AI marketing system</a>
               <a class="button secondary" href="#services">See how I work</a>
@@ -68,6 +83,8 @@
           </div>
 
           <div class="portrait-system reveal" aria-label="Ahmed Zakraoui portrait">
+            <div class="orbit-ring orbit-ring-a" aria-hidden="true"></div>
+            <div class="orbit-ring orbit-ring-b" aria-hidden="true"></div>
             <div class="portrait-frame">
               <img src="assets/ahmed-hero.jpg" alt="Ahmed Zakraoui" />
               <div class="portrait-glow"></div>
@@ -106,6 +123,10 @@
             <article>
               <span>05</span>
               <strong>UGC Video</strong>
+            </article>
+            <article>
+              <span>06</span>
+              <strong>SEO/GEO + Ads</strong>
             </article>
           </div>
         </div>
@@ -294,7 +315,8 @@
         </div>
 
         <div class="work-grid">
-          <article class="work-card work-card-feature reveal">
+          <article class="work-card work-card-feature reveal" data-tilt>
+            <span class="case-number" aria-hidden="true">01</span>
             <div class="work-visual">
               <img src="assets/dropy-store.png" alt="Dropy.store website homepage screenshot" />
             </div>
@@ -313,7 +335,8 @@
             </div>
           </article>
 
-          <article class="work-card work-card-dark reveal">
+          <article class="work-card work-card-dark reveal" data-tilt>
+            <span class="case-number" aria-hidden="true">02</span>
             <div class="work-content">
               <span>ParaHealth.tn</span>
               <h3>Parapharmacy e-commerce visibility and acquisition.</h3>
