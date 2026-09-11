@@ -83,9 +83,9 @@ const translations = {
       eyebrow: "Ahmed Zakraoui - Digital marketing + AI",
       title: ["AI marketing systems", "that sell."],
       statement: {
-        before: "I help SMEs, startups, and companies connect ",
-        strong: "SEO/GEO, paid media, UGC, automation, and WordPress",
-        after: " into one clear growth system.",
+        before: "I help SMEs, startups, and companies structure growth with ",
+        strong: "an automated, measurable, conversion-focused marketing ecosystem",
+        after: " that connects SEO/GEO, ads, UGC, WordPress, and AI.",
       },
       signals: ["SEO/GEO", "Paid Social", "UGC Video", "WordPress"],
       primary: "Build my AI marketing system",
@@ -110,8 +110,8 @@ const translations = {
     ],
     hook: {
       eyebrow: "Scroll the system",
-      title: "Less noise. More motion from signal to sale.",
-      text: "Your site, content, ads, and automations work as one loop.",
+      title: "Less noise. More sales.",
+      text: "Signal, content, ads, and automation move inside one measurable growth loop.",
       label: "Live growth cockpit",
       summary: "4 connected layers",
       layers: [
@@ -181,12 +181,17 @@ const translations = {
     },
     ugcSection: {
       eyebrow: "UGC video partners",
-      title: "Authentic creator videos for brands that need trust fast.",
-      text: "Plan, brief, coordinate, and deliver short-form videos for launches, ads, testimonials, and organic content.",
+      title: "Authentic UGC videos that convert faster.",
+      text: "A simple process: sharp brief, partner creators, and short-form assets ready for organic and paid testing.",
       cta: "Start a UGC video project",
-      featureLabel: "Partner creator network",
-      featureTitle: "Native-feeling content, built around your offer and audience.",
-      featureText: "Hooks, scripts, creator guidance, filming angles, and ready-to-post assets for Reels, TikTok, Shorts, and Meta Ads.",
+      featureLabel: "UGC format preview",
+      featureTitle: "Hooks, proof, CTA.",
+      featureText: "Three short-form angles prepared for Reels, TikTok, Shorts, and Meta Ads.",
+      preview: [
+        ["01", "Hook", "0-3 sec"],
+        ["02", "Proof", "Product trust"],
+        ["03", "CTA", "Ad test"],
+      ],
       steps: [
         ["01", "Brief", "Define hooks, claims, scripts, and offer angles."],
         ["02", "Create", "Coordinate partner creators to produce credible short-form videos."],
@@ -195,8 +200,9 @@ const translations = {
     },
     sprint: {
       eyebrow: "Signature system",
-      title: "The AI Growth Sprint",
+      title: "AI Growth Sprint",
       text: "Turn manual marketing chaos into a repeatable system your team can run.",
+      cta: "Book my AI Growth Sprint",
       steps: [
         ["Day 01", "Diagnose", "Map goals, offers, tools, and blockers."],
         ["Day 02", "Architect", "Design the roadmap, automations, and content model."],
@@ -207,7 +213,8 @@ const translations = {
     },
     proof: {
       eyebrow: "Proof of work",
-      title: "Teaching, building, and creating around AI-powered growth.",
+      title: "Field-tested expertise across execution and training.",
+      link: "Discuss it",
       cards: [
         ["Instructor", "GoMyCode", "Practical digital marketing instruction built around execution."],
         ["Founder", "Alpha Tech", "Marketing systems, technology, and business growth."],
@@ -218,15 +225,25 @@ const translations = {
       eyebrow: "Selected work",
       title: "Real e-commerce projects, built and grown from the inside.",
       text: "Website creation, SEO/GEO, media buying, and social media working as one acquisition system.",
+      preview: "Project preview",
+      link: "View project",
       cards: [
         {
           title: "E-commerce platform launch and growth system.",
           text: "Created the website and managed the growth engine.",
+          metrics: [
+            ["4", "growth levers"],
+            ["Site", "built + managed"],
+          ],
           tags: ["Website creation", "SEO/GEO", "Media buying", "Social media"],
         },
         {
           title: "Parapharmacy e-commerce visibility and acquisition.",
           text: "Managed website growth across SEO/GEO, paid media, and social content.",
+          metrics: [
+            ["3", "acquisition channels"],
+            ["SEO", "GEO + content"],
+          ],
           tags: ["E-commerce website", "SEO/GEO", "Paid ads", "Social content"],
         },
       ],
@@ -235,17 +252,15 @@ const translations = {
       eyebrow: "Team training",
       title: "Make AI useful for the people doing the work.",
       text: "Practical sessions on prompts, content workflows, automation, SEO/GEO, WordPress, and analytics.",
+      format: "On-site or Remote - Custom workshops - 2 to 10 people",
+      cta: "Train my team",
       stack: [
         "Prompt libraries",
         "Content workflows",
         "Automation builders",
-        "Social media systems",
         "SEO/GEO routines",
         "UGC video briefs",
-        "WordPress pages",
-        "Analytics routines",
         "Team playbooks",
-        "AI governance",
       ],
     },
     contact: {
@@ -265,13 +280,13 @@ const translations = {
       ],
       placeholder: "What do you want to improve?",
       submit: "Send project request",
-      note: "Prefer a fast reply? WhatsApp is available below.",
+      note: "Reply within 24 business hours - 15-minute call with no obligation.",
       linkedin: "Profile",
     },
     footer: {
       text: "AI marketing systems, e-commerce websites, SEO/GEO, paid social, UGC video, and WordPress for MENA.",
       nav: ["Services", "UGC Video", "Selected Work", "AI Growth Sprint", "Team Training", "Contact"],
-      whatsapp: "WhatsApp: +216 54 302 654",
+      whatsapp: "Book a call",
       linkedin: "LinkedIn profile",
       bottom: ["Tunis, Tunisia", "AI Strategy - SEO/GEO - Media Buying - UGC Video - WordPress"],
       floating: "WhatsApp",
@@ -327,9 +342,9 @@ const translations = {
       eyebrow: "Ahmed Zakraoui - Marketing digital + IA",
       title: ["Systèmes marketing IA", "qui vendent."],
       statement: {
-        before: "J'aide les PME, startups et entreprises à relier ",
-        strong: "SEO/GEO, paid media, UGC, automatisation et WordPress",
-        after: " dans un système de croissance clair et mesurable.",
+        before: "J'aide les PME, startups et entreprises à structurer leur croissance avec ",
+        strong: "un écosystème marketing automatisé, mesurable et orienté conversion",
+        after: " qui relie SEO/GEO, ads, UGC, WordPress et IA.",
       },
       signals: ["SEO/GEO", "Paid Social", "Vidéo UGC", "WordPress"],
       primary: "Construire mon système IA",
@@ -354,8 +369,8 @@ const translations = {
     ],
     hook: {
       eyebrow: "Le système visible",
-      title: "Moins de bruit. Plus de mouvement du signal à la vente.",
-      text: "Site, contenu, ads et automatisations avancent comme une seule boucle.",
+      title: "Moins de bruit. Plus de ventes.",
+      text: "Signal, contenu, ads et automatisation avancent dans une boucle de croissance mesurable.",
       label: "Cockpit de croissance",
       summary: "4 couches connectées",
       layers: [
@@ -425,12 +440,17 @@ const translations = {
     },
     ugcSection: {
       eyebrow: "Partenaires vidéo UGC",
-      title: "Des vidéos créateurs authentiques pour les marques qui doivent gagner la confiance vite.",
-      text: "Planifier, briefer, coordonner et livrer des vidéos courtes pour lancements, ads, témoignages et contenu organique.",
+      title: "Des vidéos UGC authentiques pour convertir plus vite.",
+      text: "Un process simple : brief clair, créateurs partenaires et assets courts prêts à tester en organique comme en paid.",
       cta: "Lancer un projet vidéo UGC",
-      featureLabel: "Réseau de créateurs partenaires",
-      featureTitle: "Un contenu naturel, construit autour de votre offre et de votre audience.",
-      featureText: "Hooks, scripts, guidance créateur, angles de tournage et assets prêts pour Reels, TikTok, Shorts et Meta Ads.",
+      featureLabel: "Aperçu formats UGC",
+      featureTitle: "Hooks, preuve produit, CTA.",
+      featureText: "Trois angles courts préparés pour Reels, TikTok, Shorts et Meta Ads.",
+      preview: [
+        ["01", "Hook", "0-3 sec"],
+        ["02", "Preuve", "Produit"],
+        ["03", "CTA", "Test ads"],
+      ],
       steps: [
         ["01", "Brief", "Définir hooks, promesses, scripts et angles d'offre."],
         ["02", "Créer", "Coordonner les créateurs partenaires pour produire des vidéos crédibles."],
@@ -439,8 +459,9 @@ const translations = {
     },
     sprint: {
       eyebrow: "Système signature",
-      title: "Le AI Growth Sprint",
+      title: "L'AI Growth Sprint",
       text: "Transformer le chaos marketing manuel en système répétable que l'équipe peut piloter.",
+      cta: "Réserver mon AI Growth Sprint",
       steps: [
         ["Jour 01", "Diagnostiquer", "Cartographier objectifs, offres, outils et blocages."],
         ["Jour 02", "Architecturer", "Concevoir roadmap, automatisations et modèle contenu."],
@@ -451,7 +472,8 @@ const translations = {
     },
     proof: {
       eyebrow: "Preuves de travail",
-      title: "Former, construire et créer autour de la croissance augmentée par l'IA.",
+      title: "Une expertise éprouvée sur le terrain et en formation.",
+      link: "En parler",
       cards: [
         ["Instructeur", "GoMyCode", "Formation marketing digital centrée sur l'exécution."],
         ["Fondateur", "Alpha Tech", "Systèmes marketing, technologie et croissance business."],
@@ -462,15 +484,25 @@ const translations = {
       eyebrow: "Projets sélectionnés",
       title: "Des projets e-commerce réels, créés et développés de l'intérieur.",
       text: "Création de site, SEO/GEO, media buying et social media dans un même système d'acquisition.",
+      preview: "Aperçu projet",
+      link: "Voir le projet",
       cards: [
         {
           title: "Lancement d'une plateforme e-commerce et système de croissance.",
           text: "Création du site et pilotage du moteur de croissance.",
+          metrics: [
+            ["4", "leviers activés"],
+            ["Site", "créé + piloté"],
+          ],
           tags: ["Création site web", "SEO/GEO", "Media buying", "Social media"],
         },
         {
           title: "Visibilité et acquisition e-commerce pour parapharmacie.",
           text: "Croissance pilotée via SEO/GEO, paid media et contenu social.",
+          metrics: [
+            ["3", "canaux d'acquisition"],
+            ["SEO", "GEO + contenu"],
+          ],
           tags: ["Site e-commerce", "SEO/GEO", "Paid ads", "Contenu social"],
         },
       ],
@@ -479,17 +511,15 @@ const translations = {
       eyebrow: "Formation d'équipe",
       title: "Rendre l'IA utile pour les personnes qui exécutent.",
       text: "Sessions pratiques sur prompts, contenu IA, automation, SEO/GEO, WordPress et analytics.",
+      format: "On-site ou Remote - Ateliers sur-mesure - 2 à 10 personnes",
+      cta: "Former mon équipe",
       stack: [
         "Bibliothèques de prompts",
         "Workflows contenu",
         "Builders d'automatisation",
-        "Systèmes social media",
         "Routines SEO/GEO",
         "Briefs vidéo UGC",
-        "Pages WordPress",
-        "Routines analytics",
         "Playbooks équipe",
-        "Gouvernance IA",
       ],
     },
     contact: {
@@ -509,13 +539,13 @@ const translations = {
       ],
       placeholder: "Qu'est-ce que vous voulez améliorer ?",
       submit: "Envoyer la demande",
-      note: "Besoin d'une réponse rapide ? WhatsApp est disponible ci-dessous.",
+      note: "Réponse sous 24h ouvrées - Échange de 15 min sans engagement.",
       linkedin: "Profil",
     },
     footer: {
       text: "Systèmes marketing IA, sites e-commerce, SEO/GEO, paid social, vidéo UGC et WordPress pour la région MENA.",
       nav: ["Services", "Vidéo UGC", "Projets", "AI Growth Sprint", "Formation", "Contact"],
-      whatsapp: "WhatsApp : +216 54 302 654",
+      whatsapp: "Prendre RDV",
       linkedin: "Profil LinkedIn",
       bottom: ["Tunis, Tunisie", "Stratégie IA - SEO/GEO - Media Buying - Vidéo UGC - WordPress"],
       floating: "WhatsApp",
@@ -571,9 +601,9 @@ const translations = {
       eyebrow: "أحمد زكراوي - تسويق رقمي + ذكاء اصطناعي",
       title: ["أنظمة تسويق ذكية", "تحول الاهتمام إلى نمو."],
       statement: {
-        before: "أساعد الشركات على ربط ",
-        strong: "SEO/GEO، الإعلانات الممولة، UGC، الأتمتة وWordPress",
-        after: " داخل نظام نمو واضح وقابل للقياس.",
+        before: "أساعد الشركات على بناء نمو أوضح عبر ",
+        strong: "نظام تسويق مؤتمت، قابل للقياس وموجه للتحويل",
+        after: " يربط SEO/GEO، الإعلانات، UGC، WordPress والذكاء الاصطناعي.",
       },
       signals: ["SEO/GEO", "إعلانات ممولة", "فيديو UGC", "WordPress"],
       primary: "ابن نظامك التسويقي الذكي",
@@ -598,8 +628,8 @@ const translations = {
     ],
     hook: {
       eyebrow: "النظام بشكل واضح",
-      title: "ضجيج أقل. حركة أوضح من الإشارة إلى البيع.",
-      text: "الموقع، المحتوى، الإعلانات والأتمتة تعمل كحلقة نمو واحدة.",
+      title: "ضجيج أقل. مبيعات أكثر.",
+      text: "الإشارة، المحتوى، الإعلانات والأتمتة تتحرك داخل حلقة نمو قابلة للقياس.",
       label: "لوحة نمو مباشرة",
       summary: "4 طبقات مترابطة",
       layers: [
@@ -669,12 +699,17 @@ const translations = {
     },
     ugcSection: {
       eyebrow: "شركاء فيديو UGC",
-      title: "فيديوهات UGC حقيقية للعلامات التي تحتاج إلى بناء الثقة بسرعة.",
-      text: "نخطط، نكتب الـ brief، ننسق ونقدم فيديوهات قصيرة للإطلاقات، الإعلانات، الشهادات والمحتوى العضوي.",
+      title: "فيديوهات UGC حقيقية لتحويل أسرع.",
+      text: "عملية بسيطة: brief واضح، صناع محتوى شركاء وملفات قصيرة جاهزة للاختبار العضوي والمدفوع.",
       cta: "ابدأ مشروع فيديو UGC",
-      featureLabel: "شبكة صناع محتوى شركاء",
-      featureTitle: "محتوى يبدو طبيعيا ومبنيا حول عرضك وجمهورك.",
-      featureText: "Hooks، سكريبتات، توجيه لصناع المحتوى وملفات جاهزة للنشر على Reels وTikTok وShorts وMeta Ads.",
+      featureLabel: "نماذج UGC قصيرة",
+      featureTitle: "افتتاحية، إثبات، دعوة للفعل.",
+      featureText: "ثلاث زوايا قصيرة جاهزة لـ Reels وTikTok وShorts وMeta Ads.",
+      preview: [
+        ["01", "افتتاحية", "0-3 ث"],
+        ["02", "إثبات", "ثقة المنتج"],
+        ["03", "دعوة", "اختبار إعلان"],
+      ],
       steps: [
         ["01", "التخطيط", "تحديد الـ hooks، الوعود، السكريبتات وزوايا العرض."],
         ["02", "الإنتاج", "تنسيق العمل مع صناع محتوى شركاء لإنتاج فيديوهات قصيرة موثوقة."],
@@ -685,6 +720,7 @@ const translations = {
       eyebrow: "النظام الخاص",
       title: "Sprint نمو بالذكاء الاصطناعي",
       text: "تحويل فوضى التسويق اليدوي إلى نظام نمو قابل للتكرار.",
+      cta: "احجز AI Growth Sprint",
       steps: [
         ["اليوم 01", "تشخيص", "رسم الأهداف، العروض، الأدوات والعوائق."],
         ["اليوم 02", "تصميم", "تصميم الخارطة، الأتمتة ونموذج المحتوى."],
@@ -695,7 +731,8 @@ const translations = {
     },
     proof: {
       eyebrow: "دليل العمل",
-      title: "تدريب، بناء وصناعة محتوى حول النمو المدعوم بالذكاء الاصطناعي.",
+      title: "خبرة عملية مثبتة في التنفيذ والتدريب.",
+      link: "لنتحدث عنه",
       cards: [
         ["مدرب", "GoMyCode", "تدريب تسويق رقمي مبني حول التنفيذ."],
         ["مؤسس", "Alpha Tech", "أنظمة تسويق، تكنولوجيا ونمو أعمال."],
@@ -706,15 +743,25 @@ const translations = {
       eyebrow: "مشاريع مختارة",
       title: "مشاريع تجارة إلكترونية حقيقية، تم بناؤها وتنميتها من الداخل.",
       text: "إنشاء مواقع، SEO/GEO، إعلانات وسوشيال ميديا ضمن نظام اكتساب واحد.",
+      preview: "معاينة المشروع",
+      link: "مشاهدة المشروع",
       cards: [
         {
           title: "إطلاق منصة تجارة إلكترونية ونظام نمو.",
           text: "إنشاء الموقع وقيادة محرك النمو.",
+          metrics: [
+            ["4", "روافع نمو"],
+            ["موقع", "إنشاء + إدارة"],
+          ],
           tags: ["إنشاء الموقع", "SEO/GEO", "إعلانات ممولة", "إدارة السوشيال ميديا"],
         },
         {
           title: "ظهور واكتساب لمتجر بارافارماسي.",
           text: "نمو عبر SEO/GEO، الإعلانات والمحتوى الاجتماعي.",
+          metrics: [
+            ["3", "قنوات اكتساب"],
+            ["SEO", "GEO + محتوى"],
+          ],
           tags: ["موقع تجارة إلكترونية", "SEO/GEO", "إعلانات ممولة", "محتوى اجتماعي"],
         },
       ],
@@ -723,17 +770,15 @@ const translations = {
       eyebrow: "تدريب الفرق",
       title: "جعل الذكاء الاصطناعي مفيدا لمن يقومون بالعمل.",
       text: "جلسات عملية حول Prompts، محتوى بالذكاء الاصطناعي، أتمتة، SEO/GEO، WordPress وتحليلات.",
+      format: "حضوري أو عن بعد - ورشات مخصصة - من 2 إلى 10 أشخاص",
+      cta: "درّب فريقي",
       stack: [
         "مكتبات Prompts",
         "تدفقات محتوى",
         "أدوات أتمتة",
-        "أنظمة السوشيال ميديا",
         "روتينات SEO/GEO",
         "Briefs فيديو UGC",
-        "صفحات WordPress",
-        "روتينات التحليلات",
         "Playbooks للفِرق",
-        "حوكمة الذكاء الاصطناعي",
       ],
     },
     contact: {
@@ -753,13 +798,13 @@ const translations = {
       ],
       placeholder: "ما الذي تريد تحسينه؟",
       submit: "إرسال الطلب",
-      note: "تفضل ردا أسرع؟ WhatsApp متاح أسفله.",
+      note: "رد خلال 24 ساعة عمل - مكالمة 15 دقيقة بدون التزام.",
       linkedin: "الملف الشخصي",
     },
     footer: {
       text: "أنظمة تسويق بالذكاء الاصطناعي، مواقع تجارة إلكترونية، SEO/GEO، إعلانات ممولة، فيديو UGC وWordPress لمنطقة MENA.",
       nav: ["الخدمات", "فيديو UGC", "المشاريع", "Sprint النمو", "التدريب", "التواصل"],
-      whatsapp: "WhatsApp: +216 54 302 654",
+      whatsapp: "احجز موعدا",
       linkedin: "ملف LinkedIn",
       bottom: ["تونس", "استراتيجية الذكاء الاصطناعي - SEO/GEO - الإعلانات الممولة - فيديو UGC - WordPress"],
       floating: "WhatsApp",
@@ -1306,9 +1351,15 @@ const applyLanguage = (language, shouldPersist = true) => {
   setText(".ugc-copy p:not(.eyebrow)", copy.ugcSection.text);
   setText(".ugc-copy .button", copy.ugcSection.cta);
   setAttribute(".ugc-board", "aria-label", copy.aria.ugcWorkflow);
-  setText(".ugc-feature span", copy.ugcSection.featureLabel);
-  setText(".ugc-feature strong", copy.ugcSection.featureTitle);
-  setText(".ugc-feature p", copy.ugcSection.featureText);
+  setText(".ugc-feature-copy > span", copy.ugcSection.featureLabel);
+  setText(".ugc-feature-copy > strong", copy.ugcSection.featureTitle);
+  setText(".ugc-feature-copy > p", copy.ugcSection.featureText);
+  copy.ugcSection.preview.forEach((item, index) => {
+    const previewNumber = index + 1;
+    setText(`.ugc-reel:nth-child(${previewNumber}) i`, item[0]);
+    setText(`.ugc-reel:nth-child(${previewNumber}) b`, item[1]);
+    setText(`.ugc-reel:nth-child(${previewNumber}) small`, item[2]);
+  });
   copy.ugcSection.steps.forEach((step, index) => {
     const stepNumber = index + 1;
     setText(`.ugc-steps article:nth-child(${stepNumber}) span`, step[0]);
@@ -1319,6 +1370,7 @@ const applyLanguage = (language, shouldPersist = true) => {
   setText(".sprint .section-head .eyebrow", copy.sprint.eyebrow);
   setText(".sprint .section-head h2", copy.sprint.title);
   setText(".sprint .section-head p:not(.eyebrow)", copy.sprint.text);
+  setText(".sprint-cta", copy.sprint.cta);
   copy.sprint.steps.forEach((step, index) => {
     const stepNumber = index + 1;
     setText(`.sprint-steps article:nth-child(${stepNumber}) span`, step[0]);
@@ -1328,6 +1380,7 @@ const applyLanguage = (language, shouldPersist = true) => {
 
   setText(".proof .section-head .eyebrow", copy.proof.eyebrow);
   setText(".proof .section-head h2", copy.proof.title);
+  setAllText(".proof-link", [copy.proof.link, copy.proof.link, copy.proof.link]);
   copy.proof.cards.forEach((card, index) => {
     const cardNumber = index + 1;
     setText(`.proof-card:nth-child(${cardNumber}) span`, card[0]);
@@ -1338,13 +1391,26 @@ const applyLanguage = (language, shouldPersist = true) => {
   setText(".selected-work .section-head .eyebrow", copy.work.eyebrow);
   setText(".selected-work .section-head h2", copy.work.title);
   setText(".selected-work .section-head p:not(.eyebrow)", copy.work.text);
+  setAllText(".preview-badge", [copy.work.preview, copy.work.preview]);
   setText(".work-card-feature .work-content h3", copy.work.cards[0].title);
-  setText(".work-card-feature .work-content p", copy.work.cards[0].text);
+  setText(".work-card-feature .work-content > p", copy.work.cards[0].text);
+  copy.work.cards[0].metrics.forEach((metric, index) => {
+    const metricNumber = index + 1;
+    setText(`.work-card-feature .work-kpi:nth-child(${metricNumber}) strong`, metric[0]);
+    setText(`.work-card-feature .work-kpi:nth-child(${metricNumber}) span`, metric[1]);
+  });
+  setText(".work-card-feature .case-link", copy.work.link);
   setAttribute(".work-card-feature .work-visual img", "alt", localizedImageAlt[language].dropy);
   setAllText(".work-card-feature .work-tags span", copy.work.cards[0].tags);
   setAttribute(".work-card-feature .work-tags", "aria-label", copy.aria.dropyScope);
   setText(".work-card-dark .work-content h3", copy.work.cards[1].title);
-  setText(".work-card-dark .work-content p", copy.work.cards[1].text);
+  setText(".work-card-dark .work-content > p", copy.work.cards[1].text);
+  copy.work.cards[1].metrics.forEach((metric, index) => {
+    const metricNumber = index + 1;
+    setText(`.work-card-dark .work-kpi:nth-child(${metricNumber}) strong`, metric[0]);
+    setText(`.work-card-dark .work-kpi:nth-child(${metricNumber}) span`, metric[1]);
+  });
+  setText(".work-card-dark .case-link", copy.work.link);
   setAttribute(".work-card-dark .work-visual img", "alt", localizedImageAlt[language].parahealth);
   setAllText(".work-card-dark .work-tags span", copy.work.cards[1].tags);
   setAttribute(".work-card-dark .work-tags", "aria-label", copy.aria.paraScope);
@@ -1353,6 +1419,8 @@ const applyLanguage = (language, shouldPersist = true) => {
   setAttribute(".training-card img", "alt", localizedImageAlt[language].profile);
   setText(".training-card h2", copy.training.title);
   setText(".training-card p:not(.eyebrow)", copy.training.text);
+  setText(".training-format", copy.training.format);
+  setText(".training-cta", copy.training.cta);
   setAllText(".tool-stack span", copy.training.stack);
   setAttribute(".tool-stack", "aria-label", copy.aria.trainingTopics);
 
