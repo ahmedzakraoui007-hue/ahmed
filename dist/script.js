@@ -27,7 +27,7 @@ nav?.querySelectorAll("a").forEach((link) => {
 
 const languageCodes = ["fr", "en", "ar"];
 const serviceKeys = ["strategy", "automation", "content", "growth", "training", "wordpress", "ugc"];
-const siteBaseUrl = "https://site-personnel-premium.ahmedzakraoui8.chatgpt.site";
+const siteBaseUrl = "https://ahmedzakraoui.com";
 const languagePaths = {
   fr: "/",
   en: "/en/",
@@ -928,7 +928,7 @@ const getCopy = () => translations[currentLanguage] || translations.fr;
 
 const getLanguageHref = (language, isThanksPage = false) => {
   if (isThanksPage) {
-    return language === "fr" ? "/thanks.html" : `/thanks.html?lang=${language}`;
+    return language === "fr" ? "/merci" : `/merci?lang=${language}`;
   }
 
   return languagePaths[language] || "/";
@@ -1319,7 +1319,7 @@ const applyLanguage = (language, shouldPersist = true) => {
 
   const nextInput = document.querySelector('input[name="_next"]');
   if (nextInput) {
-    nextInput.value = `${siteBaseUrl}/thanks.html${language === "fr" ? "" : `?lang=${language}`}`;
+    nextInput.value = `${siteBaseUrl}/merci${language === "fr" ? "" : `?lang=${language}`}`;
   }
 
   setText(".brand-copy small", copy.brandSmall);

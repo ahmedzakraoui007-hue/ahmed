@@ -5,6 +5,16 @@
   "cleanUrls": true,
   "redirects": [
     {
+      "source": "/thanks",
+      "destination": "/merci",
+      "permanent": true
+    },
+    {
+      "source": "/thanks.html",
+      "destination": "/merci",
+      "permanent": true
+    },
+    {
       "source": "/fr",
       "destination": "/",
       "permanent": true
