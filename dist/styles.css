@@ -1344,6 +1344,50 @@ h1 {
   gap: 42px;
 }
 
+.work-impact {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.work-impact article {
+  min-height: 132px;
+  padding: 20px;
+  border: 1px solid rgba(8, 8, 6, 0.12);
+  border-radius: 24px;
+  background:
+    linear-gradient(135deg, rgba(255, 90, 20, 0.12), rgba(255, 255, 255, 0.74)),
+    var(--white);
+  box-shadow: 0 18px 52px rgba(8, 8, 6, 0.08);
+}
+
+.work-impact strong {
+  display: block;
+  color: var(--ink);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(2rem, 3.1vw, 3.1rem);
+  line-height: 0.95;
+  overflow-wrap: anywhere;
+}
+
+.work-impact span {
+  display: block;
+  margin-top: 18px;
+  color: #4a453f;
+  font-size: 0.86rem;
+  font-weight: 950;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.work-data-note {
+  max-width: 520px;
+  margin: -28px 0 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 850;
+}
+
 .work-grid {
   display: grid;
   gap: 18px;
@@ -1499,7 +1543,7 @@ h1 {
 .work-content h3 {
   margin-top: 24px;
   font-size: clamp(2.2rem, 3.45vw, 4.25rem);
-  line-height: 1;
+  line-height: 1.06;
   text-wrap: balance;
 }
 
@@ -1536,8 +1580,9 @@ h1 {
   display: block;
   color: var(--ink);
   font-family: "Space Grotesk", sans-serif;
-  font-size: 1.8rem;
+  font-size: clamp(1.28rem, 2vw, 1.8rem);
   line-height: 0.95;
+  overflow-wrap: anywhere;
 }
 
 .work-kpi span {
@@ -2503,6 +2548,10 @@ html[dir="rtl"] .floating-cta {
     grid-template-columns: 1fr;
   }
 
+  .work-impact {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .work-card-dark .work-visual {
     order: -1;
   }
@@ -2801,6 +2850,30 @@ html[dir="rtl"] .floating-cta {
 
   .work-kpis {
     grid-template-columns: 1fr;
+  }
+
+  .work-impact {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .work-impact article {
+    min-height: 112px;
+    padding: 16px;
+    border-radius: 20px;
+  }
+
+  .work-impact strong {
+    font-size: clamp(1.55rem, 8vw, 2.25rem);
+  }
+
+  .work-impact span {
+    margin-top: 12px;
+    font-size: 0.76rem;
+  }
+
+  .work-data-note {
+    margin-top: -26px;
   }
 
   .preview-badge {

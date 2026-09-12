@@ -68,6 +68,9 @@ const translations = {
       footerNav: "Footer navigation",
       dropyScope: "Dropy work scope",
       paraScope: "ParaHealth work scope",
+      workImpact: "ParaHealth performance metrics",
+      dropyMetrics: "Dropy execution metrics",
+      paraMetrics: "ParaHealth performance metrics",
     },
     nav: {
       services: "Services",
@@ -225,24 +228,35 @@ const translations = {
       eyebrow: "Selected work",
       title: "Real e-commerce projects, built and grown from the inside.",
       text: "Website creation, SEO/GEO, media buying, and social media working as one acquisition system.",
+      impact: [
+        ["99k+", "visitors / 90 days"],
+        ["530k TND", "revenue / 12 months"],
+        ["+207%", "Google impressions"],
+        ["78", "SEO guides published"],
+      ],
+      impactNote: "Parahealth data - 90 days and 12 months.",
       preview: "Project preview",
       link: "View project",
       cards: [
         {
           title: "E-commerce platform launch and growth system.",
-          text: "Created the website and managed the growth engine.",
+          text: "Created the website and structured the growth engine across sellers, UGC, SEO/GEO, paid media, and social channels.",
           metrics: [
             ["4", "growth levers"],
             ["Site", "built + managed"],
+            ["UGC", "creator flow"],
+            ["Ads", "acquisition system"],
           ],
           tags: ["Website creation", "SEO/GEO", "Media buying", "Social media"],
         },
         {
           title: "Parapharmacy e-commerce visibility and acquisition.",
-          text: "Managed website growth across SEO/GEO, paid media, and social content.",
+          text: "Managed website growth across SEO/GEO, paid media, social content, and search visibility.",
           metrics: [
-            ["3", "acquisition channels"],
-            ["SEO", "GEO + content"],
+            ["99k+", "visitors / 90 days"],
+            ["530k TND", "revenue / 12 months"],
+            ["5 246", "orders delivered"],
+            ["+207%", "Google impressions"],
           ],
           tags: ["E-commerce website", "SEO/GEO", "Paid ads", "Social content"],
         },
@@ -327,6 +341,9 @@ const translations = {
       footerNav: "Navigation du pied de page",
       dropyScope: "Périmètre du projet Dropy",
       paraScope: "Périmètre du projet ParaHealth",
+      workImpact: "Chiffres de performance Parahealth",
+      dropyMetrics: "Indicateurs d'exécution Dropy",
+      paraMetrics: "Chiffres de performance ParaHealth",
     },
     nav: {
       services: "Services",
@@ -484,24 +501,35 @@ const translations = {
       eyebrow: "Projets sélectionnés",
       title: "Des projets e-commerce réels, créés et développés de l'intérieur.",
       text: "Création de site, SEO/GEO, media buying et social media dans un même système d'acquisition.",
+      impact: [
+        ["99k+", "visiteurs / 90 jours"],
+        ["530k TND", "CA / 12 mois"],
+        ["+207%", "impressions Google"],
+        ["78", "guides SEO publiés"],
+      ],
+      impactNote: "Données Parahealth - 90 jours et 12 mois.",
       preview: "Aperçu projet",
       link: "Voir le projet",
       cards: [
         {
           title: "Lancement d'une plateforme e-commerce et système de croissance.",
-          text: "Création du site et pilotage du moteur de croissance.",
+          text: "Création du site et structuration du moteur de croissance : vendeurs, UGC, SEO/GEO, media buying et social media.",
           metrics: [
             ["4", "leviers activés"],
             ["Site", "créé + piloté"],
+            ["UGC", "flux créateurs"],
+            ["Ads", "système acquisition"],
           ],
           tags: ["Création site web", "SEO/GEO", "Media buying", "Social media"],
         },
         {
           title: "Visibilité et acquisition e-commerce pour parapharmacie.",
-          text: "Croissance pilotée via SEO/GEO, paid media et contenu social.",
+          text: "Croissance pilotée via SEO/GEO, paid media, contenu social et visibilité search.",
           metrics: [
-            ["3", "canaux d'acquisition"],
-            ["SEO", "GEO + contenu"],
+            ["99k+", "visiteurs / 90 jours"],
+            ["530k TND", "CA / 12 mois"],
+            ["5 246", "commandes livrées"],
+            ["+207%", "impressions Google"],
           ],
           tags: ["Site e-commerce", "SEO/GEO", "Paid ads", "Contenu social"],
         },
@@ -586,6 +614,9 @@ const translations = {
       footerNav: "تنقل التذييل",
       dropyScope: "نطاق عمل Dropy",
       paraScope: "نطاق عمل ParaHealth",
+      workImpact: "أرقام أداء Parahealth",
+      dropyMetrics: "مؤشرات تنفيذ Dropy",
+      paraMetrics: "أرقام أداء ParaHealth",
     },
     nav: {
       services: "الخدمات",
@@ -743,24 +774,35 @@ const translations = {
       eyebrow: "مشاريع مختارة",
       title: "مشاريع تجارة إلكترونية حقيقية، تم بناؤها وتنميتها من الداخل.",
       text: "إنشاء مواقع، SEO/GEO، إعلانات وسوشيال ميديا ضمن نظام اكتساب واحد.",
+      impact: [
+        ["+99 ألف", "زائر / 90 يوما"],
+        ["530 ألف د.ت", "رقم معاملات / 12 شهرا"],
+        ["+207%", "انطباعات Google"],
+        ["78", "دليل SEO منشور"],
+      ],
+      impactNote: "بيانات Parahealth - 90 يوما و12 شهرا.",
       preview: "معاينة المشروع",
       link: "مشاهدة المشروع",
       cards: [
         {
           title: "إطلاق منصة تجارة إلكترونية ونظام نمو.",
-          text: "إنشاء الموقع وقيادة محرك النمو.",
+          text: "إنشاء الموقع وتنظيم محرك النمو عبر البائعين، UGC، SEO/GEO، الإعلانات والسوشيال ميديا.",
           metrics: [
             ["4", "روافع نمو"],
             ["موقع", "إنشاء + إدارة"],
+            ["UGC", "تدفق صناع المحتوى"],
+            ["إعلانات", "نظام اكتساب"],
           ],
           tags: ["إنشاء الموقع", "SEO/GEO", "إعلانات ممولة", "إدارة السوشيال ميديا"],
         },
         {
           title: "ظهور واكتساب لمتجر بارافارماسي.",
-          text: "نمو عبر SEO/GEO، الإعلانات والمحتوى الاجتماعي.",
+          text: "نمو عبر SEO/GEO، الإعلانات، المحتوى الاجتماعي والظهور في البحث.",
           metrics: [
-            ["3", "قنوات اكتساب"],
-            ["SEO", "GEO + محتوى"],
+            ["+99 ألف", "زائر / 90 يوما"],
+            ["530 ألف د.ت", "رقم معاملات / 12 شهرا"],
+            ["5 246", "طلبا تم تسليمه"],
+            ["+207%", "انطباعات Google"],
           ],
           tags: ["موقع تجارة إلكترونية", "SEO/GEO", "إعلانات ممولة", "محتوى اجتماعي"],
         },
@@ -1391,6 +1433,13 @@ const applyLanguage = (language, shouldPersist = true) => {
   setText(".selected-work .section-head .eyebrow", copy.work.eyebrow);
   setText(".selected-work .section-head h2", copy.work.title);
   setText(".selected-work .section-head p:not(.eyebrow)", copy.work.text);
+  setAttribute(".work-impact", "aria-label", copy.aria.workImpact);
+  copy.work.impact.forEach((metric, index) => {
+    const metricNumber = index + 1;
+    setText(`.work-impact article:nth-child(${metricNumber}) strong`, metric[0]);
+    setText(`.work-impact article:nth-child(${metricNumber}) span`, metric[1]);
+  });
+  setText(".work-data-note", copy.work.impactNote);
   setAllText(".preview-badge", [copy.work.preview, copy.work.preview]);
   setText(".work-card-feature .work-content h3", copy.work.cards[0].title);
   setText(".work-card-feature .work-content > p", copy.work.cards[0].text);
@@ -1399,6 +1448,7 @@ const applyLanguage = (language, shouldPersist = true) => {
     setText(`.work-card-feature .work-kpi:nth-child(${metricNumber}) strong`, metric[0]);
     setText(`.work-card-feature .work-kpi:nth-child(${metricNumber}) span`, metric[1]);
   });
+  setAttribute(".work-card-feature .work-kpis", "aria-label", copy.aria.dropyMetrics);
   setText(".work-card-feature .case-link", copy.work.link);
   setAttribute(".work-card-feature .work-visual img", "alt", localizedImageAlt[language].dropy);
   setAllText(".work-card-feature .work-tags span", copy.work.cards[0].tags);
@@ -1410,6 +1460,7 @@ const applyLanguage = (language, shouldPersist = true) => {
     setText(`.work-card-dark .work-kpi:nth-child(${metricNumber}) strong`, metric[0]);
     setText(`.work-card-dark .work-kpi:nth-child(${metricNumber}) span`, metric[1]);
   });
+  setAttribute(".work-card-dark .work-kpis", "aria-label", copy.aria.paraMetrics);
   setText(".work-card-dark .case-link", copy.work.link);
   setAttribute(".work-card-dark .work-visual img", "alt", localizedImageAlt[language].parahealth);
   setAllText(".work-card-dark .work-tags span", copy.work.cards[1].tags);
