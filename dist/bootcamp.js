@@ -16,9 +16,9 @@ const bootcampCopy = {
   fr: {
     dir: "ltr",
     meta: {
-      title: "Bootcamp gratuit Growth Marketing with AI | Ahmed Zakraoui",
+      title: "AI Growth Academy gratuite | Ahmed Zakraoui",
       description:
-        "Bootcamp gratuit Growth Marketing with AI par Ahmed Zakraoui : modules pratiques, quiz, checkpoints, prompts et ressources pour construire un système marketing IA.",
+        "AI Growth Academy gratuite par Ahmed Zakraoui : diagnostic, modules pratiques, quiz, checkpoints, prompts et workbook pour apprendre à construire un système de croissance IA.",
     },
     ui: {
       brandSmall: "Systèmes Marketing IA",
@@ -27,18 +27,18 @@ const bootcampCopy = {
       navWork: "Projets",
       navBootcamp: "Bootcamp",
       navContact: "Contact",
-      heroKicker: "Bootcamp gratuit - avec quiz et checkpoints",
-      heroTitle: "Growth Marketing with AI",
+      heroKicker: "Academy gratuite - apprendre avant de construire",
+      heroTitle: "AI Growth Academy",
       heroText:
-        "Un parcours pratique pour transformer l'IA en système d'acquisition : stratégie, contenu, SEO/GEO, ads, UGC, automation et mesure.",
+        "Un parcours pratique pour comprendre comment connecter stratégie, contenu, SEO/GEO, ads, UGC, automation et mesure dans un système de croissance.",
       heroPrimary: "Faire le diagnostic gratuit",
       heroSecondary: "Télécharger le workbook",
       statModules: "modules pratiques",
       statQuiz: "questions de quiz",
       statChecks: "checkpoints actionnables",
       heroPathLabel: "Parcours conseillé",
-      heroPathTitle: "Commence par diagnostiquer ton moteur growth.",
-      heroPathText: "Chaque module se termine par un quiz, des checkpoints et un prompt prêt à utiliser.",
+      heroPathTitle: "Diagnostique, apprends, puis passe au module suivant.",
+      heroPathText: "Chaque module te pousse naturellement du cours vers le quiz, puis vers l'étape suivante.",
       searchLabel: "Trouver un module",
       searchPlaceholder: "Rechercher...",
       progressLabel: "Progression",
@@ -56,10 +56,10 @@ const bootcampCopy = {
         "Ce programme aide les entrepreneurs, PME et startups en Tunisie, Afrique du Nord et MENA à structurer un système marketing plus visible, mesurable et orienté conversion.",
       faqEyebrow: "Questions fréquentes",
       faqTitle: "Avant de commencer le bootcamp.",
-      finalTitle: "Tu veux l'appliquer plus vite sur ton business ?",
+      finalTitle: "Tu veux construire ce système plus vite sur ton business ?",
       finalText:
-        "Le bootcamp est gratuit. Si tu veux aller plus vite, on peut transformer ces checkpoints en plan d'action pour ton entreprise.",
-      finalCta: "Lancer mon système IA",
+        "L'Academy reste gratuite. Si tu veux passer de l'apprentissage à l'exécution, le AI Growth Sprint transforme tes checkpoints en plan d'action et workflows réels.",
+      finalCta: "Construire mon système de croissance",
       schemaLevel: "Débutant à intermédiaire",
       schemaPrerequisites: "Avoir un projet, une offre ou un site à améliorer.",
       moduleLabel: "Module",
@@ -69,7 +69,7 @@ const bootcampCopy = {
       moduleComplete: "Validé",
       checkpointMini: "checks",
       quizMini: "quiz",
-      courseFlowHint: "Quand tu as compris le module, valide-le avec le quiz.",
+      courseFlowHint: "Lis le module, coche les actions, puis valide avec le quiz.",
       courseNext: "Passer au quiz",
       courseResources: "Voir les ressources",
       nextModule: "Module suivant",
@@ -492,29 +492,29 @@ const bootcampCopy = {
   en: {
     dir: "ltr",
     meta: {
-      title: "Free Growth Marketing with AI Bootcamp | Ahmed Zakraoui",
+      title: "Free AI Growth Academy | Ahmed Zakraoui",
       description:
-        "Free Growth Marketing with AI bootcamp by Ahmed Zakraoui with practical modules, quizzes, checkpoints, prompts, and resources.",
+        "Free AI Growth Academy by Ahmed Zakraoui with diagnostic, practical modules, quizzes, checkpoints, prompts, and workbook to learn how to build an AI growth system.",
     },
     ui: {
-      brandSmall: "AI Marketing Systems",
+      brandSmall: "AI Growth Systems",
       navHome: "Home",
-      navServices: "Services",
-      navWork: "Work",
-      navBootcamp: "Bootcamp",
+      navServices: "System",
+      navWork: "Projects",
+      navBootcamp: "Academy",
       navContact: "Contact",
-      heroKicker: "Free bootcamp - quizzes and checkpoints",
-      heroTitle: "Growth Marketing with AI",
+      heroKicker: "Free Academy - learn before you build",
+      heroTitle: "AI Growth Academy",
       heroText:
-        "A practical path to turn AI into an acquisition system: strategy, content, SEO/GEO, ads, UGC, automation, and measurement.",
+        "A practical path to understand how strategy, content, SEO/GEO, ads, UGC, automation, and measurement connect inside one growth system.",
       heroPrimary: "Take the free diagnostic",
       heroSecondary: "Download the workbook",
       statModules: "practical modules",
       statQuiz: "quiz questions",
       statChecks: "action checkpoints",
       heroPathLabel: "Recommended path",
-      heroPathTitle: "Start by diagnosing your growth engine.",
-      heroPathText: "Each module ends with a quiz, checkpoints, and a ready-to-use prompt.",
+      heroPathTitle: "Diagnose, learn, then move to the next module.",
+      heroPathText: "Each module naturally moves you from lesson to quiz, then to the next action.",
       searchLabel: "Find a module",
       searchPlaceholder: "Search...",
       progressLabel: "Progress",
@@ -532,9 +532,9 @@ const bootcampCopy = {
         "This program helps entrepreneurs, SMEs, and startups in Tunisia, North Africa, and MENA build a more visible, measurable, conversion-focused marketing system.",
       faqEyebrow: "FAQ",
       faqTitle: "Before you start the bootcamp.",
-      finalTitle: "Want to apply it faster to your business?",
-      finalText: "The bootcamp is free. If you want speed, we can turn these checkpoints into an action plan for your company.",
-      finalCta: "Launch my AI system",
+      finalTitle: "Want to build this system faster for your business?",
+      finalText: "The Academy stays free. If you want to move from learning to execution, the AI Growth Sprint turns your checkpoints into an action plan and real workflows.",
+      finalCta: "Build my growth system",
       schemaLevel: "Beginner to intermediate",
       schemaPrerequisites: "Have a project, offer, or website to improve.",
       moduleLabel: "Module",
@@ -544,7 +544,7 @@ const bootcampCopy = {
       moduleComplete: "Validated",
       checkpointMini: "checks",
       quizMini: "quiz",
-      courseFlowHint: "Once the module is clear, validate it with the quiz.",
+      courseFlowHint: "Read the module, check the actions, then validate it with the quiz.",
       courseNext: "Go to quiz",
       courseResources: "View resources",
       nextModule: "Next module",
@@ -623,29 +623,29 @@ const bootcampCopy = {
   ar: {
     dir: "rtl",
     meta: {
-      title: "بوتكامب مجاني Growth Marketing with AI | أحمد زكراوي",
+      title: "أكاديمية AI Growth مجانية | أحمد زكراوي",
       description:
-        "بوتكامب مجاني لتعلم التسويق والنمو بالذكاء الاصطناعي مع وحدات عملية، اختبارات، نقاط تحقق، Prompts وموارد.",
+        "أكاديمية AI Growth مجانية من أحمد زكراوي مع تشخيص، وحدات عملية، اختبارات، نقاط تحقق، Prompts وWorkbook لتعلم بناء نظام نمو بالذكاء الاصطناعي.",
     },
     ui: {
-      brandSmall: "أنظمة تسويق بالذكاء الاصطناعي",
+      brandSmall: "أنظمة نمو بالذكاء الاصطناعي",
       navHome: "الرئيسية",
-      navServices: "الخدمات",
+      navServices: "النظام",
       navWork: "المشاريع",
-      navBootcamp: "البوتكامب",
+      navBootcamp: "الأكاديمية",
       navContact: "التواصل",
-      heroKicker: "بوتكامب مجاني - اختبارات ونقاط تحقق",
-      heroTitle: "Growth Marketing with AI",
+      heroKicker: "أكاديمية مجانية - تعلم قبل أن تبني",
+      heroTitle: "AI Growth Academy",
       heroText:
-        "مسار عملي لتحويل الذكاء الاصطناعي إلى نظام اكتساب: استراتيجية، محتوى، SEO/GEO، إعلانات، UGC، أتمتة وقياس.",
+        "مسار عملي لفهم ربط الاستراتيجية، المحتوى، SEO/GEO، الإعلانات، UGC، الأتمتة والقياس داخل نظام نمو واحد.",
       heroPrimary: "ابدأ التشخيص المجاني",
       heroSecondary: "حمّل الWorkbook",
       statModules: "وحدات عملية",
       statQuiz: "أسئلة اختبار",
       statChecks: "نقاط تحقق",
       heroPathLabel: "المسار المقترح",
-      heroPathTitle: "ابدأ بتشخيص محرك النمو.",
-      heroPathText: "كل وحدة تنتهي باختبار، نقاط تحقق وPrompt جاهز للاستخدام.",
+      heroPathTitle: "شخّص، تعلم، ثم انتقل إلى الوحدة التالية.",
+      heroPathText: "كل وحدة تنقلك من الدرس إلى الاختبار ثم إلى الخطوة التالية.",
       searchLabel: "ابحث عن وحدة",
       searchPlaceholder: "بحث...",
       progressLabel: "التقدم",
@@ -663,9 +663,9 @@ const bootcampCopy = {
         "يساعد هذا البرنامج رواد الأعمال، الشركات الصغيرة والمتوسطة والستارتابس في تونس، شمال أفريقيا ومنطقة MENA على بناء نظام تسويق أوضح، قابل للقياس وموجه للتحويل.",
       faqEyebrow: "أسئلة متكررة",
       faqTitle: "قبل أن تبدأ البوتكامب.",
-      finalTitle: "تريد تطبيقه أسرع على مشروعك؟",
-      finalText: "البوتكامب مجاني. وإذا أردت السرعة، يمكننا تحويل هذه النقاط إلى خطة تنفيذ لشركتك.",
-      finalCta: "أطلق نظامي بالذكاء الاصطناعي",
+      finalTitle: "تريد بناء هذا النظام أسرع لمشروعك؟",
+      finalText: "الأكاديمية تبقى مجانية. وإذا أردت الانتقال من التعلم إلى التنفيذ، يحول AI Growth Sprint نقاطك إلى خطة عمل وWorkflows حقيقية.",
+      finalCta: "ابن نظام النمو الخاص بي",
       schemaLevel: "مبتدئ إلى متوسط",
       schemaPrerequisites: "امتلاك مشروع، عرض أو موقع تريد تحسينه.",
       moduleLabel: "الوحدة",
@@ -675,7 +675,7 @@ const bootcampCopy = {
       moduleComplete: "تم التحقق",
       checkpointMini: "نقاط",
       quizMini: "اختبار",
-      courseFlowHint: "عندما تصبح الوحدة واضحة، ثبّتها بالاختبار.",
+      courseFlowHint: "اقرأ الوحدة، فعّل نقاط العمل، ثم ثبّت الفهم بالاختبار.",
       courseNext: "انتقل إلى الاختبار",
       courseResources: "شاهد الموارد",
       nextModule: "الوحدة التالية",
@@ -1711,6 +1711,31 @@ function renderPanel() {
   renderCourse(module);
 }
 
+function renderLearningFlow(activeStep) {
+  const copy = getCopy();
+  const steps = [
+    ["course", copy.ui.tabCourse],
+    ["quiz", copy.ui.tabQuiz],
+    ["next", copy.ui.nextModule],
+  ];
+  const activeIndex = Math.max(
+    0,
+    steps.findIndex(([step]) => step === activeStep),
+  );
+
+  return `
+    <div class="learning-flow" aria-label="${escapeHtml(copy.ui.moduleProgress)}">
+      ${steps
+        .map(([step, label], index) => {
+          const state = index < activeIndex ? "is-done" : index === activeIndex ? "is-current" : "";
+          const connector = index < steps.length - 1 ? '<i aria-hidden="true"></i>' : "";
+          return `<span class="${state}" data-step="${escapeHtml(step)}"><b>${String(index + 1).padStart(2, "0")}</b>${escapeHtml(label)}</span>${connector}`;
+        })
+        .join("")}
+    </div>
+  `;
+}
+
 function renderCourse(module) {
   const copy = getCopy();
   const moduleState = getModuleState(module.id);
@@ -1732,6 +1757,8 @@ function renderCourse(module) {
         <span><strong>${quizDone}/${module.quiz.length}</strong> ${escapeHtml(copy.ui.quizMini)}</span>
       </div>
     </div>
+
+    ${renderLearningFlow("course")}
 
     <div class="lesson-grid" aria-label="${escapeHtml(copy.ui.lessons)}">
       ${module.lessons
@@ -1800,6 +1827,7 @@ function renderQuiz(module) {
       <h2>${escapeHtml(module.title)}</h2>
       <p>${escapeHtml(feedback)}</p>
     </div>
+    ${renderLearningFlow(moduleState.checked ? "next" : "quiz")}
     <div class="quiz-list">
       ${module.quiz
         .map((question, questionIndex) => {

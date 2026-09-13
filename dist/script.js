@@ -6,6 +6,8 @@ const hero = document.querySelector(".hero");
 const neuralCanvas = document.querySelector("#neuralCanvas");
 const cursorAura = document.querySelector("#cursorAura");
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const enableDecorativeCanvas = false;
+const enableCardTilt = false;
 
 if (!prefersReducedMotion) {
   document.body.classList.add("motion-ready");
@@ -44,14 +46,14 @@ const translations = {
     dir: "ltr",
     name: "English",
     meta: {
-      homeTitle: "Ahmed Zakraoui | AI Marketing Systems That Sell",
+      homeTitle: "Ahmed Zakraoui | AI Growth Systems for MENA Teams",
       homeDescription:
-        "Ahmed Zakraoui builds AI marketing systems for SMEs, startups, and companies across Tunisia, North Africa, and MENA: SEO/GEO, paid media, UGC, automation, and WordPress.",
+        "Ahmed Zakraoui turns fragmented marketing into measurable AI growth systems for SMEs, startups, and companies across Tunisia, North Africa, and MENA: strategy, SEO/GEO, paid media, UGC, automation, and WordPress.",
       thanksTitle: "Message sent | Ahmed Zakraoui",
       thanksDescription:
         "Thank you for contacting Ahmed Zakraoui about AI marketing strategy, automation, content systems, UGC video production, team training, or WordPress.",
     },
-    brandSmall: "AI Marketing Systems",
+    brandSmall: "AI Growth Systems",
     aria: {
       home: "Ahmed Zakraoui home",
       menuOpen: "Open menu",
@@ -73,33 +75,33 @@ const translations = {
       paraMetrics: "Public ParaHealth scope indicators",
     },
     nav: {
-      services: "Services",
+      services: "System",
       ugc: "UGC",
       sprint: "Sprint",
       proof: "Proof",
-      work: "Work",
+      work: "Projects",
       training: "Training",
-      bootcamp: "Free Bootcamp",
-      cta: "Start a project",
+      bootcamp: "Free Academy",
+      cta: "Build",
     },
     hero: {
       rail: ["Tunis", "North Africa", "MENA"],
-      eyebrow: "Ahmed Zakraoui - Digital marketing + AI",
-      title: ["AI marketing systems", "that sell."],
+      eyebrow: "Ahmed Zakraoui - AI Growth Systems",
+      title: ["Turn fragmented marketing", "into a growth system."],
       statement: {
-        before: "I help SMEs, startups, and companies structure growth with ",
-        strong: "an automated, measurable, conversion-focused marketing ecosystem",
-        after: " that connects SEO/GEO, ads, UGC, WordPress, and AI.",
+        before: "I help SMEs, startups, and marketing teams connect ",
+        strong: "strategy, content, SEO/GEO, paid media, UGC, WordPress, and automation",
+        after: " into a measurable AI-powered growth engine.",
       },
-      signals: ["SEO/GEO", "Paid Social", "UGC Video", "WordPress"],
-      primary: "Build my AI marketing system",
-      secondary: "See how I work",
-      availability: "Available for MENA growth projects",
+      signals: ["Strategy", "SEO/GEO", "Paid + UGC", "Automation"],
+      primary: "Build my growth system",
+      secondary: "Learn for free",
+      availability: "Available for MENA growth system projects",
       cards: [
-        ["AI Roadmap", "Clear priorities"],
-        ["Marketing Ops", "Ready workflows"],
+        ["Build", "Systems for teams"],
+        ["Learn", "Free Academy"],
       ],
-      proof: ["AI Strategy", "Automation Setup", "Content Systems", "WordPress Builds", "UGC Video", "SEO/GEO + Ads"],
+      proof: ["Learn the system", "Build with Ahmed", "Measure growth"],
     },
     marquee: [
       "SMEs",
@@ -113,22 +115,23 @@ const translations = {
       "MENA region",
     ],
     hook: {
-      eyebrow: "Scroll the system",
-      title: "Less noise. More sales.",
-      text: "Signal, content, ads, and automation move inside one measurable growth loop.",
-      label: "Live growth cockpit",
-      summary: "4 connected layers",
+      eyebrow: "Signature system",
+      title: "A clear progression from signal to sale.",
+      text: "I turn isolated marketing levers into a growth loop your team can understand, run, and improve.",
+      label: "Growth Operating System",
+      summary: "5 movements",
       layers: [
-        ["01", "Strategy", "Offers, audience, and priorities locked."],
-        ["02", "Content", "UGC, social, SEO, and landing pages aligned."],
-        ["03", "Automation", "Prompts, tools, and workflows saving time."],
-        ["04", "Growth", "Paid social, search, and analytics improving weekly."],
+        ["01", "Diagnose", "Goals, offers, channels, data, and blockers."],
+        ["02", "Clarify", "ICP, promise, journey, and conversion message."],
+        ["03", "Build", "Pages, content, UGC, SEO/GEO, ads, and WordPress."],
+        ["04", "Automate", "Prompts, CRM, dashboards, and team workflows."],
+        ["05", "Measure", "Weekly signal reading, testing, and improvement."],
       ],
-      metrics: ["Signal", "Content", "Acquisition", "Learning"],
+      metrics: ["Signal", "Offer", "Assets", "Ops", "Learning"],
     },
     servicesHead: {
       eyebrow: "What I do",
-      title: "From AI idea to daily marketing execution.",
+      title: "From scattered channels to one operating system.",
     },
     serviceTabs: {
       strategy: "AI Strategy",
@@ -142,45 +145,45 @@ const translations = {
     services: {
       strategy: {
         index: "01",
-        title: "AI Marketing Strategy",
-        text: "Turn AI from random tools into a focused growth roadmap.",
-        items: ["Opportunity audit", "Use-case map", "Prioritized roadmap"],
+        title: "AI Growth Strategy",
+        text: "Clarify where growth is blocked before adding more tools.",
+        items: ["Growth diagnosis", "Use-case map", "90-day roadmap"],
       },
       automation: {
         index: "02",
         title: "Marketing Automation & AI Tools Setup",
-        text: "Set up tools, prompts, and repeatable workflows that teams actually use.",
-        items: ["Tool setup", "Prompt library", "Content automations"],
+        text: "Set up tools, prompts, and repeatable workflows your team can actually run.",
+        items: ["CRM and forms", "Prompt library", "Weekly routines"],
       },
       content: {
         index: "03",
         title: "Social Media & Content Strategy",
-        text: "Create a content machine for ideas, planning, production, and repurposing.",
-        items: ["Content pillars", "AI production flow", "Review system"],
+        text: "Turn ideas, UGC, SEO pages, and social posts into one editorial engine.",
+        items: ["Content pillars", "UGC briefs", "Review system"],
       },
       growth: {
         index: "04",
         title: "SEO/GEO & Media Buying",
-        text: "Connect search, AI discovery, paid campaigns, and landing pages.",
-        items: ["Search visibility", "Meta campaigns", "Landing page optimization"],
+        text: "Connect search visibility, AI discovery, paid campaigns, and conversion pages.",
+        items: ["Search visibility", "Meta campaigns", "Landing page tests"],
       },
       training: {
         index: "05",
         title: "Team Training",
-        text: "Give your team practical AI workflows they can use immediately.",
+        text: "Give your team practical workflows for using AI without losing judgment.",
         items: ["Prompting foundations", "Content workflows", "Analytics routines"],
       },
       wordpress: {
         index: "06",
         title: "WordPress Development",
-        text: "Build clean websites and landing pages designed to convert.",
+        text: "Build clean business websites and landing pages that fit the growth system.",
         items: ["Business websites", "Lead capture", "SEO-ready structure"],
       },
       ugc: {
         index: "07",
         title: "UGC Video Production",
-        text: "Produce short-form videos with UGC partners for launches, ads, and trust.",
-        items: ["Creator brief", "Partner coordination", "Ready-to-post videos"],
+        text: "Produce short-form videos with UGC partners for trust, launches, and ad testing.",
+        items: ["Creator brief", "Partner coordination", "Ready-to-test videos"],
       },
     },
     ugcSection: {
@@ -226,38 +229,38 @@ const translations = {
       ],
     },
     work: {
-      eyebrow: "Selected work",
-      title: "Real e-commerce projects, built and grown from the inside.",
-      text: "Website creation, SEO/GEO, media buying, and social media working as one acquisition system.",
+      eyebrow: "Real projects",
+      title: "Case studies without vanity numbers.",
+      text: "For public pages, I show scope, systems, and visible execution. No private client metrics are published without approval.",
       impact: [
-        ["SEO/GEO", "Search visibility system"],
-        ["Paid media", "Acquisition campaigns"],
-        ["Social media", "Content operations"],
-        ["E-commerce", "Customer journey optimization"],
+        ["Fragmented", "Channels and actions mapped"],
+        ["Built", "SEO/GEO, paid, social and web connected"],
+        ["Real sites", "Dropy.store and ParaHealth.tn"],
+        ["Public proof", "No invented figures"],
       ],
-      impactNote: "Public summary of the collaboration scope.",
+      impactNote: "Only public, approval-safe information is shown here.",
       preview: "Project preview",
       link: "View project",
       cards: [
         {
-          title: "E-commerce platform launch and growth system.",
-          text: "Created the website and structured the growth engine across sellers, UGC, SEO/GEO, paid media, and social channels.",
+          title: "Built an e-commerce platform and acquisition system.",
+          text: "Website creation and growth structure across seller acquisition, UGC creator flow, SEO/GEO, paid media, and social operations.",
           metrics: [
-            ["4", "growth levers"],
-            ["Site", "built + managed"],
-            ["UGC", "creator flow"],
-            ["Ads", "acquisition system"],
+            ["Fragmented", "seller, content and ads paths"],
+            ["Built", "e-commerce website"],
+            ["Connected", "UGC + paid testing"],
+            ["Managed", "SEO/GEO + social media"],
           ],
           tags: ["Website creation", "SEO/GEO", "Media buying", "Social media"],
         },
         {
-          title: "Parapharmacy e-commerce visibility and acquisition.",
-          text: "Managed website growth across SEO/GEO, paid media, social content, and search visibility.",
+          title: "Connected visibility and acquisition for ParaHealth.tn.",
+          text: "Managed SEO/GEO, media buying and social content around a real parapharmacy e-commerce experience. Impact is described publicly without private figures.",
           metrics: [
-            ["SEO/GEO", "Visibility architecture"],
-            ["Paid media", "Acquisition campaigns"],
-            ["Social media", "Content and animation"],
-            ["E-commerce", "Journey optimization"],
+            ["Fragmented", "search, social and ads"],
+            ["Built", "visibility architecture"],
+            ["Managed", "paid media + content"],
+            ["Impact", "public scope only"],
           ],
           tags: ["E-commerce website", "SEO/GEO", "Paid ads", "Social content"],
         },
@@ -279,27 +282,27 @@ const translations = {
       ],
     },
     homeBootcamp: {
-      eyebrow: "Free bootcamp",
-      title: "Growth Marketing with AI Bootcamp.",
-      text: "A free practical path to turn AI into a growth engine: strategy, content, SEO/GEO, paid ads, UGC, automation, and measurement.",
+      eyebrow: "Free Academy",
+      title: "Learn the system before you build it.",
+      text: "A free entry point with diagnostic, modules, quizzes, checkpoints, and workbook. Learn the logic, then use the AI Growth Sprint to build it faster with Ahmed.",
       pointsAria: "Bootcamp content",
-      points: ["6 practical modules", "AI Growth Score", "Workbook + certificate"],
+      points: ["Diagnostic first", "6 modules + quizzes", "Sprint-ready checkpoints"],
       previewRows: [
         ["Growth Loop + AI", "Checkpoint"],
         ["Content + SEO/GEO", "Quiz"],
         ["Ads, UGC + Analytics", "Score"],
       ],
-      primary: "Start for free",
+      primary: "Learn for free",
       secondary: "See the modules",
     },
     contact: {
       eyebrow: "Work with Ahmed",
-      title: "Ready to turn your marketing into a smarter system?",
-      text: "Tell me what you want to improve: AI strategy, automation, content, UGC, SEO/GEO, ads, or WordPress.",
+      title: "Ready to build your growth system?",
+      text: "Tell me what is fragmented today: strategy, content, SEO/GEO, ads, UGC, WordPress, automation, or measurement.",
       labels: ["Name", "Email", "Company", "Service", "Message"],
       servicePlaceholder: "Choose one",
       serviceOptions: [
-        "AI Marketing Strategy",
+        "AI Growth System",
         "Marketing Automation",
         "Content Strategy",
         "SEO/GEO & Media Buying",
@@ -313,8 +316,8 @@ const translations = {
       linkedin: "Profile",
     },
     footer: {
-      text: "AI marketing systems, e-commerce websites, SEO/GEO, paid social, UGC video, and WordPress for MENA.",
-      nav: ["Services", "UGC Video", "Selected Work", "AI Growth Sprint", "Team Training", "Free Bootcamp", "Contact"],
+      text: "AI growth systems, e-commerce websites, SEO/GEO, paid social, UGC video, and WordPress for MENA teams.",
+      nav: ["System", "UGC Video", "Projects", "AI Growth Sprint", "Team Training", "Free Academy", "Contact"],
       whatsapp: "Book a call",
       linkedin: "LinkedIn profile",
       bottom: ["Tunis, Tunisia", "AI Strategy - SEO/GEO - Media Buying - UGC Video - WordPress"],
@@ -332,14 +335,14 @@ const translations = {
     dir: "ltr",
     name: "Français",
     meta: {
-      homeTitle: "Ahmed Zakraoui | Systèmes Marketing IA qui vendent",
+      homeTitle: "Ahmed Zakraoui | Systèmes de croissance IA",
       homeDescription:
-        "Ahmed Zakraoui construit des systèmes marketing IA pour PME, startups et entreprises en Tunisie, Afrique du Nord et MENA : SEO/GEO, paid media, UGC, automatisation et WordPress.",
+        "Ahmed Zakraoui transforme le marketing fragmenté des PME, startups et équipes MENA en systèmes de croissance IA mesurables : stratégie, SEO/GEO, paid media, UGC, automatisation et WordPress.",
       thanksTitle: "Message envoyé | Ahmed Zakraoui",
       thanksDescription:
         "Merci d'avoir contacté Ahmed Zakraoui pour une stratégie marketing IA, l'automatisation, les systèmes de contenu, la vidéo UGC, la formation d'équipe ou WordPress.",
     },
-    brandSmall: "Systèmes Marketing IA",
+    brandSmall: "Systèmes de croissance IA",
     aria: {
       home: "Accueil Ahmed Zakraoui",
       menuOpen: "Ouvrir le menu",
@@ -361,33 +364,33 @@ const translations = {
       paraMetrics: "Périmètre public ParaHealth",
     },
     nav: {
-      services: "Services",
+      services: "Système",
       ugc: "UGC",
       sprint: "Sprint",
       proof: "Preuves",
       work: "Projets",
       training: "Formation",
-      bootcamp: "Bootcamp gratuit",
-      cta: "Lancer un projet",
+      bootcamp: "Academy gratuite",
+      cta: "Construire",
     },
     hero: {
       rail: ["Tunis", "Afrique du Nord", "MENA"],
-      eyebrow: "Ahmed Zakraoui - Marketing digital + IA",
-      title: ["Systèmes marketing IA", "qui vendent."],
+      eyebrow: "Ahmed Zakraoui - AI Growth Systems",
+      title: ["Transformer un marketing fragmenté", "en système de croissance."],
       statement: {
-        before: "J'aide les PME, startups et entreprises à structurer leur croissance avec ",
-        strong: "un écosystème marketing automatisé, mesurable et orienté conversion",
-        after: " qui relie SEO/GEO, ads, UGC, WordPress et IA.",
+        before: "J'aide les PME, startups et équipes marketing à connecter ",
+        strong: "stratégie, contenu, SEO/GEO, paid media, UGC, WordPress et automatisation",
+        after: " dans un moteur de croissance mesurable alimenté par l'IA.",
       },
-      signals: ["SEO/GEO", "Paid Social", "Vidéo UGC", "WordPress"],
-      primary: "Construire mon système IA",
-      secondary: "Voir ma méthode",
-      availability: "Disponible pour des projets de croissance MENA",
+      signals: ["Stratégie", "SEO/GEO", "Paid + UGC", "Automatisation"],
+      primary: "Construire mon système de croissance",
+      secondary: "Apprendre gratuitement",
+      availability: "Disponible pour des systèmes de croissance MENA",
       cards: [
-        ["Roadmap IA", "Priorités claires"],
-        ["Marketing Ops", "Workflows prêts"],
+        ["Build", "Systèmes pour équipes"],
+        ["Learn", "Academy gratuite"],
       ],
-      proof: ["Stratégie IA", "Automatisation", "Systèmes de contenu", "Sites WordPress", "Vidéo UGC", "SEO/GEO + Ads"],
+      proof: ["Apprendre le système", "Construire avec Ahmed", "Mesurer la croissance"],
     },
     marquee: [
       "PME",
@@ -401,22 +404,23 @@ const translations = {
       "Région MENA",
     ],
     hook: {
-      eyebrow: "Le système visible",
-      title: "Moins de bruit. Plus de ventes.",
-      text: "Signal, contenu, ads et automatisation avancent dans une boucle de croissance mesurable.",
-      label: "Cockpit de croissance",
-      summary: "4 couches connectées",
+      eyebrow: "Système signature",
+      title: "Une progression claire du signal à la vente.",
+      text: "Je transforme les leviers isolés en une boucle de croissance que l'équipe peut comprendre, piloter et améliorer.",
+      label: "Growth Operating System",
+      summary: "5 mouvements",
       layers: [
-        ["01", "Stratégie", "Offre, audience et priorités clarifiées."],
-        ["02", "Contenu", "UGC, social, SEO et landing pages alignés."],
-        ["03", "Automatisation", "Prompts, outils et workflows qui gagnent du temps."],
-        ["04", "Croissance", "Paid social, search et analytics améliorés chaque semaine."],
+        ["01", "Diagnostiquer", "Objectifs, offres, canaux, données et blocages."],
+        ["02", "Clarifier", "ICP, promesse, parcours et message de conversion."],
+        ["03", "Construire", "Pages, contenus, UGC, SEO/GEO, ads et WordPress."],
+        ["04", "Automatiser", "Prompts, CRM, dashboards et workflows d'équipe."],
+        ["05", "Mesurer", "Lecture hebdomadaire du signal, tests et amélioration."],
       ],
-      metrics: ["Signal", "Contenu", "Acquisition", "Apprentissage"],
+      metrics: ["Signal", "Offre", "Assets", "Ops", "Learning"],
     },
     servicesHead: {
       eyebrow: "Ce que je fais",
-      title: "De l'idée IA à l'exécution marketing quotidienne.",
+      title: "Des canaux dispersés à un système qui se pilote.",
     },
     serviceTabs: {
       strategy: "Stratégie IA",
@@ -430,45 +434,45 @@ const translations = {
     services: {
       strategy: {
         index: "01",
-        title: "Stratégie Marketing IA",
-        text: "Transformer l'IA en roadmap de croissance claire.",
-        items: ["Audit opportunités", "Carte des cas d'usage", "Roadmap priorisée"],
+        title: "Stratégie de croissance IA",
+        text: "Clarifier où la croissance bloque avant d'ajouter de nouveaux outils.",
+        items: ["Diagnostic growth", "Carte des cas d'usage", "Roadmap 90 jours"],
       },
       automation: {
         index: "02",
         title: "Automatisation Marketing & Setup d'Outils IA",
-        text: "Installer outils, prompts et workflows que l'équipe utilise vraiment.",
-        items: ["Setup outils", "Bibliothèque prompts", "Automatisations contenu"],
+        text: "Installer outils, prompts et workflows que l'équipe peut réellement piloter.",
+        items: ["CRM et formulaires", "Bibliothèque prompts", "Routines hebdomadaires"],
       },
       content: {
         index: "03",
         title: "Stratégie Social Media & Contenu",
-        text: "Créer une machine de contenu pour idées, planning, production et recyclage.",
-        items: ["Piliers de contenu", "Production assistée IA", "Système de validation"],
+        text: "Relier idées, UGC, pages SEO et social media dans un même moteur éditorial.",
+        items: ["Piliers de contenu", "Briefs UGC", "Système de validation"],
       },
       growth: {
         index: "04",
         title: "SEO/GEO & Media Buying",
-        text: "Connecter search, visibilité IA, campagnes paid et landing pages.",
-        items: ["Visibilité search", "Campagnes Meta", "Optimisation landing pages"],
+        text: "Connecter visibilité search, découverte IA, campagnes paid et pages de conversion.",
+        items: ["Visibilité search", "Campagnes Meta", "Tests landing pages"],
       },
       training: {
         index: "05",
         title: "Formation d'Équipe",
-        text: "Donner à l'équipe des workflows IA utilisables immédiatement.",
+        text: "Donner à l'équipe des workflows IA utiles sans perdre le jugement humain.",
         items: ["Fondations prompting", "Workflows contenu", "Routines analytics"],
       },
       wordpress: {
         index: "06",
         title: "Développement WordPress",
-        text: "Créer des sites et landing pages propres, pensés pour convertir.",
+        text: "Créer des sites business et landing pages propres qui s'intègrent au système growth.",
         items: ["Sites business", "Capture de leads", "Structure SEO-ready"],
       },
       ugc: {
         index: "07",
         title: "Production Vidéo UGC",
-        text: "Produire des vidéos courtes avec des créateurs UGC pour lancer, vendre et rassurer.",
-        items: ["Brief créateur", "Coordination UGC", "Vidéos prêtes à publier"],
+        text: "Produire des vidéos courtes avec des partenaires UGC pour rassurer, lancer et tester.",
+        items: ["Brief créateur", "Coordination UGC", "Vidéos prêtes à tester"],
       },
     },
     ugcSection: {
@@ -514,38 +518,38 @@ const translations = {
       ],
     },
     work: {
-      eyebrow: "Projets sélectionnés",
-      title: "Des projets e-commerce réels, créés et développés de l'intérieur.",
-      text: "Création de site, SEO/GEO, media buying et social media dans un même système d'acquisition.",
+      eyebrow: "Projets réels",
+      title: "Des études de cas sans chiffres inventés.",
+      text: "Sur les pages publiques, je montre le périmètre, le système construit et l'exécution visible. Aucun chiffre client privé n'est publié sans accord.",
       impact: [
-        ["SEO/GEO", "Visibilité organique structurée"],
-        ["Paid media", "Acquisition pilotée"],
-        ["Social media", "Contenu et animation"],
-        ["E-commerce", "Parcours d'achat optimisé"],
+        ["Fragmenté", "Canaux et actions cartographiés"],
+        ["Construit", "SEO/GEO, paid, social et web connectés"],
+        ["Sites réels", "Dropy.store et ParaHealth.tn"],
+        ["Preuve publique", "Aucun chiffre inventé"],
       ],
-      impactNote: "Synthèse publique du périmètre d'accompagnement.",
+      impactNote: "Seules les informations publiques et approuvables sont affichées ici.",
       preview: "Aperçu projet",
       link: "Voir le projet",
       cards: [
         {
-          title: "Lancement d'une plateforme e-commerce et système de croissance.",
-          text: "Création du site et structuration du moteur de croissance : vendeurs, UGC, SEO/GEO, media buying et social media.",
+          title: "Création d'une plateforme e-commerce et d'un système d'acquisition.",
+          text: "Création du site et structuration du moteur growth autour des vendeurs, du flux créateurs UGC, du SEO/GEO, du media buying et du social media.",
           metrics: [
-            ["4", "leviers activés"],
-            ["Site", "créé + piloté"],
-            ["UGC", "flux créateurs"],
-            ["Ads", "système acquisition"],
+            ["Fragmenté", "vendeurs, contenu et ads"],
+            ["Construit", "site e-commerce"],
+            ["Connecté", "UGC + tests paid"],
+            ["Piloté", "SEO/GEO + social media"],
           ],
           tags: ["Création site web", "SEO/GEO", "Media buying", "Social media"],
         },
         {
-          title: "Visibilité et acquisition e-commerce pour parapharmacie.",
-          text: "Croissance pilotée via SEO/GEO, paid media, contenu social et visibilité search.",
+          title: "Visibilité et acquisition connectées pour ParaHealth.tn.",
+          text: "Pilotage SEO/GEO, media buying et contenu social autour d'une vraie expérience e-commerce parapharmacie. L'impact est décrit publiquement sans chiffres privés.",
           metrics: [
-            ["SEO/GEO", "Architecture de visibilité"],
-            ["Paid media", "Campagnes d'acquisition"],
-            ["Social media", "Contenu et animation"],
-            ["E-commerce", "Optimisation du parcours"],
+            ["Fragmenté", "search, social et ads"],
+            ["Construit", "architecture visibilité"],
+            ["Piloté", "paid media + contenu"],
+            ["Impact", "périmètre public"],
           ],
           tags: ["Site e-commerce", "SEO/GEO", "Paid ads", "Contenu social"],
         },
@@ -567,27 +571,27 @@ const translations = {
       ],
     },
     homeBootcamp: {
-      eyebrow: "Bootcamp gratuit",
-      title: "Growth Marketing with AI Bootcamp.",
-      text: "Un parcours gratuit pour apprendre à transformer l'IA en moteur de croissance : stratégie, contenu, SEO/GEO, paid ads, UGC, automation et mesure.",
+      eyebrow: "Academy gratuite",
+      title: "Apprendre le système avant de le construire.",
+      text: "Une porte d'entrée gratuite avec diagnostic, modules, quiz, checkpoints et workbook. Tu comprends la logique, puis le AI Growth Sprint sert à construire plus vite avec Ahmed.",
       pointsAria: "Contenu du bootcamp",
-      points: ["6 modules pratiques", "AI Growth Score", "Workbook + certificat"],
+      points: ["Diagnostic d'abord", "6 modules + quiz", "Checkpoints prêts pour le Sprint"],
       previewRows: [
         ["Growth Loop + IA", "Checkpoint"],
         ["Contenu + SEO/GEO", "Quiz"],
         ["Ads, UGC + Analytics", "Score"],
       ],
-      primary: "Commencer gratuitement",
+      primary: "Apprendre gratuitement",
       secondary: "Voir les modules",
     },
     contact: {
       eyebrow: "Travailler avec Ahmed",
-      title: "Prêt à transformer votre marketing en système plus intelligent ?",
-      text: "Dites-moi quoi améliorer : stratégie IA, automation, contenu, UGC, SEO/GEO, ads ou WordPress.",
+      title: "Prêt à construire votre système de croissance ?",
+      text: "Dites-moi ce qui est fragmenté aujourd'hui : stratégie, contenu, SEO/GEO, ads, UGC, WordPress, automation ou mesure.",
       labels: ["Nom", "Email", "Entreprise", "Service", "Message"],
       servicePlaceholder: "Choisir un service",
       serviceOptions: [
-        "Stratégie Marketing IA",
+        "Système de croissance IA",
         "Automatisation Marketing",
         "Stratégie de Contenu",
         "SEO/GEO & Media Buying",
@@ -601,8 +605,8 @@ const translations = {
       linkedin: "Profil",
     },
     footer: {
-      text: "Systèmes marketing IA, sites e-commerce, SEO/GEO, paid social, vidéo UGC et WordPress pour la région MENA.",
-      nav: ["Services", "Vidéo UGC", "Projets", "AI Growth Sprint", "Formation", "Bootcamp gratuit", "Contact"],
+      text: "Systèmes de croissance IA, sites e-commerce, SEO/GEO, paid social, vidéo UGC et WordPress pour les équipes MENA.",
+      nav: ["Système", "Vidéo UGC", "Projets", "AI Growth Sprint", "Formation", "Academy gratuite", "Contact"],
       whatsapp: "Prendre RDV",
       linkedin: "Profil LinkedIn",
       bottom: ["Tunis, Tunisie", "Stratégie IA - SEO/GEO - Media Buying - Vidéo UGC - WordPress"],
@@ -620,9 +624,9 @@ const translations = {
     dir: "rtl",
     name: "العربية",
     meta: {
-      homeTitle: "أحمد زكراوي | أنظمة تسويق ذكية تحول الاهتمام إلى نمو",
+      homeTitle: "أحمد زكراوي | أنظمة نمو بالذكاء الاصطناعي",
       homeDescription:
-        "أحمد زكراوي يبني أنظمة تسويق ذكية للشركات في تونس، شمال أفريقيا ومنطقة MENA تشمل SEO/GEO، الإعلانات الممولة، UGC، الأتمتة وWordPress.",
+        "أحمد زكراوي يحول التسويق المتفرق إلى أنظمة نمو قابلة للقياس للشركات في تونس، شمال أفريقيا ومنطقة MENA عبر الاستراتيجية، SEO/GEO، الإعلانات، UGC، الأتمتة وWordPress.",
       thanksTitle: "تم إرسال الرسالة | أحمد زكراوي",
       thanksDescription:
         "شكرا لتواصلك مع أحمد زكراوي حول التسويق الرقمي، الذكاء الاصطناعي، SEO/GEO، الإعلانات الممولة، فيديو UGC، تدريب الفرق أو تطوير WordPress.",
@@ -649,33 +653,33 @@ const translations = {
       paraMetrics: "نطاق عام لعمل ParaHealth",
     },
     nav: {
-      services: "الخدمات",
+      services: "النظام",
       ugc: "فيديو UGC",
       sprint: "Sprint النمو",
       proof: "الأعمال",
       work: "المشاريع",
       training: "التدريب",
-      bootcamp: "بوتكامب مجاني",
-      cta: "ابدأ مشروعا",
+      bootcamp: "الأكاديمية المجانية",
+      cta: "ابن النظام",
     },
     hero: {
       rail: ["تونس", "شمال أفريقيا", "MENA"],
-      eyebrow: "أحمد زكراوي - تسويق رقمي + ذكاء اصطناعي",
-      title: ["أنظمة تسويق ذكية", "تحول الاهتمام إلى نمو."],
+      eyebrow: "أحمد زكراوي - أنظمة نمو بالذكاء الاصطناعي",
+      title: ["حوّل التسويق المتفرق", "إلى نظام نمو قابل للقياس."],
       statement: {
-        before: "أساعد الشركات على بناء نمو أوضح عبر ",
-        strong: "نظام تسويق مؤتمت، قابل للقياس وموجه للتحويل",
-        after: " يربط SEO/GEO، الإعلانات، UGC، WordPress والذكاء الاصطناعي.",
+        before: "أساعد الشركات وفرق التسويق على ربط ",
+        strong: "الاستراتيجية، المحتوى، SEO/GEO، الإعلانات، UGC، WordPress والأتمتة",
+        after: " داخل محرك نمو واضح مدعوم بالذكاء الاصطناعي.",
       },
-      signals: ["SEO/GEO", "إعلانات ممولة", "فيديو UGC", "WordPress"],
-      primary: "ابن نظامك التسويقي الذكي",
-      secondary: "شاهد طريقة عملي",
-      availability: "متاح لمشاريع النمو في منطقة MENA",
+      signals: ["استراتيجية", "SEO/GEO", "إعلانات + UGC", "أتمتة"],
+      primary: "ابن نظام النمو الخاص بك",
+      secondary: "تعلم مجانا",
+      availability: "متاح لبناء أنظمة نمو في منطقة MENA",
       cards: [
-        ["خارطة الذكاء الاصطناعي", "أولويات واضحة"],
-        ["عمليات التسويق", "تدفقات جاهزة"],
+        ["Build", "أنظمة تعمل مع الفريق"],
+        ["Learn", "أكاديمية مجانية"],
       ],
-      proof: ["استراتيجية الذكاء الاصطناعي", "إعداد الأتمتة", "أنظمة المحتوى", "مواقع WordPress", "فيديو UGC", "SEO/GEO + إعلانات"],
+      proof: ["تعلم النظام", "ابنه مع أحمد", "قس النمو"],
     },
     marquee: [
       "الشركات الصغيرة والمتوسطة",
@@ -689,22 +693,23 @@ const translations = {
       "منطقة MENA",
     ],
     hook: {
-      eyebrow: "النظام بشكل واضح",
-      title: "ضجيج أقل. مبيعات أكثر.",
-      text: "الإشارة، المحتوى، الإعلانات والأتمتة تتحرك داخل حلقة نمو قابلة للقياس.",
-      label: "لوحة نمو مباشرة",
-      summary: "4 طبقات مترابطة",
+      eyebrow: "النظام الخاص",
+      title: "تقدم واضح من الإشارة إلى البيع.",
+      text: "أحوّل القنوات المتفرقة إلى حلقة نمو يفهمها الفريق، يديرها ويحسنها أسبوعيا.",
+      label: "Growth Operating System",
+      summary: "5 حركات",
       layers: [
-        ["01", "الاستراتيجية", "العرض، الجمهور والأولويات بوضوح."],
-        ["02", "المحتوى", "UGC، السوشيال، SEO وصفحات الهبوط في اتجاه واحد."],
-        ["03", "الأتمتة", "Prompts، أدوات وتدفقات عمل توفر الوقت."],
-        ["04", "النمو", "إعلانات، بحث وتحليلات تتحسن كل أسبوع."],
+        ["01", "تشخيص", "الأهداف، العروض، القنوات، البيانات والعوائق."],
+        ["02", "توضيح", "العميل المثالي، الوعد، الرحلة ورسالة التحويل."],
+        ["03", "بناء", "صفحات، محتوى، UGC، SEO/GEO، إعلانات وWordPress."],
+        ["04", "أتمتة", "Prompts، CRM، Dashboards وتدفقات عمل الفريق."],
+        ["05", "قياس", "قراءة الإشارة أسبوعيا، الاختبار والتحسين."],
       ],
-      metrics: ["إشارة", "محتوى", "اكتساب", "تعلم"],
+      metrics: ["إشارة", "عرض", "Assets", "Ops", "تعلم"],
     },
     servicesHead: {
       eyebrow: "ماذا أقدم",
-      title: "من فكرة الذكاء الاصطناعي إلى تنفيذ تسويقي يومي.",
+      title: "من قنوات متفرقة إلى نظام يمكن قيادته.",
     },
     serviceTabs: {
       strategy: "استراتيجية الذكاء الاصطناعي",
@@ -718,45 +723,45 @@ const translations = {
     services: {
       strategy: {
         index: "01",
-        title: "استراتيجية التسويق بالذكاء الاصطناعي",
-        text: "تحويل الذكاء الاصطناعي من أدوات متفرقة إلى خارطة نمو واضحة.",
-        items: ["تدقيق الفرص", "خريطة حالات الاستخدام", "خارطة تنفيذ مرتبة"],
+        title: "استراتيجية نمو بالذكاء الاصطناعي",
+        text: "توضيح أين يتعطل النمو قبل إضافة أدوات جديدة.",
+        items: ["تشخيص النمو", "خريطة حالات الاستخدام", "خارطة 90 يوما"],
       },
       automation: {
         index: "02",
         title: "أتمتة التسويق وإعداد أدوات الذكاء الاصطناعي",
-        text: "إعداد أدوات، Prompts وتدفقات عمل يستخدمها الفريق فعلا.",
-        items: ["إعداد الأدوات", "مكتبة Prompts", "أتمتة المحتوى"],
+        text: "إعداد أدوات، Prompts وتدفقات عمل يستطيع الفريق قيادتها فعلا.",
+        items: ["CRM ونماذج", "مكتبة Prompts", "روتينات أسبوعية"],
       },
       content: {
         index: "03",
         title: "استراتيجية السوشيال ميديا والمحتوى",
-        text: "بناء آلة محتوى للأفكار، التخطيط، الإنتاج وإعادة الاستخدام.",
-        items: ["محاور المحتوى", "إنتاج بمساعدة الذكاء الاصطناعي", "نظام مراجعة"],
+        text: "ربط الأفكار، UGC، صفحات SEO والسوشيال ميديا داخل محرك تحرير واحد.",
+        items: ["محاور المحتوى", "Briefs UGC", "نظام مراجعة"],
       },
       growth: {
         index: "04",
         title: "SEO/GEO والإعلانات الممولة",
-        text: "ربط البحث، الظهور في إجابات الذكاء الاصطناعي، الإعلانات وصفحات الهبوط.",
-        items: ["ظهور في البحث", "حملات Meta", "تحسين صفحات الهبوط"],
+        text: "ربط الظهور في البحث، إجابات الذكاء الاصطناعي، الإعلانات وصفحات التحويل.",
+        items: ["ظهور في البحث", "حملات Meta", "اختبارات صفحات الهبوط"],
       },
       training: {
         index: "05",
         title: "تدريب الفرق",
-        text: "تدريب الفريق على تدفقات عمل بالذكاء الاصطناعي قابلة للتطبيق فورا.",
+        text: "تدريب الفريق على استخدام الذكاء الاصطناعي بدون فقدان الحكم البشري.",
         items: ["أساسيات Prompting", "تدفقات محتوى", "روتينات تحليل"],
       },
       wordpress: {
         index: "06",
         title: "تطوير WordPress",
-        text: "إنشاء مواقع وصفحات هبوط نظيفة ومبنية للتحويل.",
+        text: "إنشاء مواقع وصفحات هبوط نظيفة تدخل ضمن نظام النمو.",
         items: ["مواقع أعمال", "جمع عملاء محتملين", "بنية SEO جاهزة"],
       },
       ugc: {
         index: "07",
         title: "إنتاج فيديو UGC",
-        text: "إنتاج فيديوهات قصيرة مع صناع UGC للإطلاق، البيع وبناء الثقة.",
-        items: ["Brief واضح", "تنسيق مع شركاء UGC", "فيديوهات جاهزة للنشر"],
+        text: "إنتاج فيديوهات قصيرة مع شركاء UGC لبناء الثقة، الإطلاق والاختبار.",
+        items: ["Brief واضح", "تنسيق مع شركاء UGC", "فيديوهات جاهزة للاختبار"],
       },
     },
     ugcSection: {
@@ -802,38 +807,38 @@ const translations = {
       ],
     },
     work: {
-      eyebrow: "مشاريع مختارة",
-      title: "مشاريع تجارة إلكترونية حقيقية، تم بناؤها وتنميتها من الداخل.",
-      text: "إنشاء مواقع، SEO/GEO، إعلانات وسوشيال ميديا ضمن نظام اكتساب واحد.",
+      eyebrow: "مشاريع حقيقية",
+      title: "دراسات حالة بدون أرقام مخترعة.",
+      text: "في الصفحات العامة أعرض النطاق، النظام المبني والتنفيذ المرئي. لا أنشر أرقام عملاء خاصة بدون موافقة.",
       impact: [
-        ["SEO/GEO", "تنظيم الظهور في البحث"],
-        ["الإعلانات", "إدارة حملات الاكتساب"],
-        ["السوشيال ميديا", "تخطيط ونشر المحتوى"],
-        ["التجارة الإلكترونية", "تحسين تجربة الشراء"],
+        ["متفرق", "قنوات وأعمال تم تنظيمها"],
+        ["مبني", "SEO/GEO، إعلانات، سوشيال وموقع متصلة"],
+        ["مواقع حقيقية", "Dropy.store وParaHealth.tn"],
+        ["إثبات عام", "بدون أرقام مخترعة"],
       ],
-      impactNote: "ملخص عام لنطاق التعاون.",
+      impactNote: "المعلومات المنشورة هنا عامة وآمنة للنشر فقط.",
       preview: "معاينة المشروع",
       link: "مشاهدة المشروع",
       cards: [
         {
-          title: "إطلاق منصة تجارة إلكترونية ونظام نمو.",
-          text: "إنشاء الموقع وتنظيم محرك النمو عبر البائعين، UGC، SEO/GEO، الإعلانات والسوشيال ميديا.",
+          title: "بناء منصة تجارة إلكترونية ونظام اكتساب.",
+          text: "إنشاء الموقع وتنظيم محرك النمو عبر البائعين، تدفق صناع UGC، SEO/GEO، الإعلانات والسوشيال ميديا.",
           metrics: [
-            ["4", "روافع نمو"],
-            ["موقع", "إنشاء + إدارة"],
-            ["UGC", "تدفق صناع المحتوى"],
-            ["إعلانات", "نظام اكتساب"],
+            ["متفرق", "بائعون، محتوى وإعلانات"],
+            ["مبني", "موقع تجارة إلكترونية"],
+            ["متصل", "UGC + اختبارات إعلانات"],
+            ["مدار", "SEO/GEO + سوشيال ميديا"],
           ],
           tags: ["إنشاء الموقع", "SEO/GEO", "إعلانات ممولة", "إدارة السوشيال ميديا"],
         },
         {
-          title: "ظهور واكتساب لمتجر بارافارماسي.",
-          text: "نمو عبر SEO/GEO، الإعلانات، المحتوى الاجتماعي والظهور في البحث.",
+          title: "ربط الظهور والاكتساب لموقع ParaHealth.tn.",
+          text: "إدارة SEO/GEO، media buying والمحتوى الاجتماعي حول تجربة تجارة إلكترونية حقيقية في مجال parapharmacie. يتم وصف الأثر بدون أرقام خاصة.",
           metrics: [
-            ["SEO/GEO", "هندسة الظهور"],
-            ["الإعلانات", "حملات اكتساب"],
-            ["السوشيال ميديا", "محتوى وتنشيط"],
-            ["التجارة الإلكترونية", "تحسين تجربة الشراء"],
+            ["متفرق", "بحث، سوشيال وإعلانات"],
+            ["مبني", "هندسة ظهور"],
+            ["مدار", "إعلانات + محتوى"],
+            ["أثر", "نطاق عام فقط"],
           ],
           tags: ["موقع تجارة إلكترونية", "SEO/GEO", "إعلانات ممولة", "محتوى اجتماعي"],
         },
@@ -855,27 +860,27 @@ const translations = {
       ],
     },
     homeBootcamp: {
-      eyebrow: "بوتكامب مجاني",
-      title: "Growth Marketing with AI Bootcamp.",
-      text: "مسار عملي مجاني لتحويل الذكاء الاصطناعي إلى محرك نمو: استراتيجية، محتوى، SEO/GEO، إعلانات، UGC، أتمتة وقياس.",
+      eyebrow: "الأكاديمية المجانية",
+      title: "تعلّم النظام قبل أن تبنيه.",
+      text: "مدخل مجاني فيه تشخيص، وحدات، اختبارات، نقاط تحقق وWorkbook. تفهم المنطق أولا، ثم يساعدك AI Growth Sprint على البناء أسرع مع أحمد.",
       pointsAria: "محتوى البوتكامب",
-      points: ["6 وحدات عملية", "AI Growth Score", "Workbook + شهادة"],
+      points: ["التشخيص أولا", "6 وحدات + اختبارات", "Checkpoints جاهزة للSprint"],
       previewRows: [
         ["حلقة النمو + الذكاء الاصطناعي", "Checkpoint"],
         ["المحتوى + SEO/GEO", "Quiz"],
         ["الإعلانات، UGC والتحليلات", "Score"],
       ],
-      primary: "ابدأ مجانا",
+      primary: "تعلم مجانا",
       secondary: "شاهد الوحدات",
     },
     contact: {
       eyebrow: "اعمل مع أحمد",
-      title: "جاهز لتحويل تسويقك إلى نظام أذكى؟",
-      text: "أخبرني ما الذي تريد تحسينه: استراتيجية، أتمتة، محتوى، UGC، SEO/GEO، إعلانات أو WordPress.",
+      title: "جاهز لبناء نظام النمو الخاص بك؟",
+      text: "أخبرني ما المتفرق اليوم: الاستراتيجية، المحتوى، SEO/GEO، الإعلانات، UGC، WordPress، الأتمتة أو القياس.",
       labels: ["الاسم", "البريد الإلكتروني", "الشركة", "الخدمة", "الرسالة"],
       servicePlaceholder: "اختر خدمة",
       serviceOptions: [
-        "استراتيجية التسويق بالذكاء الاصطناعي",
+        "نظام نمو بالذكاء الاصطناعي",
         "أتمتة التسويق",
         "استراتيجية المحتوى",
         "SEO/GEO والإعلانات الممولة",
@@ -889,8 +894,8 @@ const translations = {
       linkedin: "الملف الشخصي",
     },
     footer: {
-      text: "أنظمة تسويق بالذكاء الاصطناعي، مواقع تجارة إلكترونية، SEO/GEO، إعلانات ممولة، فيديو UGC وWordPress لمنطقة MENA.",
-      nav: ["الخدمات", "فيديو UGC", "المشاريع", "Sprint النمو", "التدريب", "بوتكامب مجاني", "التواصل"],
+      text: "أنظمة نمو بالذكاء الاصطناعي، مواقع تجارة إلكترونية، SEO/GEO، إعلانات ممولة، فيديو UGC وWordPress لفرق MENA.",
+      nav: ["النظام", "فيديو UGC", "المشاريع", "AI Growth Sprint", "التدريب", "الأكاديمية المجانية", "التواصل"],
       whatsapp: "احجز موعدا",
       linkedin: "ملف LinkedIn",
       bottom: ["تونس", "استراتيجية الذكاء الاصطناعي - SEO/GEO - الإعلانات الممولة - فيديو UGC - WordPress"],
@@ -1096,7 +1101,7 @@ const applySeo = (copy, isThanksPage) => {
   const knowsAbout = currentLanguage === "ar"
     ? [
         "التسويق الرقمي",
-        "الذكاء الاصطناعي في التسويق",
+        "أنظمة النمو بالذكاء الاصطناعي",
         "SEO/GEO",
         "الإعلانات الممولة",
         "إنتاج فيديو UGC",
@@ -1106,7 +1111,7 @@ const applySeo = (copy, isThanksPage) => {
     : currentLanguage === "fr"
       ? [
           "Marketing digital",
-          "Intelligence artificielle appliquée au marketing",
+          "Systèmes de croissance alimentés par l'IA",
           "SEO/GEO",
           "Media buying",
           "Production vidéo UGC",
@@ -1115,7 +1120,7 @@ const applySeo = (copy, isThanksPage) => {
         ]
       : [
           "Digital marketing",
-          "AI marketing strategy",
+          "AI growth systems",
           "SEO/GEO",
           "Media buying",
           "UGC video production",
@@ -1162,7 +1167,7 @@ const applySeo = (copy, isThanksPage) => {
       {
         "@type": "ProfessionalService",
         "@id": `${siteBaseUrl}/#services`,
-        name: currentLanguage === "ar" ? "خدمات أحمد زكراوي للتسويق الرقمي والذكاء الاصطناعي" : "Ahmed Zakraoui AI Marketing Systems",
+        name: currentLanguage === "ar" ? "أنظمة نمو أحمد زكراوي بالذكاء الاصطناعي" : "Ahmed Zakraoui AI Growth Systems",
         url: canonicalUrl,
         image: seoImageUrl,
         areaServed: ["Tunisia", "North Africa", "MENA"],
@@ -1397,7 +1402,7 @@ const applyLanguage = (language, shouldPersist = true) => {
     return;
   }
 
-  setText('.site-header .nav > a[href="#services"]', copy.nav.services);
+  setText('.site-header .nav > a[href="#system"]', copy.nav.services);
   setText('.site-header .nav > a[href="#ugc"]', copy.nav.ugc);
   setText('.site-header .nav > a[href="#sprint"]', copy.nav.sprint);
   setText('.site-header .nav > a[href="#proof"]', copy.nav.proof);
@@ -1417,6 +1422,7 @@ const applyLanguage = (language, shouldPersist = true) => {
   setAttribute(".signal-bar", "aria-label", copy.aria.signal);
   setText(".hero-actions .primary", copy.hero.primary);
   setText(".hero-actions .secondary", copy.hero.secondary);
+  setAttribute(".hero-actions .secondary", "href", getBootcampHref(language));
   setAttribute(".portrait-system", "aria-label", copy.aria.portrait);
   setInlineWithStatusDot(".availability-card", copy.hero.availability);
   setText(".system-card-a small", copy.hero.cards[0][0]);
@@ -1640,7 +1646,7 @@ if (!prefersReducedMotion && cursorAura && window.matchMedia("(pointer: fine)").
   );
 }
 
-if (!prefersReducedMotion && window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
+if (enableCardTilt && !prefersReducedMotion && window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
   document.querySelectorAll("[data-tilt]").forEach((card) => {
     card.addEventListener("pointermove", (event) => {
       const rect = card.getBoundingClientRect();
@@ -1662,7 +1668,7 @@ if (!prefersReducedMotion && window.matchMedia("(hover: hover) and (pointer: fin
 }
 
 const startNeuralCanvas = () => {
-  if (!neuralCanvas || !hero || prefersReducedMotion) {
+  if (!enableDecorativeCanvas || !neuralCanvas || !hero || prefersReducedMotion) {
     return;
   }
 
