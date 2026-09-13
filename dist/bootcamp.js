@@ -18,7 +18,7 @@ const bootcampCopy = {
     meta: {
       title: "AI Growth Academy gratuite | Ahmed Zakraoui",
       description:
-        "AI Growth Academy gratuite par Ahmed Zakraoui : diagnostic, modules pratiques, quiz, checkpoints, prompts et workbook pour apprendre à construire un système de croissance IA.",
+        "AI Growth Academy gratuite par Ahmed Zakraoui : diagnostic, modules, quiz et checkpoints pour apprendre à construire un système de croissance IA.",
     },
     ui: {
       brandSmall: "Systèmes Marketing IA",
@@ -27,18 +27,18 @@ const bootcampCopy = {
       navWork: "Projets",
       navBootcamp: "Bootcamp",
       navContact: "Contact",
-      heroKicker: "Academy gratuite - apprendre avant de construire",
+      heroKicker: "Academy gratuite",
       heroTitle: "AI Growth Academy",
       heroText:
-        "Un parcours pratique pour comprendre comment connecter stratégie, contenu, SEO/GEO, ads, UGC, automation et mesure dans un système de croissance.",
+        "Un parcours court : cours, quiz, puis module suivant.",
       heroPrimary: "Faire le diagnostic gratuit",
       heroSecondary: "Télécharger le workbook",
       statModules: "modules pratiques",
       statQuiz: "questions de quiz",
       statChecks: "checkpoints actionnables",
       heroPathLabel: "Parcours conseillé",
-      heroPathTitle: "Diagnostique, apprends, puis passe au module suivant.",
-      heroPathText: "Chaque module te pousse naturellement du cours vers le quiz, puis vers l'étape suivante.",
+      heroPathTitle: "Cours. Quiz. Module suivant.",
+      heroPathText: "Un flow fluide pour avancer sans te perdre.",
       searchLabel: "Trouver un module",
       searchPlaceholder: "Rechercher...",
       progressLabel: "Progression",
@@ -51,14 +51,14 @@ const bootcampCopy = {
       tabQuiz: "Quiz",
       tabResources: "Ressources",
       seoEyebrow: "Programme SEO-ready",
-      seoTitle: "Un bootcamp gratuit pour apprendre le growth marketing avec l'IA.",
+      seoTitle: "Growth marketing avec l'IA, sans surcharge.",
       seoText:
-        "Ce programme aide les entrepreneurs, PME et startups en Tunisie, Afrique du Nord et MENA à structurer un système marketing plus visible, mesurable et orienté conversion.",
+        "Un parcours gratuit pour structurer visibilité, contenu, acquisition et mesure.",
       faqEyebrow: "Questions fréquentes",
       faqTitle: "Avant de commencer le bootcamp.",
-      finalTitle: "Tu veux construire ce système plus vite sur ton business ?",
+      finalTitle: "Prêt à le construire sur ton business ?",
       finalText:
-        "L'Academy reste gratuite. Si tu veux passer de l'apprentissage à l'exécution, le AI Growth Sprint transforme tes checkpoints en plan d'action et workflows réels.",
+        "L'Academy t'apprend la logique. Le Sprint installe le système.",
       finalCta: "Construire mon système de croissance",
       schemaLevel: "Débutant à intermédiaire",
       schemaPrerequisites: "Avoir un projet, une offre ou un site à améliorer.",
@@ -69,7 +69,7 @@ const bootcampCopy = {
       moduleComplete: "Validé",
       checkpointMini: "checks",
       quizMini: "quiz",
-      courseFlowHint: "Lis le module, coche les actions, puis valide avec le quiz.",
+      courseFlowHint: "Lis, coche, puis valide avec le quiz.",
       courseNext: "Passer au quiz",
       courseResources: "Voir les ressources",
       nextModule: "Module suivant",
@@ -78,9 +78,9 @@ const bootcampCopy = {
       stickyCta: "Continuer",
       stickyComplete: "Certificat prêt",
       diagnosticEyebrow: "AI Growth Score",
-      diagnosticTitle: "Diagnostique ton système marketing avant de commencer.",
+      diagnosticTitle: "Diagnostique ton système.",
       diagnosticText:
-        "Réponds à 8 questions rapides pour voir où ton moteur growth bloque et quel module suivre en priorité.",
+        "8 questions pour trouver le blocage et le module prioritaire.",
       diagnosticStep: "Question",
       diagnosticOf: "sur",
       diagnosticScore: "Score AI Growth",
@@ -88,13 +88,13 @@ const bootcampCopy = {
       diagnosticStartCourse: "Commencer le module conseillé",
       diagnosticContact: "Transformer ça en plan d'action",
       outcomesEyebrow: "Résultats attendus",
-      outcomesTitle: "Ce que tu construis pendant le bootcamp.",
-      outcomesText: "Pas de théorie décorative : chaque étape produit un actif que tu peux utiliser pour vendre, publier, mesurer ou automatiser.",
+      outcomesTitle: "Ce que tu construis.",
+      outcomesText: "Chaque module produit un actif utile.",
       assetsEyebrow: "Outils gratuits",
-      assetsTitle: "Workbook, certificat et ressources pour passer à l'action.",
-      assetsText: "Le bootcamp devient plus utile quand tu gardes une trace de tes décisions, de tes scores et de tes prochains tests.",
+      assetsTitle: "Workbook, certificat et ressources.",
+      assetsText: "Garde tes décisions, scores et prochains tests au même endroit.",
       workbookTitle: "AI Growth Workbook",
-      workbookText: "Un PDF simple pour noter ton ICP, ton offre, tes prompts, tes pages SEO/GEO, tes scripts UGC et ton dashboard.",
+      workbookText: "Un PDF pour noter ICP, offre, prompts, SEO/GEO, UGC et dashboard.",
       workbookDownload: "Télécharger le workbook PDF",
       certificateTitle: "Certificat de complétion",
       certificateLocked: "Valide les 6 modules, les checkpoints et les quiz pour débloquer ton certificat.",
@@ -379,7 +379,7 @@ const bootcampCopy = {
         {
           moduleId: "foundations",
           category: "Stratégie",
-          q: "Ton équipe connaît-elle le growth loop qui relie acquisition, conversion et revenus ?",
+          q: "Ton growth loop est-il clair ?",
           options: [
             ["Pas encore clairement", 0],
             ["Oui, mais il n'est pas suivi chaque semaine", 1],
@@ -389,7 +389,7 @@ const bootcampCopy = {
         {
           moduleId: "offer",
           category: "Offre",
-          q: "Ton message explique-t-il le résultat business avant de parler des outils ?",
+          q: "Ton message vend-il un résultat clair ?",
           options: [
             ["Il reste très général", 0],
             ["Il est clair pour un segment", 1],
@@ -399,7 +399,7 @@ const bootcampCopy = {
         {
           moduleId: "content",
           category: "Contenu",
-          q: "As-tu un système régulier pour produire, recycler et valider ton contenu ?",
+          q: "Ton contenu suit-il un vrai système ?",
           options: [
             ["Je publie quand j'ai le temps", 0],
             ["J'ai un calendrier mais peu de réutilisation", 1],
@@ -409,7 +409,7 @@ const bootcampCopy = {
         {
           moduleId: "seo",
           category: "SEO/GEO",
-          q: "Tes pages répondent-elles aux questions que tes clients posent sur Google et les moteurs IA ?",
+          q: "Tes pages répondent-elles aux vraies questions clients ?",
           options: [
             ["Pas vraiment", 0],
             ["Quelques pages répondent aux intentions principales", 1],
@@ -419,7 +419,7 @@ const bootcampCopy = {
         {
           moduleId: "paid-ugc",
           category: "Paid + UGC",
-          q: "Testes-tu des angles créatifs UGC avec une lecture claire des premiers signaux ?",
+          q: "Tes tests UGC donnent-ils un signal clair ?",
           options: [
             ["Non, les créas sont décidées au feeling", 0],
             ["Oui, mais les apprentissages restent dispersés", 1],
@@ -429,7 +429,7 @@ const bootcampCopy = {
         {
           moduleId: "automation",
           category: "Automation",
-          q: "Les leads entrants sont-ils suivis automatiquement sans perdre la personnalisation ?",
+          q: "Tes leads sont-ils suivis sans effort manuel ?",
           options: [
             ["Non, tout est manuel", 0],
             ["Une partie est automatisée", 1],
@@ -439,7 +439,7 @@ const bootcampCopy = {
         {
           moduleId: "automation",
           category: "Analytics",
-          q: "Sais-tu chaque semaine quel canal apporte le meilleur signal business ?",
+          q: "Vois-tu le meilleur canal chaque semaine ?",
           options: [
             ["Je regarde surtout les impressions ou les likes", 0],
             ["Je suis quelques métriques mais sans routine fixe", 1],
@@ -449,7 +449,7 @@ const bootcampCopy = {
         {
           moduleId: "foundations",
           category: "Équipe",
-          q: "Ton équipe sait-elle utiliser l'IA avec des prompts et règles qualité partagés ?",
+          q: "Ton équipe a-t-elle des prompts partagés ?",
           options: [
             ["Chacun teste de son côté", 0],
             ["Nous avons quelques prompts utiles", 1],
@@ -494,7 +494,7 @@ const bootcampCopy = {
     meta: {
       title: "Free AI Growth Academy | Ahmed Zakraoui",
       description:
-        "Free AI Growth Academy by Ahmed Zakraoui with diagnostic, practical modules, quizzes, checkpoints, prompts, and workbook to learn how to build an AI growth system.",
+        "Free AI Growth Academy by Ahmed Zakraoui with diagnostic, modules, quizzes, and checkpoints to learn how to build an AI growth system.",
     },
     ui: {
       brandSmall: "AI Growth Systems",
@@ -503,18 +503,18 @@ const bootcampCopy = {
       navWork: "Projects",
       navBootcamp: "Academy",
       navContact: "Contact",
-      heroKicker: "Free Academy - learn before you build",
+      heroKicker: "Free Academy",
       heroTitle: "AI Growth Academy",
       heroText:
-        "A practical path to understand how strategy, content, SEO/GEO, ads, UGC, automation, and measurement connect inside one growth system.",
+        "A short path: course, quiz, then next module.",
       heroPrimary: "Take the free diagnostic",
       heroSecondary: "Download the workbook",
       statModules: "practical modules",
       statQuiz: "quiz questions",
       statChecks: "action checkpoints",
       heroPathLabel: "Recommended path",
-      heroPathTitle: "Diagnose, learn, then move to the next module.",
-      heroPathText: "Each module naturally moves you from lesson to quiz, then to the next action.",
+      heroPathTitle: "Course. Quiz. Next module.",
+      heroPathText: "A smooth flow so the Academy feels easy to finish.",
       searchLabel: "Find a module",
       searchPlaceholder: "Search...",
       progressLabel: "Progress",
@@ -527,13 +527,13 @@ const bootcampCopy = {
       tabQuiz: "Quiz",
       tabResources: "Resources",
       seoEyebrow: "SEO-ready program",
-      seoTitle: "A free bootcamp to learn growth marketing with AI.",
+      seoTitle: "Growth marketing with AI, without overwhelm.",
       seoText:
-        "This program helps entrepreneurs, SMEs, and startups in Tunisia, North Africa, and MENA build a more visible, measurable, conversion-focused marketing system.",
+        "A free path to structure visibility, content, acquisition, and measurement.",
       faqEyebrow: "FAQ",
       faqTitle: "Before you start the bootcamp.",
-      finalTitle: "Want to build this system faster for your business?",
-      finalText: "The Academy stays free. If you want to move from learning to execution, the AI Growth Sprint turns your checkpoints into an action plan and real workflows.",
+      finalTitle: "Ready to build it for your business?",
+      finalText: "The Academy teaches the logic. The Sprint installs the system.",
       finalCta: "Build my growth system",
       schemaLevel: "Beginner to intermediate",
       schemaPrerequisites: "Have a project, offer, or website to improve.",
@@ -544,7 +544,7 @@ const bootcampCopy = {
       moduleComplete: "Validated",
       checkpointMini: "checks",
       quizMini: "quiz",
-      courseFlowHint: "Read the module, check the actions, then validate it with the quiz.",
+      courseFlowHint: "Read, check, then validate with the quiz.",
       courseNext: "Go to quiz",
       courseResources: "View resources",
       nextModule: "Next module",
@@ -553,8 +553,8 @@ const bootcampCopy = {
       stickyCta: "Continue",
       stickyComplete: "Certificate ready",
       diagnosticEyebrow: "AI Growth Score",
-      diagnosticTitle: "Diagnose your marketing system before you start.",
-      diagnosticText: "Answer 8 quick questions to find where your growth engine is blocked and which module to follow first.",
+      diagnosticTitle: "Diagnose your system.",
+      diagnosticText: "8 questions to find the blockage and the right module.",
       diagnosticStep: "Question",
       diagnosticOf: "of",
       diagnosticScore: "AI Growth Score",
@@ -562,13 +562,13 @@ const bootcampCopy = {
       diagnosticStartCourse: "Start the recommended module",
       diagnosticContact: "Turn this into an action plan",
       outcomesEyebrow: "Expected outcomes",
-      outcomesTitle: "What you build during the bootcamp.",
-      outcomesText: "No decorative theory: every step produces an asset you can use to sell, publish, measure, or automate.",
+      outcomesTitle: "What you build.",
+      outcomesText: "Each module gives you one useful asset.",
       assetsEyebrow: "Free tools",
-      assetsTitle: "Workbook, certificate, and resources to move into action.",
-      assetsText: "The bootcamp becomes more useful when you keep track of your decisions, scores, and next tests.",
+      assetsTitle: "Workbook, certificate, resources.",
+      assetsText: "Keep decisions, scores, and next tests in one place.",
       workbookTitle: "AI Growth Workbook",
-      workbookText: "A simple PDF to map your ICP, offer, prompts, SEO/GEO pages, UGC scripts, and dashboard.",
+      workbookText: "A PDF for ICP, offer, prompts, SEO/GEO, UGC, and dashboard.",
       workbookDownload: "Download the PDF workbook",
       certificateTitle: "Completion certificate",
       certificateLocked: "Validate all 6 modules, checkpoints, and quizzes to unlock your certificate.",
@@ -625,7 +625,7 @@ const bootcampCopy = {
     meta: {
       title: "أكاديمية AI Growth مجانية | أحمد زكراوي",
       description:
-        "أكاديمية AI Growth مجانية من أحمد زكراوي مع تشخيص، وحدات عملية، اختبارات، نقاط تحقق، Prompts وWorkbook لتعلم بناء نظام نمو بالذكاء الاصطناعي.",
+        "أكاديمية AI Growth مجانية من أحمد زكراوي مع تشخيص، وحدات، اختبارات ونقاط تحقق لتعلم بناء نظام نمو بالذكاء الاصطناعي.",
     },
     ui: {
       brandSmall: "أنظمة نمو بالذكاء الاصطناعي",
@@ -634,18 +634,18 @@ const bootcampCopy = {
       navWork: "المشاريع",
       navBootcamp: "الأكاديمية",
       navContact: "التواصل",
-      heroKicker: "أكاديمية مجانية - تعلم قبل أن تبني",
+      heroKicker: "أكاديمية مجانية",
       heroTitle: "AI Growth Academy",
       heroText:
-        "مسار عملي لفهم ربط الاستراتيجية، المحتوى، SEO/GEO، الإعلانات، UGC، الأتمتة والقياس داخل نظام نمو واحد.",
+        "مسار قصير: درس، اختبار، ثم الوحدة التالية.",
       heroPrimary: "ابدأ التشخيص المجاني",
       heroSecondary: "حمّل الWorkbook",
       statModules: "وحدات عملية",
       statQuiz: "أسئلة اختبار",
       statChecks: "نقاط تحقق",
       heroPathLabel: "المسار المقترح",
-      heroPathTitle: "شخّص، تعلم، ثم انتقل إلى الوحدة التالية.",
-      heroPathText: "كل وحدة تنقلك من الدرس إلى الاختبار ثم إلى الخطوة التالية.",
+      heroPathTitle: "درس. اختبار. وحدة تالية.",
+      heroPathText: "Flow واضح لتتقدم بدون تشتيت.",
       searchLabel: "ابحث عن وحدة",
       searchPlaceholder: "بحث...",
       progressLabel: "التقدم",
@@ -658,13 +658,13 @@ const bootcampCopy = {
       tabQuiz: "الاختبار",
       tabResources: "الموارد",
       seoEyebrow: "برنامج جاهز للسيو",
-      seoTitle: "بوتكامب مجاني لتعلم Growth Marketing بالذكاء الاصطناعي.",
+      seoTitle: "Growth Marketing بالذكاء الاصطناعي بدون ازدحام.",
       seoText:
-        "يساعد هذا البرنامج رواد الأعمال، الشركات الصغيرة والمتوسطة والستارتابس في تونس، شمال أفريقيا ومنطقة MENA على بناء نظام تسويق أوضح، قابل للقياس وموجه للتحويل.",
+        "مسار مجاني لتنظيم الظهور، المحتوى، الاكتساب والقياس.",
       faqEyebrow: "أسئلة متكررة",
       faqTitle: "قبل أن تبدأ البوتكامب.",
-      finalTitle: "تريد بناء هذا النظام أسرع لمشروعك؟",
-      finalText: "الأكاديمية تبقى مجانية. وإذا أردت الانتقال من التعلم إلى التنفيذ، يحول AI Growth Sprint نقاطك إلى خطة عمل وWorkflows حقيقية.",
+      finalTitle: "جاهز لبناءه على مشروعك؟",
+      finalText: "الأكاديمية تعطيك المنطق. الـSprint يثبت النظام.",
       finalCta: "ابن نظام النمو الخاص بي",
       schemaLevel: "مبتدئ إلى متوسط",
       schemaPrerequisites: "امتلاك مشروع، عرض أو موقع تريد تحسينه.",
@@ -675,7 +675,7 @@ const bootcampCopy = {
       moduleComplete: "تم التحقق",
       checkpointMini: "نقاط",
       quizMini: "اختبار",
-      courseFlowHint: "اقرأ الوحدة، فعّل نقاط العمل، ثم ثبّت الفهم بالاختبار.",
+      courseFlowHint: "اقرأ، فعّل النقاط، ثم اختبر.",
       courseNext: "انتقل إلى الاختبار",
       courseResources: "شاهد الموارد",
       nextModule: "الوحدة التالية",
@@ -684,8 +684,8 @@ const bootcampCopy = {
       stickyCta: "واصل",
       stickyComplete: "الشهادة جاهزة",
       diagnosticEyebrow: "AI Growth Score",
-      diagnosticTitle: "شخّص نظام التسويق قبل أن تبدأ.",
-      diagnosticText: "أجب عن 8 أسئلة سريعة لتعرف أين يتعطل محرك النمو وأي وحدة تبدأ بها.",
+      diagnosticTitle: "شخّص نظامك.",
+      diagnosticText: "8 أسئلة لتحديد العائق والوحدة المناسبة.",
       diagnosticStep: "السؤال",
       diagnosticOf: "من",
       diagnosticScore: "AI Growth Score",
@@ -693,13 +693,13 @@ const bootcampCopy = {
       diagnosticStartCourse: "ابدأ الوحدة المقترحة",
       diagnosticContact: "حوّل النتيجة إلى خطة عمل",
       outcomesEyebrow: "النتائج المتوقعة",
-      outcomesTitle: "ما الذي ستبنيه أثناء البوتكامب.",
-      outcomesText: "ليست نظرية للعرض فقط: كل خطوة تنتج أصلا عمليا تستعمله للبيع، النشر، القياس أو الأتمتة.",
+      outcomesTitle: "ما الذي ستبنيه.",
+      outcomesText: "كل وحدة تعطيك أصلا عمليا.",
       assetsEyebrow: "أدوات مجانية",
-      assetsTitle: "Workbook، شهادة وموارد للانتقال إلى التنفيذ.",
-      assetsText: "يصبح البوتكامب أكثر فائدة عندما تحتفظ بقراراتك، نتائجك والاختبارات القادمة.",
+      assetsTitle: "Workbook، شهادة وموارد.",
+      assetsText: "احتفظ بالقرارات، النتائج والاختبارات في مكان واحد.",
       workbookTitle: "AI Growth Workbook",
-      workbookText: "PDF بسيط لتدوين ICP، العرض، الPrompts، صفحات SEO/GEO، سكريبتات UGC والDashboard.",
+      workbookText: "PDF لتدوين ICP، العرض، Prompts، SEO/GEO، UGC وDashboard.",
       workbookDownload: "تحميل الWorkbook PDF",
       certificateTitle: "شهادة الإكمال",
       certificateLocked: "أكمل الوحدات الست، نقاط التحقق والاختبارات لفتح الشهادة.",
@@ -762,7 +762,7 @@ bootcampCopy.en.modules = bootcampCopy.fr.modules.map((module) => ({
       content: "AI content engine",
       seo: "SEO/GEO and AI visibility",
       "paid-ugc": "Paid social + UGC",
-      automation: "Automation, CRM and analytics",
+      automation: "Automation + Analytics",
     }[module.id] || module.title,
   short:
     {
@@ -1210,61 +1210,61 @@ bootcampCopy.en.diagnostic = {
     {
       moduleId: "foundations",
       category: "Strategy",
-      q: "Does your team know the growth loop connecting acquisition, conversion, and revenue?",
+      q: "Is your growth loop clear?",
       options: [["Not clearly yet", 0], ["Yes, but it is not reviewed weekly", 1], ["Yes, with one core metric and a routine", 2]],
     },
     {
       moduleId: "offer",
       category: "Offer",
-      q: "Does your message explain the business outcome before listing tools?",
+      q: "Does your message sell a clear outcome?",
       options: [["It is still generic", 0], ["It is clear for one segment", 1], ["It targets one ICP with proof and objections", 2]],
     },
     {
       moduleId: "content",
       category: "Content",
-      q: "Do you have a repeatable system to produce, repurpose, and validate content?",
+      q: "Does your content follow a system?",
       options: [["I publish when I have time", 0], ["I have a calendar but little repurposing", 1], ["I have a full AI workflow with human validation", 2]],
     },
     {
       moduleId: "seo",
       category: "SEO/GEO",
-      q: "Do your pages answer the questions customers ask on Google and AI engines?",
+      q: "Do your pages answer real customer questions?",
       options: [["Not really", 0], ["Some pages answer core intent", 1], ["Yes, with FAQ, proof, entities, and internal links", 2]],
     },
     {
       moduleId: "paid-ugc",
       category: "Paid + UGC",
-      q: "Do you test UGC creative angles with a clear read of early signals?",
+      q: "Do your UGC tests produce a clear signal?",
       options: [["No, creatives are mostly intuition-led", 0], ["Yes, but learnings are scattered", 1], ["Yes, every test has hook, objection, KPI, and decision", 2]],
     },
     {
       moduleId: "automation",
       category: "Automation",
-      q: "Are inbound leads followed up automatically without losing personalization?",
+      q: "Are leads followed up without manual chaos?",
       options: [["No, everything is manual", 0], ["Part of it is automated", 1], ["Yes, form, CRM, follow-up, and dashboard are connected", 2]],
     },
     {
       moduleId: "automation",
       category: "Analytics",
-      q: "Do you know every week which channel brings the strongest business signal?",
+      q: "Can you see the best channel each week?",
       options: [["I mostly watch impressions or likes", 0], ["I track some metrics without a fixed routine", 1], ["Yes, traffic, leads, cost, conversion, and revenue are visible", 2]],
     },
     {
       moduleId: "foundations",
       category: "Team",
-      q: "Can your team use AI with shared prompts and quality rules?",
+      q: "Does your team use shared prompts?",
       options: [["Everyone experiments separately", 0], ["We have a few useful prompts", 1], ["We have playbooks, prompts, and validation criteria", 2]],
     },
   ],
 };
 
 bootcampCopy.en.outcomes = [
-  ["01", "Clear growth loop", "A simple map connecting audience, offer, acquisition, conversion, and revenue."],
-  ["02", "Message that sells", "A result-led promise with ICP, proof, and objection answers."],
-  ["03", "AI content engine", "A workflow to produce posts, Reels, UGC scripts, FAQs, and SEO content without losing quality."],
-  ["04", "SEO/GEO architecture", "A list of pages, questions, entities, and internal links to show up better in Google and AI engines."],
-  ["05", "Paid + UGC tests", "Hooks, creative angles, and KPIs to learn faster without wasting budget."],
-  ["06", "Minimum dashboard", "A weekly routine to track the signal: traffic, leads, conversion, cost, and revenue."],
+  ["01", "Growth loop", "Audience, offer, acquisition, conversion, revenue."],
+  ["02", "Clear message", "ICP, promise, proof, objections."],
+  ["03", "Content engine", "Posts, Reels, UGC scripts, FAQs, SEO."],
+  ["04", "SEO/GEO map", "Pages, questions, entities, internal links."],
+  ["05", "UGC tests", "Hooks, angles, KPIs, decisions."],
+  ["06", "Dashboard", "Traffic, leads, cost, conversion, revenue."],
 ];
 
 bootcampCopy.ar.resources = [
@@ -1316,61 +1316,61 @@ bootcampCopy.ar.diagnostic = {
     {
       moduleId: "foundations",
       category: "الاستراتيجية",
-      q: "هل يعرف فريقك حلقة النمو التي تربط الاكتساب، التحويل والإيرادات؟",
+      q: "هل حلقة النمو واضحة؟",
       options: [["ليس بوضوح بعد", 0], ["نعم، لكنها لا تراجع أسبوعيا", 1], ["نعم، مع مؤشر رئيسي وروتين واضح", 2]],
     },
     {
       moduleId: "offer",
       category: "العرض",
-      q: "هل تشرح رسالتك النتيجة التجارية قبل الحديث عن الأدوات؟",
+      q: "هل رسالتك تبيع نتيجة واضحة؟",
       options: [["ما زالت عامة", 0], ["واضحة لشريحة واحدة", 1], ["تستهدف ICP واضحا مع إثبات واعتراضات", 2]],
     },
     {
       moduleId: "content",
       category: "المحتوى",
-      q: "هل لديك نظام ثابت لإنتاج المحتوى، إعادة استخدامه والتحقق من جودته؟",
+      q: "هل المحتوى يعمل كنظام؟",
       options: [["أنشر عندما أجد الوقت", 0], ["لدي رزنامة لكن إعادة الاستخدام قليلة", 1], ["لدي Workflow كامل بالذكاء الاصطناعي ومراجعة بشرية", 2]],
     },
     {
       moduleId: "seo",
       category: "SEO/GEO",
-      q: "هل تجيب صفحاتك عن أسئلة العملاء في Google ومحركات الذكاء الاصطناعي؟",
+      q: "هل صفحاتك تجيب عن أسئلة العملاء؟",
       options: [["ليس فعلا", 0], ["بعض الصفحات تجيب عن النوايا الرئيسية", 1], ["نعم، مع FAQ، إثباتات، كيانات وروابط داخلية", 2]],
     },
     {
       moduleId: "paid-ugc",
       category: "Paid + UGC",
-      q: "هل تختبر زوايا UGC الإبداعية مع قراءة واضحة للإشارات الأولى؟",
+      q: "هل اختبارات UGC تعطي إشارة واضحة؟",
       options: [["لا، الاختيارات غالبا بالحدس", 0], ["نعم، لكن التعلم متفرق", 1], ["نعم، كل اختبار لديه Hook، اعتراض، KPI وقرار", 2]],
     },
     {
       moduleId: "automation",
       category: "الأتمتة",
-      q: "هل تتم متابعة الleads آليا بدون فقدان التخصيص؟",
+      q: "هل تتم متابعة الleads بدون فوضى يدوية؟",
       options: [["لا، كل شيء يدوي", 0], ["جزء منها مؤتمت", 1], ["نعم، Form وCRM ومتابعة وDashboard متصلون", 2]],
     },
     {
       moduleId: "automation",
       category: "Analytics",
-      q: "هل تعرف كل أسبوع أي قناة تعطي أفضل إشارة تجارية؟",
+      q: "هل ترى أفضل قناة كل أسبوع؟",
       options: [["أراقب غالبا impressions أو likes", 0], ["أتابع بعض المؤشرات بدون روتين ثابت", 1], ["نعم، الترافيك، الleads، التكلفة، التحويل والإيراد واضحة", 2]],
     },
     {
       moduleId: "foundations",
       category: "الفريق",
-      q: "هل يستطيع فريقك استعمال الذكاء الاصطناعي بPrompts وقواعد جودة مشتركة؟",
+      q: "هل لدى الفريق Prompts مشتركة؟",
       options: [["كل شخص يجرب وحده", 0], ["لدينا بعض الPrompts المفيدة", 1], ["لدينا Playbooks، Prompts ومعايير تحقق", 2]],
     },
   ],
 };
 
 bootcampCopy.ar.outcomes = [
-  ["01", "حلقة نمو واضحة", "خريطة بسيطة تربط الجمهور، العرض، الاكتساب، التحويل والإيرادات."],
-  ["02", "رسالة تبيع", "وعد مبني على النتيجة مع ICP، إثباتات وردود على الاعتراضات."],
-  ["03", "محرك محتوى بالذكاء الاصطناعي", "Workflow لإنتاج Posts، Reels، UGC scripts، FAQ ومحتوى SEO بدون فقدان الجودة."],
-  ["04", "هندسة SEO/GEO", "قائمة صفحات، أسئلة، كيانات وروابط داخلية للظهور أفضل في Google ومحركات AI."],
-  ["05", "اختبارات Paid + UGC", "Hooks، زوايا إبداعية وKPIs للتعلم أسرع بدون إهدار الميزانية."],
-  ["06", "Dashboard أدنى", "روتين أسبوعي لمتابعة الإشارة: ترافيك، leads، تحويل، تكلفة وإيراد."],
+  ["01", "حلقة نمو", "جمهور، عرض، اكتساب، تحويل، إيراد."],
+  ["02", "رسالة واضحة", "ICP، وعد، إثبات، اعتراضات."],
+  ["03", "محرك محتوى", "Posts، Reels، UGC، FAQ، SEO."],
+  ["04", "خريطة SEO/GEO", "صفحات، أسئلة، كيانات، روابط."],
+  ["05", "اختبارات UGC", "Hooks، زوايا، KPIs، قرارات."],
+  ["06", "Dashboard", "ترافيك، leads، تكلفة، تحويل، إيراد."],
 ];
 
 const menuButton = document.querySelector("#menuButton");
@@ -2414,3 +2414,26 @@ const onScroll = () => {
 window.addEventListener("scroll", onScroll, { passive: true });
 renderAll();
 onScroll();
+
+const alignHashTarget = () => {
+  if (!window.location.hash) {
+    return;
+  }
+
+  const target = document.getElementById(decodeURIComponent(window.location.hash.slice(1)));
+  if (!target) {
+    return;
+  }
+
+  const headerOffset = (header?.offsetHeight || 78) + 20;
+  const targetTop = target.getBoundingClientRect().top + window.scrollY - headerOffset;
+  window.scrollTo({ top: Math.max(0, targetTop), behavior: "auto" });
+};
+
+window.addEventListener("load", () => {
+  window.setTimeout(alignHashTarget, 80);
+});
+
+window.addEventListener("hashchange", () => {
+  window.setTimeout(alignHashTarget, 40);
+});
