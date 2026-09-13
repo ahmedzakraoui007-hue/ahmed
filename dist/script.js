@@ -48,7 +48,7 @@ const translations = {
     meta: {
       homeTitle: "Ahmed Zakraoui | AI Growth Systems for MENA Teams",
       homeDescription:
-        "Ahmed Zakraoui builds AI growth systems for SMEs, startups, and MENA teams: strategy, content, SEO/GEO, paid media, UGC, automation, WordPress, and measurement.",
+        "Ahmed Zakraoui builds AI growth systems for MENA teams: strategy, content, acquisition, automation, WordPress, and measurement.",
       thanksTitle: "Message sent | Ahmed Zakraoui",
       thanksDescription:
         "Thank you for contacting Ahmed Zakraoui about AI marketing strategy, automation, content systems, UGC video production, team training, or WordPress.",
@@ -81,7 +81,7 @@ const translations = {
       proof: "Proof",
       work: "Projects",
       training: "Training",
-      bootcamp: "Free Academy",
+      bootcamp: "Learn",
       cta: "Build",
     },
     hero: {
@@ -91,14 +91,14 @@ const translations = {
       statement: {
         before: "I connect ",
         strong: "strategy, content, traffic, WordPress, and automation",
-        after: " into one measurable AI growth system.",
+        after: " into one measurable growth system.",
       },
       signals: ["Offer", "Content", "Traffic", "Measurement"],
       primary: "Build the system",
       secondary: "Learn for free",
-      availability: "Available for selected MENA projects",
+      availability: "Selected MENA projects",
       cards: [
-        ["Build", "Systems for teams"],
+        ["Build", "Growth systems"],
         ["Learn", "Free Academy"],
       ],
       proof: ["Learn", "Build", "Measure"],
@@ -116,7 +116,7 @@ const translations = {
     ],
     hook: {
       eyebrow: "Signature system",
-      title: "One system. Five moves.",
+      title: "The growth system.",
       text: "Diagnose, align, build, automate, measure.",
       label: "Growth Operating System",
       summary: "5 movements",
@@ -131,7 +131,7 @@ const translations = {
     },
     servicesHead: {
       eyebrow: "What I do",
-      title: "What I build.",
+      title: "Systems I build.",
     },
     serviceTabs: {
       strategy: "AI Strategy",
@@ -230,21 +230,21 @@ const translations = {
     },
     work: {
       eyebrow: "Real projects",
-      title: "Real work. Public proof.",
-      text: "Scope is shown. Private numbers stay private.",
+      title: "Projects you can inspect.",
+      text: "Real scope. No invented numbers.",
       impact: [
-        ["Mapped", "Channels and actions"],
+        ["Before", "Fragmented channels"],
         ["Built", "Web, SEO/GEO, paid, social"],
-        ["Real sites", "Dropy + ParaHealth"],
-        ["Clean proof", "No invented figures"],
+        ["Proof", "Live public projects"],
+        ["Trust", "Private metrics protected"],
       ],
-      impactNote: "Only public, approval-safe information appears here.",
+      impactNote: "Public proof only. Private numbers stay private.",
       preview: "Project preview",
       link: "View project",
       cards: [
         {
-          title: "Dropy.store growth stack.",
-          text: "Website, SEO/GEO, UGC flow, paid tests, and social ops.",
+          title: "Dropy growth stack.",
+          text: "Website, SEO/GEO, UGC, paid and social connected.",
           metrics: [
             ["Mapped", "sellers + ads"],
             ["Built", "website"],
@@ -254,8 +254,8 @@ const translations = {
           tags: ["Website creation", "SEO/GEO", "Media buying", "Social media"],
         },
         {
-          title: "ParaHealth visibility system.",
-          text: "SEO/GEO, paid media, and social content around a real e-commerce experience.",
+          title: "ParaHealth visibility stack.",
+          text: "SEO/GEO, paid media and social content connected around e-commerce.",
           metrics: [
             ["Mapped", "search + social"],
             ["Built", "visibility"],
@@ -269,8 +269,8 @@ const translations = {
     training: {
       eyebrow: "Team training",
       title: "Train the team that executes.",
-      text: "Prompts, workflows, SEO/GEO, automation, and dashboards.",
-      format: "On-site or remote - 2 to 10 people",
+      text: "Prompt libraries, workflows and dashboards.",
+      format: "On-site or remote - teams of 2 to 10",
       cta: "Train my team",
       stack: [
         "Prompts",
@@ -283,8 +283,8 @@ const translations = {
     },
     homeBootcamp: {
       eyebrow: "Free Academy",
-      title: "Learn free. Build faster.",
-      text: "Diagnostic, modules, quizzes, and checkpoints that feed the Sprint.",
+      title: "Learn free. Build next.",
+      text: "A free entry point before the paid Sprint.",
       pointsAria: "Bootcamp content",
       points: ["Diagnostic", "6 modules", "Sprint checkpoints"],
       previewRows: [
@@ -298,7 +298,7 @@ const translations = {
     contact: {
       eyebrow: "Work with Ahmed",
       title: "Let’s connect the pieces.",
-      text: "Send the bottleneck. I’ll suggest the next build.",
+      text: "Tell me the bottleneck. I’ll map the next build.",
       labels: ["Name", "Email", "Company", "Service", "Message"],
       servicePlaceholder: "Choose one",
       serviceOptions: [
@@ -320,7 +320,7 @@ const translations = {
       nav: ["System", "UGC Video", "Projects", "AI Growth Sprint", "Team Training", "Free Academy", "Contact"],
       whatsapp: "Book a call",
       linkedin: "LinkedIn profile",
-      bottom: ["Tunis, Tunisia", "AI Strategy - SEO/GEO - Media Buying - UGC Video - WordPress"],
+      bottom: ["Tunis, Tunisia", "AI Strategy - SEO/GEO - Ads - UGC - WordPress"],
       floating: "WhatsApp",
     },
     thanks: {
@@ -337,7 +337,7 @@ const translations = {
     meta: {
       homeTitle: "Ahmed Zakraoui | Systèmes de croissance IA",
       homeDescription:
-        "Ahmed Zakraoui construit des systèmes de croissance IA pour PME, startups et équipes MENA : stratégie, contenu, SEO/GEO, paid media, UGC, automation, WordPress et mesure.",
+        "Ahmed Zakraoui construit des systèmes de croissance IA pour équipes MENA : stratégie, contenu, acquisition, automation, WordPress et mesure.",
       thanksTitle: "Message envoyé | Ahmed Zakraoui",
       thanksDescription:
         "Merci d'avoir contacté Ahmed Zakraoui pour une stratégie marketing IA, l'automatisation, les systèmes de contenu, la vidéo UGC, la formation d'équipe ou WordPress.",
@@ -370,7 +370,7 @@ const translations = {
       proof: "Preuves",
       work: "Projets",
       training: "Formation",
-      bootcamp: "Academy gratuite",
+      bootcamp: "Apprendre",
       cta: "Construire",
     },
     hero: {
@@ -380,14 +380,14 @@ const translations = {
       statement: {
         before: "Je connecte ",
         strong: "stratégie, contenu, acquisition, WordPress et automation",
-        after: " dans un système de croissance IA mesurable.",
+        after: " dans un système de croissance mesurable.",
       },
       signals: ["Offre", "Contenu", "Trafic", "Mesure"],
       primary: "Construire le système",
       secondary: "Apprendre gratuit",
-      availability: "Disponible pour projets MENA sélectionnés",
+      availability: "Projets MENA sélectionnés",
       cards: [
-        ["Build", "Systèmes pour équipes"],
+        ["Build", "Systèmes growth"],
         ["Learn", "Academy gratuite"],
       ],
       proof: ["Apprendre", "Construire", "Mesurer"],
@@ -405,7 +405,7 @@ const translations = {
     ],
     hook: {
       eyebrow: "Système signature",
-      title: "Un système. Cinq mouvements.",
+      title: "Le système de croissance.",
       text: "Diagnostiquer, aligner, construire, automatiser, mesurer.",
       label: "Growth Operating System",
       summary: "5 mouvements",
@@ -420,7 +420,7 @@ const translations = {
     },
     servicesHead: {
       eyebrow: "Ce que je fais",
-      title: "Ce que je construis.",
+      title: "Systèmes construits.",
     },
     serviceTabs: {
       strategy: "Stratégie IA",
@@ -519,21 +519,21 @@ const translations = {
     },
     work: {
       eyebrow: "Projets réels",
-      title: "Travail réel. Preuve publique.",
-      text: "Le périmètre est visible. Les chiffres privés restent privés.",
+      title: "Projets inspectables.",
+      text: "Périmètre réel. Aucun chiffre inventé.",
       impact: [
-        ["Cartographié", "Canaux et actions"],
+        ["Avant", "Canaux fragmentés"],
         ["Construit", "Web, SEO/GEO, paid, social"],
-        ["Sites réels", "Dropy + ParaHealth"],
-        ["Preuve propre", "Aucun chiffre inventé"],
+        ["Preuve", "Projets publics live"],
+        ["Confiance", "Métriques privées protégées"],
       ],
-      impactNote: "Seulement des informations publiques ou validables.",
+      impactNote: "Preuve publique uniquement. Les chiffres privés restent privés.",
       preview: "Aperçu projet",
       link: "Voir le projet",
       cards: [
         {
-          title: "Stack growth Dropy.store.",
-          text: "Site, SEO/GEO, flux UGC, tests paid et social ops.",
+          title: "Stack growth Dropy.",
+          text: "Site, SEO/GEO, UGC, paid et social connectés.",
           metrics: [
             ["Map", "vendeurs + ads"],
             ["Build", "site web"],
@@ -543,8 +543,8 @@ const translations = {
           tags: ["Création site web", "SEO/GEO", "Media buying", "Social media"],
         },
         {
-          title: "Système visibilité ParaHealth.",
-          text: "SEO/GEO, paid media et contenu social sur un vrai e-commerce.",
+          title: "Stack visibilité ParaHealth.",
+          text: "SEO/GEO, paid media et contenu social connectés autour de l'e-commerce.",
           metrics: [
             ["Map", "search + social"],
             ["Build", "visibilité"],
@@ -558,8 +558,8 @@ const translations = {
     training: {
       eyebrow: "Formation d'équipe",
       title: "Former l'équipe qui exécute.",
-      text: "Prompts, workflows, SEO/GEO, automation et dashboards.",
-      format: "Présentiel ou remote - 2 à 10 personnes",
+      text: "Bibliothèques de prompts, workflows et dashboards.",
+      format: "Présentiel ou remote - équipes de 2 à 10",
       cta: "Former mon équipe",
       stack: [
         "Prompts",
@@ -572,8 +572,8 @@ const translations = {
     },
     homeBootcamp: {
       eyebrow: "Academy gratuite",
-      title: "Apprendre gratuit. Construire plus vite.",
-      text: "Diagnostic, modules, quiz et checkpoints prêts pour le Sprint.",
+      title: "Apprendre gratuit. Construire ensuite.",
+      text: "La porte d'entrée gratuite avant le Sprint payant.",
       pointsAria: "Contenu du bootcamp",
       points: ["Diagnostic", "6 modules", "Checkpoints Sprint"],
       previewRows: [
@@ -587,7 +587,7 @@ const translations = {
     contact: {
       eyebrow: "Travailler avec Ahmed",
       title: "Connectons les pièces.",
-      text: "Envoyez le blocage. Je propose le prochain build.",
+      text: "Envoyez le blocage. Je cartographie le prochain build.",
       labels: ["Nom", "Email", "Entreprise", "Service", "Message"],
       servicePlaceholder: "Choisir un service",
       serviceOptions: [
@@ -609,7 +609,7 @@ const translations = {
       nav: ["Système", "Vidéo UGC", "Projets", "AI Growth Sprint", "Formation", "Academy gratuite", "Contact"],
       whatsapp: "Prendre RDV",
       linkedin: "Profil LinkedIn",
-      bottom: ["Tunis, Tunisie", "Stratégie IA - SEO/GEO - Media Buying - Vidéo UGC - WordPress"],
+      bottom: ["Tunis, Tunisie", "Stratégie IA - SEO/GEO - Ads - UGC - WordPress"],
       floating: "WhatsApp",
     },
     thanks: {
@@ -626,7 +626,7 @@ const translations = {
     meta: {
       homeTitle: "أحمد زكراوي | أنظمة نمو بالذكاء الاصطناعي",
       homeDescription:
-        "أحمد زكراوي يبني أنظمة نمو بالذكاء الاصطناعي للشركات في تونس ومنطقة MENA: استراتيجية، محتوى، SEO/GEO، إعلانات، UGC، أتمتة وWordPress.",
+        "أحمد زكراوي يبني أنظمة نمو بالذكاء الاصطناعي لفرق MENA: استراتيجية، محتوى، اكتساب، أتمتة، WordPress وقياس.",
       thanksTitle: "تم إرسال الرسالة | أحمد زكراوي",
       thanksDescription:
         "شكرا لتواصلك مع أحمد زكراوي حول التسويق الرقمي، الذكاء الاصطناعي، SEO/GEO، الإعلانات الممولة، فيديو UGC، تدريب الفرق أو تطوير WordPress.",
@@ -659,7 +659,7 @@ const translations = {
       proof: "الأعمال",
       work: "المشاريع",
       training: "التدريب",
-      bootcamp: "الأكاديمية المجانية",
+      bootcamp: "تعلّم",
       cta: "ابن النظام",
     },
     hero: {
@@ -674,9 +674,9 @@ const translations = {
       signals: ["العرض", "المحتوى", "الزيارات", "القياس"],
       primary: "ابن النظام",
       secondary: "تعلم مجانا",
-      availability: "متاح لمشاريع MENA مختارة",
+      availability: "مشاريع MENA مختارة",
       cards: [
-        ["Build", "أنظمة تعمل مع الفريق"],
+        ["Build", "أنظمة نمو"],
         ["Learn", "أكاديمية مجانية"],
       ],
       proof: ["تعلم", "ابن", "قس"],
@@ -694,7 +694,7 @@ const translations = {
     ],
     hook: {
       eyebrow: "النظام الخاص",
-      title: "نظام واحد. خمس خطوات.",
+      title: "نظام النمو.",
       text: "تشخيص، توحيد، بناء، أتمتة، قياس.",
       label: "Growth Operating System",
       summary: "5 حركات",
@@ -709,7 +709,7 @@ const translations = {
     },
     servicesHead: {
       eyebrow: "ماذا أقدم",
-      title: "ماذا أبني.",
+      title: "أنظمة أبنيها.",
     },
     serviceTabs: {
       strategy: "استراتيجية الذكاء الاصطناعي",
@@ -808,21 +808,21 @@ const translations = {
     },
     work: {
       eyebrow: "مشاريع حقيقية",
-      title: "عمل حقيقي. دليل عام.",
-      text: "أعرض النطاق. الأرقام الخاصة تبقى خاصة.",
+      title: "مشاريع قابلة للفحص.",
+      text: "نطاق حقيقي. بدون أرقام مخترعة.",
       impact: [
-        ["منظم", "قنوات وأعمال"],
+        ["قبل", "قنوات متفرقة"],
         ["مبني", "موقع، SEO/GEO، Ads"],
-        ["مواقع حقيقية", "Dropy + ParaHealth"],
-        ["دليل نظيف", "بدون أرقام مخترعة"],
+        ["دليل", "مشاريع عامة مباشرة"],
+        ["ثقة", "الأرقام الخاصة محمية"],
       ],
-      impactNote: "فقط معلومات عامة أو قابلة للتحقق.",
+      impactNote: "دليل عام فقط. الأرقام الخاصة تبقى خاصة.",
       preview: "معاينة المشروع",
       link: "مشاهدة المشروع",
       cards: [
         {
-          title: "Growth stack لـ Dropy.store.",
-          text: "موقع، SEO/GEO، UGC، اختبارات Ads وSocial ops.",
+          title: "Growth stack لـ Dropy.",
+          text: "موقع، SEO/GEO، UGC، Ads وSocial متصلة.",
           metrics: [
             ["Map", "بائعون + Ads"],
             ["Build", "موقع"],
@@ -832,8 +832,8 @@ const translations = {
           tags: ["إنشاء الموقع", "SEO/GEO", "إعلانات ممولة", "إدارة السوشيال ميديا"],
         },
         {
-          title: "نظام ظهور ParaHealth.",
-          text: "SEO/GEO، Paid media ومحتوى اجتماعي حول e-commerce حقيقي.",
+          title: "Visibility stack لـ ParaHealth.",
+          text: "SEO/GEO، Paid media ومحتوى اجتماعي متصل حول e-commerce.",
           metrics: [
             ["Map", "بحث + Social"],
             ["Build", "ظهور"],
@@ -847,8 +847,8 @@ const translations = {
     training: {
       eyebrow: "تدريب الفرق",
       title: "درّب الفريق الذي ينفذ.",
-      text: "Prompts، workflows، SEO/GEO، أتمتة وdashboards.",
-      format: "حضوري أو عن بعد - من 2 إلى 10 أشخاص",
+      text: "مكتبات Prompts، workflows وdashboards.",
+      format: "حضوري أو عن بعد - فرق من 2 إلى 10",
       cta: "درّب فريقي",
       stack: [
         "Prompts",
@@ -861,8 +861,8 @@ const translations = {
     },
     homeBootcamp: {
       eyebrow: "الأكاديمية المجانية",
-      title: "تعلّم مجانا. ابن أسرع.",
-      text: "تشخيص، وحدات، اختبارات وcheckpoints جاهزة للSprint.",
+      title: "تعلّم مجانا. ابن بعدها.",
+      text: "مدخل مجاني قبل الـSprint المدفوع.",
       pointsAria: "محتوى البوتكامب",
       points: ["تشخيص", "6 وحدات", "Checkpoints Sprint"],
       previewRows: [
@@ -876,7 +876,7 @@ const translations = {
     contact: {
       eyebrow: "اعمل مع أحمد",
       title: "لنربط القطع.",
-      text: "أرسل العائق. أقترح البناء التالي.",
+      text: "أرسل العائق. أحدد البناء التالي.",
       labels: ["الاسم", "البريد الإلكتروني", "الشركة", "الخدمة", "الرسالة"],
       servicePlaceholder: "اختر خدمة",
       serviceOptions: [
@@ -898,7 +898,7 @@ const translations = {
       nav: ["النظام", "فيديو UGC", "المشاريع", "AI Growth Sprint", "التدريب", "الأكاديمية المجانية", "التواصل"],
       whatsapp: "احجز موعدا",
       linkedin: "ملف LinkedIn",
-      bottom: ["تونس", "استراتيجية الذكاء الاصطناعي - SEO/GEO - الإعلانات الممولة - فيديو UGC - WordPress"],
+      bottom: ["تونس", "استراتيجية AI - SEO/GEO - Ads - UGC - WordPress"],
       floating: "WhatsApp",
     },
     thanks: {

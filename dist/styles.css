@@ -3312,6 +3312,16 @@ html[dir="rtl"] .floating-cta {
   color: var(--white);
   box-shadow: 0 18px 58px rgba(8, 8, 6, 0.22);
   backdrop-filter: blur(18px);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(14px);
+  transition: opacity 0.22s ease, transform 0.22s ease;
+}
+
+.bootcamp-sticky-progress.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
 }
 
 .bootcamp-sticky-progress span {
@@ -5913,4 +5923,451 @@ html[dir="rtl"] .training-card h2,
 html[dir="rtl"] .home-bootcamp h2,
 html[dir="rtl"] .contact-copy h2 {
   line-height: 1.12;
+}
+
+/* Premium clarity pass */
+:root {
+  --panel: #171714;
+  --paper: #fff8ee;
+  --paper-2: #f3e9dc;
+  --muted: #6c655c;
+  --muted-dark: #d8d0c3;
+  --cyan: #1f8f87;
+  --teal: #0f4f4b;
+  --lime: #d7a85a;
+  --shadow: 0 24px 76px rgba(8, 8, 6, 0.14);
+}
+
+.scroll-progress {
+  background: linear-gradient(90deg, var(--orange), var(--teal));
+}
+
+.cursor-aura {
+  background:
+    radial-gradient(circle, rgba(31, 143, 135, 0.12), transparent 58%),
+    radial-gradient(circle, rgba(255, 90, 20, 0.1), transparent 68%);
+}
+
+.site-header {
+  background: rgba(8, 8, 6, 0.82);
+  box-shadow: 0 18px 56px rgba(8, 8, 6, 0.2);
+}
+
+.hero {
+  background:
+    linear-gradient(rgba(255, 248, 237, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 248, 237, 0.04) 1px, transparent 1px),
+    radial-gradient(circle at 62% 12%, rgba(31, 143, 135, 0.13), transparent 30%),
+    radial-gradient(circle at 20% 52%, rgba(255, 90, 20, 0.18), transparent 34%),
+    var(--ink);
+  background-size: 48px 48px, 48px 48px, auto, auto, auto;
+}
+
+.hero::after {
+  border-color: rgba(31, 143, 135, 0.2);
+}
+
+.hero-grid {
+  grid-template-columns: 68px minmax(0, 680px) minmax(330px, 0.72fr);
+  min-height: clamp(640px, 88vh, 820px);
+}
+
+.hero-statement {
+  color: rgba(255, 248, 237, 0.78);
+}
+
+.signal-bar {
+  border-color: rgba(255, 248, 237, 0.16);
+  background: rgba(255, 248, 237, 0.075);
+}
+
+.signal-bar span {
+  background: rgba(255, 248, 237, 0.09);
+  color: rgba(255, 248, 237, 0.92);
+}
+
+.signal-bar i,
+.status-dot {
+  background: var(--teal);
+  box-shadow: 0 0 0 7px rgba(31, 143, 135, 0.14);
+}
+
+.primary,
+.hero-actions .primary,
+.form-submit {
+  background: linear-gradient(135deg, var(--orange), #ff7a21);
+  color: var(--ink);
+}
+
+.availability-card,
+.system-card {
+  background: rgba(20, 20, 17, 0.72);
+}
+
+.system-card small {
+  color: var(--lime);
+}
+
+.scroll-hook {
+  grid-template-columns: minmax(260px, 0.62fr) minmax(0, 1.38fr);
+  padding: 72px 0 66px;
+}
+
+.growth-cockpit {
+  min-height: auto;
+  border-radius: 26px;
+  background:
+    linear-gradient(rgba(255, 248, 237, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 248, 237, 0.05) 1px, transparent 1px),
+    linear-gradient(135deg, #080806 0%, #161a15 54%, #0a2421 100%);
+  background-size: 28px 28px, 28px 28px, auto;
+}
+
+.growth-cockpit::before,
+.system-map::before,
+.system-map::after {
+  display: none;
+}
+
+.system-map {
+  grid-template-columns: 1fr;
+  gap: 9px;
+}
+
+.system-node {
+  display: grid;
+  grid-template-columns: 48px minmax(150px, 0.46fr) minmax(0, 1fr);
+  gap: 14px;
+  align-items: center;
+  min-height: 76px;
+  padding: 12px 14px;
+  border-radius: 18px;
+  background: rgba(255, 248, 237, 0.07);
+}
+
+.system-node strong {
+  margin-top: 0;
+  font-size: clamp(1.18rem, 1.55vw, 1.72rem);
+  line-height: 1.05;
+}
+
+.system-node p {
+  max-width: none;
+  margin: 0;
+  color: rgba(255, 248, 237, 0.72);
+}
+
+.service-detail,
+.proof-card,
+.work-impact article,
+.bootcamp-search,
+.bootcamp-progress-card,
+.bootcamp-panel,
+.bootcamp-tabs,
+.diagnostic-app,
+.diagnostic-question-card,
+.diagnostic-result-card,
+.workbook-card,
+.certificate-card,
+.outcome-card,
+.seo-module-card,
+.faq-item {
+  box-shadow: 0 18px 54px rgba(8, 8, 6, 0.08);
+}
+
+.service-detail h3,
+.work-content h3 {
+  font-size: clamp(1.75rem, 3.2vw, 3.55rem);
+}
+
+.proof-card {
+  min-height: 168px;
+  padding: 20px;
+  border-radius: 18px;
+}
+
+.proof-card h3 {
+  margin-top: 30px;
+  font-size: clamp(1.45rem, 2vw, 2.05rem);
+}
+
+.proof-card p {
+  margin-bottom: 0;
+}
+
+.proof-link {
+  display: none;
+}
+
+.work-impact article {
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.66);
+}
+
+.work-card {
+  border-radius: 24px;
+}
+
+.work-visual {
+  min-height: 380px;
+}
+
+.training-card {
+  border-radius: 26px;
+  background:
+    radial-gradient(circle at 18% 70%, rgba(255, 90, 20, 0.16), transparent 30%),
+    linear-gradient(135deg, #080806 0%, #12120f 62%, #0b211f 100%);
+}
+
+.home-bootcamp {
+  border-radius: 26px;
+  background:
+    linear-gradient(rgba(255, 248, 237, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 248, 237, 0.045) 1px, transparent 1px),
+    radial-gradient(circle at 12% 10%, rgba(255, 90, 20, 0.24), transparent 32%),
+    linear-gradient(135deg, #080806 0%, #111410 54%, #0d2522 100%);
+}
+
+.bootcamp-hero {
+  min-height: clamp(440px, 52vh, 570px);
+  padding-bottom: 28px;
+}
+
+.bootcamp-hero h1 {
+  font-size: clamp(3.15rem, 6.3vw, 6.6rem);
+  line-height: 0.94;
+}
+
+.bootcamp-hero-copy > p {
+  max-width: 560px;
+}
+
+.bootcamp-hero-card {
+  max-width: 430px;
+  justify-self: end;
+}
+
+.growth-diagnostic,
+.bootcamp-outcomes,
+.bootcamp-assets {
+  margin-bottom: 58px;
+}
+
+.growth-diagnostic {
+  grid-template-columns: minmax(280px, 0.72fr) minmax(0, 1.28fr);
+}
+
+.diagnostic-copy,
+.diagnostic-app {
+  min-height: 350px;
+}
+
+.bootcamp-academy {
+  grid-template-columns: minmax(250px, 292px) minmax(0, 1fr);
+  gap: 18px;
+  padding-bottom: 66px;
+}
+
+.bootcamp-sidebar {
+  top: 100px;
+}
+
+.bootcamp-tabs {
+  top: 100px;
+}
+
+.bootcamp-panel {
+  padding: 20px;
+  border-radius: 24px;
+}
+
+.module-head {
+  max-width: 680px;
+}
+
+.module-head h2 {
+  font-size: clamp(1.85rem, 3.45vw, 3.55rem);
+}
+
+.module-head p {
+  max-width: 620px;
+}
+
+.lesson-grid {
+  grid-template-columns: 1fr;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.bootcamp-lesson {
+  grid-template-columns: 34px minmax(0, 1fr);
+  align-items: center;
+  min-height: 58px;
+  padding: 12px;
+}
+
+.bootcamp-lesson strong {
+  font-size: 0.94rem;
+}
+
+.prompt-lab {
+  gap: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.prompt-lab summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.prompt-lab summary::-webkit-details-marker {
+  display: none;
+}
+
+.prompt-lab summary::after {
+  content: "+";
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: rgba(255, 248, 237, 0.1);
+  color: var(--orange);
+  font-weight: 950;
+}
+
+.prompt-lab[open] summary::after {
+  content: "-";
+}
+
+.prompt-lab p {
+  padding: 0 16px 12px;
+}
+
+.prompt-lab button {
+  justify-self: start;
+  margin: 0 16px 16px;
+}
+
+.checkpoint-list {
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.checkpoint-card {
+  padding: 12px 14px;
+}
+
+.bootcamp-flow-actions {
+  margin-top: 14px;
+}
+
+.bootcamp-seo {
+  margin-bottom: 54px;
+}
+
+.bootcamp-seo-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.seo-module-card {
+  align-content: space-between;
+  min-height: 156px;
+  padding: 16px;
+}
+
+.seo-module-card h3 {
+  font-size: 1.08rem;
+}
+
+.seo-module-card p {
+  font-size: 0.9rem;
+}
+
+.seo-module-link {
+  justify-self: start;
+  min-height: 36px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--white);
+  cursor: pointer;
+  font-size: 0.78rem;
+  font-weight: 950;
+}
+
+@media (max-width: 1040px) {
+  .hero-grid,
+  .scroll-hook,
+  .growth-diagnostic,
+  .bootcamp-academy {
+    grid-template-columns: 1fr;
+  }
+
+  .bootcamp-hero-card {
+    justify-self: stretch;
+    max-width: none;
+  }
+
+  .system-node {
+    grid-template-columns: 48px minmax(140px, 0.55fr) minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 720px) {
+  .hero-grid {
+    min-height: auto;
+  }
+
+  .system-node {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .system-node span {
+    width: fit-content;
+  }
+
+  .bootcamp-seo-grid,
+  .outcome-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bootcamp-hero-card {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .bootcamp-stat {
+    min-height: 96px;
+    padding: 12px 8px;
+  }
+
+  .prompt-lab summary {
+    padding: 13px 14px;
+  }
+}
+
+@media (min-width: 1041px) {
+  .hero-grid {
+    grid-template-columns: minmax(0, 760px) minmax(300px, 430px);
+    grid-template-rows: auto auto;
+    gap: 34px 58px;
+    align-items: center;
+  }
+
+  .hero-copy {
+    grid-column: 1;
+  }
+
+  .portrait-system {
+    grid-column: 2;
+  }
 }

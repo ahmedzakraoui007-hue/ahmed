@@ -30,15 +30,15 @@ const bootcampCopy = {
       heroKicker: "Academy gratuite",
       heroTitle: "AI Growth Academy",
       heroText:
-        "Un parcours court : cours, quiz, puis module suivant.",
+        "Cours, quiz, module suivant. Simple.",
       heroPrimary: "Faire le diagnostic gratuit",
       heroSecondary: "Télécharger le workbook",
       statModules: "modules pratiques",
       statQuiz: "questions de quiz",
       statChecks: "checkpoints actionnables",
       heroPathLabel: "Parcours conseillé",
-      heroPathTitle: "Cours. Quiz. Module suivant.",
-      heroPathText: "Un flow fluide pour avancer sans te perdre.",
+      heroPathTitle: "Cours. Quiz. Suite.",
+      heroPathText: "Une progression courte, sans bruit.",
       searchLabel: "Trouver un module",
       searchPlaceholder: "Rechercher...",
       progressLabel: "Progression",
@@ -51,11 +51,11 @@ const bootcampCopy = {
       tabQuiz: "Quiz",
       tabResources: "Ressources",
       seoEyebrow: "Programme SEO-ready",
-      seoTitle: "Growth marketing avec l'IA, sans surcharge.",
+      seoTitle: "Programme SEO-ready, en bref.",
       seoText:
         "Un parcours gratuit pour structurer visibilité, contenu, acquisition et mesure.",
       faqEyebrow: "Questions fréquentes",
-      faqTitle: "Avant de commencer le bootcamp.",
+      faqTitle: "Questions rapides.",
       finalTitle: "Prêt à le construire sur ton business ?",
       finalText:
         "L'Academy t'apprend la logique. Le Sprint installe le système.",
@@ -69,9 +69,10 @@ const bootcampCopy = {
       moduleComplete: "Validé",
       checkpointMini: "checks",
       quizMini: "quiz",
-      courseFlowHint: "Lis, coche, puis valide avec le quiz.",
+      courseFlowHint: "Lis. Coche. Passe au quiz.",
       courseNext: "Passer au quiz",
       courseResources: "Voir les ressources",
+      openModule: "Ouvrir le module",
       nextModule: "Module suivant",
       finishBootcamp: "Terminer le bootcamp",
       stickyLabel: "Bootcamp",
@@ -91,8 +92,8 @@ const bootcampCopy = {
       outcomesTitle: "Ce que tu construis.",
       outcomesText: "Chaque module produit un actif utile.",
       assetsEyebrow: "Outils gratuits",
-      assetsTitle: "Workbook, certificat et ressources.",
-      assetsText: "Garde tes décisions, scores et prochains tests au même endroit.",
+      assetsTitle: "Workbook et certificat.",
+      assetsText: "Décisions, scores et prochains tests au même endroit.",
       workbookTitle: "AI Growth Workbook",
       workbookText: "Un PDF pour noter ICP, offre, prompts, SEO/GEO, UGC et dashboard.",
       workbookDownload: "Télécharger le workbook PDF",
@@ -128,18 +129,18 @@ const bootcampCopy = {
         short: "Comprendre le système avant les outils.",
         duration: "35 min",
         objective:
-          "Identifier ton moteur de croissance et les points où l'IA peut accélérer le travail sans créer du chaos.",
+          "Identifier le growth loop et où l'IA aide en premier.",
         lessons: [
-          "Définir le growth loop : acquisition, activation, conversion, rétention.",
-          "Séparer les tâches à automatiser des tâches à mieux décider.",
-          "Choisir une North Star Metric simple pour mesurer le progrès.",
+          "Mapper acquisition, activation, conversion, rétention.",
+          "Séparer automation et décisions stratégiques.",
+          "Choisir une North Star Metric simple.",
         ],
         prompt:
           "Agis comme un consultant growth. Pose-moi 7 questions pour cartographier mon business, mon offre, mes canaux actuels, mes blocages et mes objectifs. Ensuite, propose un growth loop clair en 5 étapes.",
         checkpoints: [
           "J'ai défini mon objectif business prioritaire.",
-          "J'ai identifié mes 3 plus gros blocages marketing.",
-          "J'ai choisi un workflow où l'IA peut gagner du temps dès cette semaine.",
+          "J'ai identifié mes 3 gros blocages.",
+          "J'ai choisi un workflow assisté par IA.",
         ],
         quiz: [
           {
@@ -166,11 +167,11 @@ const bootcampCopy = {
         short: "Dire clairement qui tu aides et pourquoi.",
         duration: "40 min",
         objective:
-          "Transformer une offre vague en message clair pour un segment précis, avec bénéfices, preuves et objections.",
+          "Transformer une offre vague en message clair pour un segment.",
         lessons: [
           "Définir l'ICP : contexte, douleur, urgence et budget.",
           "Écrire une promesse orientée résultat plutôt qu'une liste d'outils.",
-          "Construire une matrice objections, preuves et réponses.",
+          "Relier objections, preuves et réponses.",
         ],
         prompt:
           "Analyse mon offre comme un strategist B2B. Donne-moi 3 ICP possibles, leurs douleurs, leurs objections, les preuves nécessaires et une proposition de valeur en une phrase pour chaque segment.",
@@ -200,11 +201,11 @@ const bootcampCopy = {
         short: "Produire mieux, plus vite et plus régulier.",
         duration: "45 min",
         objective:
-          "Créer un système de contenu hebdomadaire : idées, briefs, posts, vidéos courtes, réutilisation et validation qualité.",
+          "Créer un système de contenu hebdomadaire assisté par IA.",
         lessons: [
-          "Construire 4 piliers de contenu liés au parcours client.",
-          "Créer un workflow IA : recherche, angle, brouillon, édition, publication.",
-          "Recycler une idée en post, carousel, reel, newsletter et script UGC.",
+          "Construire 4 piliers liés au parcours client.",
+          "Utiliser l'IA pour recherche, angle, brouillon, édition.",
+          "Recycler une idée en plusieurs formats.",
         ],
         prompt:
           "À partir de mon offre et mon ICP, génère un calendrier de contenu sur 14 jours avec 4 piliers, hooks, formats, CTA et une idée de réutilisation pour chaque contenu.",
@@ -234,11 +235,11 @@ const bootcampCopy = {
         short: "Être trouvé par Google et les moteurs IA.",
         duration: "45 min",
         objective:
-          "Construire une architecture de visibilité qui répond aux vraies questions clients sur Google, ChatGPT et moteurs IA.",
+          "Répondre aux questions clients sur Google et les moteurs IA.",
         lessons: [
-          "Trouver les requêtes informationnelles, commerciales et locales.",
-          "Créer des pages qui répondent clairement aux intentions de recherche.",
-          "Structurer FAQ, preuves, entités et maillage interne pour le GEO.",
+          "Trouver requêtes search et réponses IA.",
+          "Créer des pages autour d'une intention claire.",
+          "Ajouter FAQ, preuves, entités et liens internes.",
         ],
         prompt:
           "Agis comme expert SEO/GEO. Donne-moi une architecture de contenu pour mon offre avec mots-clés, questions fréquentes, pages prioritaires, entités à mentionner et plan de maillage interne.",
@@ -268,11 +269,11 @@ const bootcampCopy = {
         short: "Tester des angles créatifs qui vendent.",
         duration: "50 min",
         objective:
-          "Construire des tests publicitaires plus intelligents avec hooks, scripts UGC, angles d'objection et apprentissage rapide.",
+          "Transformer hooks, scripts UGC et ads en boucle d'apprentissage.",
         lessons: [
-          "Transformer douleurs et objections en angles de publicité.",
-          "Écrire des scripts UGC naturels : hook, problème, preuve, CTA.",
-          "Lire les premiers signaux : CTR, CPA, conversion, commentaires.",
+          "Transformer douleurs et objections en angles ads.",
+          "Écrire scripts UGC : hook, problème, preuve, CTA.",
+          "Lire CTR, CPA, conversion et commentaires.",
         ],
         prompt:
           "Crée 12 angles publicitaires pour mon offre : 4 orientés douleur, 4 orientés désir, 4 orientés preuve. Pour chaque angle, propose un script UGC de 20 secondes et un CTA.",
@@ -302,11 +303,11 @@ const bootcampCopy = {
         short: "Piloter le système sans perdre le signal.",
         duration: "55 min",
         objective:
-          "Mettre en place une routine simple : capture des leads, nurturing, reporting et amélioration continue.",
+          "Installer une routine leads, suivi, reporting et apprentissage.",
         lessons: [
           "Cartographier les étapes du lead : source, besoin, urgence, prochaine action.",
           "Automatiser les relances sans perdre la personnalisation.",
-          "Créer un dashboard minimum : trafic, leads, conversion, coût, revenu.",
+          "Suivre trafic, leads, conversion, coût et revenu.",
         ],
         prompt:
           "Dessine mon système marketing minimum : formulaires, CRM, emails, WhatsApp, dashboard, responsabilités de l'équipe et routine hebdomadaire d'optimisation.",
@@ -506,15 +507,15 @@ const bootcampCopy = {
       heroKicker: "Free Academy",
       heroTitle: "AI Growth Academy",
       heroText:
-        "A short path: course, quiz, then next module.",
+        "Course, quiz, next module. Simple.",
       heroPrimary: "Take the free diagnostic",
       heroSecondary: "Download the workbook",
       statModules: "practical modules",
       statQuiz: "quiz questions",
       statChecks: "action checkpoints",
       heroPathLabel: "Recommended path",
-      heroPathTitle: "Course. Quiz. Next module.",
-      heroPathText: "A smooth flow so the Academy feels easy to finish.",
+      heroPathTitle: "Course. Quiz. Next.",
+      heroPathText: "Short progress, no noise.",
       searchLabel: "Find a module",
       searchPlaceholder: "Search...",
       progressLabel: "Progress",
@@ -527,11 +528,11 @@ const bootcampCopy = {
       tabQuiz: "Quiz",
       tabResources: "Resources",
       seoEyebrow: "SEO-ready program",
-      seoTitle: "Growth marketing with AI, without overwhelm.",
+      seoTitle: "SEO-ready program, in brief.",
       seoText:
         "A free path to structure visibility, content, acquisition, and measurement.",
       faqEyebrow: "FAQ",
-      faqTitle: "Before you start the bootcamp.",
+      faqTitle: "Quick questions.",
       finalTitle: "Ready to build it for your business?",
       finalText: "The Academy teaches the logic. The Sprint installs the system.",
       finalCta: "Build my growth system",
@@ -544,9 +545,10 @@ const bootcampCopy = {
       moduleComplete: "Validated",
       checkpointMini: "checks",
       quizMini: "quiz",
-      courseFlowHint: "Read, check, then validate with the quiz.",
+      courseFlowHint: "Read. Check. Go quiz.",
       courseNext: "Go to quiz",
       courseResources: "View resources",
+      openModule: "Open module",
       nextModule: "Next module",
       finishBootcamp: "Finish bootcamp",
       stickyLabel: "Bootcamp",
@@ -565,8 +567,8 @@ const bootcampCopy = {
       outcomesTitle: "What you build.",
       outcomesText: "Each module gives you one useful asset.",
       assetsEyebrow: "Free tools",
-      assetsTitle: "Workbook, certificate, resources.",
-      assetsText: "Keep decisions, scores, and next tests in one place.",
+      assetsTitle: "Workbook and certificate.",
+      assetsText: "Decisions, scores, and next tests in one place.",
       workbookTitle: "AI Growth Workbook",
       workbookText: "A PDF for ICP, offer, prompts, SEO/GEO, UGC, and dashboard.",
       workbookDownload: "Download the PDF workbook",
@@ -637,15 +639,15 @@ const bootcampCopy = {
       heroKicker: "أكاديمية مجانية",
       heroTitle: "AI Growth Academy",
       heroText:
-        "مسار قصير: درس، اختبار، ثم الوحدة التالية.",
+        "درس، اختبار، ثم الوحدة التالية. ببساطة.",
       heroPrimary: "ابدأ التشخيص المجاني",
       heroSecondary: "حمّل الWorkbook",
       statModules: "وحدات عملية",
       statQuiz: "أسئلة اختبار",
       statChecks: "نقاط تحقق",
       heroPathLabel: "المسار المقترح",
-      heroPathTitle: "درس. اختبار. وحدة تالية.",
-      heroPathText: "Flow واضح لتتقدم بدون تشتيت.",
+      heroPathTitle: "درس. اختبار. التالي.",
+      heroPathText: "تقدم قصير بدون ضجيج.",
       searchLabel: "ابحث عن وحدة",
       searchPlaceholder: "بحث...",
       progressLabel: "التقدم",
@@ -658,11 +660,11 @@ const bootcampCopy = {
       tabQuiz: "الاختبار",
       tabResources: "الموارد",
       seoEyebrow: "برنامج جاهز للسيو",
-      seoTitle: "Growth Marketing بالذكاء الاصطناعي بدون ازدحام.",
+      seoTitle: "برنامج جاهز للسيو باختصار.",
       seoText:
         "مسار مجاني لتنظيم الظهور، المحتوى، الاكتساب والقياس.",
       faqEyebrow: "أسئلة متكررة",
-      faqTitle: "قبل أن تبدأ البوتكامب.",
+      faqTitle: "أسئلة سريعة.",
       finalTitle: "جاهز لبناءه على مشروعك؟",
       finalText: "الأكاديمية تعطيك المنطق. الـSprint يثبت النظام.",
       finalCta: "ابن نظام النمو الخاص بي",
@@ -675,9 +677,10 @@ const bootcampCopy = {
       moduleComplete: "تم التحقق",
       checkpointMini: "نقاط",
       quizMini: "اختبار",
-      courseFlowHint: "اقرأ، فعّل النقاط، ثم اختبر.",
+      courseFlowHint: "اقرأ. ضع علامة. انتقل للاختبار.",
       courseNext: "انتقل إلى الاختبار",
       courseResources: "شاهد الموارد",
+      openModule: "افتح الوحدة",
       nextModule: "الوحدة التالية",
       finishBootcamp: "إنهاء البوتكامب",
       stickyLabel: "البوتكامب",
@@ -696,8 +699,8 @@ const bootcampCopy = {
       outcomesTitle: "ما الذي ستبنيه.",
       outcomesText: "كل وحدة تعطيك أصلا عمليا.",
       assetsEyebrow: "أدوات مجانية",
-      assetsTitle: "Workbook، شهادة وموارد.",
-      assetsText: "احتفظ بالقرارات، النتائج والاختبارات في مكان واحد.",
+      assetsTitle: "Workbook وشهادة.",
+      assetsText: "قرارات، نتائج واختبارات في مكان واحد.",
       workbookTitle: "AI Growth Workbook",
       workbookText: "PDF لتدوين ICP، العرض، Prompts، SEO/GEO، UGC وDashboard.",
       workbookDownload: "تحميل الWorkbook PDF",
@@ -802,18 +805,18 @@ bootcampCopy.ar.resources = bootcampCopy.fr.resources.map((resource) => ({ ...re
 const localizedModules = {
   en: {
     foundations: {
-      objective: "Identify your growth engine and the points where AI can speed up the work without creating chaos.",
+      objective: "Find the growth loop and where AI should help first.",
       lessons: [
-        "Define the growth loop: acquisition, activation, conversion, retention.",
-        "Separate tasks to automate from decisions that need better thinking.",
-        "Choose a simple North Star Metric to measure progress.",
+        "Map acquisition, activation, conversion, retention.",
+        "Separate automation from strategic decisions.",
+        "Choose one North Star Metric.",
       ],
       prompt:
         "Act as a growth consultant. Ask me 7 questions to map my business, offer, current channels, bottlenecks, and goals. Then propose a clear 5-step growth loop.",
       checkpoints: [
         "I defined my priority business objective.",
-        "I identified my 3 biggest marketing bottlenecks.",
-        "I chose one workflow where AI can save time this week.",
+        "I identified my 3 biggest bottlenecks.",
+        "I chose one AI-assisted workflow.",
       ],
       quiz: [
         {
@@ -831,11 +834,11 @@ const localizedModules = {
       ],
     },
     offer: {
-      objective: "Turn a vague offer into a clear message for one segment, with benefits, proof, and objection handling.",
+      objective: "Turn a vague offer into a clear message for one segment.",
       lessons: [
-        "Define the ICP: context, pain, urgency, and budget.",
+        "Define ICP: context, pain, urgency, budget.",
         "Write a result-driven promise instead of a tool list.",
-        "Build an objections, proof, and response matrix.",
+        "Match objections with proof and responses.",
       ],
       prompt:
         "Analyze my offer as a B2B strategist. Give me 3 possible ICPs, their pains, objections, required proof, and a one-sentence value proposition for each segment.",
@@ -860,11 +863,11 @@ const localizedModules = {
       ],
     },
     content: {
-      objective: "Create a weekly content system: ideas, briefs, posts, short videos, repurposing, and quality control.",
+      objective: "Create a weekly content system with AI support.",
       lessons: [
-        "Build 4 content pillars connected to the customer journey.",
-        "Create an AI workflow: research, angle, draft, edit, publish.",
-        "Repurpose one idea into a post, carousel, reel, newsletter, and UGC script.",
+        "Build 4 customer-journey pillars.",
+        "Use AI for research, angles, drafts, edits.",
+        "Repurpose one idea into multiple formats.",
       ],
       prompt:
         "Based on my offer and ICP, generate a 14-day content calendar with 4 pillars, hooks, formats, CTAs, and one repurposing idea for every content piece.",
@@ -889,11 +892,11 @@ const localizedModules = {
       ],
     },
     seo: {
-      objective: "Build a visibility architecture that answers real customer questions on Google, ChatGPT, and AI engines.",
+      objective: "Answer real customer questions across Google and AI engines.",
       lessons: [
-        "Find informational, commercial, and local search queries.",
-        "Create pages that clearly answer search intent.",
-        "Structure FAQs, proof, entities, and internal links for GEO.",
+        "Find search and AI-answer queries.",
+        "Build pages around one clear intent.",
+        "Add FAQ, proof, entities, internal links.",
       ],
       prompt:
         "Act as an SEO/GEO expert. Give me a content architecture for my offer with keywords, frequent questions, priority pages, entities to mention, and an internal linking plan.",
@@ -918,10 +921,10 @@ const localizedModules = {
       ],
     },
     "paid-ugc": {
-      objective: "Build smarter ad tests with hooks, UGC scripts, objection angles, and faster learning.",
+      objective: "Turn hooks, UGC scripts, and ads into a learning loop.",
       lessons: [
         "Turn pains and objections into ad angles.",
-        "Write natural UGC scripts: hook, problem, proof, CTA.",
+        "Write UGC scripts: hook, problem, proof, CTA.",
         "Read early signals: CTR, CPA, conversion, comments.",
       ],
       prompt:
@@ -947,11 +950,11 @@ const localizedModules = {
       ],
     },
     automation: {
-      objective: "Set up a simple routine: lead capture, nurturing, reporting, and continuous improvement.",
+      objective: "Set up one routine for leads, follow-up, reporting, and learning.",
       lessons: [
         "Map the lead stages: source, need, urgency, next action.",
         "Automate follow-ups without losing personalization.",
-        "Create a minimum dashboard: traffic, leads, conversion, cost, revenue.",
+        "Track traffic, leads, conversion, cost, revenue.",
       ],
       prompt:
         "Design my minimum marketing system: forms, CRM, emails, WhatsApp, dashboard, team responsibilities, and weekly optimization routine.",
@@ -978,18 +981,18 @@ const localizedModules = {
   },
   ar: {
     foundations: {
-      objective: "حدد محرك النمو لديك والنقاط التي يمكن للذكاء الاصطناعي تسريعها بدون خلق فوضى.",
+      objective: "حدد حلقة النمو وأين يساعد الذكاء الاصطناعي أولا.",
       lessons: [
         "حدد حلقة النمو: الاكتساب، التفعيل، التحويل، والاحتفاظ.",
-        "افصل المهام التي يمكن أتمتتها عن القرارات التي تحتاج تفكيرا أفضل.",
-        "اختر مؤشرا رئيسيا بسيطا لقياس التقدم.",
+        "افصل الأتمتة عن القرارات الاستراتيجية.",
+        "اختر مؤشرا رئيسيا بسيطا.",
       ],
       prompt:
         "تصرف كاستشاري Growth. اسألني 7 أسئلة لفهم مشروعي، العرض، القنوات الحالية، العراقيل والأهداف، ثم اقترح حلقة نمو واضحة من 5 خطوات.",
       checkpoints: [
         "حددت الهدف التجاري الأول لهذا الشهر.",
-        "حددت أكبر 3 عراقيل في التسويق.",
-        "اخترت Workflow يمكن للذكاء الاصطناعي تسريعه هذا الأسبوع.",
+        "حددت أكبر 3 عراقيل.",
+        "اخترت Workflow بمساعدة AI.",
       ],
       quiz: [
         {
@@ -1007,11 +1010,11 @@ const localizedModules = {
       ],
     },
     offer: {
-      objective: "حوّل عرضا غير واضح إلى رسالة دقيقة لفئة محددة، مع الفوائد، الإثباتات ومعالجة الاعتراضات.",
+      objective: "حوّل عرضا غير واضح إلى رسالة دقيقة لفئة واحدة.",
       lessons: [
         "حدد العميل المثالي: السياق، الألم، الاستعجال والميزانية.",
         "اكتب وعدا مرتبطا بالنتيجة بدل قائمة أدوات.",
-        "ابنِ مصفوفة اعتراضات، إثباتات وردود.",
+        "اربط الاعتراضات بالإثباتات والردود.",
       ],
       prompt:
         "حلل عرضي كخبير B2B. أعطني 3 شرائح ICP ممكنة، آلامها، اعتراضاتها، الإثبات المطلوب، وقيمة العرض في جملة واحدة لكل شريحة.",
@@ -1036,11 +1039,11 @@ const localizedModules = {
       ],
     },
     content: {
-      objective: "أنشئ نظام محتوى أسبوعي: أفكار، Briefs، منشورات، فيديوهات قصيرة، إعادة استخدام ومراقبة جودة.",
+      objective: "أنشئ نظام محتوى أسبوعي بمساعدة AI.",
       lessons: [
-        "ابنِ 4 محاور محتوى مرتبطة برحلة العميل.",
-        "صمم Workflow بالذكاء الاصطناعي: بحث، زاوية، مسودة، تحرير، نشر.",
-        "حوّل فكرة واحدة إلى منشور، كاروسيل، Reel، Newsletter وسكريبت UGC.",
+        "ابنِ 4 محاور مرتبطة برحلة العميل.",
+        "استخدم AI للبحث، الزوايا، المسودات والتحرير.",
+        "حوّل فكرة واحدة إلى عدة صيغ.",
       ],
       prompt:
         "اعتمادا على عرضي وICP، أنشئ رزنامة محتوى لمدة 14 يوما مع المحاور، Hooks، الصيغ، CTA وفكرة إعادة استخدام لكل قطعة محتوى.",
@@ -1065,11 +1068,11 @@ const localizedModules = {
       ],
     },
     seo: {
-      objective: "ابنِ هندسة ظهور تجيب عن أسئلة العملاء في Google وChatGPT ومحركات الذكاء الاصطناعي.",
+      objective: "أجب عن أسئلة العملاء في Google ومحركات AI.",
       lessons: [
-        "استخرج الكلمات والطلبات المعلوماتية، التجارية والمحلية.",
-        "أنشئ صفحات تجيب بوضوح عن نية البحث.",
-        "نظم FAQ، الإثباتات، الكيانات والروابط الداخلية لخدمة GEO.",
+        "استخرج طلبات البحث وإجابات AI.",
+        "أنشئ صفحات حول نية واضحة.",
+        "أضف FAQ، إثباتات، كيانات وروابط.",
       ],
       prompt:
         "تصرف كخبير SEO/GEO. أعطني هندسة محتوى لعرضي تشمل الكلمات، الأسئلة المتكررة، الصفحات ذات الأولوية، الكيانات التي يجب ذكرها وخطة روابط داخلية.",
@@ -1094,11 +1097,11 @@ const localizedModules = {
       ],
     },
     "paid-ugc": {
-      objective: "ابنِ اختبارات إعلانية أذكى باستخدام Hooks، سكريبتات UGC، زوايا اعتراض وتعلم سريع.",
+      objective: "حوّل Hooks وUGC وAds إلى حلقة تعلم.",
       lessons: [
-        "حوّل آلام واعتراضات العملاء إلى زوايا إعلانية.",
-        "اكتب سكريبتات UGC طبيعية: Hook، مشكلة، إثبات، CTA.",
-        "اقرأ الإشارات الأولى: CTR، CPA، التحويل والتعليقات.",
+        "حوّل الآلام والاعتراضات إلى زوايا Ads.",
+        "اكتب UGC: Hook، مشكلة، إثبات، CTA.",
+        "اقرأ CTR، CPA، التحويل والتعليقات.",
       ],
       prompt:
         "أنشئ 12 زاوية إعلانية لعرضي: 4 مبنية على الألم، 4 على الرغبة و4 على الإثبات. لكل زاوية، اقترح سكريبت UGC من 20 ثانية وCTA.",
@@ -1123,11 +1126,11 @@ const localizedModules = {
       ],
     },
     automation: {
-      objective: "ضع روتينا بسيطا: جمع leads، متابعة، Reporting وتحسين مستمر.",
+      objective: "ضع روتينا للleads، المتابعة، Reporting والتعلم.",
       lessons: [
         "ارسم مراحل الLead: المصدر، الحاجة، الاستعجال والخطوة التالية.",
         "أتمت المتابعة بدون فقدان التخصيص.",
-        "أنشئ Dashboard بسيطا: ترافيك، leads، تحويل، تكلفة وإيراد.",
+        "تابع الترافيك، leads، التحويل، التكلفة والإيراد.",
       ],
       prompt:
         "صمم نظامي التسويقي الأدنى: Forms، CRM، Emails، WhatsApp، Dashboard، مسؤوليات الفريق وروتين تحسين أسبوعي.",
@@ -1385,6 +1388,7 @@ const faqList = document.querySelector("#faqList");
 const diagnosticApp = document.querySelector("#diagnosticApp");
 const outcomeList = document.querySelector("#outcomeList");
 const certificatePanel = document.querySelector("#certificatePanel");
+const stickyProgress = document.querySelector("#stickyProgress");
 const stickyProgressText = document.querySelector("#stickyProgressText");
 const stickyProgressLink = document.querySelector("#stickyProgressLink");
 const progressMeter = document.querySelector("#progressMeter");
@@ -1773,11 +1777,11 @@ function renderCourse(module) {
         .join("")}
     </div>
 
-    <div class="prompt-lab">
-      <strong>${escapeHtml(copy.ui.promptTitle)}</strong>
+    <details class="prompt-lab">
+      <summary><strong>${escapeHtml(copy.ui.promptTitle)}</strong></summary>
       <p>${escapeHtml(module.prompt)}</p>
       <button type="button" data-action="copy-prompt">${escapeHtml(copy.ui.copyPrompt)}</button>
-    </div>
+    </details>
 
     <div class="checkpoint-list" aria-label="${escapeHtml(copy.ui.checkpoints)}">
       ${module.checkpoints
@@ -2032,10 +2036,8 @@ function renderSeoContent() {
           <article class="seo-module-card">
             <span>${escapeHtml(copy.ui.moduleLabel)} ${String(index + 1).padStart(2, "0")}</span>
             <h3>${escapeHtml(module.title)}</h3>
-            <p>${escapeHtml(module.objective)}</p>
-            <ul>
-              ${module.lessons.map((lesson) => `<li>${escapeHtml(lesson)}</li>`).join("")}
-            </ul>
+            <p>${escapeHtml(module.short)}</p>
+            <button class="seo-module-link" type="button" data-action="open-module" data-module="${escapeHtml(module.id)}">${escapeHtml(copy.ui.openModule)}</button>
           </article>
         `,
       )
@@ -2340,6 +2342,17 @@ panel?.addEventListener("click", (event) => {
   }
 });
 
+seoProgrammeList?.addEventListener("click", (event) => {
+  const actionButton = event.target.closest('[data-action="open-module"]');
+  const moduleId = actionButton?.dataset.module;
+
+  if (!moduleId) {
+    return;
+  }
+
+  goToModule(moduleId);
+});
+
 diagnosticApp?.addEventListener("click", (event) => {
   const actionButton = event.target.closest("[data-action]");
   if (!actionButton) {
@@ -2408,6 +2421,7 @@ const onScroll = () => {
   if (progress) {
     progress.style.width = `${Math.min(100, Math.max(0, ratio))}%`;
   }
+  stickyProgress?.classList.toggle("is-visible", scrollTop > 680);
   header?.classList.toggle("is-scrolled", scrollTop > 18);
 };
 
