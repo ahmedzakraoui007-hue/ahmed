@@ -31,8 +31,8 @@ const bootcampCopy = {
       heroTitle: "Growth Marketing with AI",
       heroText:
         "Un parcours pratique pour transformer l'IA en système d'acquisition : stratégie, contenu, SEO/GEO, ads, UGC, automation et mesure.",
-      heroPrimary: "Commencer le bootcamp",
-      heroSecondary: "Appliquer ça à mon business",
+      heroPrimary: "Faire le diagnostic gratuit",
+      heroSecondary: "Télécharger le workbook",
       statModules: "modules pratiques",
       statQuiz: "questions de quiz",
       statChecks: "checkpoints actionnables",
@@ -74,6 +74,38 @@ const bootcampCopy = {
       courseResources: "Voir les ressources",
       nextModule: "Module suivant",
       finishBootcamp: "Terminer le bootcamp",
+      stickyLabel: "Bootcamp",
+      stickyCta: "Continuer",
+      stickyComplete: "Certificat prêt",
+      diagnosticEyebrow: "AI Growth Score",
+      diagnosticTitle: "Diagnostique ton système marketing avant de commencer.",
+      diagnosticText:
+        "Réponds à 8 questions rapides pour voir où ton moteur growth bloque et quel module suivre en priorité.",
+      diagnosticStep: "Question",
+      diagnosticOf: "sur",
+      diagnosticScore: "Score AI Growth",
+      diagnosticReset: "Refaire le diagnostic",
+      diagnosticStartCourse: "Commencer le module conseillé",
+      diagnosticContact: "Transformer ça en plan d'action",
+      outcomesEyebrow: "Résultats attendus",
+      outcomesTitle: "Ce que tu construis pendant le bootcamp.",
+      outcomesText: "Pas de théorie décorative : chaque étape produit un actif que tu peux utiliser pour vendre, publier, mesurer ou automatiser.",
+      assetsEyebrow: "Outils gratuits",
+      assetsTitle: "Workbook, certificat et ressources pour passer à l'action.",
+      assetsText: "Le bootcamp devient plus utile quand tu gardes une trace de tes décisions, de tes scores et de tes prochains tests.",
+      workbookTitle: "AI Growth Workbook",
+      workbookText: "Un PDF simple pour noter ton ICP, ton offre, tes prompts, tes pages SEO/GEO, tes scripts UGC et ton dashboard.",
+      workbookDownload: "Télécharger le workbook PDF",
+      certificateTitle: "Certificat de complétion",
+      certificateLocked: "Valide les 6 modules, les checkpoints et les quiz pour débloquer ton certificat.",
+      certificateUnlocked: "Bravo. Ton certificat est prêt à partager.",
+      certificateNameLabel: "Nom à afficher",
+      certificateNamePlaceholder: "Ahmed Zakraoui",
+      certificateCopy: "Copier le texte LinkedIn",
+      certificateShare: "Partager sur LinkedIn",
+      certificateFallbackName: "Participant",
+      certificateAchievement: "a complété le Growth Marketing with AI Bootcamp gratuit d'Ahmed Zakraoui.",
+      certificateIssued: "Certificat généré localement - gratuit - AhmedZakraoui.com",
       lessons: "Leçons",
       promptTitle: "Prompt atelier",
       copyPrompt: "Copier le prompt",
@@ -325,6 +357,115 @@ const bootcampCopy = {
         copy: "Dashboard minimum : trafic qualifié, leads, taux de conversion, coût par lead, revenu attribué.",
       },
     ],
+    diagnostic: {
+      levels: [
+        {
+          min: 0,
+          title: "Mode manuel",
+          text: "Ton marketing dépend encore beaucoup d'efforts isolés. Commence par clarifier le loop, l'offre et les prochains workflows à automatiser.",
+        },
+        {
+          min: 46,
+          title: "Système en construction",
+          text: "Tu as déjà des bases solides. Le plus gros gain vient maintenant de la mesure, de la répétition et des assets réutilisables.",
+        },
+        {
+          min: 76,
+          title: "Growth engine prêt à scaler",
+          text: "Ton système est lisible. Utilise le bootcamp pour renforcer les tests créatifs, le SEO/GEO et les routines d'amélioration.",
+        },
+      ],
+      questions: [
+        {
+          moduleId: "foundations",
+          category: "Stratégie",
+          q: "Ton équipe connaît-elle le growth loop qui relie acquisition, conversion et revenus ?",
+          options: [
+            ["Pas encore clairement", 0],
+            ["Oui, mais il n'est pas suivi chaque semaine", 1],
+            ["Oui, avec une métrique centrale et une routine", 2],
+          ],
+        },
+        {
+          moduleId: "offer",
+          category: "Offre",
+          q: "Ton message explique-t-il le résultat business avant de parler des outils ?",
+          options: [
+            ["Il reste très général", 0],
+            ["Il est clair pour un segment", 1],
+            ["Il cible un ICP précis avec preuve et objections", 2],
+          ],
+        },
+        {
+          moduleId: "content",
+          category: "Contenu",
+          q: "As-tu un système régulier pour produire, recycler et valider ton contenu ?",
+          options: [
+            ["Je publie quand j'ai le temps", 0],
+            ["J'ai un calendrier mais peu de réutilisation", 1],
+            ["J'ai un workflow complet avec IA et validation humaine", 2],
+          ],
+        },
+        {
+          moduleId: "seo",
+          category: "SEO/GEO",
+          q: "Tes pages répondent-elles aux questions que tes clients posent sur Google et les moteurs IA ?",
+          options: [
+            ["Pas vraiment", 0],
+            ["Quelques pages répondent aux intentions principales", 1],
+            ["Oui, avec FAQ, preuves, entités et maillage interne", 2],
+          ],
+        },
+        {
+          moduleId: "paid-ugc",
+          category: "Paid + UGC",
+          q: "Testes-tu des angles créatifs UGC avec une lecture claire des premiers signaux ?",
+          options: [
+            ["Non, les créas sont décidées au feeling", 0],
+            ["Oui, mais les apprentissages restent dispersés", 1],
+            ["Oui, chaque test a hook, objection, KPI et décision", 2],
+          ],
+        },
+        {
+          moduleId: "automation",
+          category: "Automation",
+          q: "Les leads entrants sont-ils suivis automatiquement sans perdre la personnalisation ?",
+          options: [
+            ["Non, tout est manuel", 0],
+            ["Une partie est automatisée", 1],
+            ["Oui, formulaire, CRM, relance et dashboard sont connectés", 2],
+          ],
+        },
+        {
+          moduleId: "automation",
+          category: "Analytics",
+          q: "Sais-tu chaque semaine quel canal apporte le meilleur signal business ?",
+          options: [
+            ["Je regarde surtout les impressions ou les likes", 0],
+            ["Je suis quelques métriques mais sans routine fixe", 1],
+            ["Oui, trafic, leads, coût, conversion et revenu sont visibles", 2],
+          ],
+        },
+        {
+          moduleId: "foundations",
+          category: "Équipe",
+          q: "Ton équipe sait-elle utiliser l'IA avec des prompts et règles qualité partagés ?",
+          options: [
+            ["Chacun teste de son côté", 0],
+            ["Nous avons quelques prompts utiles", 1],
+            ["Nous avons playbooks, prompts et critères de validation", 2],
+          ],
+        },
+      ],
+    },
+    outcomes: [
+      ["01", "Growth Loop clair", "Un schéma simple qui relie audience, offre, acquisition, conversion et revenus."],
+      ["02", "Message qui vend", "Une promesse orientée résultat avec ICP, preuves et réponses aux objections."],
+      ["03", "Content engine IA", "Un workflow pour produire posts, Reels, UGC scripts, FAQ et contenus SEO sans perdre la qualité."],
+      ["04", "Architecture SEO/GEO", "Une liste de pages, questions, entités et liens internes pour mieux apparaître dans Google et les moteurs IA."],
+      ["05", "Tests paid + UGC", "Des hooks, angles créatifs et KPI pour apprendre plus vite sans gaspiller le budget."],
+      ["06", "Dashboard minimum", "Une routine hebdomadaire pour suivre le signal : trafic, leads, conversion, coût et revenu."],
+    ],
     faq: [
       {
         q: "Le Growth Marketing with AI Bootcamp est-il vraiment gratuit ?",
@@ -366,8 +507,8 @@ const bootcampCopy = {
       heroTitle: "Growth Marketing with AI",
       heroText:
         "A practical path to turn AI into an acquisition system: strategy, content, SEO/GEO, ads, UGC, automation, and measurement.",
-      heroPrimary: "Start the bootcamp",
-      heroSecondary: "Apply this to my business",
+      heroPrimary: "Take the free diagnostic",
+      heroSecondary: "Download the workbook",
       statModules: "practical modules",
       statQuiz: "quiz questions",
       statChecks: "action checkpoints",
@@ -408,6 +549,37 @@ const bootcampCopy = {
       courseResources: "View resources",
       nextModule: "Next module",
       finishBootcamp: "Finish bootcamp",
+      stickyLabel: "Bootcamp",
+      stickyCta: "Continue",
+      stickyComplete: "Certificate ready",
+      diagnosticEyebrow: "AI Growth Score",
+      diagnosticTitle: "Diagnose your marketing system before you start.",
+      diagnosticText: "Answer 8 quick questions to find where your growth engine is blocked and which module to follow first.",
+      diagnosticStep: "Question",
+      diagnosticOf: "of",
+      diagnosticScore: "AI Growth Score",
+      diagnosticReset: "Retake diagnostic",
+      diagnosticStartCourse: "Start the recommended module",
+      diagnosticContact: "Turn this into an action plan",
+      outcomesEyebrow: "Expected outcomes",
+      outcomesTitle: "What you build during the bootcamp.",
+      outcomesText: "No decorative theory: every step produces an asset you can use to sell, publish, measure, or automate.",
+      assetsEyebrow: "Free tools",
+      assetsTitle: "Workbook, certificate, and resources to move into action.",
+      assetsText: "The bootcamp becomes more useful when you keep track of your decisions, scores, and next tests.",
+      workbookTitle: "AI Growth Workbook",
+      workbookText: "A simple PDF to map your ICP, offer, prompts, SEO/GEO pages, UGC scripts, and dashboard.",
+      workbookDownload: "Download the PDF workbook",
+      certificateTitle: "Completion certificate",
+      certificateLocked: "Validate all 6 modules, checkpoints, and quizzes to unlock your certificate.",
+      certificateUnlocked: "Nice work. Your certificate is ready to share.",
+      certificateNameLabel: "Display name",
+      certificateNamePlaceholder: "Ahmed Zakraoui",
+      certificateCopy: "Copy LinkedIn text",
+      certificateShare: "Share on LinkedIn",
+      certificateFallbackName: "Participant",
+      certificateAchievement: "completed Ahmed Zakraoui's free Growth Marketing with AI Bootcamp.",
+      certificateIssued: "Certificate generated locally - free - AhmedZakraoui.com",
       lessons: "Lessons",
       promptTitle: "Workshop prompt",
       copyPrompt: "Copy prompt",
@@ -466,8 +638,8 @@ const bootcampCopy = {
       heroTitle: "Growth Marketing with AI",
       heroText:
         "مسار عملي لتحويل الذكاء الاصطناعي إلى نظام اكتساب: استراتيجية، محتوى، SEO/GEO، إعلانات، UGC، أتمتة وقياس.",
-      heroPrimary: "ابدأ البوتكامب",
-      heroSecondary: "طبقه على مشروعي",
+      heroPrimary: "ابدأ التشخيص المجاني",
+      heroSecondary: "حمّل الWorkbook",
       statModules: "وحدات عملية",
       statQuiz: "أسئلة اختبار",
       statChecks: "نقاط تحقق",
@@ -508,6 +680,37 @@ const bootcampCopy = {
       courseResources: "شاهد الموارد",
       nextModule: "الوحدة التالية",
       finishBootcamp: "إنهاء البوتكامب",
+      stickyLabel: "البوتكامب",
+      stickyCta: "واصل",
+      stickyComplete: "الشهادة جاهزة",
+      diagnosticEyebrow: "AI Growth Score",
+      diagnosticTitle: "شخّص نظام التسويق قبل أن تبدأ.",
+      diagnosticText: "أجب عن 8 أسئلة سريعة لتعرف أين يتعطل محرك النمو وأي وحدة تبدأ بها.",
+      diagnosticStep: "السؤال",
+      diagnosticOf: "من",
+      diagnosticScore: "AI Growth Score",
+      diagnosticReset: "إعادة التشخيص",
+      diagnosticStartCourse: "ابدأ الوحدة المقترحة",
+      diagnosticContact: "حوّل النتيجة إلى خطة عمل",
+      outcomesEyebrow: "النتائج المتوقعة",
+      outcomesTitle: "ما الذي ستبنيه أثناء البوتكامب.",
+      outcomesText: "ليست نظرية للعرض فقط: كل خطوة تنتج أصلا عمليا تستعمله للبيع، النشر، القياس أو الأتمتة.",
+      assetsEyebrow: "أدوات مجانية",
+      assetsTitle: "Workbook، شهادة وموارد للانتقال إلى التنفيذ.",
+      assetsText: "يصبح البوتكامب أكثر فائدة عندما تحتفظ بقراراتك، نتائجك والاختبارات القادمة.",
+      workbookTitle: "AI Growth Workbook",
+      workbookText: "PDF بسيط لتدوين ICP، العرض، الPrompts، صفحات SEO/GEO، سكريبتات UGC والDashboard.",
+      workbookDownload: "تحميل الWorkbook PDF",
+      certificateTitle: "شهادة الإكمال",
+      certificateLocked: "أكمل الوحدات الست، نقاط التحقق والاختبارات لفتح الشهادة.",
+      certificateUnlocked: "أحسنت. شهادتك جاهزة للمشاركة.",
+      certificateNameLabel: "الاسم المعروض",
+      certificateNamePlaceholder: "Ahmed Zakraoui",
+      certificateCopy: "نسخ نص LinkedIn",
+      certificateShare: "مشاركة على LinkedIn",
+      certificateFallbackName: "مشارك",
+      certificateAchievement: "أكمل بوتكامب Growth Marketing with AI المجاني من أحمد زكراوي.",
+      certificateIssued: "شهادة منشأة محليا - مجانية - AhmedZakraoui.com",
       lessons: "الدروس",
       promptTitle: "Prompt عملي",
       copyPrompt: "نسخ الPrompt",
@@ -985,6 +1188,85 @@ bootcampCopy.en.resources = [
   },
 ];
 
+bootcampCopy.en.diagnostic = {
+  levels: [
+    {
+      min: 0,
+      title: "Manual mode",
+      text: "Your marketing still depends on isolated effort. Start by clarifying the loop, the offer, and the next workflows to automate.",
+    },
+    {
+      min: 46,
+      title: "System under construction",
+      text: "You already have useful foundations. The biggest gain now comes from measurement, repetition, and reusable assets.",
+    },
+    {
+      min: 76,
+      title: "Growth engine ready to scale",
+      text: "Your system is readable. Use the bootcamp to strengthen creative testing, SEO/GEO, and improvement routines.",
+    },
+  ],
+  questions: [
+    {
+      moduleId: "foundations",
+      category: "Strategy",
+      q: "Does your team know the growth loop connecting acquisition, conversion, and revenue?",
+      options: [["Not clearly yet", 0], ["Yes, but it is not reviewed weekly", 1], ["Yes, with one core metric and a routine", 2]],
+    },
+    {
+      moduleId: "offer",
+      category: "Offer",
+      q: "Does your message explain the business outcome before listing tools?",
+      options: [["It is still generic", 0], ["It is clear for one segment", 1], ["It targets one ICP with proof and objections", 2]],
+    },
+    {
+      moduleId: "content",
+      category: "Content",
+      q: "Do you have a repeatable system to produce, repurpose, and validate content?",
+      options: [["I publish when I have time", 0], ["I have a calendar but little repurposing", 1], ["I have a full AI workflow with human validation", 2]],
+    },
+    {
+      moduleId: "seo",
+      category: "SEO/GEO",
+      q: "Do your pages answer the questions customers ask on Google and AI engines?",
+      options: [["Not really", 0], ["Some pages answer core intent", 1], ["Yes, with FAQ, proof, entities, and internal links", 2]],
+    },
+    {
+      moduleId: "paid-ugc",
+      category: "Paid + UGC",
+      q: "Do you test UGC creative angles with a clear read of early signals?",
+      options: [["No, creatives are mostly intuition-led", 0], ["Yes, but learnings are scattered", 1], ["Yes, every test has hook, objection, KPI, and decision", 2]],
+    },
+    {
+      moduleId: "automation",
+      category: "Automation",
+      q: "Are inbound leads followed up automatically without losing personalization?",
+      options: [["No, everything is manual", 0], ["Part of it is automated", 1], ["Yes, form, CRM, follow-up, and dashboard are connected", 2]],
+    },
+    {
+      moduleId: "automation",
+      category: "Analytics",
+      q: "Do you know every week which channel brings the strongest business signal?",
+      options: [["I mostly watch impressions or likes", 0], ["I track some metrics without a fixed routine", 1], ["Yes, traffic, leads, cost, conversion, and revenue are visible", 2]],
+    },
+    {
+      moduleId: "foundations",
+      category: "Team",
+      q: "Can your team use AI with shared prompts and quality rules?",
+      options: [["Everyone experiments separately", 0], ["We have a few useful prompts", 1], ["We have playbooks, prompts, and validation criteria", 2]],
+    },
+  ],
+};
+
+bootcampCopy.en.outcomes = [
+  ["01", "Clear growth loop", "A simple map connecting audience, offer, acquisition, conversion, and revenue."],
+  ["02", "Message that sells", "A result-led promise with ICP, proof, and objection answers."],
+  ["03", "AI content engine", "A workflow to produce posts, Reels, UGC scripts, FAQs, and SEO content without losing quality."],
+  ["04", "SEO/GEO architecture", "A list of pages, questions, entities, and internal links to show up better in Google and AI engines."],
+  ["05", "Paid + UGC tests", "Hooks, creative angles, and KPIs to learn faster without wasting budget."],
+  ["06", "Minimum dashboard", "A weekly routine to track the signal: traffic, leads, conversion, cost, and revenue."],
+];
+
 bootcampCopy.ar.resources = [
   {
     type: "Canvas",
@@ -1012,6 +1294,85 @@ bootcampCopy.ar.resources = [
   },
 ];
 
+bootcampCopy.ar.diagnostic = {
+  levels: [
+    {
+      min: 0,
+      title: "وضع يدوي",
+      text: "التسويق ما زال يعتمد على مجهودات متفرقة. ابدأ بتوضيح حلقة النمو، العرض والWorkflows التي يجب أتمتتها.",
+    },
+    {
+      min: 46,
+      title: "نظام في طور البناء",
+      text: "لديك أساس جيد. أكبر ربح الآن يأتي من القياس، التكرار وبناء أصول قابلة لإعادة الاستخدام.",
+    },
+    {
+      min: 76,
+      title: "محرك نمو جاهز للتوسع",
+      text: "النظام واضح. استعمل البوتكامب لتقوية اختبارات الإعلانات، SEO/GEO وروتين التحسين.",
+    },
+  ],
+  questions: [
+    {
+      moduleId: "foundations",
+      category: "الاستراتيجية",
+      q: "هل يعرف فريقك حلقة النمو التي تربط الاكتساب، التحويل والإيرادات؟",
+      options: [["ليس بوضوح بعد", 0], ["نعم، لكنها لا تراجع أسبوعيا", 1], ["نعم، مع مؤشر رئيسي وروتين واضح", 2]],
+    },
+    {
+      moduleId: "offer",
+      category: "العرض",
+      q: "هل تشرح رسالتك النتيجة التجارية قبل الحديث عن الأدوات؟",
+      options: [["ما زالت عامة", 0], ["واضحة لشريحة واحدة", 1], ["تستهدف ICP واضحا مع إثبات واعتراضات", 2]],
+    },
+    {
+      moduleId: "content",
+      category: "المحتوى",
+      q: "هل لديك نظام ثابت لإنتاج المحتوى، إعادة استخدامه والتحقق من جودته؟",
+      options: [["أنشر عندما أجد الوقت", 0], ["لدي رزنامة لكن إعادة الاستخدام قليلة", 1], ["لدي Workflow كامل بالذكاء الاصطناعي ومراجعة بشرية", 2]],
+    },
+    {
+      moduleId: "seo",
+      category: "SEO/GEO",
+      q: "هل تجيب صفحاتك عن أسئلة العملاء في Google ومحركات الذكاء الاصطناعي؟",
+      options: [["ليس فعلا", 0], ["بعض الصفحات تجيب عن النوايا الرئيسية", 1], ["نعم، مع FAQ، إثباتات، كيانات وروابط داخلية", 2]],
+    },
+    {
+      moduleId: "paid-ugc",
+      category: "Paid + UGC",
+      q: "هل تختبر زوايا UGC الإبداعية مع قراءة واضحة للإشارات الأولى؟",
+      options: [["لا، الاختيارات غالبا بالحدس", 0], ["نعم، لكن التعلم متفرق", 1], ["نعم، كل اختبار لديه Hook، اعتراض، KPI وقرار", 2]],
+    },
+    {
+      moduleId: "automation",
+      category: "الأتمتة",
+      q: "هل تتم متابعة الleads آليا بدون فقدان التخصيص؟",
+      options: [["لا، كل شيء يدوي", 0], ["جزء منها مؤتمت", 1], ["نعم، Form وCRM ومتابعة وDashboard متصلون", 2]],
+    },
+    {
+      moduleId: "automation",
+      category: "Analytics",
+      q: "هل تعرف كل أسبوع أي قناة تعطي أفضل إشارة تجارية؟",
+      options: [["أراقب غالبا impressions أو likes", 0], ["أتابع بعض المؤشرات بدون روتين ثابت", 1], ["نعم، الترافيك، الleads، التكلفة، التحويل والإيراد واضحة", 2]],
+    },
+    {
+      moduleId: "foundations",
+      category: "الفريق",
+      q: "هل يستطيع فريقك استعمال الذكاء الاصطناعي بPrompts وقواعد جودة مشتركة؟",
+      options: [["كل شخص يجرب وحده", 0], ["لدينا بعض الPrompts المفيدة", 1], ["لدينا Playbooks، Prompts ومعايير تحقق", 2]],
+    },
+  ],
+};
+
+bootcampCopy.ar.outcomes = [
+  ["01", "حلقة نمو واضحة", "خريطة بسيطة تربط الجمهور، العرض، الاكتساب، التحويل والإيرادات."],
+  ["02", "رسالة تبيع", "وعد مبني على النتيجة مع ICP، إثباتات وردود على الاعتراضات."],
+  ["03", "محرك محتوى بالذكاء الاصطناعي", "Workflow لإنتاج Posts، Reels، UGC scripts، FAQ ومحتوى SEO بدون فقدان الجودة."],
+  ["04", "هندسة SEO/GEO", "قائمة صفحات، أسئلة، كيانات وروابط داخلية للظهور أفضل في Google ومحركات AI."],
+  ["05", "اختبارات Paid + UGC", "Hooks، زوايا إبداعية وKPIs للتعلم أسرع بدون إهدار الميزانية."],
+  ["06", "Dashboard أدنى", "روتين أسبوعي لمتابعة الإشارة: ترافيك، leads، تحويل، تكلفة وإيراد."],
+];
+
 const menuButton = document.querySelector("#menuButton");
 const nav = document.querySelector("#nav");
 const header = document.querySelector("#siteHeader");
@@ -1021,6 +1382,11 @@ const panel = document.querySelector("#bootcampPanel");
 const moduleSearch = document.querySelector("#moduleSearch");
 const seoProgrammeList = document.querySelector("#seoProgrammeList");
 const faqList = document.querySelector("#faqList");
+const diagnosticApp = document.querySelector("#diagnosticApp");
+const outcomeList = document.querySelector("#outcomeList");
+const certificatePanel = document.querySelector("#certificatePanel");
+const stickyProgressText = document.querySelector("#stickyProgressText");
+const stickyProgressLink = document.querySelector("#stickyProgressLink");
 const progressMeter = document.querySelector("#progressMeter");
 const progressPercent = document.querySelector("#progressPercent");
 const completedModules = document.querySelector("#completedModules");
@@ -1077,11 +1443,16 @@ function loadState() {
     const parsed = JSON.parse(window.localStorage.getItem(storageKey) || "{}");
     return {
       modules: parsed.modules && typeof parsed.modules === "object" ? parsed.modules : {},
+      diagnostic:
+        parsed.diagnostic && typeof parsed.diagnostic === "object" && Array.isArray(parsed.diagnostic.answers)
+          ? parsed.diagnostic
+          : { answers: [] },
+      certificateName: parsed.certificateName || "",
       activeModuleId: parsed.activeModuleId || "foundations",
       activeTab: parsed.activeTab || "course",
     };
   } catch {
-    return { modules: {}, activeModuleId: "foundations", activeTab: "course" };
+    return { modules: {}, diagnostic: { answers: [] }, certificateName: "", activeModuleId: "foundations", activeTab: "course" };
   }
 }
 
@@ -1158,6 +1529,31 @@ function getTotals() {
   return { totalChecks, doneChecks, totalQuiz, doneQuiz, completed, percent };
 }
 
+function getDiagnosticAnswers() {
+  state.diagnostic ||= { answers: [] };
+  state.diagnostic.answers ||= [];
+  return state.diagnostic.answers;
+}
+
+function getDiagnosticResult() {
+  const copy = getCopy();
+  const questions = copy.diagnostic?.questions || [];
+  const answers = getDiagnosticAnswers();
+  const score = answers.reduce((sum, answer) => sum + (Number.isFinite(Number(answer)) ? Number(answer) : 0), 0);
+  const max = questions.length * 2;
+  const percent = max ? Math.round((score / max) * 100) : 0;
+  const level = (copy.diagnostic?.levels || [])
+    .filter((item) => percent >= item.min)
+    .at(-1) || copy.diagnostic?.levels?.[0];
+  const weakQuestion = questions
+    .map((question, index) => ({ ...question, score: Number(answers[index] ?? 0), index }))
+    .sort((a, b) => a.score - b.score)[0];
+  const recommendedModuleId = weakQuestion?.moduleId || "foundations";
+  const recommendedModule = getModules().find((module) => module.id === recommendedModuleId) || getModules()[0];
+
+  return { answers, questions, score, max, percent, level, recommendedModule };
+}
+
 function renderStaticText() {
   const copy = getCopy();
   document.documentElement.lang = currentLanguage;
@@ -1215,6 +1611,14 @@ function renderProgress() {
   checkpointTotal.textContent = `${totals.doneChecks}/${totals.totalChecks}`;
   quizScore.textContent = `${totals.doneQuiz}/${totals.totalQuiz}`;
   resetProgress.textContent = copy.ui.resetProgress;
+  if (stickyProgressText) {
+    stickyProgressText.textContent =
+      totals.completed === getModules().length ? copy.ui.stickyComplete : `${totals.percent}% ${copy.ui.progressLabel.toLowerCase()}`;
+  }
+  if (stickyProgressLink) {
+    stickyProgressLink.href = totals.completed === getModules().length ? "#certificatePanel" : "#academy";
+    stickyProgressLink.textContent = totals.completed === getModules().length ? copy.ui.certificateTitle : copy.ui.stickyCta;
+  }
 }
 
 function renderModules() {
@@ -1457,6 +1861,138 @@ function renderResources(module) {
   `;
 }
 
+function renderDiagnostic() {
+  if (!diagnosticApp) {
+    return;
+  }
+
+  const copy = getCopy();
+  const result = getDiagnosticResult();
+  const answeredCount = result.questions.reduce((sum, _, index) => sum + (result.answers[index] !== undefined ? 1 : 0), 0);
+  const currentIndex = result.questions.findIndex((_, index) => result.answers[index] === undefined);
+  const progressPercent = result.questions.length ? Math.round((answeredCount / result.questions.length) * 100) : 0;
+
+  if (currentIndex === -1 && result.questions.length) {
+    const priorities = result.questions
+      .map((question, index) => ({ ...question, score: Number(result.answers[index] ?? 0) }))
+      .filter((question) => question.score < 2)
+      .slice(0, 3);
+    const recommendations = priorities.length
+      ? priorities
+      : [{ category: result.recommendedModule.title, q: result.recommendedModule.short, moduleId: result.recommendedModule.id }];
+
+    diagnosticApp.innerHTML = `
+      <div class="diagnostic-result-card">
+        <div class="diagnostic-score-ring" style="--score:${result.percent}%">
+          <strong>${result.percent}</strong>
+          <span>/100</span>
+        </div>
+        <div class="diagnostic-result-copy">
+          <span>${escapeHtml(copy.ui.diagnosticScore)}</span>
+          <h3>${escapeHtml(result.level?.title || copy.ui.diagnosticScore)}</h3>
+          <p>${escapeHtml(result.level?.text || "")}</p>
+          <div class="diagnostic-recommendations">
+            ${recommendations
+              .map(
+                (item) => `
+                  <button type="button" data-action="diagnostic-start" data-module="${escapeHtml(item.moduleId || result.recommendedModule.id)}">
+                    <strong>${escapeHtml(item.category || result.recommendedModule.title)}</strong>
+                    <span>${escapeHtml(item.q || result.recommendedModule.short)}</span>
+                  </button>
+                `,
+              )
+              .join("")}
+          </div>
+          <div class="diagnostic-actions">
+            <button class="flow-primary" type="button" data-action="diagnostic-start" data-module="${escapeHtml(result.recommendedModule.id)}">${escapeHtml(copy.ui.diagnosticStartCourse)}</button>
+            <a class="flow-secondary" href="${escapeHtml(getHomePath(currentLanguage, "#contact"))}">${escapeHtml(copy.ui.diagnosticContact)}</a>
+            <button class="reset-progress" type="button" data-action="diagnostic-reset">${escapeHtml(copy.ui.diagnosticReset)}</button>
+          </div>
+        </div>
+      </div>
+    `;
+    return;
+  }
+
+  const question = result.questions[currentIndex] || result.questions[0];
+  diagnosticApp.innerHTML = `
+    <div class="diagnostic-question-card">
+      <div class="diagnostic-progress">
+        <span>${escapeHtml(copy.ui.diagnosticStep)} ${currentIndex + 1} ${escapeHtml(copy.ui.diagnosticOf)} ${result.questions.length}</span>
+        <strong>${progressPercent}%</strong>
+        <div aria-hidden="true"><i style="width:${progressPercent}%"></i></div>
+      </div>
+      <span class="diagnostic-category">${escapeHtml(question.category)}</span>
+      <h3>${escapeHtml(question.q)}</h3>
+      <div class="diagnostic-options">
+        ${question.options
+          .map(
+            ([label, score]) => `
+              <button type="button" data-action="diagnostic-answer" data-question="${currentIndex}" data-score="${score}">
+                ${escapeHtml(label)}
+              </button>
+            `,
+          )
+          .join("")}
+      </div>
+    </div>
+  `;
+}
+
+function renderOutcomes() {
+  if (!outcomeList) {
+    return;
+  }
+
+  const copy = getCopy();
+  outcomeList.innerHTML = (copy.outcomes || [])
+    .map(
+      ([index, title, text]) => `
+        <article class="outcome-card">
+          <span>${escapeHtml(index)}</span>
+          <h3>${escapeHtml(title)}</h3>
+          <p>${escapeHtml(text)}</p>
+        </article>
+      `,
+    )
+    .join("");
+}
+
+function renderCertificate() {
+  if (!certificatePanel) {
+    return;
+  }
+
+  const copy = getCopy();
+  const totals = getTotals();
+  const isUnlocked = totals.completed === getModules().length;
+  const displayName = (state.certificateName || "").trim() || copy.ui.certificateFallbackName;
+  const locale = currentLanguage === "ar" ? "ar-TN" : currentLanguage === "fr" ? "fr-TN" : "en-US";
+  const issuedDate = new Intl.DateTimeFormat(locale, { day: "2-digit", month: "short", year: "numeric" }).format(new Date());
+  const shareText = `${displayName} ${copy.ui.certificateAchievement} ${getBootcampUrl(currentLanguage)}#certificatePanel`;
+  const linkedInUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(`${getBootcampUrl(currentLanguage)}#certificatePanel`)}`;
+
+  certificatePanel.classList.toggle("is-unlocked", isUnlocked);
+  certificatePanel.innerHTML = `
+    <span class="asset-label">${escapeHtml(copy.ui.certificateTitle)}</span>
+    <h3>${escapeHtml(isUnlocked ? copy.ui.certificateUnlocked : copy.ui.certificateLocked)}</h3>
+    <div class="certificate-preview" aria-hidden="${isUnlocked ? "false" : "true"}">
+      <span>Growth Marketing with AI</span>
+      <strong>${escapeHtml(displayName)}</strong>
+      <p>${escapeHtml(copy.ui.certificateAchievement)}</p>
+      <small>${escapeHtml(copy.ui.certificateIssued)} - ${escapeHtml(issuedDate)}</small>
+    </div>
+    <label class="certificate-name">
+      <span>${escapeHtml(copy.ui.certificateNameLabel)}</span>
+      <input id="certificateName" type="text" value="${escapeHtml(state.certificateName || "")}" placeholder="${escapeHtml(copy.ui.certificateNamePlaceholder)}" autocomplete="name">
+    </label>
+    <div class="certificate-actions">
+      <button class="flow-primary" type="button" data-action="copy-certificate" data-share="${escapeHtml(shareText)}" ${isUnlocked ? "" : "disabled"}>${escapeHtml(copy.ui.certificateCopy)}</button>
+      <a class="flow-secondary ${isUnlocked ? "" : "is-disabled"}" href="${isUnlocked ? escapeHtml(linkedInUrl) : "#academy"}" ${isUnlocked ? 'target="_blank"' : ""} rel="noreferrer" aria-disabled="${isUnlocked ? "false" : "true"}">${escapeHtml(copy.ui.certificateShare)}</a>
+    </div>
+  `;
+}
+
 function renderSeoContent() {
   const copy = getCopy();
   const modules = getModules();
@@ -1623,6 +2159,9 @@ function renderAll() {
   renderModules();
   updateTabs();
   renderPanel();
+  renderDiagnostic();
+  renderOutcomes();
+  renderCertificate();
   renderSeoContent();
   renderSchemas();
 }
@@ -1684,6 +2223,7 @@ panel?.addEventListener("change", (event) => {
   renderPanel();
   renderProgress();
   renderModules();
+  renderCertificate();
 });
 
 panel?.addEventListener("click", (event) => {
@@ -1728,7 +2268,7 @@ panel?.addEventListener("click", (event) => {
   }
 
   if (actionButton?.dataset.action === "finish-bootcamp") {
-    document.querySelector(".bootcamp-final")?.scrollIntoView({
+    document.querySelector("#certificatePanel")?.scrollIntoView({
       behavior: prefersReducedMotion ? "auto" : "smooth",
       block: "center",
     });
@@ -1772,11 +2312,61 @@ panel?.addEventListener("click", (event) => {
   }
 });
 
+diagnosticApp?.addEventListener("click", (event) => {
+  const actionButton = event.target.closest("[data-action]");
+  if (!actionButton) {
+    return;
+  }
+
+  if (actionButton.dataset.action === "diagnostic-answer") {
+    const answers = getDiagnosticAnswers();
+    answers[Number(actionButton.dataset.question)] = Number(actionButton.dataset.score);
+    saveState();
+    renderDiagnostic();
+    return;
+  }
+
+  if (actionButton.dataset.action === "diagnostic-reset") {
+    state.diagnostic = { answers: [] };
+    saveState();
+    renderDiagnostic();
+    return;
+  }
+
+  if (actionButton.dataset.action === "diagnostic-start") {
+    const moduleId = actionButton.dataset.module || getDiagnosticResult().recommendedModule.id;
+    goToModule(moduleId);
+  }
+});
+
+certificatePanel?.addEventListener("input", (event) => {
+  if (event.target.id !== "certificateName") {
+    return;
+  }
+  state.certificateName = event.target.value;
+  saveState();
+  const copy = getCopy();
+  const displayName = state.certificateName.trim() || copy.ui.certificateFallbackName;
+  certificatePanel.querySelector(".certificate-preview strong").textContent = displayName;
+  const copyButton = certificatePanel.querySelector('[data-action="copy-certificate"]');
+  if (copyButton) {
+    copyButton.dataset.share = `${displayName} ${copy.ui.certificateAchievement} ${getBootcampUrl(currentLanguage)}#certificatePanel`;
+  }
+});
+
+certificatePanel?.addEventListener("click", (event) => {
+  const copyButton = event.target.closest('[data-action="copy-certificate"]');
+  if (!copyButton || copyButton.disabled) {
+    return;
+  }
+  copyText(copyButton.dataset.share || "", copyButton);
+});
+
 resetProgress?.addEventListener("click", () => {
   if (!window.confirm(getCopy().ui.resetConfirm)) {
     return;
   }
-  state = { modules: {}, activeModuleId: "foundations", activeTab: "course" };
+  state = { modules: {}, diagnostic: { answers: [] }, certificateName: "", activeModuleId: "foundations", activeTab: "course" };
   activeModuleId = "foundations";
   activeTab = "course";
   saveState();

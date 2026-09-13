@@ -283,7 +283,7 @@ const translations = {
       title: "Growth Marketing with AI Bootcamp.",
       text: "A free practical path to turn AI into a growth engine: strategy, content, SEO/GEO, paid ads, UGC, automation, and measurement.",
       pointsAria: "Bootcamp content",
-      points: ["6 practical modules", "Interactive quizzes", "Action checkpoints"],
+      points: ["6 practical modules", "AI Growth Score", "Workbook + certificate"],
       previewRows: [
         ["Growth Loop + AI", "Checkpoint"],
         ["Content + SEO/GEO", "Quiz"],
@@ -571,7 +571,7 @@ const translations = {
       title: "Growth Marketing with AI Bootcamp.",
       text: "Un parcours gratuit pour apprendre à transformer l'IA en moteur de croissance : stratégie, contenu, SEO/GEO, paid ads, UGC, automation et mesure.",
       pointsAria: "Contenu du bootcamp",
-      points: ["6 modules pratiques", "Quiz interactifs", "Checkpoints actionnables"],
+      points: ["6 modules pratiques", "AI Growth Score", "Workbook + certificat"],
       previewRows: [
         ["Growth Loop + IA", "Checkpoint"],
         ["Contenu + SEO/GEO", "Quiz"],
@@ -859,7 +859,7 @@ const translations = {
       title: "Growth Marketing with AI Bootcamp.",
       text: "مسار عملي مجاني لتحويل الذكاء الاصطناعي إلى محرك نمو: استراتيجية، محتوى، SEO/GEO، إعلانات، UGC، أتمتة وقياس.",
       pointsAria: "محتوى البوتكامب",
-      points: ["6 وحدات عملية", "اختبارات تفاعلية", "نقاط تحقق قابلة للتنفيذ"],
+      points: ["6 وحدات عملية", "AI Growth Score", "Workbook + شهادة"],
       previewRows: [
         ["حلقة النمو + الذكاء الاصطناعي", "Checkpoint"],
         ["المحتوى + SEO/GEO", "Quiz"],
