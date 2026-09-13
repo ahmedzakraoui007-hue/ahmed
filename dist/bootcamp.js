@@ -36,6 +36,9 @@ const bootcampCopy = {
       statModules: "modules pratiques",
       statQuiz: "questions de quiz",
       statChecks: "checkpoints actionnables",
+      heroPathLabel: "Parcours conseillé",
+      heroPathTitle: "Commence par diagnostiquer ton moteur growth.",
+      heroPathText: "Chaque module se termine par un quiz, des checkpoints et un prompt prêt à utiliser.",
       searchLabel: "Trouver un module",
       searchPlaceholder: "Rechercher...",
       progressLabel: "Progression",
@@ -61,6 +64,11 @@ const bootcampCopy = {
       schemaPrerequisites: "Avoir un projet, une offre ou un site à améliorer.",
       moduleLabel: "Module",
       duration: "Durée",
+      moduleProgress: "Progression du module",
+      moduleInProgress: "En cours",
+      moduleComplete: "Validé",
+      checkpointMini: "checks",
+      quizMini: "quiz",
       lessons: "Leçons",
       promptTitle: "Prompt atelier",
       copyPrompt: "Copier le prompt",
@@ -358,6 +366,9 @@ const bootcampCopy = {
       statModules: "practical modules",
       statQuiz: "quiz questions",
       statChecks: "action checkpoints",
+      heroPathLabel: "Recommended path",
+      heroPathTitle: "Start by diagnosing your growth engine.",
+      heroPathText: "Each module ends with a quiz, checkpoints, and a ready-to-use prompt.",
       searchLabel: "Find a module",
       searchPlaceholder: "Search...",
       progressLabel: "Progress",
@@ -382,6 +393,11 @@ const bootcampCopy = {
       schemaPrerequisites: "Have a project, offer, or website to improve.",
       moduleLabel: "Module",
       duration: "Duration",
+      moduleProgress: "Module progress",
+      moduleInProgress: "In progress",
+      moduleComplete: "Validated",
+      checkpointMini: "checks",
+      quizMini: "quiz",
       lessons: "Lessons",
       promptTitle: "Workshop prompt",
       copyPrompt: "Copy prompt",
@@ -445,6 +461,9 @@ const bootcampCopy = {
       statModules: "وحدات عملية",
       statQuiz: "أسئلة اختبار",
       statChecks: "نقاط تحقق",
+      heroPathLabel: "المسار المقترح",
+      heroPathTitle: "ابدأ بتشخيص محرك النمو.",
+      heroPathText: "كل وحدة تنتهي باختبار، نقاط تحقق وPrompt جاهز للاستخدام.",
       searchLabel: "ابحث عن وحدة",
       searchPlaceholder: "بحث...",
       progressLabel: "التقدم",
@@ -469,6 +488,11 @@ const bootcampCopy = {
       schemaPrerequisites: "امتلاك مشروع، عرض أو موقع تريد تحسينه.",
       moduleLabel: "الوحدة",
       duration: "المدة",
+      moduleProgress: "تقدم الوحدة",
+      moduleInProgress: "قيد الإنجاز",
+      moduleComplete: "تم التحقق",
+      checkpointMini: "نقاط",
+      quizMini: "اختبار",
       lessons: "الدروس",
       promptTitle: "Prompt عملي",
       copyPrompt: "نسخ الPrompt",
@@ -1234,12 +1258,22 @@ function renderCourse(module) {
   const copy = getCopy();
   const moduleState = getModuleState(module.id);
   const moduleIndex = getModules().findIndex((item) => item.id === module.id) + 1;
+  const checksDone = moduleState.checkpoints.filter(Boolean).length;
+  const quizDone = moduleState.checked ? moduleState.correct : 0;
+  const moduleComplete = isModuleComplete(module);
 
   panel.innerHTML = `
     <div class="module-head">
-      <span>${escapeHtml(copy.ui.moduleLabel)} ${String(moduleIndex).padStart(2, "0")} - ${escapeHtml(copy.ui.duration)} ${escapeHtml(module.duration)}</span>
+      <div class="module-head-top">
+        <span>${escapeHtml(copy.ui.moduleLabel)} ${String(moduleIndex).padStart(2, "0")} - ${escapeHtml(copy.ui.duration)} ${escapeHtml(module.duration)}</span>
+        <strong>${escapeHtml(moduleComplete ? copy.ui.moduleComplete : copy.ui.moduleInProgress)}</strong>
+      </div>
       <h2>${escapeHtml(module.title)}</h2>
       <p>${escapeHtml(module.objective)}</p>
+      <div class="module-progress-mini" aria-label="${escapeHtml(copy.ui.moduleProgress)}">
+        <span><strong>${checksDone}/${module.checkpoints.length}</strong> ${escapeHtml(copy.ui.checkpointMini)}</span>
+        <span><strong>${quizDone}/${module.quiz.length}</strong> ${escapeHtml(copy.ui.quizMini)}</span>
+      </div>
     </div>
 
     <div class="lesson-grid" aria-label="${escapeHtml(copy.ui.lessons)}">
@@ -1578,6 +1612,7 @@ panel?.addEventListener("change", (event) => {
   const moduleState = getModuleState(activeModuleId);
   moduleState.checkpoints[Number(event.target.dataset.checkpoint)] = event.target.checked;
   saveState();
+  renderPanel();
   renderProgress();
   renderModules();
 });
