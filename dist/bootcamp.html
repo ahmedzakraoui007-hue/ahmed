@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootcamp gratuit Growth Marketing with AI | Ahmed Zakraoui</title>
+    <meta
+      name="description"
+      content="Bootcamp gratuit Growth Marketing with AI par Ahmed Zakraoui : modules pratiques, quiz, checkpoints, prompts et ressources pour construire un système marketing IA."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://ahmedzakraoui.com/bootcamp" />
+    <link rel="alternate" hreflang="fr" href="https://ahmedzakraoui.com/bootcamp" />
+    <link rel="alternate" hreflang="en" href="https://ahmedzakraoui.com/bootcamp?lang=en" />
+    <link rel="alternate" hreflang="ar" href="https://ahmedzakraoui.com/bootcamp?lang=ar" />
+    <link rel="alternate" hreflang="x-default" href="https://ahmedzakraoui.com/bootcamp" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Ahmed Zakraoui" />
+    <meta property="og:title" content="Bootcamp gratuit Growth Marketing with AI" />
+    <meta
+      property="og:description"
+      content="Un bootcamp gratuit avec modules, quiz, checkpoints et prompts pour construire un système marketing avec l'IA."
+    />
+    <meta property="og:url" content="https://ahmedzakraoui.com/bootcamp" />
+    <meta property="og:image" content="https://ahmedzakraoui.com/assets/ahmed-hero.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Bootcamp gratuit Growth Marketing with AI" />
+    <meta
+      name="twitter:description"
+      content="Modules pratiques, quiz, checkpoints et ressources pour apprendre le growth marketing avec l'IA."
+    />
+    <meta name="twitter:image" content="https://ahmedzakraoui.com/assets/ahmed-hero.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;650;700;800;900&family=Space+Grotesk:wght@700;800;900&family=Tajawal:wght@500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/bootcamp.js" defer></script>
+  </head>
+  <body class="bootcamp-body" data-page="bootcamp">
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+    <header class="site-header" id="siteHeader">
+      <a class="brand" href="/" aria-label="Accueil Ahmed Zakraoui">
+        <span class="brand-mark">AZ</span>
+        <span class="brand-copy">
+          <strong>Ahmed Zakraoui</strong>
+          <small data-i18n="brandSmall">Systèmes Marketing IA</small>
+        </span>
+      </a>
+      <button class="menu-button" id="menuButton" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" id="nav" aria-label="Navigation bootcamp">
+        <a href="/" data-i18n="navHome">Accueil</a>
+        <a href="/#services" data-i18n="navServices">Services</a>
+        <a href="/#work" data-i18n="navWork">Projets</a>
+        <a href="/bootcamp" data-i18n="navBootcamp">Bootcamp</a>
+        <div class="language-switch" role="group" aria-label="Sélecteur de langue">
+          <a class="language-option is-active" href="/bootcamp" data-lang="fr" hreflang="fr" aria-current="true">FR</a>
+          <a class="language-option" href="/bootcamp?lang=en" data-lang="en" hreflang="en">EN</a>
+          <a class="language-option" href="/bootcamp?lang=ar" data-lang="ar" hreflang="ar">AR</a>
+        </div>
+        <a href="/#contact" class="nav-cta" data-i18n="navContact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="bootcamp-main">
+      <section class="bootcamp-hero section-shell">
+        <div class="bootcamp-hero-copy">
+          <span class="bootcamp-kicker" data-i18n="heroKicker">Bootcamp gratuit - avec quiz et checkpoints</span>
+          <h1 data-i18n="heroTitle">Growth Marketing with AI</h1>
+          <p data-i18n="heroText">
+            Un parcours pratique pour transformer l'IA en système d'acquisition : stratégie, contenu, SEO/GEO, ads,
+            UGC, automation et mesure.
+          </p>
+          <div class="bootcamp-hero-actions">
+            <a class="button primary" href="#academy" data-i18n="heroPrimary">Commencer le bootcamp</a>
+            <a class="button secondary" href="/#contact" data-i18n="heroSecondary">Appliquer ça à mon business</a>
+          </div>
+        </div>
+        <div class="bootcamp-hero-card" aria-label="Résumé du bootcamp">
+          <div class="bootcamp-stat">
+            <strong>6</strong>
+            <span data-i18n="statModules">modules pratiques</span>
+          </div>
+          <div class="bootcamp-stat">
+            <strong>12</strong>
+            <span data-i18n="statQuiz">questions de quiz</span>
+          </div>
+          <div class="bootcamp-stat">
+            <strong>18</strong>
+            <span data-i18n="statChecks">checkpoints actionnables</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="bootcamp-academy section-shell" id="academy">
+        <aside class="bootcamp-sidebar" aria-label="Modules du bootcamp">
+          <div class="bootcamp-search">
+            <label for="moduleSearch" data-i18n="searchLabel">Trouver un module</label>
+            <input id="moduleSearch" type="search" placeholder="Rechercher..." autocomplete="off" />
+          </div>
+
+          <div class="bootcamp-progress-card">
+            <div class="progress-label">
+              <span data-i18n="progressLabel">Progression</span>
+              <strong id="progressPercent">0%</strong>
+            </div>
+            <div class="progress-track" aria-hidden="true"><span id="progressMeter"></span></div>
+            <div class="bootcamp-progress-grid">
+              <div>
+                <strong id="completedModules">0/6</strong>
+                <span data-i18n="progressModules">Modules</span>
+              </div>
+              <div>
+                <strong id="checkpointTotal">0/18</strong>
+                <span data-i18n="progressChecks">Checks</span>
+              </div>
+              <div>
+                <strong id="quizScore">0/12</strong>
+                <span data-i18n="progressQuiz">Quiz</span>
+              </div>
+            </div>
+            <button class="reset-progress" type="button" id="resetProgress" data-i18n="resetProgress">Réinitialiser</button>
+          </div>
+
+          <nav class="bootcamp-module-list" id="moduleList" aria-label="Liste des modules"></nav>
+        </aside>
+
+        <section class="bootcamp-workspace" aria-live="polite">
+          <div class="bootcamp-tabs" role="tablist" aria-label="Contenu du module">
+            <button class="bootcamp-tab is-active" type="button" data-tab="course" role="tab" aria-selected="true" data-i18n="tabCourse">Cours</button>
+            <button class="bootcamp-tab" type="button" data-tab="quiz" role="tab" aria-selected="false" data-i18n="tabQuiz">Quiz</button>
+            <button class="bootcamp-tab" type="button" data-tab="resources" role="tab" aria-selected="false" data-i18n="tabResources">Ressources</button>
+          </div>
+          <article class="bootcamp-panel" id="bootcampPanel"></article>
+        </section>
+      </section>
+
+      <section class="bootcamp-final section-shell">
+        <div>
+          <h2 data-i18n="finalTitle">Tu veux l'appliquer plus vite sur ton business ?</h2>
+          <p data-i18n="finalText">
+            Le bootcamp est gratuit. Si tu veux aller plus vite, on peut transformer ces checkpoints en plan d'action
+            pour ton entreprise.
+          </p>
+        </div>
+        <a class="button primary" href="/#contact" data-i18n="finalCta">Lancer mon système IA</a>
+      </section>
+    </main>
+
+    <a class="floating-cta" href="https://wa.me/21654302654" target="_blank" rel="noreferrer">WhatsApp</a>
+  </body>
+</html>

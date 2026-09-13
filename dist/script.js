@@ -79,6 +79,7 @@ const translations = {
       proof: "Proof",
       work: "Work",
       training: "Training",
+      bootcamp: "Free Bootcamp",
       cta: "Start a project",
     },
     hero: {
@@ -277,6 +278,20 @@ const translations = {
         "Team playbooks",
       ],
     },
+    homeBootcamp: {
+      eyebrow: "Free bootcamp",
+      title: "Growth Marketing with AI Bootcamp.",
+      text: "A free practical path to turn AI into a growth engine: strategy, content, SEO/GEO, paid ads, UGC, automation, and measurement.",
+      pointsAria: "Bootcamp content",
+      points: ["6 practical modules", "Interactive quizzes", "Action checkpoints"],
+      previewRows: [
+        ["Growth Loop + AI", "Checkpoint"],
+        ["Content + SEO/GEO", "Quiz"],
+        ["Ads, UGC + Analytics", "Score"],
+      ],
+      primary: "Start for free",
+      secondary: "See the modules",
+    },
     contact: {
       eyebrow: "Work with Ahmed",
       title: "Ready to turn your marketing into a smarter system?",
@@ -299,7 +314,7 @@ const translations = {
     },
     footer: {
       text: "AI marketing systems, e-commerce websites, SEO/GEO, paid social, UGC video, and WordPress for MENA.",
-      nav: ["Services", "UGC Video", "Selected Work", "AI Growth Sprint", "Team Training", "Contact"],
+      nav: ["Services", "UGC Video", "Selected Work", "AI Growth Sprint", "Team Training", "Free Bootcamp", "Contact"],
       whatsapp: "Book a call",
       linkedin: "LinkedIn profile",
       bottom: ["Tunis, Tunisia", "AI Strategy - SEO/GEO - Media Buying - UGC Video - WordPress"],
@@ -352,6 +367,7 @@ const translations = {
       proof: "Preuves",
       work: "Projets",
       training: "Formation",
+      bootcamp: "Bootcamp gratuit",
       cta: "Lancer un projet",
     },
     hero: {
@@ -550,6 +566,20 @@ const translations = {
         "Playbooks équipe",
       ],
     },
+    homeBootcamp: {
+      eyebrow: "Bootcamp gratuit",
+      title: "Growth Marketing with AI Bootcamp.",
+      text: "Un parcours gratuit pour apprendre à transformer l'IA en moteur de croissance : stratégie, contenu, SEO/GEO, paid ads, UGC, automation et mesure.",
+      pointsAria: "Contenu du bootcamp",
+      points: ["6 modules pratiques", "Quiz interactifs", "Checkpoints actionnables"],
+      previewRows: [
+        ["Growth Loop + IA", "Checkpoint"],
+        ["Contenu + SEO/GEO", "Quiz"],
+        ["Ads, UGC + Analytics", "Score"],
+      ],
+      primary: "Commencer gratuitement",
+      secondary: "Voir les modules",
+    },
     contact: {
       eyebrow: "Travailler avec Ahmed",
       title: "Prêt à transformer votre marketing en système plus intelligent ?",
@@ -572,7 +602,7 @@ const translations = {
     },
     footer: {
       text: "Systèmes marketing IA, sites e-commerce, SEO/GEO, paid social, vidéo UGC et WordPress pour la région MENA.",
-      nav: ["Services", "Vidéo UGC", "Projets", "AI Growth Sprint", "Formation", "Contact"],
+      nav: ["Services", "Vidéo UGC", "Projets", "AI Growth Sprint", "Formation", "Bootcamp gratuit", "Contact"],
       whatsapp: "Prendre RDV",
       linkedin: "Profil LinkedIn",
       bottom: ["Tunis, Tunisie", "Stratégie IA - SEO/GEO - Media Buying - Vidéo UGC - WordPress"],
@@ -625,6 +655,7 @@ const translations = {
       proof: "الأعمال",
       work: "المشاريع",
       training: "التدريب",
+      bootcamp: "بوتكامب مجاني",
       cta: "ابدأ مشروعا",
     },
     hero: {
@@ -823,6 +854,20 @@ const translations = {
         "Playbooks للفِرق",
       ],
     },
+    homeBootcamp: {
+      eyebrow: "بوتكامب مجاني",
+      title: "Growth Marketing with AI Bootcamp.",
+      text: "مسار عملي مجاني لتحويل الذكاء الاصطناعي إلى محرك نمو: استراتيجية، محتوى، SEO/GEO، إعلانات، UGC، أتمتة وقياس.",
+      pointsAria: "محتوى البوتكامب",
+      points: ["6 وحدات عملية", "اختبارات تفاعلية", "نقاط تحقق قابلة للتنفيذ"],
+      previewRows: [
+        ["حلقة النمو + الذكاء الاصطناعي", "Checkpoint"],
+        ["المحتوى + SEO/GEO", "Quiz"],
+        ["الإعلانات، UGC والتحليلات", "Score"],
+      ],
+      primary: "ابدأ مجانا",
+      secondary: "شاهد الوحدات",
+    },
     contact: {
       eyebrow: "اعمل مع أحمد",
       title: "جاهز لتحويل تسويقك إلى نظام أذكى؟",
@@ -845,7 +890,7 @@ const translations = {
     },
     footer: {
       text: "أنظمة تسويق بالذكاء الاصطناعي، مواقع تجارة إلكترونية، SEO/GEO، إعلانات ممولة، فيديو UGC وWordPress لمنطقة MENA.",
-      nav: ["الخدمات", "فيديو UGC", "المشاريع", "Sprint النمو", "التدريب", "التواصل"],
+      nav: ["الخدمات", "فيديو UGC", "المشاريع", "Sprint النمو", "التدريب", "بوتكامب مجاني", "التواصل"],
       whatsapp: "احجز موعدا",
       linkedin: "ملف LinkedIn",
       bottom: ["تونس", "استراتيجية الذكاء الاصطناعي - SEO/GEO - الإعلانات الممولة - فيديو UGC - WordPress"],
@@ -932,6 +977,11 @@ const getLanguageHref = (language, isThanksPage = false) => {
   }
 
   return languagePaths[language] || "/";
+};
+
+const getBootcampHref = (language, hash = "") => {
+  const path = language === "fr" ? "/bootcamp" : `/bootcamp?lang=${language}`;
+  return `${path}${hash}`;
 };
 
 const upsertMetaName = (name, content) => {
@@ -1346,6 +1396,9 @@ const applyLanguage = (language, shouldPersist = true) => {
   setText('.site-header .nav > a[href="#proof"]', copy.nav.proof);
   setText('.site-header .nav > a[href="#work"]', copy.nav.work);
   setText('.site-header .nav > a[href="#training"]', copy.nav.training);
+  setText(".site-header .nav > .bootcamp-link", copy.nav.bootcamp);
+  setAllAttribute(".bootcamp-link", "href", getBootcampHref(language));
+  setAllAttribute(".bootcamp-modules-link", "href", getBootcampHref(language, "#academy"));
   setText('.site-header .nav > a[href="#contact"]', copy.nav.cta);
 
   setAllText(".hero-rail span", copy.hero.rail);
@@ -1474,6 +1527,15 @@ const applyLanguage = (language, shouldPersist = true) => {
   setText(".training-cta", copy.training.cta);
   setAllText(".tool-stack span", copy.training.stack);
   setAttribute(".tool-stack", "aria-label", copy.aria.trainingTopics);
+  setText(".home-bootcamp .eyebrow", copy.homeBootcamp.eyebrow);
+  setText(".home-bootcamp h2", copy.homeBootcamp.title);
+  setText(".home-bootcamp-copy > p:not(.eyebrow)", copy.homeBootcamp.text);
+  setAttribute(".home-bootcamp-points", "aria-label", copy.homeBootcamp.pointsAria);
+  setAllText(".home-bootcamp-points span", copy.homeBootcamp.points);
+  setAllText(".bootcamp-preview-row span", copy.homeBootcamp.previewRows.map((row) => row[0]));
+  setAllText(".bootcamp-preview-row small", copy.homeBootcamp.previewRows.map((row) => row[1]));
+  setText(".home-bootcamp-actions .primary", copy.homeBootcamp.primary);
+  setText(".home-bootcamp-actions .secondary", copy.homeBootcamp.secondary);
 
   setText(".contact-copy .eyebrow", copy.contact.eyebrow);
   setText(".contact-copy h2", copy.contact.title);

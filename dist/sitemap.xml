@@ -30,4 +30,14 @@
     <xhtml:link rel="alternate" hreflang="ar" href="https://ahmedzakraoui.com/ar/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://ahmedzakraoui.com/" />
   </url>
+  <url>
+    <loc>https://ahmedzakraoui.com/bootcamp</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ahmedzakraoui.com/bootcamp" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://ahmedzakraoui.com/bootcamp?lang=en" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ahmedzakraoui.com/bootcamp?lang=ar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://ahmedzakraoui.com/bootcamp" />
+  </url>
 </urlset>
