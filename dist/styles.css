@@ -3423,6 +3423,7 @@ html[dir="rtl"] .floating-cta {
 
 .bootcamp-workspace {
   min-width: 0;
+  scroll-margin-top: 128px;
 }
 
 .bootcamp-tabs {
@@ -3462,6 +3463,7 @@ html[dir="rtl"] .floating-cta {
   display: grid;
   gap: 10px;
   max-width: 760px;
+  scroll-margin-top: 128px;
 }
 
 .module-head-top {
@@ -3601,7 +3603,8 @@ html[dir="rtl"] .floating-cta {
 .prompt-lab button,
 .quiz-submit,
 .resource-copy,
-.reset-progress {
+.reset-progress,
+.flow-primary {
   min-height: 42px;
   padding: 0 14px;
   border: 0;
@@ -3610,6 +3613,68 @@ html[dir="rtl"] .floating-cta {
   color: var(--ink);
   cursor: pointer;
   font-weight: 950;
+}
+
+.flow-secondary {
+  min-height: 42px;
+  padding: 0 14px;
+  border: 1px solid rgba(8, 8, 6, 0.12);
+  border-radius: 999px;
+  background: var(--white);
+  color: var(--ink);
+  cursor: pointer;
+  font-weight: 950;
+}
+
+.bootcamp-flow-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 18px;
+  padding: 14px;
+  border: 1px solid rgba(255, 90, 20, 0.18);
+  border-radius: 20px;
+  background: rgba(255, 90, 20, 0.07);
+}
+
+.bootcamp-flow-actions > div,
+.quiz-actions.has-next {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.flow-hint {
+  max-width: 360px;
+  color: #554d45;
+  font-size: 0.88rem;
+  font-weight: 850;
+}
+
+.flow-next-module {
+  display: grid;
+  min-height: 54px;
+  min-width: min(100%, 260px);
+  padding-block: 9px;
+  text-align: left;
+}
+
+.flow-next-module span {
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.flow-next-module strong {
+  overflow: hidden;
+  color: var(--ink);
+  font-size: 0.92rem;
+  line-height: 1.15;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .checkpoint-card {
@@ -3675,6 +3740,11 @@ html[dir="rtl"] .floating-cta {
   gap: 10px;
   align-items: center;
   margin-top: 16px;
+  scroll-margin-top: 128px;
+}
+
+.quiz-actions.has-next .quiz-feedback {
+  flex: 1 1 100%;
 }
 
 .resource-grid {
@@ -3827,7 +3897,8 @@ html[dir="rtl"] .floating-cta {
 }
 
 html[dir="rtl"] .bootcamp-module,
-html[dir="rtl"] .quiz-option {
+html[dir="rtl"] .quiz-option,
+html[dir="rtl"] .flow-next-module {
   text-align: right;
 }
 

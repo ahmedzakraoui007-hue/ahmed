@@ -69,6 +69,11 @@ const bootcampCopy = {
       moduleComplete: "Validé",
       checkpointMini: "checks",
       quizMini: "quiz",
+      courseFlowHint: "Quand tu as compris le module, valide-le avec le quiz.",
+      courseNext: "Passer au quiz",
+      courseResources: "Voir les ressources",
+      nextModule: "Module suivant",
+      finishBootcamp: "Terminer le bootcamp",
       lessons: "Leçons",
       promptTitle: "Prompt atelier",
       copyPrompt: "Copier le prompt",
@@ -398,6 +403,11 @@ const bootcampCopy = {
       moduleComplete: "Validated",
       checkpointMini: "checks",
       quizMini: "quiz",
+      courseFlowHint: "Once the module is clear, validate it with the quiz.",
+      courseNext: "Go to quiz",
+      courseResources: "View resources",
+      nextModule: "Next module",
+      finishBootcamp: "Finish bootcamp",
       lessons: "Lessons",
       promptTitle: "Workshop prompt",
       copyPrompt: "Copy prompt",
@@ -493,6 +503,11 @@ const bootcampCopy = {
       moduleComplete: "تم التحقق",
       checkpointMini: "نقاط",
       quizMini: "اختبار",
+      courseFlowHint: "عندما تصبح الوحدة واضحة، ثبّتها بالاختبار.",
+      courseNext: "انتقل إلى الاختبار",
+      courseResources: "شاهد الموارد",
+      nextModule: "الوحدة التالية",
+      finishBootcamp: "إنهاء البوتكامب",
       lessons: "الدروس",
       promptTitle: "Prompt عملي",
       copyPrompt: "نسخ الPrompt",
@@ -1235,6 +1250,44 @@ function getActiveModule() {
   return getModules().find((module) => module.id === activeModuleId) || getModules()[0];
 }
 
+function getNextModule(moduleId) {
+  const modules = getModules();
+  const index = modules.findIndex((module) => module.id === moduleId);
+  return index >= 0 ? modules[index + 1] || null : null;
+}
+
+function scrollToWorkspace() {
+  document.querySelector(".bootcamp-workspace")?.scrollIntoView({
+    behavior: prefersReducedMotion ? "auto" : "smooth",
+    block: "start",
+  });
+}
+
+function scrollToFlowActions() {
+  panel?.querySelector(".quiz-actions")?.scrollIntoView({
+    behavior: prefersReducedMotion ? "auto" : "smooth",
+    block: "center",
+  });
+}
+
+function goToTab(tab) {
+  activeTab = tab;
+  saveState();
+  renderAll();
+  requestAnimationFrame(scrollToWorkspace);
+}
+
+function goToModule(moduleId) {
+  activeModuleId = moduleId;
+  activeTab = "course";
+  if (moduleSearch) {
+    moduleSearch.value = "";
+  }
+  saveState();
+  renderAll();
+  requestAnimationFrame(scrollToWorkspace);
+}
+
 function renderPanel() {
   const module = getActiveModule();
   if (!module) {
@@ -1309,6 +1362,14 @@ function renderCourse(module) {
         )
         .join("")}
     </div>
+
+    <div class="bootcamp-flow-actions">
+      <span class="flow-hint">${escapeHtml(copy.ui.courseFlowHint)}</span>
+      <div>
+        <button class="flow-primary" type="button" data-action="go-quiz">${escapeHtml(copy.ui.courseNext)}</button>
+        <button class="flow-secondary" type="button" data-action="go-resources">${escapeHtml(copy.ui.courseResources)}</button>
+      </div>
+    </div>
   `;
 }
 
@@ -1319,6 +1380,15 @@ function renderQuiz(module) {
   const feedback = moduleState.checked
     ? copy.ui.quizResult.replace("{score}", moduleState.correct).replace("{total}", module.quiz.length)
     : copy.ui.quizIntro;
+  const nextModule = getNextModule(module.id);
+  const nextAction = nextModule
+    ? `
+      <button class="flow-primary flow-next-module" type="button" data-action="next-module">
+        <span>${escapeHtml(copy.ui.nextModule)}</span>
+        <strong>${escapeHtml(nextModule.title)}</strong>
+      </button>
+    `
+    : `<button class="flow-primary" type="button" data-action="finish-bootcamp">${escapeHtml(copy.ui.finishBootcamp)}</button>`;
 
   panel.innerHTML = `
     <div class="module-head">
@@ -1354,8 +1424,9 @@ function renderQuiz(module) {
         })
         .join("")}
     </div>
-    <div class="quiz-actions">
-      <button class="quiz-submit" type="button" data-action="submit-quiz">${escapeHtml(moduleState.checked ? copy.ui.quizRetry : copy.ui.quizSubmit)}</button>
+    <div class="quiz-actions ${moduleState.checked ? "has-next" : ""}">
+      ${moduleState.checked ? nextAction : ""}
+      <button class="quiz-submit ${moduleState.checked ? "flow-secondary" : ""}" type="button" data-action="submit-quiz">${escapeHtml(moduleState.checked ? copy.ui.quizRetry : copy.ui.quizSubmit)}</button>
       <span class="quiz-feedback">${escapeHtml(allAnswered || moduleState.checked ? feedback : copy.ui.quizMissing)}</span>
     </div>
   `;
@@ -1592,9 +1663,7 @@ moduleList?.addEventListener("click", (event) => {
   if (!button) {
     return;
   }
-  activeModuleId = button.dataset.module;
-  saveState();
-  renderAll();
+  goToModule(button.dataset.module);
 });
 
 document.querySelectorAll(".bootcamp-tab").forEach((tab) => {
@@ -1640,6 +1709,32 @@ panel?.addEventListener("click", (event) => {
     return;
   }
 
+  if (actionButton?.dataset.action === "go-quiz") {
+    goToTab("quiz");
+    return;
+  }
+
+  if (actionButton?.dataset.action === "go-resources") {
+    goToTab("resources");
+    return;
+  }
+
+  if (actionButton?.dataset.action === "next-module") {
+    const nextModule = getNextModule(activeModule.id);
+    if (nextModule) {
+      goToModule(nextModule.id);
+    }
+    return;
+  }
+
+  if (actionButton?.dataset.action === "finish-bootcamp") {
+    document.querySelector(".bootcamp-final")?.scrollIntoView({
+      behavior: prefersReducedMotion ? "auto" : "smooth",
+      block: "center",
+    });
+    return;
+  }
+
   if (actionButton?.dataset.action === "submit-quiz") {
     if (moduleState.checked) {
       moduleState.checked = false;
@@ -1665,6 +1760,7 @@ panel?.addEventListener("click", (event) => {
     moduleState.checked = true;
     saveState();
     renderAll();
+    requestAnimationFrame(scrollToFlowActions);
     return;
   }
 
