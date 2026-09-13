@@ -1,6 +1,16 @@
 const languageCodes = ["fr", "en", "ar"];
 const storageKey = "ahmed-growth-ai-bootcamp-v1";
 const siteBaseUrl = "https://ahmedzakraoui.com";
+const bootcampPaths = {
+  fr: "/bootcamp",
+  en: "/en/bootcamp",
+  ar: "/ar/bootcamp",
+};
+const languageLocales = {
+  fr: "fr_FR",
+  en: "en_US",
+  ar: "ar_AR",
+};
 
 const bootcampCopy = {
   fr: {
@@ -37,10 +47,18 @@ const bootcampCopy = {
       tabCourse: "Cours",
       tabQuiz: "Quiz",
       tabResources: "Ressources",
+      seoEyebrow: "Programme SEO-ready",
+      seoTitle: "Un bootcamp gratuit pour apprendre le growth marketing avec l'IA.",
+      seoText:
+        "Ce programme aide les entrepreneurs, PME et startups en Tunisie, Afrique du Nord et MENA à structurer un système marketing plus visible, mesurable et orienté conversion.",
+      faqEyebrow: "Questions fréquentes",
+      faqTitle: "Avant de commencer le bootcamp.",
       finalTitle: "Tu veux l'appliquer plus vite sur ton business ?",
       finalText:
         "Le bootcamp est gratuit. Si tu veux aller plus vite, on peut transformer ces checkpoints en plan d'action pour ton entreprise.",
       finalCta: "Lancer mon système IA",
+      schemaLevel: "Débutant à intermédiaire",
+      schemaPrerequisites: "Avoir un projet, une offre ou un site à améliorer.",
       moduleLabel: "Module",
       duration: "Durée",
       lessons: "Leçons",
@@ -294,6 +312,28 @@ const bootcampCopy = {
         copy: "Dashboard minimum : trafic qualifié, leads, taux de conversion, coût par lead, revenu attribué.",
       },
     ],
+    faq: [
+      {
+        q: "Le Growth Marketing with AI Bootcamp est-il vraiment gratuit ?",
+        a: "Oui. Le bootcamp est accessible gratuitement, sans compte obligatoire. La progression, les quiz et les checkpoints sont sauvegardés localement dans ton navigateur.",
+      },
+      {
+        q: "À qui s'adresse cette formation marketing IA ?",
+        a: "Elle s'adresse aux entrepreneurs, PME, startups et équipes marketing qui veulent utiliser l'IA pour améliorer acquisition, contenu, SEO/GEO, publicités, UGC, automatisation et analytics.",
+      },
+      {
+        q: "Combien de temps faut-il pour terminer le bootcamp ?",
+        a: "Le parcours complet prend environ 4 à 5 heures. Chaque module peut être suivi séparément avec ses propres checkpoints et questions de validation.",
+      },
+      {
+        q: "Est-ce adapté aux entreprises en Tunisie et dans la région MENA ?",
+        a: "Oui. Les exemples et workflows sont pensés pour des PME, startups et marques en Tunisie, Afrique du Nord et MENA, avec une logique orientée conversion et exécution.",
+      },
+      {
+        q: "Puis-je appliquer les exercices à mon site WordPress ou e-commerce ?",
+        a: "Oui. Les prompts et checkpoints peuvent être utilisés pour un site WordPress, une boutique e-commerce, une landing page, une stratégie social media ou un système de génération de leads.",
+      },
+    ],
   },
   en: {
     dir: "ltr",
@@ -329,9 +369,17 @@ const bootcampCopy = {
       tabCourse: "Course",
       tabQuiz: "Quiz",
       tabResources: "Resources",
+      seoEyebrow: "SEO-ready program",
+      seoTitle: "A free bootcamp to learn growth marketing with AI.",
+      seoText:
+        "This program helps entrepreneurs, SMEs, and startups in Tunisia, North Africa, and MENA build a more visible, measurable, conversion-focused marketing system.",
+      faqEyebrow: "FAQ",
+      faqTitle: "Before you start the bootcamp.",
       finalTitle: "Want to apply it faster to your business?",
       finalText: "The bootcamp is free. If you want speed, we can turn these checkpoints into an action plan for your company.",
       finalCta: "Launch my AI system",
+      schemaLevel: "Beginner to intermediate",
+      schemaPrerequisites: "Have a project, offer, or website to improve.",
       moduleLabel: "Module",
       duration: "Duration",
       lessons: "Lessons",
@@ -351,6 +399,28 @@ const bootcampCopy = {
     },
     modules: [],
     resources: [],
+    faq: [
+      {
+        q: "Is the Growth Marketing with AI Bootcamp really free?",
+        a: "Yes. The bootcamp is free to access with no mandatory account. Progress, quizzes, and checkpoints are saved locally in your browser.",
+      },
+      {
+        q: "Who is this AI marketing training for?",
+        a: "It is for entrepreneurs, SMEs, startups, and marketing teams that want to use AI to improve acquisition, content, SEO/GEO, ads, UGC, automation, and analytics.",
+      },
+      {
+        q: "How long does the bootcamp take?",
+        a: "The full path takes around 4 to 5 hours. Each module can be completed separately with its own checkpoints and validation questions.",
+      },
+      {
+        q: "Is it adapted to Tunisia and the MENA region?",
+        a: "Yes. The examples and workflows are designed for SMEs, startups, and brands in Tunisia, North Africa, and MENA, with a focus on conversion and execution.",
+      },
+      {
+        q: "Can I apply the exercises to WordPress or e-commerce?",
+        a: "Yes. The prompts and checkpoints can be used for a WordPress site, e-commerce store, landing page, social media strategy, or lead generation system.",
+      },
+    ],
   },
   ar: {
     dir: "rtl",
@@ -386,9 +456,17 @@ const bootcampCopy = {
       tabCourse: "الدروس",
       tabQuiz: "الاختبار",
       tabResources: "الموارد",
+      seoEyebrow: "برنامج جاهز للسيو",
+      seoTitle: "بوتكامب مجاني لتعلم Growth Marketing بالذكاء الاصطناعي.",
+      seoText:
+        "يساعد هذا البرنامج رواد الأعمال، الشركات الصغيرة والمتوسطة والستارتابس في تونس، شمال أفريقيا ومنطقة MENA على بناء نظام تسويق أوضح، قابل للقياس وموجه للتحويل.",
+      faqEyebrow: "أسئلة متكررة",
+      faqTitle: "قبل أن تبدأ البوتكامب.",
       finalTitle: "تريد تطبيقه أسرع على مشروعك؟",
       finalText: "البوتكامب مجاني. وإذا أردت السرعة، يمكننا تحويل هذه النقاط إلى خطة تنفيذ لشركتك.",
       finalCta: "أطلق نظامي بالذكاء الاصطناعي",
+      schemaLevel: "مبتدئ إلى متوسط",
+      schemaPrerequisites: "امتلاك مشروع، عرض أو موقع تريد تحسينه.",
       moduleLabel: "الوحدة",
       duration: "المدة",
       lessons: "الدروس",
@@ -408,6 +486,28 @@ const bootcampCopy = {
     },
     modules: [],
     resources: [],
+    faq: [
+      {
+        q: "هل بوتكامب Growth Marketing with AI مجاني فعلا؟",
+        a: "نعم. البوتكامب مجاني ويمكن الدخول إليه بدون حساب إجباري. يتم حفظ التقدم، الاختبارات ونقاط التحقق محليا في المتصفح.",
+      },
+      {
+        q: "لمن تناسب هذه الدورة في التسويق بالذكاء الاصطناعي؟",
+        a: "تناسب رواد الأعمال، الشركات الصغيرة والمتوسطة، الستارتابس وفرق التسويق التي تريد تحسين الاكتساب، المحتوى، SEO/GEO، الإعلانات، UGC، الأتمتة والتحليلات.",
+      },
+      {
+        q: "كم يستغرق إنهاء البوتكامب؟",
+        a: "يمكن إنهاء المسار الكامل في حوالي 4 إلى 5 ساعات. كل وحدة يمكن متابعتها وحدها مع نقاط تحقق وأسئلة اختبار.",
+      },
+      {
+        q: "هل المحتوى مناسب لتونس ومنطقة MENA؟",
+        a: "نعم. الأمثلة والWorkflows مصممة للشركات في تونس، شمال أفريقيا ومنطقة MENA، مع تركيز على التحويل والتنفيذ.",
+      },
+      {
+        q: "هل يمكن تطبيق التمارين على WordPress أو e-commerce؟",
+        a: "نعم. يمكن استخدام الPrompts ونقاط التحقق لموقع WordPress، متجر e-commerce، landing page، استراتيجية social media أو نظام lead generation.",
+      },
+    ],
   },
 };
 
@@ -880,6 +980,8 @@ const progress = document.querySelector("#scrollProgress");
 const moduleList = document.querySelector("#moduleList");
 const panel = document.querySelector("#bootcampPanel");
 const moduleSearch = document.querySelector("#moduleSearch");
+const seoProgrammeList = document.querySelector("#seoProgrammeList");
+const faqList = document.querySelector("#faqList");
 const progressMeter = document.querySelector("#progressMeter");
 const progressPercent = document.querySelector("#progressPercent");
 const completedModules = document.querySelector("#completedModules");
@@ -893,12 +995,19 @@ if (!prefersReducedMotion) {
 }
 
 const requestedLanguage = new URLSearchParams(window.location.search).get("lang");
+const pathLanguage = window.location.pathname.startsWith("/en/")
+  ? "en"
+  : window.location.pathname.startsWith("/ar/")
+    ? "ar"
+    : document.body.dataset.defaultLang;
 const storedLanguage = window.localStorage.getItem("ahmed-site-language");
 let currentLanguage = languageCodes.includes(requestedLanguage)
   ? requestedLanguage
-  : languageCodes.includes(storedLanguage)
-    ? storedLanguage
-    : "fr";
+  : languageCodes.includes(pathLanguage)
+    ? pathLanguage
+    : languageCodes.includes(storedLanguage)
+      ? storedLanguage
+      : "fr";
 let state = loadState();
 let activeModuleId = state.activeModuleId || "foundations";
 let activeTab = state.activeTab || "course";
@@ -909,6 +1018,19 @@ function getCopy() {
 
 function getModules() {
   return getCopy().modules;
+}
+
+function getBootcampPath(language = currentLanguage) {
+  return bootcampPaths[language] || bootcampPaths.fr;
+}
+
+function getBootcampUrl(language = currentLanguage) {
+  return `${siteBaseUrl}${getBootcampPath(language)}`;
+}
+
+function getHomePath(language = currentLanguage, hash = "") {
+  const homePath = language === "fr" ? "/" : `/${language}/`;
+  return `${homePath}${hash}`;
 }
 
 function loadState() {
@@ -965,6 +1087,13 @@ function setMeta(selector, value) {
   }
 }
 
+function setAttribute(selector, attribute, value) {
+  const element = document.querySelector(selector);
+  if (element) {
+    element.setAttribute(attribute, value);
+  }
+}
+
 function isModuleComplete(module) {
   const moduleState = getModuleState(module.id);
   return (
@@ -996,8 +1125,15 @@ function renderStaticText() {
   document.documentElement.dir = copy.dir;
   document.title = copy.meta.title;
   setMeta('meta[name="description"]', copy.meta.description);
+  setAttribute('link[rel="canonical"]', "href", getBootcampUrl(currentLanguage));
+  setAttribute('link[hreflang="fr"]', "href", getBootcampUrl("fr"));
+  setAttribute('link[hreflang="en"]', "href", getBootcampUrl("en"));
+  setAttribute('link[hreflang="ar"]', "href", getBootcampUrl("ar"));
+  setAttribute('link[hreflang="x-default"]', "href", getBootcampUrl("fr"));
   setMeta('meta[property="og:title"]', copy.meta.title);
   setMeta('meta[property="og:description"]', copy.meta.description);
+  setMeta('meta[property="og:url"]', getBootcampUrl(currentLanguage));
+  setMeta('meta[property="og:locale"]', languageLocales[currentLanguage]);
   setMeta('meta[name="twitter:title"]', copy.meta.title);
   setMeta('meta[name="twitter:description"]', copy.meta.description);
 
@@ -1011,13 +1147,23 @@ function renderStaticText() {
   moduleSearch.placeholder = copy.ui.searchPlaceholder;
   nav?.setAttribute("aria-label", currentLanguage === "ar" ? "تنقل البوتكامب" : "Navigation bootcamp");
   menuButton?.setAttribute("aria-label", nav?.classList.contains("is-open") ? copy.ui.menuClose : copy.ui.menuOpen);
+  setAttribute(".brand", "href", getHomePath(currentLanguage));
+  setAttribute('[data-i18n="navHome"]', "href", getHomePath(currentLanguage));
+  setAttribute('[data-i18n="navServices"]', "href", getHomePath(currentLanguage, "#services"));
+  setAttribute('[data-i18n="navWork"]', "href", getHomePath(currentLanguage, "#work"));
+  setAttribute('[data-i18n="navBootcamp"]', "href", getBootcampPath(currentLanguage));
+  setAttribute('[data-i18n="navContact"]', "href", getHomePath(currentLanguage, "#contact"));
 
   document.querySelectorAll(".language-option").forEach((link) => {
     const language = link.dataset.lang;
-    const href = language === "fr" ? "/bootcamp" : `/bootcamp?lang=${language}`;
+    const href = getBootcampPath(language);
     link.href = href;
     link.classList.toggle("is-active", language === currentLanguage);
-    link.toggleAttribute("aria-current", language === currentLanguage);
+    if (language === currentLanguage) {
+      link.setAttribute("aria-current", "true");
+    } else {
+      link.removeAttribute("aria-current");
+    }
   });
 }
 
@@ -1206,6 +1352,134 @@ function renderResources(module) {
   `;
 }
 
+function renderSeoContent() {
+  const copy = getCopy();
+  const modules = getModules();
+
+  if (seoProgrammeList) {
+    seoProgrammeList.innerHTML = modules
+      .map(
+        (module, index) => `
+          <article class="seo-module-card">
+            <span>${escapeHtml(copy.ui.moduleLabel)} ${String(index + 1).padStart(2, "0")}</span>
+            <h3>${escapeHtml(module.title)}</h3>
+            <p>${escapeHtml(module.objective)}</p>
+            <ul>
+              ${module.lessons.map((lesson) => `<li>${escapeHtml(lesson)}</li>`).join("")}
+            </ul>
+          </article>
+        `,
+      )
+      .join("");
+  }
+
+  if (faqList) {
+    faqList.innerHTML = copy.faq
+      .map(
+        (item, index) => `
+          <details class="faq-item" ${index === 0 ? "open" : ""}>
+            <summary>${escapeHtml(item.q)}</summary>
+            <p>${escapeHtml(item.a)}</p>
+          </details>
+        `,
+      )
+      .join("");
+  }
+}
+
+function renderSchemas() {
+  const copy = getCopy();
+  const modules = getModules();
+  const url = getBootcampUrl(currentLanguage);
+  const courseSchema = document.querySelector("#courseSchema");
+  const faqSchema = document.querySelector("#faqSchema");
+  const breadcrumbSchema = document.querySelector("#breadcrumbSchema");
+
+  const courseData = {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    name: copy.meta.title.replace(" | Ahmed Zakraoui", ""),
+    description: copy.meta.description,
+    url,
+    inLanguage: currentLanguage,
+    isAccessibleForFree: true,
+    provider: {
+      "@type": "Person",
+      name: "Ahmed Zakraoui",
+      url: siteBaseUrl,
+      address: {
+        "@type": "PostalAddress",
+        addressCountry: "TN",
+        addressLocality: "Tunis",
+      },
+    },
+    teaches: modules.map((module) => module.title),
+    educationalLevel: copy.ui.schemaLevel,
+    coursePrerequisites: copy.ui.schemaPrerequisites,
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      priceCurrency: "TND",
+      availability: "https://schema.org/InStock",
+      category: "Free",
+      url,
+    },
+    hasCourseInstance: {
+      "@type": "CourseInstance",
+      courseMode: "online",
+      courseWorkload: "PT4H30M",
+      location: {
+        "@type": "VirtualLocation",
+        url,
+      },
+    },
+  };
+
+  const faqData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: copy.faq.map((item) => ({
+      "@type": "Question",
+      name: item.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.a,
+      },
+    })),
+  };
+
+  const breadcrumbData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: copy.ui.navHome,
+        item: `${siteBaseUrl}${getHomePath(currentLanguage)}`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: copy.ui.navBootcamp,
+        item: url,
+      },
+    ],
+  };
+
+  if (courseSchema) {
+    courseSchema.textContent = JSON.stringify(courseData);
+  }
+
+  if (faqSchema) {
+    faqSchema.textContent = JSON.stringify(faqData);
+  }
+
+  if (breadcrumbSchema) {
+    breadcrumbSchema.textContent = JSON.stringify(breadcrumbData);
+  }
+}
+
 function updateTabs() {
   document.querySelectorAll(".bootcamp-tab").forEach((tab) => {
     const isActive = tab.dataset.tab === activeTab;
@@ -1244,6 +1518,8 @@ function renderAll() {
   renderModules();
   updateTabs();
   renderPanel();
+  renderSeoContent();
+  renderSchemas();
 }
 
 menuButton?.addEventListener("click", () => {
@@ -1270,7 +1546,7 @@ document.querySelectorAll(".language-option").forEach((link) => {
     event.preventDefault();
     currentLanguage = language;
     window.localStorage.setItem("ahmed-site-language", language);
-    window.history.replaceState({}, "", language === "fr" ? "/bootcamp" : `/bootcamp?lang=${language}`);
+    window.history.replaceState({}, "", getBootcampPath(language));
     renderAll();
   });
 });

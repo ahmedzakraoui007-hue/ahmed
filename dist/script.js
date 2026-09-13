@@ -980,7 +980,14 @@ const getLanguageHref = (language, isThanksPage = false) => {
 };
 
 const getBootcampHref = (language, hash = "") => {
-  const path = language === "fr" ? "/bootcamp" : `/bootcamp?lang=${language}`;
+  const path =
+    language === "fr"
+      ? "/bootcamp"
+      : language === "en"
+      ? "/en/bootcamp"
+      : language === "ar"
+      ? "/ar/bootcamp"
+      : "/bootcamp";
   return `${path}${hash}`;
 };
 
