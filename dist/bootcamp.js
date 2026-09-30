@@ -118,6 +118,11 @@ const bootcampCopy = {
       quizMissing: "Réponds à toutes les questions avant de valider.",
       quizResult: "Score : {score}/{total}.",
       resourcesIntro: "Templates rapides pour appliquer le module dès aujourd'hui.",
+      stepPlanTitle: "Plan pas à pas",
+      stepPlanText: "Suis ces actions dans l'ordre avant de passer au quiz.",
+      externalResourcesTitle: "Liens utiles",
+      externalResourcesText: "Ressources fiables pour approfondir sans te perdre.",
+      openResource: "Ouvrir",
       noResult: "Aucun module trouvé.",
       menuOpen: "Ouvrir le menu",
       menuClose: "Fermer le menu",
@@ -593,6 +598,11 @@ const bootcampCopy = {
       quizMissing: "Answer every question before validating.",
       quizResult: "Score: {score}/{total}.",
       resourcesIntro: "Fast templates to apply the module today.",
+      stepPlanTitle: "Step-by-step plan",
+      stepPlanText: "Complete these actions in order before the quiz.",
+      externalResourcesTitle: "Helpful links",
+      externalResourcesText: "Reliable resources to go deeper without getting lost.",
+      openResource: "Open",
       noResult: "No module found.",
       menuOpen: "Open menu",
       menuClose: "Close menu",
@@ -725,6 +735,11 @@ const bootcampCopy = {
       quizMissing: "أجب عن كل الأسئلة قبل التأكيد.",
       quizResult: "النتيجة: {score}/{total}.",
       resourcesIntro: "قوالب سريعة لتطبيق الوحدة اليوم.",
+      stepPlanTitle: "خطة خطوة بخطوة",
+      stepPlanText: "أنجز هذه الخطوات بالترتيب قبل المرور إلى الاختبار.",
+      externalResourcesTitle: "روابط مفيدة",
+      externalResourcesText: "مصادر موثوقة للتعمق بدون تشتت.",
+      openResource: "فتح",
       noResult: "لم يتم العثور على وحدة.",
       menuOpen: "فتح القائمة",
       menuClose: "إغلاق القائمة",
@@ -1161,6 +1176,428 @@ Object.entries(localizedModules).forEach(([language, modules]) => {
   bootcampCopy[language].modules = bootcampCopy[language].modules.map((module) => ({
     ...module,
     ...(modules[module.id] || {}),
+  }));
+});
+
+const moduleLearningEnhancements = {
+  fr: {
+    foundations: {
+      steps: [
+        "Dessine le parcours client actuel : source, première action, demande, vente, rétention.",
+        "Choisis une seule métrique centrale à suivre chaque semaine.",
+        "Identifie l'étape qui bloque le plus la croissance aujourd'hui.",
+        "Transforme ce blocage en expérience de 7 jours avec objectif, action et mesure.",
+      ],
+      links: [
+        {
+          label: "OpenAI - Guide prompting",
+          text: "Comprendre comment structurer des prompts utiles pour l'analyse, la stratégie et les workflows.",
+          url: "https://platform.openai.com/docs/guides/prompt-engineering",
+        },
+        {
+          label: "Google Analytics - Premiers pas",
+          text: "Installer GA4 et commencer à mesurer les événements qui comptent.",
+          url: "https://support.google.com/analytics/answer/9304153",
+        },
+      ],
+    },
+    offer: {
+      steps: [
+        "Liste les clients que tu veux vraiment attirer et ceux que tu veux éviter.",
+        "Écris leurs douleurs avec leurs propres mots, pas avec du vocabulaire interne.",
+        "Formule une promesse en une phrase : pour qui, quel résultat, grâce à quoi.",
+        "Ajoute trois preuves : projet, capture, témoignage, démonstration ou méthode.",
+      ],
+      links: [
+        {
+          label: "HubSpot - Buyer persona",
+          text: "Créer une fiche client claire pour améliorer message, contenu et offres.",
+          url: "https://www.hubspot.com/make-my-persona",
+        },
+        {
+          label: "Think with Google",
+          text: "Explorer des ressources marketing orientées client, données et parcours d'achat.",
+          url: "https://www.thinkwithgoogle.com/",
+        },
+      ],
+    },
+    content: {
+      steps: [
+        "Choisis 4 piliers : problème, preuve, méthode, conversion.",
+        "Crée 10 hooks à partir des objections et questions clients.",
+        "Transforme une idée en post LinkedIn, Reel script, FAQ et email.",
+        "Planifie une semaine complète puis note le signal : sauvegardes, clics, réponses, leads.",
+      ],
+      links: [
+        {
+          label: "HubSpot Academy - Content Marketing",
+          text: "Bases solides pour stratégie éditoriale, storytelling et calendrier contenu.",
+          url: "https://academy.hubspot.com/courses/content-marketing",
+        },
+        {
+          label: "Google Search Central - Helpful content",
+          text: "Créer du contenu utile, fiable et pensé pour l'utilisateur.",
+          url: "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+        },
+      ],
+    },
+    seo: {
+      steps: [
+        "Regroupe les questions clients par intention : apprendre, comparer, acheter, résoudre.",
+        "Choisis une page par intention forte et donne-lui un objectif unique.",
+        "Ajoute une FAQ, des preuves réelles, des entités et des liens internes.",
+        "Mesure impressions, clics, positions et demandes qualifiées chaque semaine.",
+      ],
+      links: [
+        {
+          label: "Google Search Central - SEO Starter Guide",
+          text: "Le guide officiel pour rendre un site compréhensible, utile et indexable.",
+          url: "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+        },
+        {
+          label: "Google Search Central - Structured data",
+          text: "Comprendre les données structurées pour mieux décrire pages, FAQ, articles et offres.",
+          url: "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        },
+        {
+          label: "Google Business Profile - Local ranking",
+          text: "Améliorer la visibilité locale avec pertinence, distance et notoriété.",
+          url: "https://support.google.com/business/answer/7091",
+        },
+      ],
+    },
+    "paid-ugc": {
+      steps: [
+        "Écris 3 douleurs, 3 désirs et 3 preuves qui peuvent devenir des angles publicitaires.",
+        "Pour chaque angle, écris un script UGC court : hook, problème, preuve, CTA.",
+        "Lance peu de variations à la fois pour lire le signal sans confusion.",
+        "Garde une bibliothèque : angle, créa, KPI, apprentissage et prochaine décision.",
+      ],
+      links: [
+        {
+          label: "Meta Blueprint - Courses",
+          text: "Cours officiels pour publicité Meta, audiences, créas et mesure.",
+          url: "https://www.facebook.com/business/learn/courses",
+        },
+        {
+          label: "Google Ads Skillshop",
+          text: "Comprendre les bases de Google Ads, mesure et optimisation des campagnes.",
+          url: "https://skillshop.exceedlms.com/student/catalog/list?category_ids=53-google-ads",
+        },
+        {
+          label: "TikTok Creative Center",
+          text: "Trouver des tendances, formats et inspirations créatives pour vidéos courtes.",
+          url: "https://ads.tiktok.com/business/creativecenter/",
+        },
+      ],
+    },
+    automation: {
+      steps: [
+        "Définis les champs minimum du lead : besoin, urgence, budget, canal, prochaine action.",
+        "Connecte formulaire, email, WhatsApp ou CRM avec une relance simple.",
+        "Crée un dashboard de 5 métriques : trafic, leads, conversion, coût, revenu.",
+        "Réserve 30 minutes chaque semaine pour décider : doubler, corriger ou arrêter.",
+      ],
+      links: [
+        {
+          label: "Google Tag Manager - Setup",
+          text: "Installer des balises de mesure sans modifier le site à chaque fois.",
+          url: "https://support.google.com/tagmanager/answer/6103696",
+        },
+        {
+          label: "Google Analytics Skillshop",
+          text: "Apprendre GA4 avec les ressources de formation officielles Google.",
+          url: "https://skillshop.exceedlms.com/student/catalog/list?category_ids=6431-google-analytics",
+        },
+        {
+          label: "Looker Studio Help",
+          text: "Créer un reporting lisible pour piloter les décisions marketing.",
+          url: "https://support.google.com/looker-studio/answer/6283323",
+        },
+      ],
+    },
+  },
+  en: {
+    foundations: {
+      steps: [
+        "Draw the current customer journey: source, first action, request, sale, retention.",
+        "Pick one weekly metric that represents real business progress.",
+        "Find the stage that blocks growth the most today.",
+        "Turn that blockage into a 7-day experiment with goal, action, and metric.",
+      ],
+      links: [
+        {
+          label: "OpenAI - Prompt engineering",
+          text: "Learn how to structure prompts for analysis, strategy, and workflows.",
+          url: "https://platform.openai.com/docs/guides/prompt-engineering",
+        },
+        {
+          label: "Google Analytics - Get started",
+          text: "Set up GA4 and start measuring the events that matter.",
+          url: "https://support.google.com/analytics/answer/9304153",
+        },
+      ],
+    },
+    offer: {
+      steps: [
+        "List the customers you want to attract and the ones you should avoid.",
+        "Write their pains in their own words, not internal jargon.",
+        "Create one promise: who it is for, the outcome, and the mechanism.",
+        "Add three proof points: project, screenshot, testimonial, demo, or method.",
+      ],
+      links: [
+        {
+          label: "HubSpot - Buyer persona",
+          text: "Build a clearer customer profile for messaging, content, and offers.",
+          url: "https://www.hubspot.com/make-my-persona",
+        },
+        {
+          label: "Think with Google",
+          text: "Explore customer-led marketing resources, data, and buying journeys.",
+          url: "https://www.thinkwithgoogle.com/",
+        },
+      ],
+    },
+    content: {
+      steps: [
+        "Choose 4 pillars: problem, proof, method, conversion.",
+        "Create 10 hooks from customer objections and questions.",
+        "Turn one idea into a LinkedIn post, Reel script, FAQ, and email.",
+        "Plan one full week, then track signal: saves, clicks, replies, leads.",
+      ],
+      links: [
+        {
+          label: "HubSpot Academy - Content Marketing",
+          text: "A practical foundation for editorial strategy, storytelling, and calendars.",
+          url: "https://academy.hubspot.com/courses/content-marketing",
+        },
+        {
+          label: "Google Search Central - Helpful content",
+          text: "Create useful, reliable, people-first content.",
+          url: "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+        },
+      ],
+    },
+    seo: {
+      steps: [
+        "Group customer questions by intent: learn, compare, buy, solve.",
+        "Pick one page for every strong intent and give it one job.",
+        "Add FAQ, real proof, entities, and internal links.",
+        "Review impressions, clicks, positions, and qualified requests every week.",
+      ],
+      links: [
+        {
+          label: "Google Search Central - SEO Starter Guide",
+          text: "The official guide to make a site understandable, useful, and indexable.",
+          url: "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+        },
+        {
+          label: "Google Search Central - Structured data",
+          text: "Use structured data to describe pages, FAQ, articles, and offers.",
+          url: "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        },
+        {
+          label: "Google Business Profile - Local ranking",
+          text: "Improve local visibility through relevance, distance, and prominence.",
+          url: "https://support.google.com/business/answer/7091",
+        },
+      ],
+    },
+    "paid-ugc": {
+      steps: [
+        "Write 3 pains, 3 desires, and 3 proof points that can become ad angles.",
+        "For every angle, write one short UGC script: hook, problem, proof, CTA.",
+        "Launch a small number of variations so the signal stays readable.",
+        "Keep a library: angle, creative, KPI, learning, and next decision.",
+      ],
+      links: [
+        {
+          label: "Meta Blueprint - Courses",
+          text: "Official courses for Meta ads, audiences, creative, and measurement.",
+          url: "https://www.facebook.com/business/learn/courses",
+        },
+        {
+          label: "Google Ads Skillshop",
+          text: "Learn Google Ads foundations, measurement, and campaign optimization.",
+          url: "https://skillshop.exceedlms.com/student/catalog/list?category_ids=53-google-ads",
+        },
+        {
+          label: "TikTok Creative Center",
+          text: "Find creative trends, formats, and inspiration for short-form video.",
+          url: "https://ads.tiktok.com/business/creativecenter/",
+        },
+      ],
+    },
+    automation: {
+      steps: [
+        "Define minimum lead fields: need, urgency, budget, source, next action.",
+        "Connect form, email, WhatsApp, or CRM with one simple follow-up.",
+        "Create a 5-metric dashboard: traffic, leads, conversion, cost, revenue.",
+        "Reserve 30 minutes weekly to decide: double down, fix, or stop.",
+      ],
+      links: [
+        {
+          label: "Google Tag Manager - Setup",
+          text: "Install measurement tags without changing the site every time.",
+          url: "https://support.google.com/tagmanager/answer/6103696",
+        },
+        {
+          label: "Google Analytics Skillshop",
+          text: "Learn GA4 with official Google training resources.",
+          url: "https://skillshop.exceedlms.com/student/catalog/list?category_ids=6431-google-analytics",
+        },
+        {
+          label: "Looker Studio Help",
+          text: "Build readable reports that support marketing decisions.",
+          url: "https://support.google.com/looker-studio/answer/6283323",
+        },
+      ],
+    },
+  },
+  ar: {
+    foundations: {
+      steps: [
+        "ارسم رحلة العميل الحالية: المصدر، أول إجراء، الطلب، البيع والاحتفاظ.",
+        "اختر مؤشرا أسبوعيا واحدا يدل على تقدم حقيقي.",
+        "حدد المرحلة التي تعطل النمو أكثر اليوم.",
+        "حوّل هذا العائق إلى تجربة 7 أيام فيها هدف، إجراء ومؤشر قياس.",
+      ],
+      links: [
+        {
+          label: "OpenAI - Prompt engineering",
+          text: "تعلم كيف تبني Prompts مفيدة للتحليل، الاستراتيجية والWorkflows.",
+          url: "https://platform.openai.com/docs/guides/prompt-engineering",
+        },
+        {
+          label: "Google Analytics - البدء",
+          text: "إعداد GA4 وقياس الأحداث المهمة في الموقع.",
+          url: "https://support.google.com/analytics/answer/9304153",
+        },
+      ],
+    },
+    offer: {
+      steps: [
+        "اكتب أنواع العملاء الذين تريد جذبهم والذين يجب تجنبهم.",
+        "صف آلامهم بكلماتهم هم، وليس بمصطلحات داخلية.",
+        "اكتب وعدا واحدا: لمن، أي نتيجة، وبأي آلية.",
+        "أضف 3 إثباتات: مشروع، صورة، شهادة، Demo أو منهجية.",
+      ],
+      links: [
+        {
+          label: "HubSpot - Buyer persona",
+          text: "بناء بروفايل عميل أوضح للرسائل، المحتوى والعروض.",
+          url: "https://www.hubspot.com/make-my-persona",
+        },
+        {
+          label: "Think with Google",
+          text: "مصادر حول التسويق المبني على العميل، البيانات ورحلة الشراء.",
+          url: "https://www.thinkwithgoogle.com/",
+        },
+      ],
+    },
+    content: {
+      steps: [
+        "اختر 4 محاور: المشكلة، الإثبات، المنهجية، التحويل.",
+        "اكتب 10 Hooks من اعتراضات وأسئلة العملاء.",
+        "حوّل فكرة واحدة إلى LinkedIn post، Reel script، FAQ وEmail.",
+        "خطط أسبوعا كاملا ثم راقب الإشارة: saves، clicks، replies وleads.",
+      ],
+      links: [
+        {
+          label: "HubSpot Academy - Content Marketing",
+          text: "أساس عملي للاستراتيجية التحريرية، Storytelling ورزنامة المحتوى.",
+          url: "https://academy.hubspot.com/courses/content-marketing",
+        },
+        {
+          label: "Google Search Central - Helpful content",
+          text: "إنشاء محتوى مفيد وموثوق ومصمم للمستخدم.",
+          url: "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+        },
+      ],
+    },
+    seo: {
+      steps: [
+        "اجمع أسئلة العملاء حسب النية: تعلم، مقارنة، شراء، حل مشكلة.",
+        "اختر صفحة واحدة لكل نية قوية واجعل لها هدفا واحدا.",
+        "أضف FAQ، إثباتات حقيقية، كيانات وروابط داخلية.",
+        "راجع أسبوعيا: impressions، clicks، positions والطلبات المؤهلة.",
+      ],
+      links: [
+        {
+          label: "Google Search Central - SEO Starter Guide",
+          text: "الدليل الرسمي لجعل الموقع مفهوما، مفيدا وقابلا للفهرسة.",
+          url: "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+        },
+        {
+          label: "Google Search Central - Structured data",
+          text: "استخدم structured data لوصف الصفحات، FAQ، المقالات والعروض.",
+          url: "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+        },
+        {
+          label: "Google Business Profile - Local ranking",
+          text: "تحسين الظهور المحلي عبر الملاءمة، المسافة والشهرة.",
+          url: "https://support.google.com/business/answer/7091",
+        },
+      ],
+    },
+    "paid-ugc": {
+      steps: [
+        "اكتب 3 آلام، 3 رغبات و3 إثباتات يمكن تحويلها إلى زوايا إعلانية.",
+        "لكل زاوية، اكتب UGC script قصير: Hook، مشكلة، إثبات، CTA.",
+        "أطلق عددا قليلا من النسخ لكي تبقى الإشارة واضحة.",
+        "احتفظ بمكتبة: زاوية، Creative، KPI، تعلم، والقرار التالي.",
+      ],
+      links: [
+        {
+          label: "Meta Blueprint - Courses",
+          text: "دورات رسمية حول إعلانات Meta، الجماهير، الكرياتيف والقياس.",
+          url: "https://www.facebook.com/business/learn/courses",
+        },
+        {
+          label: "Google Ads Skillshop",
+          text: "تعلم أساسيات Google Ads، القياس وتحسين الحملات.",
+          url: "https://skillshop.exceedlms.com/student/catalog/list?category_ids=53-google-ads",
+        },
+        {
+          label: "TikTok Creative Center",
+          text: "مصدر للأفكار، الترندات وصيغ الفيديو القصير.",
+          url: "https://ads.tiktok.com/business/creativecenter/",
+        },
+      ],
+    },
+    automation: {
+      steps: [
+        "حدد حقول الlead الضرورية: الحاجة، الاستعجال، الميزانية، المصدر والخطوة التالية.",
+        "اربط Form، Email، WhatsApp أو CRM مع متابعة بسيطة.",
+        "أنشئ Dashboard من 5 مؤشرات: الترافيك، leads، التحويل، التكلفة والإيراد.",
+        "خصص 30 دقيقة أسبوعيا لاتخاذ قرار: مضاعفة، تصحيح أو إيقاف.",
+      ],
+      links: [
+        {
+          label: "Google Tag Manager - Setup",
+          text: "تركيب Tags القياس بدون تعديل الموقع كل مرة.",
+          url: "https://support.google.com/tagmanager/answer/6103696",
+        },
+        {
+          label: "Google Analytics Skillshop",
+          text: "تعلم GA4 من مصادر Google الرسمية.",
+          url: "https://skillshop.exceedlms.com/student/catalog/list?category_ids=6431-google-analytics",
+        },
+        {
+          label: "Looker Studio Help",
+          text: "إنشاء Reports واضحة تساعد على قرارات التسويق.",
+          url: "https://support.google.com/looker-studio/answer/6283323",
+        },
+      ],
+    },
+  },
+};
+
+Object.entries(moduleLearningEnhancements).forEach(([language, modules]) => {
+  bootcampCopy[language].modules = bootcampCopy[language].modules.map((module) => ({
+    ...module,
+    steps: modules[module.id]?.steps || [],
+    links: modules[module.id]?.links || [],
   }));
 });
 
@@ -1740,6 +2177,61 @@ function renderLearningFlow(activeStep) {
   `;
 }
 
+function renderStepPlan(module, copy) {
+  if (!module.steps?.length) {
+    return "";
+  }
+
+  return `
+    <section class="bootcamp-step-plan" aria-label="${escapeHtml(copy.ui.stepPlanTitle)}">
+      <div class="bootcamp-step-head">
+        <span>${escapeHtml(copy.ui.stepPlanTitle)}</span>
+        <p>${escapeHtml(copy.ui.stepPlanText)}</p>
+      </div>
+      <ol>
+        ${module.steps
+          .map(
+            (step) => `
+              <li>
+                <span aria-hidden="true"></span>
+                <strong>${escapeHtml(step)}</strong>
+              </li>
+            `,
+          )
+          .join("")}
+      </ol>
+    </section>
+  `;
+}
+
+function renderModuleLinks(module, copy) {
+  if (!module.links?.length) {
+    return "";
+  }
+
+  return `
+    <section class="module-resource-links" aria-label="${escapeHtml(copy.ui.externalResourcesTitle)}">
+      <div class="module-resource-head">
+        <span>${escapeHtml(copy.ui.externalResourcesTitle)}</span>
+        <p>${escapeHtml(copy.ui.externalResourcesText)}</p>
+      </div>
+      <div class="module-resource-grid">
+        ${module.links
+          .map(
+            (link) => `
+              <a class="module-resource-link" href="${escapeHtml(link.url)}" target="_blank" rel="noreferrer noopener">
+                <strong>${escapeHtml(link.label)}</strong>
+                <span>${escapeHtml(link.text)}</span>
+                <em>${escapeHtml(copy.ui.openResource)}</em>
+              </a>
+            `,
+          )
+          .join("")}
+      </div>
+    </section>
+  `;
+}
+
 function renderCourse(module) {
   const copy = getCopy();
   const moduleState = getModuleState(module.id);
@@ -1776,6 +2268,8 @@ function renderCourse(module) {
         )
         .join("")}
     </div>
+
+    ${renderStepPlan(module, copy)}
 
     <details class="prompt-lab">
       <summary><strong>${escapeHtml(copy.ui.promptTitle)}</strong></summary>
@@ -1876,6 +2370,7 @@ function renderResources(module) {
       <h2>${escapeHtml(module.title)}</h2>
       <p>${escapeHtml(copy.ui.resourcesIntro)}</p>
     </div>
+    ${renderModuleLinks(module, copy)}
     <div class="resource-grid">
       ${copy.resources
         .map(

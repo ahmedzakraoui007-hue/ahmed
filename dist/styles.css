@@ -4102,6 +4102,143 @@ html[dir="rtl"] .floating-cta {
   line-height: 1.25;
 }
 
+.bootcamp-step-plan,
+.module-resource-links {
+  display: grid;
+  gap: 16px;
+  margin-top: 18px;
+  padding: 18px;
+  border: 1px solid rgba(18, 63, 59, 0.14);
+  border-radius: 22px;
+  background:
+    linear-gradient(135deg, rgba(18, 63, 59, 0.08), rgba(255, 90, 20, 0.06)),
+    rgba(255, 250, 240, 0.72);
+}
+
+.bootcamp-step-head,
+.module-resource-head {
+  display: grid;
+  gap: 5px;
+}
+
+.bootcamp-step-head span,
+.module-resource-head span {
+  color: var(--orange);
+  font-size: 0.74rem;
+  font-weight: 950;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.bootcamp-step-head p,
+.module-resource-head p {
+  max-width: 620px;
+  margin: 0;
+  color: #4f4841;
+  font-size: 0.94rem;
+  font-weight: 780;
+}
+
+.bootcamp-step-plan ol {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: bootcamp-step;
+}
+
+.bootcamp-step-plan li {
+  display: grid;
+  grid-template-columns: 36px minmax(0, 1fr);
+  gap: 12px;
+  align-items: flex-start;
+  min-height: 72px;
+  padding: 13px;
+  border: 1px solid rgba(8, 8, 6, 0.08);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.62);
+  counter-increment: bootcamp-step;
+}
+
+.bootcamp-step-plan li span {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  background: var(--ink);
+  color: var(--orange);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 950;
+}
+
+.bootcamp-step-plan li span::before {
+  content: counter(bootcamp-step, decimal-leading-zero);
+}
+
+.bootcamp-step-plan li strong {
+  color: var(--ink);
+  font-size: 0.94rem;
+  line-height: 1.32;
+}
+
+.module-resource-links {
+  margin-bottom: 20px;
+}
+
+.module-resource-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.module-resource-link {
+  display: grid;
+  gap: 9px;
+  min-height: 170px;
+  padding: 16px;
+  border: 1px solid rgba(8, 8, 6, 0.1);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.68);
+  color: var(--ink);
+  text-decoration: none;
+  transition: border-color 0.2s ease, transform 0.2s ease, background 0.2s ease;
+}
+
+.module-resource-link:hover,
+.module-resource-link:focus-visible {
+  border-color: rgba(255, 90, 20, 0.38);
+  background: rgba(255, 255, 255, 0.92);
+  transform: translateY(-2px);
+}
+
+.module-resource-link strong {
+  color: var(--ink);
+  font-size: 1rem;
+  font-weight: 950;
+  line-height: 1.22;
+}
+
+.module-resource-link span {
+  color: #534d45;
+  font-size: 0.88rem;
+  font-weight: 720;
+  line-height: 1.4;
+}
+
+.module-resource-link em {
+  align-self: end;
+  color: var(--orange);
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 950;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .prompt-lab {
   display: grid;
   gap: 14px;
@@ -4597,6 +4734,10 @@ html[dir="rtl"] .topic-section ul {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .module-resource-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .diagnostic-result-card {
     grid-template-columns: 1fr;
   }
@@ -4630,6 +4771,8 @@ html[dir="rtl"] .topic-section ul {
 
   .lesson-grid,
   .resource-grid,
+  .bootcamp-step-plan ol,
+  .module-resource-grid,
   .bootcamp-seo-grid,
   .outcome-grid {
     grid-template-columns: 1fr;
