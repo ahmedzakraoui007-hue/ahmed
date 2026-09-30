@@ -6696,3 +6696,195 @@ html[dir="rtl"] .contact-copy h2 {
     gap: 4px;
   }
 }
+
+.scroll-story {
+  position: fixed;
+  top: 50%;
+  right: 8px;
+  z-index: 70;
+  display: grid;
+  gap: 8px;
+  padding: 6px;
+  border: 1px solid rgba(255, 248, 237, 0.14);
+  border-radius: 999px;
+  background: rgba(8, 8, 6, 0.7);
+  box-shadow: 0 18px 54px rgba(8, 8, 6, 0.22);
+  backdrop-filter: blur(18px);
+  opacity: 0;
+  pointer-events: none;
+  transform: translate3d(10px, -50%, 0);
+  transition: opacity 0.24s ease, transform 0.24s ease;
+}
+
+body.is-deep-scroll .scroll-story {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate3d(0, -50%, 0);
+}
+
+.scroll-story a {
+  display: grid;
+  grid-template-columns: 34px 0fr;
+  align-items: center;
+  width: 42px;
+  min-height: 38px;
+  overflow: hidden;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  color: rgba(255, 248, 237, 0.74);
+  text-decoration: none;
+  transition: width 0.24s ease, grid-template-columns 0.24s ease, background 0.24s ease, border-color 0.24s ease, color 0.24s ease;
+}
+
+.scroll-story a:hover,
+.scroll-story a:focus-visible,
+.scroll-story a.is-active {
+  width: 112px;
+  grid-template-columns: 34px 1fr;
+  border-color: rgba(255, 90, 20, 0.32);
+  background: rgba(255, 90, 20, 0.13);
+  color: var(--paper);
+}
+
+.scroll-story span {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  color: var(--orange);
+  font-size: 0.72rem;
+  font-weight: 950;
+}
+
+.scroll-story strong {
+  min-width: 0;
+  padding-right: 12px;
+  opacity: 0;
+  white-space: nowrap;
+  font-size: 0.78rem;
+  font-weight: 900;
+  transition: opacity 0.2s ease;
+}
+
+.scroll-story a:hover strong,
+.scroll-story a:focus-visible strong,
+.scroll-story a.is-active strong {
+  opacity: 1;
+}
+
+html[dir="rtl"] .scroll-story {
+  right: auto;
+  left: 8px;
+  transform: translate3d(-10px, -50%, 0);
+}
+
+html[dir="rtl"] body.is-deep-scroll .scroll-story {
+  transform: translate3d(0, -50%, 0);
+}
+
+html[dir="rtl"] .scroll-story strong {
+  padding-right: 0;
+  padding-left: 12px;
+}
+
+.sales-flow article,
+.offer-card,
+.system-node,
+.sprint-steps article,
+.work-impact article,
+.proof-card,
+.work-card,
+.training-card,
+.home-bootcamp-preview {
+  will-change: transform;
+}
+
+.sales-flow article.is-focus,
+.offer-card.is-focus,
+.system-node.is-focus,
+.sprint-steps article.is-focus,
+.work-impact article.is-focus,
+.proof-card.is-focus,
+.work-card.is-focus,
+.training-card.is-focus,
+.home-bootcamp-preview.is-focus {
+  border-color: rgba(255, 90, 20, 0.46);
+  box-shadow:
+    0 22px 70px rgba(8, 8, 6, 0.16),
+    0 0 0 1px rgba(255, 90, 20, 0.08);
+  transform: translateY(-4px);
+}
+
+.sales-flow article.is-focus,
+.system-node.is-focus,
+.sprint-steps article.is-focus {
+  background:
+    radial-gradient(circle at 22% 0%, rgba(255, 90, 20, 0.16), transparent 42%),
+    rgba(255, 248, 237, 0.105);
+}
+
+.offer-card-featured.is-focus {
+  box-shadow:
+    0 26px 80px rgba(8, 8, 6, 0.2),
+    0 0 0 1px rgba(255, 90, 20, 0.18);
+}
+
+body.motion-ready .sales-dashboard.is-visible .sales-demo,
+body.motion-ready .sales-dashboard.is-visible .sales-flow article,
+body.motion-ready .offer-card.is-visible {
+  animation: scroll-pop 0.62s cubic-bezier(.2, .8, .2, 1) both;
+}
+
+body.motion-ready .sales-dashboard.is-visible .sales-flow article:nth-child(2),
+body.motion-ready .offer-card.is-visible:nth-child(2) {
+  animation-delay: 0.06s;
+}
+
+body.motion-ready .sales-dashboard.is-visible .sales-flow article:nth-child(3),
+body.motion-ready .offer-card.is-visible:nth-child(3) {
+  animation-delay: 0.12s;
+}
+
+body.motion-ready .sales-dashboard.is-visible .sales-flow article:nth-child(4) {
+  animation-delay: 0.18s;
+}
+
+body.motion-ready .sales-dashboard.is-visible .sales-flow article:nth-child(5) {
+  animation-delay: 0.24s;
+}
+
+@keyframes scroll-pop {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(0.985);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (max-width: 1180px) {
+  .scroll-story {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-story,
+  .scroll-story a,
+  .scroll-story strong,
+  .sales-flow article,
+  .offer-card,
+  .system-node,
+  .sprint-steps article,
+  .work-impact article,
+  .proof-card,
+  .work-card,
+  .training-card,
+  .home-bootcamp-preview {
+    transition: none;
+    animation: none;
+  }
+}

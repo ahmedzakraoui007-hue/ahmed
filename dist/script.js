@@ -5,6 +5,8 @@ const progress = document.querySelector("#scrollProgress");
 const hero = document.querySelector(".hero");
 const neuralCanvas = document.querySelector("#neuralCanvas");
 const cursorAura = document.querySelector("#cursorAura");
+const storyNav = document.querySelector("#scrollStory");
+const storyLinks = document.querySelectorAll("[data-story-link]");
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 const enableDecorativeCanvas = false;
 const enableCardTilt = false;
@@ -85,6 +87,10 @@ const translations = {
       training: "Training",
       bootcamp: "Learn",
       cta: "Build",
+    },
+    story: {
+      aria: "Page journey",
+      labels: ["Intro", "Offers", "System", "Proof", "Contact"],
     },
     hero: {
       rail: ["Tunis", "North Africa", "MENA"],
@@ -420,6 +426,10 @@ const translations = {
       bootcamp: "Apprendre",
       cta: "Construire",
     },
+    story: {
+      aria: "Parcours de la page",
+      labels: ["Intro", "Offres", "Système", "Preuve", "Contact"],
+    },
     hero: {
       rail: ["Tunis", "Afrique du Nord", "MENA"],
       eyebrow: "Ahmed Zakraoui - AI Growth Systems",
@@ -753,6 +763,10 @@ const translations = {
       training: "التدريب",
       bootcamp: "تعلّم",
       cta: "ابن النظام",
+    },
+    story: {
+      aria: "مسار الصفحة",
+      labels: ["البداية", "العروض", "النظام", "الدليل", "التواصل"],
     },
     hero: {
       rail: ["تونس", "شمال أفريقيا", "MENA"],
@@ -1526,6 +1540,14 @@ const applyLanguage = (language, shouldPersist = true) => {
   const menuIsOpen = nav?.classList.contains("is-open");
   menuButton?.setAttribute("aria-label", menuIsOpen ? copy.aria.menuClose : copy.aria.menuOpen);
   nav?.setAttribute("aria-label", copy.aria.nav);
+  storyNav?.setAttribute("aria-label", copy.story.aria);
+  storyLinks.forEach((link, index) => {
+    const label = copy.story.labels[index];
+    const labelElement = link.querySelector("strong");
+    if (typeof label === "string" && labelElement) {
+      labelElement.textContent = label;
+    }
+  });
 
   setText(".thanks-panel .eyebrow", copy.thanks.eyebrow);
   setText(".thanks-panel h1", copy.thanks.title);
@@ -1779,6 +1801,38 @@ document.querySelectorAll(".language-option").forEach((button) => {
 
 applyLanguage(currentLanguage, false);
 
+const scrollFocusTargets = [
+  ...document.querySelectorAll(
+    ".sales-flow article, .offer-card, .system-node, .sprint-steps article, .work-impact article, .work-card, .proof-card, .training-card, .home-bootcamp-preview",
+  ),
+];
+
+const updateScrollFocus = () => {
+  const viewportFocusLine = window.innerHeight * 0.54;
+  let activeTarget = null;
+  let activeDistance = Number.POSITIVE_INFINITY;
+
+  scrollFocusTargets.forEach((element) => {
+    const rect = element.getBoundingClientRect();
+    const isCandidate = rect.top < window.innerHeight * 0.84 && rect.bottom > window.innerHeight * 0.16;
+
+    if (!isCandidate) {
+      element.classList.remove("is-focus");
+      return;
+    }
+
+    const distance = Math.abs(rect.top + rect.height * 0.5 - viewportFocusLine);
+    if (distance < activeDistance) {
+      activeDistance = distance;
+      activeTarget = element;
+    }
+  });
+
+  scrollFocusTargets.forEach((element) => {
+    element.classList.toggle("is-focus", element === activeTarget);
+  });
+};
+
 const onScroll = () => {
   const scrollTop = window.scrollY || document.documentElement.scrollTop;
   const height = document.documentElement.scrollHeight - window.innerHeight;
@@ -1789,7 +1843,13 @@ const onScroll = () => {
   }
 
   header?.classList.toggle("is-scrolled", scrollTop > 18);
+  document.body.classList.toggle("is-at-top", scrollTop < 80);
+  document.body.classList.toggle("is-deep-scroll", ratio > 8);
+  document.body.style.setProperty("--page-progress", `${Math.min(1, Math.max(0, ratio / 100)).toFixed(3)}`);
   document.body.style.setProperty("--hero-parallax", `${Math.min(92, scrollTop * 0.11)}px`);
+  if (!prefersReducedMotion) {
+    updateScrollFocus();
+  }
 };
 
 window.addEventListener("scroll", onScroll, { passive: true });
@@ -1985,3 +2045,40 @@ if (!prefersReducedMotion) {
 } else {
   document.querySelectorAll(".reveal").forEach((element) => element.classList.add("is-visible"));
 }
+
+const activateStoryLink = (key) => {
+  storyLinks.forEach((link) => {
+    const isActive = link.dataset.storyLink === key;
+    link.classList.toggle("is-active", isActive);
+    if (isActive) {
+      link.setAttribute("aria-current", "true");
+    } else {
+      link.removeAttribute("aria-current");
+    }
+  });
+};
+
+const storyObserver = new IntersectionObserver(
+  (entries) => {
+    const visibleEntries = entries
+      .filter((entry) => entry.isIntersecting)
+      .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+
+    if (!visibleEntries.length) {
+      return;
+    }
+
+    const key = visibleEntries[0].target.getAttribute("data-story-section");
+    if (key) {
+      activateStoryLink(key);
+    }
+  },
+  {
+    threshold: [0.18, 0.36, 0.58],
+    rootMargin: "-24% 0px -42% 0px",
+  },
+);
+
+document.querySelectorAll("[data-story-section]").forEach((section) => storyObserver.observe(section));
+activateStoryLink("top");
+
