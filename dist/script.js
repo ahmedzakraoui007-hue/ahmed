@@ -64,6 +64,7 @@ const translations = {
       hook: "Marketing system map",
       cockpit: "AI marketing growth cockpit",
       portrait: "Ahmed Zakraoui portrait",
+      salesWorkflow: "AI growth sales workflow",
       ugcWorkflow: "UGC video production workflow",
       trainingTopics: "Training topics",
       quickContact: "Quick contact options",
@@ -76,6 +77,7 @@ const translations = {
     },
     nav: {
       services: "System",
+      offers: "Offers",
       ugc: "UGC",
       sprint: "Sprint",
       proof: "Proof",
@@ -185,6 +187,49 @@ const translations = {
         text: "Short videos for trust, launch, and ad tests.",
         items: ["Brief", "Creators", "Ad-ready videos"],
       },
+    },
+    sales: {
+      eyebrow: "AI growth offers",
+      title: "A journey that turns attention into project requests.",
+      text: "Like an augmented marketing team: capture, qualify, convince, follow up, and measure.",
+      demoLabel: "Growth journey",
+      demoTitle: "From the first click to the next booked conversation.",
+      demoRows: [
+        ["Lead", "Form / WhatsApp"],
+        ["Message", "Offer + objections"],
+        ["Action", "Page, content, ads"],
+        ["Signal", "Dashboard & decisions"],
+      ],
+      flow: [
+        ["01", "Capture", "Pages, SEO/GEO, content, and paid traffic create demand."],
+        ["02", "Qualify", "Forms, WhatsApp, and CRM reveal buying intent."],
+        ["03", "Convince", "UGC, proof, pages, and emails reduce friction."],
+        ["04", "Follow up", "Automation and routines keep opportunities alive."],
+        ["05", "Measure", "A simple dashboard shows what sells and what to improve."],
+      ],
+      offers: [
+        {
+          index: "01",
+          title: "Growth System Diagnostic",
+          text: "Clarify the blockage, channels, and priorities before investing more.",
+          items: ["Fast audit", "Customer journey map", "30-day priorities"],
+          cta: "Request the diagnostic",
+        },
+        {
+          index: "02",
+          title: "AI Growth Sprint",
+          text: "Build the essential assets, workflows, and dashboards in 5 focused days.",
+          items: ["AI roadmap", "Pages, content, UGC, ads", "Dashboard + team routine"],
+          cta: "Book the Sprint",
+        },
+        {
+          index: "03",
+          title: "Managed Growth System",
+          text: "Monthly support to run content, acquisition, and optimization.",
+          items: ["SEO/GEO + content", "Paid media + UGC", "Reporting and iterations"],
+          cta: "Discuss monthly support",
+        },
+      ],
     },
     ugcSection: {
       eyebrow: "UGC video partners",
@@ -317,7 +362,7 @@ const translations = {
     },
     footer: {
       text: "AI growth systems for MENA teams.",
-      nav: ["System", "UGC Video", "Projects", "AI Growth Sprint", "Team Training", "Free Academy", "Contact"],
+      nav: ["System", "Offers", "UGC Video", "Projects", "AI Growth Sprint", "Team Training", "Free Academy", "Contact"],
       whatsapp: "Book a call",
       linkedin: "LinkedIn profile",
       bottom: ["Tunis, Tunisia", "AI Strategy - SEO/GEO - Ads - UGC - WordPress"],
@@ -353,6 +398,7 @@ const translations = {
       hook: "Carte du système marketing",
       cockpit: "Cockpit de croissance marketing IA",
       portrait: "Portrait d'Ahmed Zakraoui",
+      salesWorkflow: "Workflow commercial de croissance IA",
       ugcWorkflow: "Processus de production vidéo UGC",
       trainingTopics: "Sujets de formation",
       quickContact: "Options de contact rapide",
@@ -365,6 +411,7 @@ const translations = {
     },
     nav: {
       services: "Système",
+      offers: "Offres",
       ugc: "UGC",
       sprint: "Sprint",
       proof: "Preuves",
@@ -474,6 +521,49 @@ const translations = {
         text: "Vidéos courtes pour confiance, lancement et tests ads.",
         items: ["Brief", "Créateurs", "Vidéos ads"],
       },
+    },
+    sales: {
+      eyebrow: "Offres de croissance IA",
+      title: "Un parcours qui transforme l'attention en demandes.",
+      text: "Comme une équipe marketing augmentée : capter, qualifier, convaincre, relancer et mesurer.",
+      demoLabel: "Growth journey",
+      demoTitle: "Du premier clic au prochain rendez-vous.",
+      demoRows: [
+        ["Lead", "Formulaire / WhatsApp"],
+        ["Message", "Offre + objections"],
+        ["Action", "Page, contenu, ads"],
+        ["Signal", "Dashboard & décisions"],
+      ],
+      flow: [
+        ["01", "Capter", "Pages, SEO/GEO, contenu et paid pour générer la demande."],
+        ["02", "Qualifier", "Formulaires, WhatsApp et CRM pour comprendre l'intention."],
+        ["03", "Convaincre", "UGC, preuve, pages et emails qui réduisent la friction."],
+        ["04", "Relancer", "Automation et routines pour ne pas perdre les opportunités."],
+        ["05", "Mesurer", "Dashboard simple pour voir ce qui vend et quoi améliorer."],
+      ],
+      offers: [
+        {
+          index: "01",
+          title: "Growth System Diagnostic",
+          text: "Clarifier le blocage, les canaux et les priorités avant d'investir plus.",
+          items: ["Audit rapide", "Carte du parcours client", "Priorités 30 jours"],
+          cta: "Demander le diagnostic",
+        },
+        {
+          index: "02",
+          title: "AI Growth Sprint",
+          text: "Construire en 5 jours les actifs, workflows et dashboards essentiels.",
+          items: ["Roadmap IA", "Pages, contenu, UGC et ads", "Dashboard + routine équipe"],
+          cta: "Réserver le Sprint",
+        },
+        {
+          index: "03",
+          title: "Managed Growth System",
+          text: "Accompagnement mensuel pour piloter contenu, acquisition et optimisation.",
+          items: ["SEO/GEO + contenu", "Paid media + UGC", "Reporting et itérations"],
+          cta: "Parler de l'accompagnement",
+        },
+      ],
     },
     ugcSection: {
       eyebrow: "Partenaires vidéo UGC",
@@ -606,7 +696,7 @@ const translations = {
     },
     footer: {
       text: "Systèmes de croissance IA pour équipes MENA.",
-      nav: ["Système", "Vidéo UGC", "Projets", "AI Growth Sprint", "Formation", "Academy gratuite", "Contact"],
+      nav: ["Système", "Offres", "Vidéo UGC", "Projets", "AI Growth Sprint", "Formation", "Academy gratuite", "Contact"],
       whatsapp: "Prendre RDV",
       linkedin: "Profil LinkedIn",
       bottom: ["Tunis, Tunisie", "Stratégie IA - SEO/GEO - Ads - UGC - WordPress"],
@@ -642,6 +732,7 @@ const translations = {
       hook: "خريطة النظام التسويقي",
       cockpit: "لوحة نمو التسويق بالذكاء الاصطناعي",
       portrait: "صورة أحمد زكراوي",
+      salesWorkflow: "مسار بيع نظام النمو بالذكاء الاصطناعي",
       ugcWorkflow: "سير عمل إنتاج فيديو UGC",
       trainingTopics: "مواضيع التدريب",
       quickContact: "خيارات التواصل السريع",
@@ -654,6 +745,7 @@ const translations = {
     },
     nav: {
       services: "النظام",
+      offers: "العروض",
       ugc: "فيديو UGC",
       sprint: "Sprint النمو",
       proof: "الأعمال",
@@ -763,6 +855,49 @@ const translations = {
         text: "فيديوهات قصيرة للثقة والإطلاق والاختبار.",
         items: ["Brief", "صناع محتوى", "فيديوهات Ads"],
       },
+    },
+    sales: {
+      eyebrow: "عروض النمو بالذكاء الاصطناعي",
+      title: "مسار يحول الانتباه إلى طلبات حقيقية.",
+      text: "مثل فريق تسويق معزز: جذب، تأهيل، إقناع، متابعة وقياس.",
+      demoLabel: "Growth journey",
+      demoTitle: "من أول نقرة إلى محادثة محجوزة.",
+      demoRows: [
+        ["Lead", "Form / WhatsApp"],
+        ["رسالة", "العرض + الاعتراضات"],
+        ["إجراء", "صفحة، محتوى، Ads"],
+        ["إشارة", "Dashboard وقرارات"],
+      ],
+      flow: [
+        ["01", "جذب", "صفحات، SEO/GEO، محتوى وإعلانات لتوليد الطلب."],
+        ["02", "تأهيل", "Forms، WhatsApp وCRM لفهم نية الشراء."],
+        ["03", "إقناع", "UGC، دليل، صفحات ورسائل تقلل التردد."],
+        ["04", "متابعة", "أتمتة وروتين حتى لا تضيع الفرص."],
+        ["05", "قياس", "Dashboard بسيط يوضح ما يبيع وما يجب تحسينه."],
+      ],
+      offers: [
+        {
+          index: "01",
+          title: "Growth System Diagnostic",
+          text: "توضيح العائق، القنوات والأولويات قبل زيادة الاستثمار.",
+          items: ["تدقيق سريع", "خريطة رحلة العميل", "أولويات 30 يوما"],
+          cta: "اطلب التشخيص",
+        },
+        {
+          index: "02",
+          title: "AI Growth Sprint",
+          text: "بناء الأصول، workflows والdashboards الأساسية في 5 أيام.",
+          items: ["Roadmap بالذكاء الاصطناعي", "صفحات، محتوى، UGC وAds", "Dashboard + روتين الفريق"],
+          cta: "احجز الSprint",
+        },
+        {
+          index: "03",
+          title: "Managed Growth System",
+          text: "مرافقة شهرية لتسيير المحتوى، الاكتساب والتحسين.",
+          items: ["SEO/GEO + محتوى", "Paid media + UGC", "تقارير وتحسينات"],
+          cta: "ناقش المرافقة الشهرية",
+        },
+      ],
     },
     ugcSection: {
       eyebrow: "شركاء فيديو UGC",
@@ -895,7 +1030,7 @@ const translations = {
     },
     footer: {
       text: "أنظمة نمو بالذكاء الاصطناعي لفرق MENA.",
-      nav: ["النظام", "فيديو UGC", "المشاريع", "AI Growth Sprint", "التدريب", "الأكاديمية المجانية", "التواصل"],
+      nav: ["النظام", "العروض", "فيديو UGC", "المشاريع", "AI Growth Sprint", "التدريب", "الأكاديمية المجانية", "التواصل"],
       whatsapp: "احجز موعدا",
       linkedin: "ملف LinkedIn",
       bottom: ["تونس", "استراتيجية AI - SEO/GEO - Ads - UGC - WordPress"],
@@ -1403,6 +1538,7 @@ const applyLanguage = (language, shouldPersist = true) => {
   }
 
   setText('.site-header .nav > a[href="#system"]', copy.nav.services);
+  setText('.site-header .nav > a[href="#offers"]', copy.nav.offers);
   setText('.site-header .nav > a[href="#ugc"]', copy.nav.ugc);
   setText('.site-header .nav > a[href="#sprint"]', copy.nav.sprint);
   setText('.site-header .nav > a[href="#proof"]', copy.nav.proof);
@@ -1446,6 +1582,32 @@ const applyLanguage = (language, shouldPersist = true) => {
     setText(`.system-node:nth-child(${layerNumber}) p`, layer[2]);
   });
   setAllText(".cockpit-metrics span", copy.hook.metrics);
+
+  setText(".sales-head .eyebrow", copy.sales.eyebrow);
+  setText(".sales-head h2", copy.sales.title);
+  setText(".sales-head p:not(.eyebrow)", copy.sales.text);
+  setText(".sales-demo-label", copy.sales.demoLabel);
+  setText(".sales-demo > strong", copy.sales.demoTitle);
+  copy.sales.demoRows.forEach((row, index) => {
+    const rowNumber = index + 1;
+    setText(`.sales-screen div:nth-child(${rowNumber}) span`, row[0]);
+    setText(`.sales-screen div:nth-child(${rowNumber}) b`, row[1]);
+  });
+  setAttribute(".sales-flow", "aria-label", copy.aria.salesWorkflow);
+  copy.sales.flow.forEach((step, index) => {
+    const stepNumber = index + 1;
+    setText(`.sales-flow article:nth-child(${stepNumber}) span`, step[0]);
+    setText(`.sales-flow article:nth-child(${stepNumber}) strong`, step[1]);
+    setText(`.sales-flow article:nth-child(${stepNumber}) p`, step[2]);
+  });
+  copy.sales.offers.forEach((offer, index) => {
+    const offerNumber = index + 1;
+    setText(`#offerGrid .offer-card:nth-child(${offerNumber}) > span`, offer.index);
+    setText(`#offerGrid .offer-card:nth-child(${offerNumber}) h3`, offer.title);
+    setText(`#offerGrid .offer-card:nth-child(${offerNumber}) p`, offer.text);
+    setListItems(`#offerGrid .offer-card:nth-child(${offerNumber}) ul`, offer.items);
+    setText(`#offerGrid .offer-card:nth-child(${offerNumber}) a`, offer.cta);
+  });
 
   setText(".services .section-head .eyebrow", copy.servicesHead.eyebrow);
   setText(".services .section-head h2", copy.servicesHead.title);

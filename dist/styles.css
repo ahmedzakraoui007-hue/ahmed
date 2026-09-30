@@ -6370,4 +6370,329 @@ html[dir="rtl"] .contact-copy h2 {
   .portrait-system {
     grid-column: 2;
   }
+
+  .nav {
+    gap: clamp(10px, 1.1vw, 18px);
+  }
+}
+
+.sales-engine {
+  padding: clamp(58px, 7vw, 92px) 0;
+}
+
+.sales-head {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.86fr) minmax(320px, 1.14fr);
+  gap: clamp(24px, 5vw, 72px);
+  align-items: end;
+}
+
+.sales-head h2 {
+  max-width: 760px;
+  font-size: clamp(2.2rem, 4.45vw, 4.45rem);
+  line-height: 0.96;
+  text-wrap: balance;
+}
+
+.sales-head p:not(.eyebrow) {
+  max-width: 560px;
+  color: var(--muted);
+  font-size: 1.08rem;
+  font-weight: 720;
+}
+
+.sales-dashboard {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: minmax(290px, 0.78fr) minmax(0, 1.22fr);
+  gap: 16px;
+  margin-top: 34px;
+  padding: 16px;
+  border: 1px solid rgba(255, 248, 237, 0.14);
+  border-radius: 28px;
+  background:
+    linear-gradient(rgba(255, 248, 237, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 248, 237, 0.045) 1px, transparent 1px),
+    radial-gradient(circle at 16% 12%, rgba(255, 90, 20, 0.18), transparent 32%),
+    radial-gradient(circle at 84% 26%, rgba(31, 143, 135, 0.18), transparent 34%),
+    #090907;
+  background-size: 42px 42px, 42px 42px, auto, auto, auto;
+  color: var(--paper);
+  box-shadow: 0 28px 90px rgba(8, 8, 6, 0.22);
+}
+
+.sales-dashboard::after {
+  content: "";
+  position: absolute;
+  inset: 16px;
+  border: 1px solid rgba(255, 248, 237, 0.08);
+  border-radius: 20px;
+  pointer-events: none;
+}
+
+.sales-demo,
+.sales-flow article {
+  position: relative;
+  z-index: 1;
+  border: 1px solid rgba(255, 248, 237, 0.14);
+  background: rgba(255, 248, 237, 0.065);
+  backdrop-filter: blur(16px);
+}
+
+.sales-demo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 390px;
+  padding: 24px;
+  border-radius: 22px;
+}
+
+.sales-demo-label {
+  display: inline-flex;
+  width: fit-content;
+  border: 1px solid rgba(255, 90, 20, 0.42);
+  border-radius: 999px;
+  padding: 8px 12px;
+  color: var(--orange);
+  font-size: 0.78rem;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+.sales-demo > strong {
+  display: block;
+  max-width: 360px;
+  margin: 20px 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(1.8rem, 3vw, 3rem);
+  line-height: 0.98;
+  text-wrap: balance;
+}
+
+.sales-screen {
+  display: grid;
+  gap: 10px;
+}
+
+.sales-screen div {
+  display: grid;
+  grid-template-columns: 90px minmax(0, 1fr);
+  gap: 12px;
+  align-items: center;
+  min-height: 52px;
+  padding: 12px 14px;
+  border: 1px solid rgba(255, 248, 237, 0.12);
+  border-radius: 14px;
+  background: rgba(0, 0, 0, 0.22);
+}
+
+.sales-screen span {
+  color: var(--lime);
+  font-size: 0.76rem;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+.sales-screen b {
+  overflow-wrap: anywhere;
+  color: rgba(255, 248, 237, 0.9);
+  font-size: 0.92rem;
+}
+
+.sales-flow {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.sales-flow article {
+  display: grid;
+  align-content: space-between;
+  min-height: 390px;
+  padding: 20px;
+  border-radius: 18px;
+  transition: transform 0.24s ease, border-color 0.24s ease, background 0.24s ease;
+}
+
+.sales-flow article:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 90, 20, 0.38);
+  background: rgba(255, 248, 237, 0.1);
+}
+
+.sales-flow span,
+.offer-card > span {
+  color: var(--orange);
+  font-size: 0.78rem;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+.sales-flow strong {
+  display: block;
+  margin-top: auto;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(1.26rem, 1.7vw, 1.72rem);
+  line-height: 0.98;
+}
+
+.sales-flow p {
+  margin: 14px 0 0;
+  color: rgba(255, 248, 237, 0.7);
+  font-size: 0.92rem;
+  font-weight: 680;
+}
+
+.offer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.offer-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 360px;
+  padding: 24px;
+  border: 1px solid rgba(8, 8, 6, 0.1);
+  border-radius: 22px;
+  background: rgba(255, 248, 238, 0.72);
+  box-shadow: 0 18px 52px rgba(8, 8, 6, 0.08);
+}
+
+.offer-card-featured {
+  border-color: rgba(255, 90, 20, 0.38);
+  background:
+    radial-gradient(circle at 12% 0%, rgba(255, 90, 20, 0.2), transparent 38%),
+    linear-gradient(145deg, #12110f, #071817);
+  color: var(--paper);
+  transform: translateY(-8px);
+}
+
+.offer-card h3 {
+  margin-top: 22px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(1.42rem, 2vw, 2rem);
+  line-height: 1;
+}
+
+.offer-card p {
+  color: var(--muted);
+  font-weight: 680;
+}
+
+.offer-card-featured p {
+  color: rgba(255, 248, 237, 0.72);
+}
+
+.offer-card ul {
+  display: grid;
+  gap: 10px;
+  margin: 18px 0 24px;
+  padding: 0;
+  list-style: none;
+}
+
+.offer-card li {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  color: rgba(8, 8, 6, 0.78);
+  font-weight: 760;
+}
+
+.offer-card-featured li {
+  color: rgba(255, 248, 237, 0.84);
+}
+
+.offer-card li::before {
+  content: "";
+  flex: 0 0 auto;
+  width: 8px;
+  height: 8px;
+  margin-top: 8px;
+  border-radius: 50%;
+  background: var(--orange);
+}
+
+.offer-card a {
+  display: inline-flex;
+  justify-content: center;
+  margin-top: auto;
+  border: 1px solid rgba(8, 8, 6, 0.16);
+  border-radius: 999px;
+  padding: 14px 18px;
+  color: var(--ink);
+  font-weight: 950;
+}
+
+.offer-card-featured a {
+  border-color: transparent;
+  background: var(--orange);
+  color: var(--ink);
+}
+
+@media (max-width: 1180px) {
+  .sales-dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .sales-demo {
+    min-height: auto;
+  }
+
+  .sales-flow article {
+    min-height: 260px;
+  }
+}
+
+@media (max-width: 920px) {
+  .sales-head,
+  .offer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sales-flow {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .offer-card-featured {
+    transform: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .sales-engine {
+    padding: 48px 0;
+  }
+
+  .sales-dashboard {
+    margin-top: 22px;
+    padding: 10px;
+    border-radius: 22px;
+  }
+
+  .sales-demo,
+  .offer-card {
+    padding: 18px;
+    border-radius: 18px;
+  }
+
+  .sales-flow {
+    grid-template-columns: 1fr;
+  }
+
+  .sales-flow article {
+    min-height: 172px;
+  }
+
+  .sales-screen div {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
 }
