@@ -120,6 +120,8 @@ const bootcampCopy = {
       resourcesIntro: "Templates rapides pour appliquer le module dès aujourd'hui.",
       stepPlanTitle: "Plan pas à pas",
       stepPlanText: "Suis ces actions dans l'ordre avant de passer au quiz.",
+      videoLessonTitle: "Vidéo recommandée",
+      watchOnYoutube: "Regarder sur YouTube",
       externalResourcesTitle: "Liens utiles",
       externalResourcesText: "Ressources fiables pour approfondir sans te perdre.",
       openResource: "Ouvrir",
@@ -600,6 +602,8 @@ const bootcampCopy = {
       resourcesIntro: "Fast templates to apply the module today.",
       stepPlanTitle: "Step-by-step plan",
       stepPlanText: "Complete these actions in order before the quiz.",
+      videoLessonTitle: "Recommended video",
+      watchOnYoutube: "Watch on YouTube",
       externalResourcesTitle: "Helpful links",
       externalResourcesText: "Reliable resources to go deeper without getting lost.",
       openResource: "Open",
@@ -737,6 +741,8 @@ const bootcampCopy = {
       resourcesIntro: "قوالب سريعة لتطبيق الوحدة اليوم.",
       stepPlanTitle: "خطة خطوة بخطوة",
       stepPlanText: "أنجز هذه الخطوات بالترتيب قبل المرور إلى الاختبار.",
+      videoLessonTitle: "فيديو مقترح",
+      watchOnYoutube: "مشاهدة على YouTube",
       externalResourcesTitle: "روابط مفيدة",
       externalResourcesText: "مصادر موثوقة للتعمق بدون تشتت.",
       openResource: "فتح",
@@ -1200,6 +1206,12 @@ const moduleLearningEnhancements = {
           url: "https://support.google.com/analytics/answer/9304153",
         },
       ],
+      video: {
+        title: "Introduction à l'IA générative",
+        text: "Une base simple pour comprendre ce que l'IA peut générer et comment l'utiliser dans un workflow marketing.",
+        provider: "Google Cloud Tech",
+        youtubeId: "G2fqAlgmoPo",
+      },
     },
     offer: {
       steps: [
@@ -1220,6 +1232,12 @@ const moduleLearningEnhancements = {
           url: "https://www.thinkwithgoogle.com/",
         },
       ],
+      video: {
+        title: "Créer un buyer persona utile",
+        text: "Un support visuel pour passer d'une audience vague à un client idéal plus clair.",
+        provider: "HubSpot Marketing",
+        youtubeId: "v6EWN4EjHM0",
+      },
     },
     content: {
       steps: [
@@ -1240,6 +1258,12 @@ const moduleLearningEnhancements = {
           url: "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
         },
       ],
+      video: {
+        title: "Construire une stratégie de contenu",
+        text: "Voir comment relier audience, message, formats et objectif business dans un système éditorial.",
+        provider: "HubSpot Marketing",
+        youtubeId: "DSOfPEyeMNg",
+      },
     },
     seo: {
       steps: [
@@ -1265,6 +1289,12 @@ const moduleLearningEnhancements = {
           url: "https://support.google.com/business/answer/7091",
         },
       ],
+      video: {
+        title: "SEO expliqué simplement",
+        text: "Les bases Google Search Central pour comprendre visibilité, indexation et contenu utile.",
+        provider: "Google Search Central",
+        youtubeId: "xnyJQb37RRw",
+      },
     },
     "paid-ugc": {
       steps: [
@@ -1290,6 +1320,12 @@ const moduleLearningEnhancements = {
           url: "https://ads.tiktok.com/business/creativecenter/",
         },
       ],
+      video: {
+        title: "Créer des UGC ads avec IA",
+        text: "Un tutoriel pratique pour transformer un angle créatif en vidéo publicitaire testable.",
+        provider: "Shopify Success",
+        youtubeId: "8NUKLGe0JUc",
+      },
     },
     automation: {
       steps: [
@@ -1315,6 +1351,12 @@ const moduleLearningEnhancements = {
           url: "https://support.google.com/looker-studio/answer/6283323",
         },
       ],
+      video: {
+        title: "Dashboard GA4 dans Looker Studio",
+        text: "Une méthode concrète pour rendre les données marketing plus lisibles et actionnables.",
+        provider: "Analytics Mania",
+        youtubeId: "2IeVO5WT_Ok",
+      },
     },
   },
   en: {
@@ -1337,6 +1379,12 @@ const moduleLearningEnhancements = {
           url: "https://support.google.com/analytics/answer/9304153",
         },
       ],
+      video: {
+        title: "Introduction to generative AI",
+        text: "A simple foundation for understanding what AI can generate and how to use it in a marketing workflow.",
+        provider: "Google Cloud Tech",
+        youtubeId: "G2fqAlgmoPo",
+      },
     },
     offer: {
       steps: [
@@ -1357,6 +1405,12 @@ const moduleLearningEnhancements = {
           url: "https://www.thinkwithgoogle.com/",
         },
       ],
+      video: {
+        title: "Create a useful buyer persona",
+        text: "A visual guide to move from a vague audience to a clearer ideal customer.",
+        provider: "HubSpot Marketing",
+        youtubeId: "v6EWN4EjHM0",
+      },
     },
     content: {
       steps: [
@@ -1377,6 +1431,12 @@ const moduleLearningEnhancements = {
           url: "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
         },
       ],
+      video: {
+        title: "Build a content strategy",
+        text: "See how to connect audience, message, formats, and business goals into one editorial system.",
+        provider: "HubSpot Marketing",
+        youtubeId: "DSOfPEyeMNg",
+      },
     },
     seo: {
       steps: [
@@ -1402,6 +1462,12 @@ const moduleLearningEnhancements = {
           url: "https://support.google.com/business/answer/7091",
         },
       ],
+      video: {
+        title: "SEO explained simply",
+        text: "Google Search Central basics for understanding visibility, indexing, and helpful content.",
+        provider: "Google Search Central",
+        youtubeId: "xnyJQb37RRw",
+      },
     },
     "paid-ugc": {
       steps: [
@@ -1427,6 +1493,12 @@ const moduleLearningEnhancements = {
           url: "https://ads.tiktok.com/business/creativecenter/",
         },
       ],
+      video: {
+        title: "Create AI-assisted UGC ads",
+        text: "A practical tutorial for turning a creative angle into a testable video ad.",
+        provider: "Shopify Success",
+        youtubeId: "8NUKLGe0JUc",
+      },
     },
     automation: {
       steps: [
@@ -1452,6 +1524,12 @@ const moduleLearningEnhancements = {
           url: "https://support.google.com/looker-studio/answer/6283323",
         },
       ],
+      video: {
+        title: "GA4 dashboard in Looker Studio",
+        text: "A concrete method to make marketing data more readable and actionable.",
+        provider: "Analytics Mania",
+        youtubeId: "2IeVO5WT_Ok",
+      },
     },
   },
   ar: {
@@ -1474,6 +1552,12 @@ const moduleLearningEnhancements = {
           url: "https://support.google.com/analytics/answer/9304153",
         },
       ],
+      video: {
+        title: "مقدمة في الذكاء الاصطناعي التوليدي",
+        text: "قاعدة بسيطة لفهم ما يمكن أن ينشئه الذكاء الاصطناعي وكيف نستعمله في Workflow تسويقي.",
+        provider: "Google Cloud Tech",
+        youtubeId: "G2fqAlgmoPo",
+      },
     },
     offer: {
       steps: [
@@ -1494,6 +1578,12 @@ const moduleLearningEnhancements = {
           url: "https://www.thinkwithgoogle.com/",
         },
       ],
+      video: {
+        title: "إنشاء Buyer Persona مفيد",
+        text: "شرح بصري للانتقال من جمهور عام إلى عميل مثالي أكثر وضوحا.",
+        provider: "HubSpot Marketing",
+        youtubeId: "v6EWN4EjHM0",
+      },
     },
     content: {
       steps: [
@@ -1514,6 +1604,12 @@ const moduleLearningEnhancements = {
           url: "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
         },
       ],
+      video: {
+        title: "بناء استراتيجية محتوى",
+        text: "طريقة لربط الجمهور، الرسالة، الصيغ والأهداف التجارية داخل نظام محتوى واحد.",
+        provider: "HubSpot Marketing",
+        youtubeId: "DSOfPEyeMNg",
+      },
     },
     seo: {
       steps: [
@@ -1539,6 +1635,12 @@ const moduleLearningEnhancements = {
           url: "https://support.google.com/business/answer/7091",
         },
       ],
+      video: {
+        title: "شرح SEO ببساطة",
+        text: "أساسيات Google Search Central لفهم الظهور، الفهرسة والمحتوى المفيد.",
+        provider: "Google Search Central",
+        youtubeId: "xnyJQb37RRw",
+      },
     },
     "paid-ugc": {
       steps: [
@@ -1564,6 +1666,12 @@ const moduleLearningEnhancements = {
           url: "https://ads.tiktok.com/business/creativecenter/",
         },
       ],
+      video: {
+        title: "إنشاء UGC Ads بمساعدة AI",
+        text: "تطبيق عملي لتحويل زاوية إبداعية إلى فيديو إعلاني قابل للاختبار.",
+        provider: "Shopify Success",
+        youtubeId: "8NUKLGe0JUc",
+      },
     },
     automation: {
       steps: [
@@ -1589,6 +1697,12 @@ const moduleLearningEnhancements = {
           url: "https://support.google.com/looker-studio/answer/6283323",
         },
       ],
+      video: {
+        title: "Dashboard GA4 في Looker Studio",
+        text: "طريقة عملية لجعل بيانات التسويق أوضح وقابلة لاتخاذ القرار.",
+        provider: "Analytics Mania",
+        youtubeId: "2IeVO5WT_Ok",
+      },
     },
   },
 };
@@ -1598,6 +1712,7 @@ Object.entries(moduleLearningEnhancements).forEach(([language, modules]) => {
     ...module,
     steps: modules[module.id]?.steps || [],
     links: modules[module.id]?.links || [],
+    video: modules[module.id]?.video || null,
   }));
 });
 
@@ -2232,6 +2347,37 @@ function renderModuleLinks(module, copy) {
   `;
 }
 
+function renderModuleVideo(module, copy) {
+  if (!module.video?.youtubeId) {
+    return "";
+  }
+
+  const youtubeUrl = `https://www.youtube.com/watch?v=${module.video.youtubeId}`;
+  const embedUrl = `https://www.youtube-nocookie.com/embed/${module.video.youtubeId}`;
+
+  return `
+    <section class="module-video-card" aria-label="${escapeHtml(copy.ui.videoLessonTitle)}">
+      <div class="module-video-copy">
+        <span>${escapeHtml(copy.ui.videoLessonTitle)}</span>
+        <h3>${escapeHtml(module.video.title)}</h3>
+        <p>${escapeHtml(module.video.text)}</p>
+        <a href="${escapeHtml(youtubeUrl)}" target="_blank" rel="noreferrer noopener">
+          ${escapeHtml(copy.ui.watchOnYoutube)}
+        </a>
+      </div>
+      <div class="module-video-frame">
+        <iframe
+          src="${escapeHtml(embedUrl)}"
+          title="${escapeHtml(`${module.video.title} - ${module.video.provider}`)}"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+  `;
+}
+
 function renderCourse(module) {
   const copy = getCopy();
   const moduleState = getModuleState(module.id);
@@ -2370,6 +2516,7 @@ function renderResources(module) {
       <h2>${escapeHtml(module.title)}</h2>
       <p>${escapeHtml(copy.ui.resourcesIntro)}</p>
     </div>
+    ${renderModuleVideo(module, copy)}
     ${renderModuleLinks(module, copy)}
     <div class="resource-grid">
       ${copy.resources

@@ -4103,7 +4103,8 @@ html[dir="rtl"] .floating-cta {
 }
 
 .bootcamp-step-plan,
-.module-resource-links {
+.module-resource-links,
+.module-video-card {
   display: grid;
   gap: 16px;
   margin-top: 18px;
@@ -4183,6 +4184,79 @@ html[dir="rtl"] .floating-cta {
   color: var(--ink);
   font-size: 0.94rem;
   line-height: 1.32;
+}
+
+.module-video-card {
+  grid-template-columns: minmax(220px, 0.72fr) minmax(0, 1.28fr);
+  align-items: stretch;
+  background:
+    linear-gradient(135deg, rgba(8, 8, 6, 0.95), rgba(18, 63, 59, 0.84)),
+    var(--ink);
+  color: var(--white);
+}
+
+.module-video-copy {
+  display: grid;
+  gap: 10px;
+  align-content: center;
+}
+
+.module-video-copy span {
+  color: var(--orange);
+  font-size: 0.74rem;
+  font-weight: 950;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.module-video-copy h3 {
+  margin: 0;
+  color: var(--white);
+  font-size: clamp(1.35rem, 2vw, 2.3rem);
+  line-height: 1;
+  text-wrap: balance;
+}
+
+.module-video-copy p {
+  margin: 0;
+  color: rgba(255, 248, 237, 0.72);
+  font-weight: 760;
+  line-height: 1.5;
+}
+
+.module-video-copy a {
+  justify-self: start;
+  min-height: 40px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: var(--orange);
+  color: var(--ink);
+  font-size: 0.86rem;
+  font-weight: 950;
+  text-decoration: none;
+}
+
+.module-video-frame {
+  position: relative;
+  overflow: hidden;
+  min-height: 260px;
+  border: 1px solid rgba(255, 248, 237, 0.12);
+  border-radius: 18px;
+  background: #050505;
+}
+
+.module-video-frame::before {
+  content: "";
+  display: block;
+  aspect-ratio: 16 / 9;
+}
+
+.module-video-frame iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 .module-resource-links {
@@ -4738,6 +4812,10 @@ html[dir="rtl"] .topic-section ul {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .module-video-card {
+    grid-template-columns: 1fr;
+  }
+
   .diagnostic-result-card {
     grid-template-columns: 1fr;
   }
@@ -4812,6 +4890,17 @@ html[dir="rtl"] .topic-section ul {
 
   .bootcamp-sticky-progress strong {
     font-size: 0.8rem;
+  }
+
+  .module-video-card,
+  .module-resource-links,
+  .bootcamp-step-plan {
+    padding: 14px;
+    border-radius: 18px;
+  }
+
+  .module-video-frame {
+    min-height: 210px;
   }
 
   .bootcamp-progress-grid {
