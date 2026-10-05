@@ -7120,3 +7120,656 @@ body.motion-ready .sales-dashboard.is-visible .sales-flow article:nth-child(5) {
     animation: none;
   }
 }
+
+/* UI clarity pass: fewer heavy blocks, clearer spacing, calmer mobile flow. */
+.section-shell {
+  width: min(1120px, calc(100% - 48px));
+}
+
+.services,
+.proof,
+.selected-work,
+.training {
+  padding: clamp(96px, 9vw, 142px) 0;
+}
+
+.section-head {
+  max-width: 760px;
+}
+
+.section-head p:not(.eyebrow),
+.training-card p:not(.eyebrow),
+.contact-copy p {
+  max-width: 650px;
+  line-height: 1.55;
+}
+
+.sales-engine {
+  padding: clamp(102px, 10vw, 150px) 0 clamp(88px, 9vw, 128px);
+}
+
+.sales-head {
+  gap: clamp(26px, 5vw, 70px);
+  align-items: end;
+}
+
+.sales-dashboard {
+  margin-top: 56px;
+  padding: 18px;
+  border-radius: 28px;
+}
+
+.sales-demo {
+  min-height: 360px;
+  padding: 26px;
+}
+
+.sales-flow {
+  gap: 12px;
+}
+
+.sales-flow article {
+  min-height: 292px;
+  padding: 18px;
+  border-radius: 16px;
+}
+
+.sales-flow p,
+.offer-card p,
+.proof-card p,
+.work-content p,
+.home-bootcamp-copy > p:not(.eyebrow) {
+  line-height: 1.5;
+}
+
+.offer-grid {
+  gap: 22px;
+  margin-top: 30px;
+}
+
+.offer-card {
+  min-height: auto;
+  padding: 24px;
+  border-radius: 20px;
+  box-shadow: 0 14px 42px rgba(8, 8, 6, 0.06);
+}
+
+.offer-card-featured {
+  transform: none;
+}
+
+.service-console {
+  grid-template-columns: minmax(230px, 280px) minmax(0, 1fr);
+  gap: 24px;
+  margin-top: 54px;
+}
+
+.service-tab {
+  min-height: 54px;
+  border-radius: 15px;
+}
+
+.service-detail {
+  min-height: 310px;
+  padding: clamp(26px, 4vw, 42px);
+  border-radius: 24px;
+  box-shadow: 0 18px 58px rgba(8, 8, 6, 0.08);
+}
+
+.service-detail::after {
+  opacity: 0.58;
+}
+
+.service-detail span {
+  width: 46px;
+  height: 46px;
+  margin-bottom: 22px;
+  border-radius: 14px;
+}
+
+.service-detail h3,
+.work-content h3 {
+  font-size: clamp(1.9rem, 3vw, 3.25rem);
+}
+
+.service-detail li {
+  padding: 14px 16px;
+  border-radius: 14px;
+}
+
+.ugc,
+.sprint {
+  padding: clamp(98px, 9vw, 140px) 0;
+}
+
+.ugc-feature {
+  min-height: auto;
+  padding: clamp(22px, 3.5vw, 32px);
+  border-radius: 24px;
+}
+
+.ugc-steps article {
+  min-height: 154px;
+  padding: 18px;
+  border-radius: 16px;
+}
+
+.ugc-steps strong {
+  margin-top: 18px;
+}
+
+.sprint-layout {
+  gap: clamp(34px, 5vw, 58px);
+}
+
+.sprint-steps article {
+  grid-template-columns: 72px minmax(160px, 0.58fr) minmax(0, 1fr);
+  min-height: 94px;
+  padding: 18px 20px;
+  border-radius: 18px;
+}
+
+.proof-grid {
+  gap: 22px;
+}
+
+.proof-card {
+  min-height: 210px;
+  padding: 24px;
+  border-radius: 22px;
+  box-shadow: 0 14px 42px rgba(8, 8, 6, 0.06);
+}
+
+.selected-work {
+  gap: 34px;
+}
+
+.work-impact {
+  gap: 10px;
+}
+
+.work-impact article {
+  min-height: 96px;
+  padding: 16px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.68);
+  box-shadow: 0 12px 34px rgba(8, 8, 6, 0.05);
+}
+
+.work-impact strong {
+  font-size: clamp(1.25rem, 1.8vw, 1.8rem);
+  line-height: 1;
+}
+
+.work-impact span {
+  margin-top: 10px;
+  font-size: 0.74rem;
+  line-height: 1.35;
+}
+
+.work-card {
+  border-radius: 24px;
+  box-shadow: 0 18px 58px rgba(8, 8, 6, 0.08);
+}
+
+.work-card-feature {
+  grid-template-columns: minmax(0, 1.04fr) minmax(330px, 0.96fr);
+}
+
+.work-card-dark {
+  grid-template-columns: minmax(0, 0.9fr) minmax(330px, 1.1fr);
+}
+
+.work-visual,
+.work-card-dark .work-visual {
+  min-height: 360px;
+}
+
+.work-content {
+  padding: clamp(26px, 4vw, 42px);
+}
+
+.work-kpi {
+  min-height: 70px;
+  padding: 12px;
+  border-radius: 14px;
+}
+
+.work-tags span,
+.tool-stack span {
+  padding: 8px 11px;
+  font-size: 0.74rem;
+}
+
+.training-card {
+  gap: clamp(22px, 4vw, 46px);
+  padding: clamp(28px, 4.4vw, 46px);
+  border-radius: 26px;
+}
+
+.training-card img {
+  width: clamp(128px, 15vw, 190px);
+  height: clamp(128px, 15vw, 190px);
+}
+
+.tool-stack {
+  gap: 7px;
+}
+
+.home-bootcamp {
+  margin: clamp(82px, 9vw, 124px) auto;
+  padding: clamp(26px, 4vw, 38px);
+  border-radius: 26px;
+}
+
+.home-bootcamp h2 {
+  font-size: clamp(2.2rem, 4vw, 4.55rem);
+}
+
+.home-bootcamp-preview {
+  border-radius: 20px;
+}
+
+.contact {
+  padding: clamp(92px, 9vw, 132px) 0;
+}
+
+.contact-form {
+  border-radius: 24px;
+  box-shadow: 0 20px 58px rgba(8, 8, 6, 0.16);
+}
+
+.bootcamp-main {
+  padding-top: 36px;
+}
+
+.bootcamp-hero {
+  min-height: auto;
+  padding: clamp(42px, 6vw, 74px) 0 clamp(54px, 7vw, 92px);
+}
+
+.bootcamp-hero h1 {
+  font-size: clamp(3.1rem, 6vw, 6.2rem);
+}
+
+.bootcamp-hero-card,
+.diagnostic-app,
+.diagnostic-question-card,
+.diagnostic-result-card,
+.workbook-card,
+.certificate-card,
+.outcome-card,
+.bootcamp-search,
+.bootcamp-progress-card,
+.bootcamp-panel,
+.bootcamp-tabs,
+.seo-module-card,
+.faq-item {
+  box-shadow: 0 14px 42px rgba(8, 8, 6, 0.065);
+}
+
+.growth-diagnostic,
+.bootcamp-outcomes,
+.bootcamp-assets,
+.bootcamp-seo,
+.bootcamp-faq {
+  margin-bottom: clamp(78px, 8vw, 112px);
+}
+
+.growth-diagnostic {
+  gap: 22px;
+}
+
+.diagnostic-copy,
+.diagnostic-app {
+  min-height: 360px;
+}
+
+.diagnostic-copy {
+  border-radius: 24px;
+}
+
+.bootcamp-academy {
+  gap: 22px;
+  align-items: start;
+}
+
+.bootcamp-panel {
+  border-radius: 24px;
+}
+
+.module-head h2 {
+  font-size: clamp(2rem, 3.5vw, 3.75rem);
+}
+
+.learning-flow {
+  margin: 24px 0 8px;
+}
+
+.bootcamp-step-plan,
+.module-resource-links,
+.module-video-card {
+  border-radius: 20px;
+}
+
+.resource-card,
+.quiz-card,
+.checkpoint-card,
+.bootcamp-lesson {
+  border-radius: 15px;
+}
+
+@media (max-width: 1040px) {
+  .section-shell {
+    width: min(760px, calc(100% - 36px));
+  }
+
+  .service-console,
+  .ugc-layout,
+  .sprint-layout,
+  .work-card-feature,
+  .work-card-dark,
+  .training-card,
+  .home-bootcamp,
+  .contact-layout,
+  .growth-diagnostic,
+  .bootcamp-hero,
+  .bootcamp-academy {
+    grid-template-columns: 1fr;
+  }
+
+  .service-tabs {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    scroll-snap-type: x proximity;
+  }
+
+  .service-tab {
+    flex: 0 0 auto;
+    width: auto;
+    min-width: 160px;
+    scroll-snap-align: start;
+  }
+
+  .work-visual,
+  .work-card-dark .work-visual {
+    min-height: 320px;
+  }
+
+  .bootcamp-sidebar {
+    display: grid;
+    grid-template-columns: minmax(0, 0.72fr) minmax(260px, 0.58fr);
+    gap: 14px;
+    align-items: start;
+  }
+
+  .bootcamp-module-list {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 720px) {
+  .section-shell {
+    width: min(100% - 28px, 430px);
+  }
+
+  .services,
+  .proof,
+  .selected-work,
+  .training,
+  .sales-engine,
+  .ugc,
+  .sprint,
+  .contact {
+    padding-block: 64px;
+  }
+
+  .section-head h2,
+  .training-card h2,
+  .contact-copy h2 {
+    font-size: clamp(2rem, 10vw, 3.1rem);
+    line-height: 0.98;
+  }
+
+  .hero-grid {
+    width: min(100% - 28px, 430px);
+    gap: 24px;
+    padding-bottom: 50px;
+  }
+
+  .hero-title {
+    font-size: clamp(2.55rem, 12vw, 4rem);
+  }
+
+  .hero-proof {
+    display: none;
+  }
+
+  .signal-bar {
+    max-width: 100%;
+    padding: 8px;
+    gap: 6px;
+  }
+
+  .signal-bar span {
+    min-height: 32px;
+    padding: 0 10px;
+    font-size: 0.68rem;
+  }
+
+  .sales-dashboard,
+  .service-detail,
+  .ugc-feature,
+  .training-card,
+  .home-bootcamp,
+  .contact-form,
+  .work-card {
+    border-radius: 20px;
+  }
+
+  .sales-flow {
+    display: flex;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .sales-flow article {
+    flex: 0 0 78%;
+    min-height: 190px;
+    scroll-snap-align: start;
+  }
+
+  .offer-grid,
+  .proof-grid,
+  .work-impact,
+  .work-kpis,
+  .ugc-steps,
+  .quick-contact,
+  .footer-main {
+    grid-template-columns: 1fr;
+  }
+
+  .offer-card {
+    padding: 20px;
+  }
+
+  .service-detail {
+    min-height: auto;
+  }
+
+  .service-detail ul {
+    grid-template-columns: 1fr;
+  }
+
+  .ugc-preview-stack {
+    display: none;
+  }
+
+  .sprint-steps article {
+    grid-template-columns: 1fr;
+  }
+
+  .work-impact {
+    gap: 8px;
+  }
+
+  .work-impact article {
+    min-height: auto;
+    padding: 14px;
+  }
+
+  .work-card-feature .work-content,
+  .work-card-dark .work-content {
+    order: 1;
+  }
+
+  .work-card-feature .work-visual,
+  .work-card-dark .work-visual {
+    order: 2;
+    display: none;
+  }
+
+  .case-number,
+  .home-bootcamp-preview {
+    display: none;
+  }
+
+  .training-card {
+    text-align: left;
+  }
+
+  .training-card img {
+    width: 118px;
+    height: 118px;
+  }
+
+  .tool-stack {
+    max-height: 92px;
+    overflow: hidden;
+  }
+
+  .contact-layout {
+    gap: 28px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .bootcamp-main {
+    padding-top: 18px;
+  }
+
+  .bootcamp-hero {
+    gap: 22px;
+    padding: 30px 0 54px;
+  }
+
+  .bootcamp-hero h1 {
+    font-size: clamp(2.95rem, 14vw, 4.5rem);
+  }
+
+  .bootcamp-hero-card {
+    padding: 12px;
+    gap: 8px;
+  }
+
+  .bootcamp-path-card {
+    display: none;
+  }
+
+  .bootcamp-stat {
+    min-height: 82px;
+    padding: 10px;
+  }
+
+  .bootcamp-stat strong {
+    font-size: 1.6rem;
+  }
+
+  .growth-diagnostic,
+  .bootcamp-outcomes,
+  .bootcamp-assets,
+  .bootcamp-seo,
+  .bootcamp-faq {
+    margin-bottom: 64px;
+  }
+
+  .diagnostic-copy,
+  .diagnostic-app {
+    min-height: auto;
+  }
+
+  .bootcamp-sidebar {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .bootcamp-module-list {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    margin-inline: 0;
+    padding-bottom: 4px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .bootcamp-module {
+    flex: 0 0 232px;
+    min-height: 82px;
+    scroll-snap-align: start;
+  }
+
+  .bootcamp-progress-card {
+    padding: 14px;
+  }
+
+  .bootcamp-tabs {
+    top: auto;
+  }
+
+  .bootcamp-panel {
+    padding: 16px;
+  }
+
+  .module-head h2 {
+    font-size: clamp(1.85rem, 9.5vw, 3rem);
+  }
+
+  .learning-flow span {
+    justify-content: flex-start;
+  }
+
+  .bootcamp-step-plan,
+  .module-resource-links,
+  .module-video-card {
+    padding: 14px;
+  }
+
+  .outcome-grid,
+  .bootcamp-seo-grid {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    padding-bottom: 6px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .outcome-card,
+  .seo-module-card {
+    flex: 0 0 82%;
+    scroll-snap-align: start;
+  }
+
+  .module-video-frame {
+    min-height: 190px;
+  }
+
+  .bootcamp-final {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+}
