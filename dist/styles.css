@@ -7773,3 +7773,459 @@ body.motion-ready .sales-dashboard.is-visible .sales-flow article:nth-child(5) {
     text-align: left;
   }
 }
+
+.demo-lab {
+  position: relative;
+  display: grid;
+  gap: 28px;
+  margin: 98px auto 112px;
+  padding: 34px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 28px;
+  background:
+    radial-gradient(circle at 16% 0%, rgba(255, 90, 20, 0.28), transparent 34%),
+    radial-gradient(circle at 88% 18%, rgba(20, 92, 82, 0.34), transparent 36%),
+    linear-gradient(135deg, #080806 0%, #11140f 46%, #111f1b 100%);
+  color: var(--white);
+  box-shadow: 0 30px 90px rgba(8, 8, 6, 0.24);
+}
+
+.demo-lab::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+  background-size: 36px 36px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.86), transparent 78%);
+}
+
+.demo-lab > * {
+  position: relative;
+  z-index: 1;
+}
+
+.demo-lab-head {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(280px, 0.45fr);
+  gap: 24px;
+  align-items: end;
+}
+
+.demo-lab-head .eyebrow {
+  grid-column: 1 / -1;
+  margin-bottom: -4px;
+}
+
+.demo-lab-head h2 {
+  grid-column: 1;
+  max-width: 800px;
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(2.35rem, 4.55vw, 4.85rem);
+  line-height: 0.93;
+  letter-spacing: 0;
+  text-wrap: balance;
+}
+
+.demo-lab-head p:not(.eyebrow) {
+  grid-column: 2;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 1.02rem;
+  font-weight: 750;
+}
+
+.demo-lab-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 18px;
+}
+
+.demo-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 100%;
+  padding: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.075);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  transition: border-color 0.2s ease, transform 0.2s ease, background 0.2s ease;
+}
+
+.demo-card.is-focus,
+.demo-card:hover {
+  border-color: rgba(255, 90, 20, 0.42);
+  background: rgba(255, 255, 255, 0.095);
+}
+
+.demo-card-head,
+.demo-actions,
+.whatsapp-scenarios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+
+.demo-card-head {
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.demo-type,
+.demo-pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 0 11px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 950;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.demo-type {
+  background: rgba(255, 90, 20, 0.14);
+  color: var(--orange-2);
+}
+
+.demo-pill {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.demo-card h3 {
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(1.45rem, 2vw, 2.15rem);
+  line-height: 1;
+}
+
+.demo-card-text,
+.demo-lab-note {
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 0.96rem;
+  font-weight: 700;
+}
+
+.call-device {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: center;
+  margin-top: 18px;
+  padding: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  background: rgba(8, 8, 6, 0.42);
+}
+
+.call-avatar,
+.whatsapp-avatar {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  background: var(--orange);
+  color: var(--ink);
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 950;
+}
+
+.call-meta {
+  display: grid;
+  gap: 1px;
+  min-width: 0;
+}
+
+.call-status {
+  color: var(--orange-2);
+  font-size: 0.78rem;
+  font-weight: 950;
+}
+
+.call-title {
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.96rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.call-wave {
+  display: inline-flex;
+  gap: 4px;
+  align-items: end;
+  height: 28px;
+}
+
+.call-wave i {
+  display: block;
+  width: 5px;
+  height: 12px;
+  border-radius: 999px;
+  background: var(--orange);
+  opacity: 0.42;
+}
+
+.caller-demo.is-running .call-wave i {
+  animation: callPulse 0.72s ease-in-out infinite alternate;
+  opacity: 0.9;
+}
+
+.caller-demo.is-running .call-wave i:nth-child(2) {
+  animation-delay: 0.12s;
+}
+
+.caller-demo.is-running .call-wave i:nth-child(3) {
+  animation-delay: 0.24s;
+}
+
+@keyframes callPulse {
+  from {
+    height: 10px;
+  }
+
+  to {
+    height: 25px;
+  }
+}
+
+.call-transcript {
+  display: grid;
+  gap: 9px;
+  margin: 16px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.call-transcript li {
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  background: rgba(8, 8, 6, 0.26);
+  opacity: 0.7;
+}
+
+.call-transcript li.is-active {
+  border-color: rgba(255, 90, 20, 0.46);
+  background: rgba(255, 90, 20, 0.12);
+  opacity: 1;
+}
+
+.call-transcript span {
+  display: block;
+  color: var(--orange-2);
+  font-size: 0.72rem;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+.call-transcript p {
+  margin: 3px 0 0;
+  color: rgba(255, 255, 255, 0.84);
+  font-size: 0.92rem;
+  font-weight: 720;
+  line-height: 1.45;
+}
+
+.demo-actions {
+  margin-top: auto;
+  padding-top: 18px;
+}
+
+.demo-lab .button {
+  min-height: 48px;
+  border-radius: 999px;
+}
+
+.demo-lab .secondary {
+  border-color: rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--white);
+}
+
+.whatsapp-phone {
+  display: grid;
+  gap: 14px;
+  margin-top: 18px;
+  padding: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 22px;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    #07110f;
+  background-size: 24px 24px;
+}
+
+.whatsapp-top {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.whatsapp-top span:last-child {
+  display: grid;
+  gap: 1px;
+}
+
+.whatsapp-top strong {
+  line-height: 1.15;
+}
+
+.whatsapp-top small {
+  color: rgba(255, 255, 255, 0.54);
+  font-weight: 800;
+}
+
+.whatsapp-chat {
+  display: grid;
+  gap: 10px;
+  min-height: 202px;
+}
+
+.wa-message {
+  width: fit-content;
+  max-width: min(92%, 420px);
+  padding: 11px 13px;
+  border-radius: 16px 16px 16px 5px;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 0.91rem;
+  font-weight: 720;
+  line-height: 1.45;
+}
+
+.wa-message.bot {
+  background: rgba(255, 255, 255, 0.105);
+}
+
+.wa-message.user {
+  margin-inline-start: auto;
+  border-radius: 16px 16px 5px 16px;
+  background: rgba(255, 90, 20, 0.86);
+  color: #100804;
+}
+
+.whatsapp-scenarios {
+  margin-top: 14px;
+}
+
+.whatsapp-scenarios button {
+  min-height: 38px;
+  padding: 0 13px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.72);
+  cursor: pointer;
+  font-size: 0.82rem;
+  font-weight: 900;
+}
+
+.whatsapp-scenarios button.is-active {
+  border-color: rgba(255, 90, 20, 0.5);
+  background: var(--orange);
+  color: var(--ink);
+}
+
+.demo-lab-note {
+  max-width: 760px;
+  margin: -4px 0 0;
+  color: rgba(255, 255, 255, 0.56);
+}
+
+html[dir="rtl"] .demo-lab {
+  text-align: right;
+}
+
+html[dir="rtl"] .call-transcript span {
+  letter-spacing: 0;
+}
+
+html[dir="rtl"] .wa-message.user {
+  margin-inline-start: 0;
+  margin-inline-end: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .caller-demo.is-running .call-wave i {
+    animation: none;
+  }
+}
+
+@media (max-width: 1040px) {
+  .demo-lab-head,
+  .demo-lab-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .demo-lab-head h2,
+  .demo-lab-head p:not(.eyebrow) {
+    grid-column: 1;
+  }
+}
+
+@media (max-width: 720px) {
+  .demo-lab {
+    width: min(100% - 28px, 430px);
+    margin-block: 72px;
+    padding: 18px;
+    border-radius: 22px;
+  }
+
+  .demo-lab-head {
+    gap: 14px;
+  }
+
+  .demo-lab-head h2 {
+    font-size: clamp(2rem, 10vw, 3.15rem);
+  }
+
+  .demo-card {
+    padding: 16px;
+    border-radius: 18px;
+  }
+
+  .call-device {
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+
+  .call-wave {
+    grid-column: 1 / -1;
+    height: 18px;
+  }
+
+  .call-transcript li:nth-child(n + 5) {
+    display: none;
+  }
+
+  .whatsapp-chat {
+    min-height: 180px;
+  }
+
+  .whatsapp-scenarios {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .whatsapp-scenarios button {
+    justify-content: center;
+    padding-inline: 8px;
+    text-align: center;
+  }
+
+  .demo-actions .button {
+    width: 100%;
+  }
+}

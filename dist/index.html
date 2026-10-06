@@ -530,6 +530,72 @@
         </div>
       </section>
 
+      <section class="demo-lab section-shell reveal" id="demo-lab" aria-label="Démos IA">
+        <div class="demo-lab-head">
+          <p class="eyebrow">AI Demo Lab</p>
+          <h2>Faire sentir le système avant le rendez-vous.</h2>
+          <p>Deux simulations légères montrent comment l'IA peut qualifier, rassurer et envoyer la prochaine action.</p>
+        </div>
+
+        <div class="demo-lab-grid">
+          <article class="demo-card caller-demo" aria-labelledby="callerDemoTitle">
+            <div class="demo-card-head">
+              <span class="demo-type">Appel IA</span>
+              <span class="demo-pill">Simulation</span>
+            </div>
+            <h3 id="callerDemoTitle">Appel IA de qualification.</h3>
+            <p class="demo-card-text">Un appel entrant simulé : l'agent écoute, qualifie l'intention et prépare un résumé commercial propre.</p>
+            <div class="call-device" aria-live="polite">
+              <span class="call-avatar">AZ</span>
+              <span class="call-meta">
+                <small class="call-status">Prêt à simuler</small>
+                <strong class="call-title">Lead entrant</strong>
+              </span>
+              <span class="call-wave" aria-hidden="true">
+                <i></i>
+                <i></i>
+                <i></i>
+              </span>
+            </div>
+            <ol class="call-transcript"><li class="is-active"><span>Prospect</span><p>Nous voulons plus de leads qualifiés sans ajouter encore des outils séparés.</p></li><li><span>Agent IA</span><p>Je vais d'abord mapper votre offre, vos canaux, le tracking et les relances.</p></li><li><span>Prospect</span><p>Notre contenu, nos ads et notre site ne sont pas connectés.</p></li><li><span>Agent IA</span><p>Prochaine étape : un diagnostic Growth System de 30 minutes avec une carte de build claire.</p></li></ol>
+            <div class="demo-actions">
+              <button class="button primary caller-demo-button" type="button">Lancer l'appel</button>
+              <a class="button secondary caller-demo-cta" href="#contact">Réserver la vraie démo</a>
+            </div>
+          </article>
+
+          <article class="demo-card whatsapp-demo" aria-labelledby="whatsappDemoTitle">
+            <div class="demo-card-head">
+              <span class="demo-type">WhatsApp IA</span>
+              <span class="demo-pill">Interactif</span>
+            </div>
+            <h3 id="whatsappDemoTitle">Assistant WhatsApp pour leads.</h3>
+            <p class="demo-card-text">Choisissez un scénario et voyez comment l'assistant peut guider un prospect sans l'étouffer.</p>
+            <div class="whatsapp-phone" aria-live="polite">
+              <div class="whatsapp-top">
+                <span class="whatsapp-avatar">AZ</span>
+                <span>
+                  <strong>Ahmed AI Assistant</strong>
+                  <small>en ligne</small>
+                </span>
+              </div>
+              <div class="whatsapp-chat"><div class="wa-message bot">Bonjour, je suis l'assistant IA d'Ahmed. Quel blocage growth voulez-vous régler en premier ?</div><div class="wa-message user">Nous avons du trafic, mais peu de demandes de projet.</div><div class="wa-message bot">Compris. Je vérifierais l'offre, la page, la vitesse de relance et les preuves. On planifie un diagnostic ?</div></div>
+            </div>
+            <div class="whatsapp-scenarios" aria-label="Scénarios WhatsApp">
+              <button class="is-active" type="button" data-wa-scenario="lead" aria-pressed="true">Nouveau lead</button>
+              <button type="button" data-wa-scenario="content" aria-pressed="false">Contenu</button>
+              <button type="button" data-wa-scenario="sprint" aria-pressed="false">Sprint</button>
+            </div>
+            <div class="demo-actions">
+              <a class="button primary whatsapp-direct" href="https://wa.me/21654302654?text=Bonjour%20Ahmed%2C%20je%20veux%20tester%20une%20d%C3%A9mo%20IA%20pour%20mon%20marketing." target="_blank" rel="noopener">Ouvrir WhatsApp</a>
+              <a class="button secondary whatsapp-demo-cta" href="#contact">Demander l'intégration</a>
+            </div>
+          </article>
+        </div>
+
+        <p class="demo-lab-note">Aperçu MVP : aucun vrai appel n'est lancé et aucun message n'est envoyé sans action volontaire.</p>
+      </section>
+
       <section class="contact" id="contact" data-story-section="contact">
         <div class="section-shell contact-layout">
           <div class="contact-copy reveal">
@@ -624,6 +690,7 @@
 
     <a class="floating-cta" href="https://wa.me/21654302654" target="_blank" rel="noreferrer">WhatsApp</a>
     <script src="/script.js"></script>
+
 
 
 

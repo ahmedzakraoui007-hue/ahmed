@@ -346,6 +346,71 @@ const translations = {
       primary: "Learn for free",
       secondary: "See the modules",
     },
+    demoLab: {
+      aria: "AI demo lab",
+      eyebrow: "AI Demo Lab",
+      title: "Let prospects feel the system.",
+      text: "Two lightweight simulations show how AI can qualify, reassure, and hand off the next action.",
+      note: "MVP preview: no real call is placed and no message is sent until you choose WhatsApp.",
+      caller: {
+        badge: "AI Caller",
+        pill: "Simulation",
+        title: "AI qualification call.",
+        text: "A mock inbound call: the agent listens, qualifies intent, and prepares a clean sales summary.",
+        idleStatus: "Ready to simulate",
+        idleTitle: "Inbound lead",
+        doneStatus: "Summary ready",
+        button: "Run the call",
+        buttonAgain: "Replay",
+        cta: "Book the real demo",
+        steps: [
+          { speaker: "Prospect", text: "We need more qualified leads without adding more disconnected tools.", status: "Listening" },
+          { speaker: "AI agent", text: "I’ll map your offer, channels, tracking, and follow-up gaps first.", status: "Qualifying" },
+          { speaker: "Prospect", text: "Our content, ads, and website are not connected.", status: "Finding the gap" },
+          { speaker: "AI agent", text: "Next step: a 30-minute Growth System Diagnostic with a clear build map.", status: "Next action" },
+        ],
+      },
+      whatsapp: {
+        badge: "WhatsApp AI",
+        pill: "Interactive",
+        title: "WhatsApp lead assistant.",
+        text: "Choose a scenario and see how the assistant can guide a prospect without overwhelming them.",
+        scenariosLabel: "WhatsApp scenarios",
+        contactName: "Ahmed AI Assistant",
+        online: "online",
+        direct: "Open WhatsApp",
+        cta: "Request the integration",
+        scenarios: [
+          {
+            key: "lead",
+            label: "New lead",
+            messages: [
+              { role: "bot", text: "Hi, I’m Ahmed’s AI assistant. What growth blockage do you want to fix first?" },
+              { role: "user", text: "We have traffic but few project requests." },
+              { role: "bot", text: "Got it. I would check offer clarity, landing page friction, follow-up speed, and proof. Want a diagnostic call?" },
+            ],
+          },
+          {
+            key: "content",
+            label: "Content",
+            messages: [
+              { role: "bot", text: "Tell me your audience, offer, and current content rhythm." },
+              { role: "user", text: "We post often, but it does not create demand." },
+              { role: "bot", text: "Then we need a content system: pain points, proof, UGC angles, SEO/GEO pages, and a weekly review loop." },
+            ],
+          },
+          {
+            key: "sprint",
+            label: "Sprint",
+            messages: [
+              { role: "bot", text: "The AI Growth Sprint is built for teams that need a working system fast." },
+              { role: "user", text: "What happens during the sprint?" },
+              { role: "bot", text: "We diagnose, design the roadmap, build assets, train the team, and launch the first weekly growth rhythm." },
+            ],
+          },
+        ],
+      },
+    },
     contact: {
       eyebrow: "Work with Ahmed",
       title: "Let’s connect the pieces.",
@@ -684,6 +749,71 @@ const translations = {
       primary: "Apprendre gratuitement",
       secondary: "Voir les modules",
     },
+    demoLab: {
+      aria: "Démos IA",
+      eyebrow: "AI Demo Lab",
+      title: "Faire sentir le système avant le rendez-vous.",
+      text: "Deux simulations légères montrent comment l'IA peut qualifier, rassurer et envoyer la prochaine action.",
+      note: "Aperçu MVP : aucun vrai appel n'est lancé et aucun message n'est envoyé sans action volontaire.",
+      caller: {
+        badge: "Appel IA",
+        pill: "Simulation",
+        title: "Appel IA de qualification.",
+        text: "Un appel entrant simulé : l'agent écoute, qualifie l'intention et prépare un résumé commercial propre.",
+        idleStatus: "Prêt à simuler",
+        idleTitle: "Lead entrant",
+        doneStatus: "Résumé prêt",
+        button: "Lancer l'appel",
+        buttonAgain: "Rejouer",
+        cta: "Réserver la vraie démo",
+        steps: [
+          { speaker: "Prospect", text: "Nous voulons plus de leads qualifiés sans ajouter encore des outils séparés.", status: "Écoute du besoin" },
+          { speaker: "Agent IA", text: "Je vais d'abord mapper votre offre, vos canaux, le tracking et les relances.", status: "Qualification" },
+          { speaker: "Prospect", text: "Notre contenu, nos ads et notre site ne sont pas connectés.", status: "Blocage identifié" },
+          { speaker: "Agent IA", text: "Prochaine étape : un diagnostic Growth System de 30 minutes avec une carte de build claire.", status: "Action suivante" },
+        ],
+      },
+      whatsapp: {
+        badge: "WhatsApp IA",
+        pill: "Interactif",
+        title: "Assistant WhatsApp pour leads.",
+        text: "Choisissez un scénario et voyez comment l'assistant peut guider un prospect sans l'étouffer.",
+        scenariosLabel: "Scénarios WhatsApp",
+        contactName: "Ahmed AI Assistant",
+        online: "en ligne",
+        direct: "Ouvrir WhatsApp",
+        cta: "Demander l'intégration",
+        scenarios: [
+          {
+            key: "lead",
+            label: "Nouveau lead",
+            messages: [
+              { role: "bot", text: "Bonjour, je suis l'assistant IA d'Ahmed. Quel blocage growth voulez-vous régler en premier ?" },
+              { role: "user", text: "Nous avons du trafic, mais peu de demandes de projet." },
+              { role: "bot", text: "Compris. Je vérifierais l'offre, la page, la vitesse de relance et les preuves. On planifie un diagnostic ?" },
+            ],
+          },
+          {
+            key: "content",
+            label: "Contenu",
+            messages: [
+              { role: "bot", text: "Dites-moi votre audience, votre offre et votre rythme de contenu actuel." },
+              { role: "user", text: "On publie souvent, mais ça ne crée pas de demande." },
+              { role: "bot", text: "Il faut un système contenu : douleurs, preuves, angles UGC, pages SEO/GEO et revue hebdomadaire." },
+            ],
+          },
+          {
+            key: "sprint",
+            label: "Sprint",
+            messages: [
+              { role: "bot", text: "L'AI Growth Sprint est pensé pour les équipes qui veulent un système fonctionnel rapidement." },
+              { role: "user", text: "Qu'est-ce qui se passe pendant le sprint ?" },
+              { role: "bot", text: "On diagnostique, on dessine la roadmap, on construit les assets, on forme l'équipe et on lance le rythme growth." },
+            ],
+          },
+        ],
+      },
+    },
     contact: {
       eyebrow: "Travailler avec Ahmed",
       title: "Connectons les pièces.",
@@ -1021,6 +1151,71 @@ const translations = {
       ],
       primary: "تعلم مجانا",
       secondary: "شاهد الوحدات",
+    },
+    demoLab: {
+      aria: "تجارب ذكاء اصطناعي",
+      eyebrow: "AI Demo Lab",
+      title: "اجعل العميل يشعر بالنظام قبل الاجتماع.",
+      text: "تجربتان خفيفتان توضّحان كيف يساعد الذكاء الاصطناعي في التأهيل، الطمأنة، وتحديد الخطوة التالية.",
+      note: "معاينة MVP: لا يتم إطلاق أي مكالمة حقيقية ولا إرسال أي رسالة إلا إذا اخترت WhatsApp بنفسك.",
+      caller: {
+        badge: "مكالمة IA",
+        pill: "محاكاة",
+        title: "مكالمة تأهيل بالذكاء الاصطناعي.",
+        text: "مكالمة واردة افتراضية: الوكيل يسمع، يؤهل النية، ثم يحضّر ملخصا تجاريا واضحا.",
+        idleStatus: "جاهز للمحاكاة",
+        idleTitle: "Lead وارد",
+        doneStatus: "الملخص جاهز",
+        button: "ابدأ المكالمة",
+        buttonAgain: "إعادة",
+        cta: "احجز الديمو الحقيقي",
+        steps: [
+          { speaker: "العميل", text: "نحتاج Leads مؤهلين أكثر بدون إضافة أدوات منفصلة أخرى.", status: "فهم الحاجة" },
+          { speaker: "وكيل IA", text: "سأرسم العرض، القنوات، التتبع، ونقاط ضعف المتابعة أولا.", status: "التأهيل" },
+          { speaker: "العميل", text: "المحتوى، الإعلانات والموقع غير متصلين مع بعضهم.", status: "تحديد العائق" },
+          { speaker: "وكيل IA", text: "الخطوة التالية: تشخيص Growth System لمدة 30 دقيقة مع خريطة بناء واضحة.", status: "الخطوة التالية" },
+        ],
+      },
+      whatsapp: {
+        badge: "WhatsApp IA",
+        pill: "تفاعلي",
+        title: "مساعد WhatsApp للـ leads.",
+        text: "اختر سيناريو وشاهد كيف يمكن للمساعد توجيه العميل بدون إرباكه.",
+        scenariosLabel: "سيناريوهات WhatsApp",
+        contactName: "Ahmed AI Assistant",
+        online: "متصل",
+        direct: "افتح WhatsApp",
+        cta: "اطلب الربط",
+        scenarios: [
+          {
+            key: "lead",
+            label: "Lead جديد",
+            messages: [
+              { role: "bot", text: "مرحبا، أنا مساعد أحمد بالذكاء الاصطناعي. ما أول عائق نمو تريد إصلاحه؟" },
+              { role: "user", text: "لدينا زيارات، لكن طلبات المشاريع قليلة." },
+              { role: "bot", text: "واضح. سأراجع وضوح العرض، صفحة الهبوط، سرعة المتابعة والدليل. هل نحدد مكالمة تشخيص؟" },
+            ],
+          },
+          {
+            key: "content",
+            label: "المحتوى",
+            messages: [
+              { role: "bot", text: "أخبرني عن الجمهور، العرض، وإيقاع المحتوى الحالي." },
+              { role: "user", text: "ننشر كثيرا، لكن لا نصنع طلبا حقيقيا." },
+              { role: "bot", text: "نحتاج نظام محتوى: آلام العملاء، إثبات، زوايا UGC، صفحات SEO/GEO ومراجعة أسبوعية." },
+            ],
+          },
+          {
+            key: "sprint",
+            label: "Sprint",
+            messages: [
+              { role: "bot", text: "AI Growth Sprint مناسب للفرق التي تريد نظاما عمليا بسرعة." },
+              { role: "user", text: "ماذا يحدث داخل السبرينت؟" },
+              { role: "bot", text: "نشخّص، نبني roadmap، نجهز assets، ندرب الفريق، ونطلق إيقاع growth أسبوعي." },
+            ],
+          },
+        ],
+      },
     },
     contact: {
       eyebrow: "اعمل مع أحمد",
@@ -1422,6 +1617,149 @@ const setListItems = (selector, values) => {
   });
 };
 
+let activeCallStep = 0;
+let callerDemoTimer = null;
+let activeWhatsappScenario = "lead";
+
+const getWhatsappScenario = (copy, key = activeWhatsappScenario) => {
+  const scenarios = copy.demoLab?.whatsapp?.scenarios || [];
+  return scenarios.find((scenario) => scenario.key === key) || scenarios[0];
+};
+
+const renderCallTranscript = (copy, activeIndex = activeCallStep) => {
+  const list = document.querySelector(".call-transcript");
+  const steps = copy.demoLab?.caller?.steps;
+
+  if (!list || !Array.isArray(steps)) {
+    return;
+  }
+
+  list.textContent = "";
+  steps.forEach((step, index) => {
+    const item = document.createElement("li");
+    item.className = index === activeIndex ? "is-active" : "";
+
+    const speaker = document.createElement("span");
+    speaker.textContent = step.speaker;
+
+    const text = document.createElement("p");
+    text.textContent = step.text;
+
+    item.append(speaker, text);
+    list.append(item);
+  });
+};
+
+const setCallStep = (copy, index = 0) => {
+  const steps = copy.demoLab?.caller?.steps || [];
+  const normalizedIndex = Math.min(Math.max(index, 0), Math.max(steps.length - 1, 0));
+  const step = steps[normalizedIndex];
+
+  activeCallStep = normalizedIndex;
+  renderCallTranscript(copy, normalizedIndex);
+
+  if (step) {
+    setText(".call-status", step.status);
+    setText(".call-title", step.speaker);
+  }
+};
+
+const stopCallerDemo = () => {
+  if (callerDemoTimer) {
+    window.clearInterval(callerDemoTimer);
+    callerDemoTimer = null;
+  }
+};
+
+const startCallerDemo = () => {
+  const copy = getCopy();
+  const steps = copy.demoLab?.caller?.steps || [];
+
+  if (!steps.length) {
+    return;
+  }
+
+  stopCallerDemo();
+  document.querySelector(".caller-demo")?.classList.add("is-running");
+  setCallStep(copy, 0);
+
+  let nextStep = 1;
+  callerDemoTimer = window.setInterval(() => {
+    if (nextStep >= steps.length) {
+      stopCallerDemo();
+      document.querySelector(".caller-demo")?.classList.remove("is-running");
+      setText(".call-status", copy.demoLab.caller.doneStatus);
+      setText(".caller-demo-button", copy.demoLab.caller.buttonAgain);
+      return;
+    }
+
+    setCallStep(copy, nextStep);
+    nextStep += 1;
+  }, 920);
+};
+
+const renderWhatsappScenario = (copy, key = activeWhatsappScenario) => {
+  const scenario = getWhatsappScenario(copy, key);
+  const chat = document.querySelector(".whatsapp-chat");
+
+  if (!scenario || !chat) {
+    return;
+  }
+
+  activeWhatsappScenario = scenario.key;
+  chat.textContent = "";
+
+  scenario.messages.forEach((message) => {
+    const bubble = document.createElement("div");
+    bubble.className = `wa-message ${message.role === "user" ? "user" : "bot"}`;
+    bubble.textContent = message.text;
+    chat.append(bubble);
+  });
+
+  document.querySelectorAll(".whatsapp-scenarios button").forEach((button) => {
+    const isActive = button.dataset.waScenario === scenario.key;
+    button.classList.toggle("is-active", isActive);
+    button.setAttribute("aria-pressed", String(isActive));
+  });
+};
+
+const renderDemoLab = (copy) => {
+  if (!copy.demoLab) {
+    return;
+  }
+
+  setAttribute(".demo-lab", "aria-label", copy.demoLab.aria);
+  setText(".demo-lab-head .eyebrow", copy.demoLab.eyebrow);
+  setText(".demo-lab-head h2", copy.demoLab.title);
+  setText(".demo-lab-head p:not(.eyebrow)", copy.demoLab.text);
+  setText(".demo-lab-note", copy.demoLab.note);
+
+  setText(".caller-demo .demo-type", copy.demoLab.caller.badge);
+  setText(".caller-demo .demo-pill", copy.demoLab.caller.pill);
+  setText(".caller-demo h3", copy.demoLab.caller.title);
+  setText(".caller-demo .demo-card-text", copy.demoLab.caller.text);
+  setText(".call-status", copy.demoLab.caller.idleStatus);
+  setText(".call-title", copy.demoLab.caller.idleTitle);
+  setText(".caller-demo-button", copy.demoLab.caller.button);
+  setText(".caller-demo-cta", copy.demoLab.caller.cta);
+  renderCallTranscript(copy, activeCallStep);
+
+  setText(".whatsapp-demo .demo-type", copy.demoLab.whatsapp.badge);
+  setText(".whatsapp-demo .demo-pill", copy.demoLab.whatsapp.pill);
+  setText(".whatsapp-demo h3", copy.demoLab.whatsapp.title);
+  setText(".whatsapp-demo .demo-card-text", copy.demoLab.whatsapp.text);
+  setText(".whatsapp-top strong", copy.demoLab.whatsapp.contactName);
+  setText(".whatsapp-top small", copy.demoLab.whatsapp.online);
+  setAttribute(".whatsapp-scenarios", "aria-label", copy.demoLab.whatsapp.scenariosLabel);
+  setAllText(
+    ".whatsapp-scenarios button",
+    copy.demoLab.whatsapp.scenarios.map((scenario) => scenario.label),
+  );
+  setText(".whatsapp-direct", copy.demoLab.whatsapp.direct);
+  setText(".whatsapp-demo-cta", copy.demoLab.whatsapp.cta);
+  renderWhatsappScenario(copy, activeWhatsappScenario);
+};
+
 const setInlineWithStatusDot = (selector, value) => {
   const element = document.querySelector(selector);
   if (!element) {
@@ -1733,6 +2071,7 @@ const applyLanguage = (language, shouldPersist = true) => {
   setAllText(".bootcamp-preview-row small", copy.homeBootcamp.previewRows.map((row) => row[1]));
   setText(".home-bootcamp-actions .primary", copy.homeBootcamp.primary);
   setText(".home-bootcamp-actions .secondary", copy.homeBootcamp.secondary);
+  renderDemoLab(copy);
 
   setText(".contact-copy .eyebrow", copy.contact.eyebrow);
   setText(".contact-copy h2", copy.contact.title);
@@ -1801,9 +2140,20 @@ document.querySelectorAll(".language-option").forEach((button) => {
 
 applyLanguage(currentLanguage, false);
 
+document.querySelector(".caller-demo-button")?.addEventListener("click", startCallerDemo);
+
+document.querySelectorAll(".whatsapp-scenarios button").forEach((button) => {
+  button.addEventListener("click", () => {
+    const scenario = button.dataset.waScenario;
+    if (scenario) {
+      renderWhatsappScenario(getCopy(), scenario);
+    }
+  });
+});
+
 const scrollFocusTargets = [
   ...document.querySelectorAll(
-    ".sales-flow article, .offer-card, .system-node, .sprint-steps article, .work-impact article, .work-card, .proof-card, .training-card, .home-bootcamp-preview",
+    ".sales-flow article, .offer-card, .system-node, .sprint-steps article, .work-impact article, .work-card, .proof-card, .training-card, .home-bootcamp-preview, .demo-card",
   ),
 ];
 
