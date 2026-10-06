@@ -8229,3 +8229,107 @@ html[dir="rtl"] .wa-message.user {
     width: 100%;
   }
 }
+
+/* Growth journey layout repair */
+.sales-dashboard {
+  grid-template-columns: minmax(330px, 0.86fr) minmax(430px, 1fr);
+  gap: 20px;
+  align-items: stretch;
+  padding: 20px;
+}
+
+.sales-demo {
+  min-height: 0;
+}
+
+.sales-flow {
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.sales-flow article {
+  display: grid;
+  grid-template-columns: 44px minmax(168px, 0.36fr) minmax(0, 1fr);
+  gap: 16px;
+  align-items: center;
+  align-content: center;
+  min-height: 74px;
+  padding: 14px 16px;
+}
+
+.sales-flow strong {
+  margin: 0;
+  font-size: clamp(1.25rem, 1.55vw, 1.68rem);
+  line-height: 1.02;
+}
+
+.sales-flow p {
+  margin: 0;
+  max-width: 34rem;
+  color: rgba(255, 248, 237, 0.72);
+  font-size: 0.94rem;
+  line-height: 1.4;
+}
+
+.scroll-story {
+  z-index: 38;
+  opacity: 0;
+}
+
+body.is-deep-scroll .scroll-story {
+  opacity: 0.72;
+}
+
+.scroll-story a.is-active {
+  width: 42px;
+  grid-template-columns: 34px 0fr;
+  background: rgba(255, 90, 20, 0.1);
+}
+
+.scroll-story a.is-active strong {
+  opacity: 0;
+}
+
+.scroll-story a:hover,
+.scroll-story a:focus-visible {
+  width: 112px;
+  grid-template-columns: 34px 1fr;
+}
+
+.scroll-story a:hover strong,
+.scroll-story a:focus-visible strong {
+  opacity: 1;
+}
+
+@media (max-width: 1180px) {
+  .sales-dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .sales-flow article {
+    grid-template-columns: 44px minmax(168px, 0.36fr) minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 720px) {
+  .sales-dashboard {
+    padding: 14px;
+  }
+
+  .sales-flow {
+    display: grid;
+    overflow: visible;
+    padding-bottom: 0;
+  }
+
+  .sales-flow article {
+    grid-template-columns: 38px minmax(0, 1fr);
+    gap: 8px 12px;
+    min-height: auto;
+    padding: 14px;
+  }
+
+  .sales-flow p {
+    grid-column: 2;
+  }
+}
