@@ -360,14 +360,23 @@ const translations = {
         idleStatus: "Ready to simulate",
         idleTitle: "Inbound lead",
         doneStatus: "Summary ready",
-        button: "Run the call",
-        buttonAgain: "Replay",
+        button: "Run voice call",
+        buttonAgain: "Replay voice call",
+        reset: "Reset",
         cta: "Book the real demo",
+        voiceUnavailable: "Voice unavailable in this browser",
+        liveLabel: "Live analysis",
+        initialScore: "Lead score 0%",
+        initialInsight: "Waiting for the first buying signal.",
+        summaryLabel: "Lead summary",
+        summaryTitle: "Diagnostic recommended",
+        summaryText: "Need qualified, gap identified, and next action ready.",
+        summaryChips: ["High intent", "Clear gap", "Call advised"],
         steps: [
-          { speaker: "Prospect", text: "We need more qualified leads without adding more disconnected tools.", status: "Listening" },
-          { speaker: "AI agent", text: "I’ll map your offer, channels, tracking, and follow-up gaps first.", status: "Qualifying" },
-          { speaker: "Prospect", text: "Our content, ads, and website are not connected.", status: "Finding the gap" },
-          { speaker: "AI agent", text: "Next step: a 30-minute Growth System Diagnostic with a clear build map.", status: "Next action" },
+          { speaker: "Prospect", text: "We need more qualified leads without adding more disconnected tools.", status: "Listening", score: "Lead score 42%", insight: "Need detected: more qualified demand." },
+          { speaker: "AI agent", text: "I’ll map your offer, channels, tracking, and follow-up gaps first.", status: "Qualifying", score: "Lead score 64%", insight: "The agent is framing the growth system audit." },
+          { speaker: "Prospect", text: "Our content, ads, and website are not connected.", status: "Finding the gap", score: "Lead score 78%", insight: "Core pain confirmed: fragmented channels." },
+          { speaker: "AI agent", text: "Next step: a 30-minute Growth System Diagnostic with a clear build map.", status: "Next action", score: "Lead score 92%", insight: "Ready to book: send the diagnostic CTA." },
         ],
       },
       whatsapp: {
@@ -763,14 +772,23 @@ const translations = {
         idleStatus: "Prêt à simuler",
         idleTitle: "Lead entrant",
         doneStatus: "Résumé prêt",
-        button: "Lancer l'appel",
-        buttonAgain: "Rejouer",
+        button: "Lancer l'appel vocal",
+        buttonAgain: "Rejouer l'appel vocal",
+        reset: "Réinitialiser",
         cta: "Réserver la vraie démo",
+        voiceUnavailable: "Voix indisponible sur ce navigateur",
+        liveLabel: "Analyse live",
+        initialScore: "Score lead 0%",
+        initialInsight: "En attente du premier signal.",
+        summaryLabel: "Résumé lead",
+        summaryTitle: "Diagnostic recommandé",
+        summaryText: "Besoin qualifié, blocage identifié et prochaine action prête.",
+        summaryChips: ["Intent haut", "Blocage clair", "RDV conseillé"],
         steps: [
-          { speaker: "Prospect", text: "Nous voulons plus de leads qualifiés sans ajouter encore des outils séparés.", status: "Écoute du besoin" },
-          { speaker: "Agent IA", text: "Je vais d'abord mapper votre offre, vos canaux, le tracking et les relances.", status: "Qualification" },
-          { speaker: "Prospect", text: "Notre contenu, nos ads et notre site ne sont pas connectés.", status: "Blocage identifié" },
-          { speaker: "Agent IA", text: "Prochaine étape : un diagnostic Growth System de 30 minutes avec une carte de build claire.", status: "Action suivante" },
+          { speaker: "Prospect", text: "Nous voulons plus de leads qualifiés sans ajouter encore des outils séparés.", status: "Écoute du besoin", score: "Score lead 42%", insight: "Besoin détecté : plus de demandes qualifiées." },
+          { speaker: "Agent IA", text: "Je vais d'abord mapper votre offre, vos canaux, le tracking et les relances.", status: "Qualification", score: "Score lead 64%", insight: "L'agent cadre le diagnostic du système growth." },
+          { speaker: "Prospect", text: "Notre contenu, nos ads et notre site ne sont pas connectés.", status: "Blocage identifié", score: "Score lead 78%", insight: "Douleur confirmée : canaux marketing fragmentés." },
+          { speaker: "Agent IA", text: "Prochaine étape : un diagnostic Growth System de 30 minutes avec une carte de build claire.", status: "Action suivante", score: "Score lead 92%", insight: "Prêt à convertir : proposer le diagnostic." },
         ],
       },
       whatsapp: {
@@ -1166,14 +1184,23 @@ const translations = {
         idleStatus: "جاهز للمحاكاة",
         idleTitle: "Lead وارد",
         doneStatus: "الملخص جاهز",
-        button: "ابدأ المكالمة",
-        buttonAgain: "إعادة",
+        button: "ابدأ المكالمة الصوتية",
+        buttonAgain: "إعادة المكالمة الصوتية",
+        reset: "إعادة ضبط",
         cta: "احجز الديمو الحقيقي",
+        voiceUnavailable: "الصوت غير متاح في هذا المتصفح",
+        liveLabel: "تحليل مباشر",
+        initialScore: "Score lead 0%",
+        initialInsight: "في انتظار أول إشارة شراء.",
+        summaryLabel: "ملخص lead",
+        summaryTitle: "تشخيص موصى به",
+        summaryText: "تم تأهيل الحاجة، تحديد العائق، وتجهيز الخطوة التالية.",
+        summaryChips: ["نية عالية", "عائق واضح", "موعد مقترح"],
         steps: [
-          { speaker: "العميل", text: "نحتاج Leads مؤهلين أكثر بدون إضافة أدوات منفصلة أخرى.", status: "فهم الحاجة" },
-          { speaker: "وكيل IA", text: "سأرسم العرض، القنوات، التتبع، ونقاط ضعف المتابعة أولا.", status: "التأهيل" },
-          { speaker: "العميل", text: "المحتوى، الإعلانات والموقع غير متصلين مع بعضهم.", status: "تحديد العائق" },
-          { speaker: "وكيل IA", text: "الخطوة التالية: تشخيص Growth System لمدة 30 دقيقة مع خريطة بناء واضحة.", status: "الخطوة التالية" },
+          { speaker: "العميل", text: "نحتاج Leads مؤهلين أكثر بدون إضافة أدوات منفصلة أخرى.", status: "فهم الحاجة", score: "Score lead 42%", insight: "تم رصد الحاجة: طلبات مؤهلة أكثر." },
+          { speaker: "وكيل IA", text: "سأرسم العرض، القنوات، التتبع، ونقاط ضعف المتابعة أولا.", status: "التأهيل", score: "Score lead 64%", insight: "الوكيل يحدد إطار تشخيص نظام النمو." },
+          { speaker: "العميل", text: "المحتوى، الإعلانات والموقع غير متصلين مع بعضهم.", status: "تحديد العائق", score: "Score lead 78%", insight: "تم تأكيد المشكلة: قنوات تسويق متفرقة." },
+          { speaker: "وكيل IA", text: "الخطوة التالية: تشخيص Growth System لمدة 30 دقيقة مع خريطة بناء واضحة.", status: "الخطوة التالية", score: "Score lead 92%", insight: "جاهز للتحويل: اقترح مكالمة التشخيص." },
         ],
       },
       whatsapp: {
@@ -1620,6 +1647,48 @@ const setListItems = (selector, values) => {
 let activeCallStep = 0;
 let callerDemoTimer = null;
 let activeWhatsappScenario = "lead";
+let callerVoiceEnabled = true;
+
+const speechLanguageMap = {
+  en: "en-US",
+  fr: "fr-FR",
+  ar: "ar-SA",
+};
+
+const canUseSpeech = () => "speechSynthesis" in window && "SpeechSynthesisUtterance" in window;
+
+const stopSpeech = () => {
+  if (canUseSpeech()) {
+    window.speechSynthesis.cancel();
+  }
+
+  document.querySelector(".caller-demo")?.classList.remove("is-speaking");
+};
+
+const speakCallStep = (step) => {
+  if (!callerVoiceEnabled || !step || !canUseSpeech()) {
+    return;
+  }
+
+  stopSpeech();
+  const utterance = new SpeechSynthesisUtterance(`${step.speaker}. ${step.text}`);
+  utterance.lang = speechLanguageMap[currentLanguage] || speechLanguageMap.fr;
+  utterance.rate = currentLanguage === "ar" ? 0.88 : 0.94;
+  utterance.pitch = /agent|وكيل/i.test(step.speaker) ? 1.02 : 0.92;
+  const voice = window.speechSynthesis
+    .getVoices()
+    .find((item) => item.lang.toLowerCase().startsWith(utterance.lang.slice(0, 2).toLowerCase()));
+
+  if (voice) {
+    utterance.voice = voice;
+  }
+
+  utterance.onstart = () => document.querySelector(".caller-demo")?.classList.add("is-speaking");
+  utterance.onend = () => document.querySelector(".caller-demo")?.classList.remove("is-speaking");
+  utterance.onerror = () => document.querySelector(".caller-demo")?.classList.remove("is-speaking");
+  window.speechSynthesis.speak(utterance);
+  window.speechSynthesis.resume?.();
+};
 
 const getWhatsappScenario = (copy, key = activeWhatsappScenario) => {
   const scenarios = copy.demoLab?.whatsapp?.scenarios || [];
@@ -1650,7 +1719,20 @@ const renderCallTranscript = (copy, activeIndex = activeCallStep) => {
   });
 };
 
-const setCallStep = (copy, index = 0) => {
+const setCallSummary = (copy, isReady = false) => {
+  const summary = document.querySelector(".call-summary");
+  if (!summary || !copy.demoLab?.caller) {
+    return;
+  }
+
+  summary.classList.toggle("is-ready", isReady);
+  setText(".call-summary > span", copy.demoLab.caller.summaryLabel);
+  setText(".call-summary > strong", copy.demoLab.caller.summaryTitle);
+  setText(".call-summary > p", copy.demoLab.caller.summaryText);
+  setAllText(".call-summary-chips small", copy.demoLab.caller.summaryChips);
+};
+
+const setCallStep = (copy, index = 0, options = {}) => {
   const steps = copy.demoLab?.caller?.steps || [];
   const normalizedIndex = Math.min(Math.max(index, 0), Math.max(steps.length - 1, 0));
   const step = steps[normalizedIndex];
@@ -1661,6 +1743,13 @@ const setCallStep = (copy, index = 0) => {
   if (step) {
     setText(".call-status", step.status);
     setText(".call-title", step.speaker);
+    setText(".call-live-score", step.score || copy.demoLab.caller.initialScore);
+    setText(".call-live-text", step.insight || copy.demoLab.caller.initialInsight);
+    setCallSummary(copy, normalizedIndex === steps.length - 1);
+
+    if (options.speak) {
+      speakCallStep(step);
+    }
   }
 };
 
@@ -1669,6 +1758,24 @@ const stopCallerDemo = () => {
     window.clearInterval(callerDemoTimer);
     callerDemoTimer = null;
   }
+};
+
+const resetCallerDemo = () => {
+  const copy = getCopy();
+
+  stopCallerDemo();
+  stopSpeech();
+  activeCallStep = 0;
+  document.querySelector(".caller-demo")?.classList.remove("is-running", "is-complete", "has-voice-error");
+  setText(".call-status", copy.demoLab.caller.idleStatus);
+  setText(".call-title", copy.demoLab.caller.idleTitle);
+  setText(".call-live-label", copy.demoLab.caller.liveLabel);
+  setText(".call-live-score", copy.demoLab.caller.initialScore);
+  setText(".call-live-text", copy.demoLab.caller.initialInsight);
+  setText(".caller-demo-button", copy.demoLab.caller.button);
+  setText(".caller-reset-button", copy.demoLab.caller.reset);
+  renderCallTranscript(copy, 0);
+  setCallSummary(copy, false);
 };
 
 const startCallerDemo = () => {
@@ -1680,22 +1787,32 @@ const startCallerDemo = () => {
   }
 
   stopCallerDemo();
-  document.querySelector(".caller-demo")?.classList.add("is-running");
-  setCallStep(copy, 0);
+  stopSpeech();
+  const callerCard = document.querySelector(".caller-demo");
+  callerCard?.classList.remove("is-complete", "has-voice-error");
+  callerCard?.classList.add("is-running");
+  if (!canUseSpeech()) {
+    callerCard?.classList.add("has-voice-error");
+  }
+  setCallStep(copy, 0, { speak: true });
+  if (!canUseSpeech()) {
+    setText(".call-live-label", copy.demoLab.caller.voiceUnavailable);
+  }
 
   let nextStep = 1;
   callerDemoTimer = window.setInterval(() => {
     if (nextStep >= steps.length) {
       stopCallerDemo();
-      document.querySelector(".caller-demo")?.classList.remove("is-running");
+      callerCard?.classList.remove("is-running");
+      callerCard?.classList.add("is-complete");
       setText(".call-status", copy.demoLab.caller.doneStatus);
       setText(".caller-demo-button", copy.demoLab.caller.buttonAgain);
       return;
     }
 
-    setCallStep(copy, nextStep);
+    setCallStep(copy, nextStep, { speak: true });
     nextStep += 1;
-  }, 920);
+  }, 2700);
 };
 
 const renderWhatsappScenario = (copy, key = activeWhatsappScenario) => {
@@ -1738,11 +1855,30 @@ const renderDemoLab = (copy) => {
   setText(".caller-demo .demo-pill", copy.demoLab.caller.pill);
   setText(".caller-demo h3", copy.demoLab.caller.title);
   setText(".caller-demo .demo-card-text", copy.demoLab.caller.text);
-  setText(".call-status", copy.demoLab.caller.idleStatus);
-  setText(".call-title", copy.demoLab.caller.idleTitle);
-  setText(".caller-demo-button", copy.demoLab.caller.button);
+
+  const callerCard = document.querySelector(".caller-demo");
+  const callerIsRunning = callerCard?.classList.contains("is-running");
+  const callerIsComplete = callerCard?.classList.contains("is-complete");
+  const currentStep = copy.demoLab.caller.steps?.[activeCallStep];
+
+  if ((callerIsRunning || callerIsComplete) && currentStep) {
+    setText(".call-status", callerIsComplete ? copy.demoLab.caller.doneStatus : currentStep.status);
+    setText(".call-title", currentStep.speaker);
+    setText(".call-live-score", currentStep.score || copy.demoLab.caller.initialScore);
+    setText(".call-live-text", currentStep.insight || copy.demoLab.caller.initialInsight);
+  } else {
+    setText(".call-status", copy.demoLab.caller.idleStatus);
+    setText(".call-title", copy.demoLab.caller.idleTitle);
+    setText(".call-live-score", copy.demoLab.caller.initialScore);
+    setText(".call-live-text", copy.demoLab.caller.initialInsight);
+  }
+
+  setText(".call-live-label", copy.demoLab.caller.liveLabel);
+  setText(".caller-demo-button", callerIsComplete ? copy.demoLab.caller.buttonAgain : copy.demoLab.caller.button);
+  setText(".caller-reset-button", copy.demoLab.caller.reset);
   setText(".caller-demo-cta", copy.demoLab.caller.cta);
   renderCallTranscript(copy, activeCallStep);
+  setCallSummary(copy, callerIsComplete);
 
   setText(".whatsapp-demo .demo-type", copy.demoLab.whatsapp.badge);
   setText(".whatsapp-demo .demo-pill", copy.demoLab.whatsapp.pill);
@@ -2141,6 +2277,7 @@ document.querySelectorAll(".language-option").forEach((button) => {
 applyLanguage(currentLanguage, false);
 
 document.querySelector(".caller-demo-button")?.addEventListener("click", startCallerDemo);
+document.querySelector(".caller-reset-button")?.addEventListener("click", resetCallerDemo);
 
 document.querySelectorAll(".whatsapp-scenarios button").forEach((button) => {
   button.addEventListener("click", () => {
@@ -2370,12 +2507,22 @@ const alignHashTarget = () => {
   window.scrollTo({ top: Math.max(0, targetTop), behavior: "auto" });
 };
 
-window.addEventListener("load", () => {
-  window.setTimeout(alignHashTarget, 80);
-});
+const scheduleHashAlignment = () => {
+  [80, 420, 980, 1800, 3000].forEach((delay) => {
+    window.setTimeout(alignHashTarget, delay);
+  });
+};
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", scheduleHashAlignment, { once: true });
+} else {
+  scheduleHashAlignment();
+}
+
+window.addEventListener("load", scheduleHashAlignment, { once: true });
 
 window.addEventListener("hashchange", () => {
-  window.setTimeout(alignHashTarget, 40);
+  scheduleHashAlignment();
 });
 
 const observer = new IntersectionObserver(
