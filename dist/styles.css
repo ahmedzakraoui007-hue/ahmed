@@ -8333,3 +8333,50 @@ body.is-deep-scroll .scroll-story {
     grid-column: 2;
   }
 }
+
+/* Final alignment safety pass */
+.hero {
+  overflow: clip;
+  overflow-clip-margin: 0;
+}
+
+.section-head,
+.scroll-hook-copy,
+.ugc-copy,
+.sprint .section-head,
+.contact-copy {
+  padding-inline: 10px;
+}
+
+.scroll-story {
+  right: max(18px, calc((100vw - 1180px) / 2 - 78px));
+}
+
+body.is-deep-scroll .scroll-story {
+  opacity: 0.46;
+}
+
+.scroll-story:hover,
+.scroll-story:focus-within {
+  opacity: 1;
+}
+
+.scroll-hook-copy h2 {
+  max-width: 420px;
+  font-size: clamp(2.05rem, 3.35vw, 4rem);
+}
+
+html[dir="rtl"] .scroll-story {
+  right: auto;
+  left: max(18px, calc((100vw - 1180px) / 2 - 78px));
+}
+
+@media (max-width: 720px) {
+  .section-head,
+  .scroll-hook-copy,
+  .ugc-copy,
+  .sprint .section-head,
+  .contact-copy {
+    padding-inline: 8px;
+  }
+}
