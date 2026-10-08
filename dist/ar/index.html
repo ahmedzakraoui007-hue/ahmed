@@ -616,7 +616,27 @@
           </article>
         </div>
 
-        <p class="demo-lab-note">معاينة MVP: لا يتم إطلاق أي مكالمة حقيقية ولا إرسال أي رسالة إلا إذا اخترت WhatsApp بنفسك.</p>
+        <article class="ai-diagnostic-card" aria-labelledby="aiDiagnosticTitle">
+          <div class="ai-diagnostic-copy">
+            <span class="demo-type ai-diagnostic-badge">تشخيص Gemini</span>
+            <h3 id="aiDiagnosticTitle">احصل على خريطة نمو فورية.</h3>
+            <p>اكتب عائق التسويق الحالي. يحضّر المساعد mini-audit مبني على النظام بدون اختراع أرقام.</p>
+          </div>
+          <form class="ai-diagnostic-form">
+            <label>
+              <span>مرحلة الشركة</span>
+              <select name="stage"><option value="شركة صغيرة">شركة صغيرة</option><option value="Startup">Startup</option><option value="E-commerce">E-commerce</option><option value="Corporate">Corporate</option></select>
+            </label>
+            <label>
+              <span>العائق الحالي</span>
+              <textarea name="bottleneck" rows="3" maxlength="420" placeholder="مثال: لدينا زيارات لكن طلبات المشاريع المؤهلة قليلة." required=""></textarea>
+            </label>
+            <button class="button primary ai-diagnostic-submit" type="submit">أنشئ التشخيص</button>
+          </form>
+          <div class="ai-diagnostic-result" aria-live="polite"><span>النتيجة</span><p>سيظهر التشخيص هنا بعد رسالتك.</p></div>
+        </article>
+
+        <p class="demo-lab-note">معاينة MVP: لا مكالمة حقيقية ولا رسالة WhatsApp. التشخيص يستخدم فقط النص الذي تكتبه.</p>
       </section>
 
       <section class="contact" id="contact" data-story-section="contact">
@@ -713,6 +733,8 @@
 
     <a class="floating-cta" href="https://wa.me/21654302654" target="_blank" rel="noreferrer">WhatsApp</a>
     <script src="/script.js"></script>
+
+
 
 
 

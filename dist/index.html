@@ -616,7 +616,27 @@
           </article>
         </div>
 
-        <p class="demo-lab-note">Aperçu MVP : aucun vrai appel n'est lancé et aucun message n'est envoyé sans action volontaire.</p>
+        <article class="ai-diagnostic-card" aria-labelledby="aiDiagnosticTitle">
+          <div class="ai-diagnostic-copy">
+            <span class="demo-type ai-diagnostic-badge">Diagnostic Gemini</span>
+            <h3 id="aiDiagnosticTitle">Obtenir une carte de croissance instantanée.</h3>
+            <p>Décrivez votre blocage marketing. L'assistant prépare un mini-audit orienté système, sans inventer de chiffres.</p>
+          </div>
+          <form class="ai-diagnostic-form">
+            <label>
+              <span>Étape business</span>
+              <select name="stage"><option value="PME">PME</option><option value="Startup">Startup</option><option value="E-commerce">E-commerce</option><option value="Corporate">Corporate</option></select>
+            </label>
+            <label>
+              <span>Blocage actuel</span>
+              <textarea name="bottleneck" rows="3" maxlength="420" placeholder="Ex: nous avons du trafic mais peu de demandes qualifiées." required=""></textarea>
+            </label>
+            <button class="button primary ai-diagnostic-submit" type="submit">Générer le mini-audit</button>
+          </form>
+          <div class="ai-diagnostic-result" aria-live="polite"><span>Résultat</span><p>Le diagnostic apparaîtra ici après votre message.</p></div>
+        </article>
+
+        <p class="demo-lab-note">Aperçu MVP : aucun vrai appel ni WhatsApp n'est lancé. Le diagnostic utilise uniquement le texte saisi.</p>
       </section>
 
       <section class="contact" id="contact" data-story-section="contact">
@@ -713,6 +733,8 @@
 
     <a class="floating-cta" href="https://wa.me/21654302654" target="_blank" rel="noreferrer">WhatsApp</a>
     <script src="/script.js"></script>
+
+
 
 
 

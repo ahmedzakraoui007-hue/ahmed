@@ -616,7 +616,27 @@
           </article>
         </div>
 
-        <p class="demo-lab-note">MVP preview: no real call is placed and no message is sent until you choose WhatsApp.</p>
+        <article class="ai-diagnostic-card" aria-labelledby="aiDiagnosticTitle">
+          <div class="ai-diagnostic-copy">
+            <span class="demo-type ai-diagnostic-badge">Gemini diagnostic</span>
+            <h3 id="aiDiagnosticTitle">Get an instant growth map.</h3>
+            <p>Describe the marketing bottleneck. The assistant prepares a system-first mini-audit without inventing numbers.</p>
+          </div>
+          <form class="ai-diagnostic-form">
+            <label>
+              <span>Business stage</span>
+              <select name="stage"><option value="SME">SME</option><option value="Startup">Startup</option><option value="E-commerce">E-commerce</option><option value="Corporate">Corporate</option></select>
+            </label>
+            <label>
+              <span>Current bottleneck</span>
+              <textarea name="bottleneck" rows="3" maxlength="420" placeholder="Ex: we get traffic, but not enough qualified project requests." required=""></textarea>
+            </label>
+            <button class="button primary ai-diagnostic-submit" type="submit">Generate mini-audit</button>
+          </form>
+          <div class="ai-diagnostic-result" aria-live="polite"><span>Result</span><p>The diagnostic will appear here after your message.</p></div>
+        </article>
+
+        <p class="demo-lab-note">MVP preview: no real call or WhatsApp message is sent. The diagnostic only uses the text you type.</p>
       </section>
 
       <section class="contact" id="contact" data-story-section="contact">
@@ -713,6 +733,8 @@
 
     <a class="floating-cta" href="https://wa.me/21654302654" target="_blank" rel="noreferrer">WhatsApp</a>
     <script src="/script.js"></script>
+
+
 
 
 

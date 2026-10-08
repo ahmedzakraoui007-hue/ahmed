@@ -351,7 +351,7 @@ const translations = {
       eyebrow: "AI Demo Lab",
       title: "Let prospects feel the system.",
       text: "Two lightweight simulations show how AI can qualify, reassure, and hand off the next action.",
-      note: "MVP preview: no real call is placed and no message is sent until you choose WhatsApp.",
+      note: "MVP preview: no real call or WhatsApp message is sent. The diagnostic only uses the text you type.",
       caller: {
         badge: "AI Caller",
         pill: "Simulation",
@@ -418,6 +418,24 @@ const translations = {
             ],
           },
         ],
+      },
+      diagnostic: {
+        badge: "Gemini diagnostic",
+        title: "Get an instant growth map.",
+        text: "Describe the marketing bottleneck. The assistant prepares a system-first mini-audit without inventing numbers.",
+        fields: {
+          stage: "Business stage",
+          bottleneck: "Current bottleneck",
+        },
+        stages: ["SME", "Startup", "E-commerce", "Corporate"],
+        placeholder: "Ex: we get traffic, but not enough qualified project requests.",
+        button: "Generate mini-audit",
+        loading: "Mapping the growth system...",
+        resultLabel: "Result",
+        empty: "The diagnostic will appear here after your message.",
+        error: "I could not generate the diagnostic right now. Try again in a moment.",
+        fallbackLabel: "Local preview",
+        cta: "Use this as a first map, then book a diagnostic call to build the real system.",
       },
     },
     contact: {
@@ -763,7 +781,7 @@ const translations = {
       eyebrow: "AI Demo Lab",
       title: "Faire sentir le système avant le rendez-vous.",
       text: "Deux simulations légères montrent comment l'IA peut qualifier, rassurer et envoyer la prochaine action.",
-      note: "Aperçu MVP : aucun vrai appel n'est lancé et aucun message n'est envoyé sans action volontaire.",
+      note: "Aperçu MVP : aucun vrai appel ni WhatsApp n'est lancé. Le diagnostic utilise uniquement le texte saisi.",
       caller: {
         badge: "Appel IA",
         pill: "Simulation",
@@ -830,6 +848,24 @@ const translations = {
             ],
           },
         ],
+      },
+      diagnostic: {
+        badge: "Diagnostic Gemini",
+        title: "Obtenir une carte de croissance instantanée.",
+        text: "Décrivez votre blocage marketing. L'assistant prépare un mini-audit orienté système, sans inventer de chiffres.",
+        fields: {
+          stage: "Étape business",
+          bottleneck: "Blocage actuel",
+        },
+        stages: ["PME", "Startup", "E-commerce", "Corporate"],
+        placeholder: "Ex: nous avons du trafic mais peu de demandes qualifiées.",
+        button: "Générer le mini-audit",
+        loading: "Cartographie du système growth...",
+        resultLabel: "Résultat",
+        empty: "Le diagnostic apparaîtra ici après votre message.",
+        error: "Je n'ai pas pu générer le diagnostic maintenant. Réessayez dans un instant.",
+        fallbackLabel: "Aperçu local",
+        cta: "Utilisez ceci comme première carte, puis réservez un diagnostic pour construire le vrai système.",
       },
     },
     contact: {
@@ -1175,7 +1211,7 @@ const translations = {
       eyebrow: "AI Demo Lab",
       title: "اجعل العميل يشعر بالنظام قبل الاجتماع.",
       text: "تجربتان خفيفتان توضّحان كيف يساعد الذكاء الاصطناعي في التأهيل، الطمأنة، وتحديد الخطوة التالية.",
-      note: "معاينة MVP: لا يتم إطلاق أي مكالمة حقيقية ولا إرسال أي رسالة إلا إذا اخترت WhatsApp بنفسك.",
+      note: "معاينة MVP: لا مكالمة حقيقية ولا رسالة WhatsApp. التشخيص يستخدم فقط النص الذي تكتبه.",
       caller: {
         badge: "مكالمة IA",
         pill: "محاكاة",
@@ -1242,6 +1278,24 @@ const translations = {
             ],
           },
         ],
+      },
+      diagnostic: {
+        badge: "تشخيص Gemini",
+        title: "احصل على خريطة نمو فورية.",
+        text: "اكتب عائق التسويق الحالي. يحضّر المساعد mini-audit مبني على النظام بدون اختراع أرقام.",
+        fields: {
+          stage: "مرحلة الشركة",
+          bottleneck: "العائق الحالي",
+        },
+        stages: ["شركة صغيرة", "Startup", "E-commerce", "Corporate"],
+        placeholder: "مثال: لدينا زيارات لكن طلبات المشاريع المؤهلة قليلة.",
+        button: "أنشئ التشخيص",
+        loading: "يتم رسم نظام النمو...",
+        resultLabel: "النتيجة",
+        empty: "سيظهر التشخيص هنا بعد رسالتك.",
+        error: "لم أتمكن من إنشاء التشخيص الآن. حاول مرة أخرى بعد قليل.",
+        fallbackLabel: "معاينة محلية",
+        cta: "استعمل هذا كخريطة أولية، ثم احجز مكالمة تشخيص لبناء النظام الحقيقي.",
       },
     },
     contact: {
@@ -1840,6 +1894,162 @@ const renderWhatsappScenario = (copy, key = activeWhatsappScenario) => {
   });
 };
 
+const renderDiagnosticResult = (copy, result = null, state = "idle") => {
+  const panel = document.querySelector(".ai-diagnostic-result");
+  if (!panel || !copy.demoLab?.diagnostic) {
+    return;
+  }
+
+  const diagnostic = copy.demoLab.diagnostic;
+  panel.textContent = "";
+  panel.classList.toggle("is-loading", state === "loading");
+  panel.classList.toggle("is-ready", Boolean(result));
+  panel.classList.toggle("is-error", state === "error");
+
+  const label = document.createElement("span");
+  label.textContent = result?.configured === false ? diagnostic.fallbackLabel : diagnostic.resultLabel;
+  panel.append(label);
+
+  if (state === "loading") {
+    const loading = document.createElement("p");
+    loading.textContent = diagnostic.loading;
+    panel.append(loading);
+    return;
+  }
+
+  if (state === "error") {
+    const error = document.createElement("p");
+    error.textContent = diagnostic.error;
+    panel.append(error);
+    return;
+  }
+
+  if (!result) {
+    const empty = document.createElement("p");
+    empty.textContent = diagnostic.empty;
+    panel.append(empty);
+    return;
+  }
+
+  const title = document.createElement("strong");
+  title.textContent = result.summary || diagnostic.cta;
+  panel.append(title);
+
+  const focus = Array.isArray(result.focus) ? result.focus.slice(0, 3) : [];
+  if (focus.length) {
+    const grid = document.createElement("div");
+    grid.className = "ai-diagnostic-focus";
+    focus.forEach((item) => {
+      const card = document.createElement("div");
+      const cardLabel = document.createElement("small");
+      cardLabel.textContent = item.label || "";
+      const cardValue = document.createElement("p");
+      cardValue.textContent = item.value || "";
+      card.append(cardLabel, cardValue);
+      grid.append(card);
+    });
+    panel.append(grid);
+  }
+
+  const steps = Array.isArray(result.nextSteps) ? result.nextSteps.slice(0, 4) : [];
+  if (steps.length) {
+    const list = document.createElement("ol");
+    list.className = "ai-diagnostic-steps";
+    steps.forEach((step) => {
+      const item = document.createElement("li");
+      item.textContent = step;
+      list.append(item);
+    });
+    panel.append(list);
+  }
+
+  const cta = document.createElement("p");
+  cta.className = "ai-diagnostic-cta";
+  cta.textContent = result.cta || diagnostic.cta;
+  panel.append(cta);
+};
+
+const setDiagnosticFields = (copy) => {
+  const diagnostic = copy.demoLab?.diagnostic;
+  const form = document.querySelector(".ai-diagnostic-form");
+  const stageSelect = form?.querySelector('select[name="stage"]');
+  const bottleneck = form?.querySelector('textarea[name="bottleneck"]');
+
+  if (!diagnostic || !form || !stageSelect || !bottleneck) {
+    return;
+  }
+
+  setText(".ai-diagnostic-badge", diagnostic.badge);
+  setText(".ai-diagnostic-copy h3", diagnostic.title);
+  setText(".ai-diagnostic-copy p", diagnostic.text);
+  setText('.ai-diagnostic-form label:first-child span', diagnostic.fields.stage);
+  setText('.ai-diagnostic-form label:nth-child(2) span', diagnostic.fields.bottleneck);
+  setText(".ai-diagnostic-submit", diagnostic.button);
+
+  const previousValue = stageSelect.value;
+  stageSelect.textContent = "";
+  diagnostic.stages.forEach((stage) => {
+    const option = document.createElement("option");
+    option.value = stage;
+    option.textContent = stage;
+    stageSelect.append(option);
+  });
+  stageSelect.value = diagnostic.stages.includes(previousValue) ? previousValue : diagnostic.stages[0];
+  bottleneck.placeholder = diagnostic.placeholder;
+
+  if (!document.querySelector(".ai-diagnostic-result")?.classList.contains("is-ready")) {
+    renderDiagnosticResult(copy);
+  }
+};
+
+const runGrowthDiagnostic = async (event) => {
+  event.preventDefault();
+
+  const copy = getCopy();
+  const form = event.currentTarget;
+  const button = form.querySelector(".ai-diagnostic-submit");
+  const formData = new FormData(form);
+  const stage = String(formData.get("stage") || "").trim();
+  const bottleneck = String(formData.get("bottleneck") || "").trim();
+
+  if (!bottleneck) {
+    return;
+  }
+
+  button.disabled = true;
+  form.classList.add("is-loading");
+  renderDiagnosticResult(copy, null, "loading");
+
+  const controller = new AbortController();
+  const timeout = window.setTimeout(() => controller.abort(), 14000);
+
+  try {
+    const response = await fetch("/api/growth-diagnostic", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        language: currentLanguage,
+        stage,
+        bottleneck,
+      }),
+      signal: controller.signal,
+    });
+
+    if (!response.ok) {
+      throw new Error(`Diagnostic request failed: ${response.status}`);
+    }
+
+    const data = await response.json();
+    renderDiagnosticResult(copy, data);
+  } catch (error) {
+    renderDiagnosticResult(copy, null, "error");
+  } finally {
+    window.clearTimeout(timeout);
+    form.classList.remove("is-loading");
+    button.disabled = false;
+  }
+};
+
 const renderDemoLab = (copy) => {
   if (!copy.demoLab) {
     return;
@@ -1894,6 +2104,7 @@ const renderDemoLab = (copy) => {
   setText(".whatsapp-direct", copy.demoLab.whatsapp.direct);
   setText(".whatsapp-demo-cta", copy.demoLab.whatsapp.cta);
   renderWhatsappScenario(copy, activeWhatsappScenario);
+  setDiagnosticFields(copy);
 };
 
 const setInlineWithStatusDot = (selector, value) => {
@@ -2287,6 +2498,8 @@ document.querySelectorAll(".whatsapp-scenarios button").forEach((button) => {
     }
   });
 });
+
+document.querySelector(".ai-diagnostic-form")?.addEventListener("submit", runGrowthDiagnostic);
 
 const scrollFocusTargets = [
   ...document.querySelectorAll(
