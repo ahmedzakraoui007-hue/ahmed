@@ -31,6 +31,7 @@ nav?.querySelectorAll("a").forEach((link) => {
 
 const languageCodes = ["fr", "en", "ar"];
 const serviceKeys = ["strategy", "automation", "content", "growth", "training", "wordpress", "ugc"];
+const maxAssistantHistoryItems = 8;
 const siteBaseUrl = "https://ahmedzakraoui.com";
 const languagePaths = {
   fr: "/",
@@ -436,6 +437,36 @@ const translations = {
         error: "I could not generate the diagnostic right now. Try again in a moment.",
         fallbackLabel: "Local preview",
         cta: "Use this as a first map, then book a diagnostic call to build the real system.",
+      },
+      liveAssistant: {
+        badge: "Live AI assistant",
+        title: "Talk with Ahmed's Growth assistant.",
+        text: "Ask a question or start a web audio exchange. The assistant answers through the system lens: offer, content, acquisition, automation, and measurement.",
+        statusReady: "Ready for chat",
+        statusThinking: "Thinking through the system...",
+        statusListening: "Listening now...",
+        statusSpeaking: "Speaking response...",
+        statusUnsupported: "Voice input is not supported in this browser",
+        modeLabel: "AI assistant mode",
+        modes: ["Chat", "Audio call"],
+        greeting: "Hi, I’m Ahmed’s Growth assistant. What bottleneck should we analyze?",
+        assistantLabel: "Assistant",
+        youLabel: "You",
+        quickLabel: "Quick questions",
+        quickPrompts: [
+          "Why are my visitors not converting?",
+          "How can I automate my leads?",
+          "What AI system does my team need?",
+        ],
+        placeholder: "Write your question...",
+        send: "Send",
+        voiceTitle: "Web AI audio call",
+        voiceText: "Click, speak, then listen to the assistant reply. Your microphone stays in the browser.",
+        voiceStart: "Start audio call",
+        voiceStop: "End",
+        voiceNote: "Not a phone call: this is browser audio conversation.",
+        fallbackReply: "I would start by mapping your offer, page friction, proof, follow-up, and weekly measurement. Then we decide the smallest system to build first.",
+        error: "The assistant could not answer right now. Try again in a moment.",
       },
     },
     contact: {
@@ -867,6 +898,36 @@ const translations = {
         fallbackLabel: "Aperçu local",
         cta: "Utilisez ceci comme première carte, puis réservez un diagnostic pour construire le vrai système.",
       },
+      liveAssistant: {
+        badge: "Assistant IA live",
+        title: "Discutez avec l'assistant Growth d'Ahmed.",
+        text: "Posez une question ou lancez un échange audio web. L'assistant répond avec une logique système : offre, contenu, acquisition, automation et mesure.",
+        statusReady: "Prêt pour le chat",
+        statusThinking: "Analyse du système...",
+        statusListening: "Écoute en cours...",
+        statusSpeaking: "Réponse vocale...",
+        statusUnsupported: "L'entrée vocale n'est pas supportée sur ce navigateur",
+        modeLabel: "Mode assistant IA",
+        modes: ["Chat", "Audio call"],
+        greeting: "Bonjour, je suis l'assistant Growth d'Ahmed. Quel blocage voulez-vous analyser ?",
+        assistantLabel: "Assistant",
+        youLabel: "Vous",
+        quickLabel: "Questions rapides",
+        quickPrompts: [
+          "Pourquoi mes visiteurs ne convertissent pas ?",
+          "Comment automatiser mes leads ?",
+          "Quel système IA pour mon équipe ?",
+        ],
+        placeholder: "Écrivez votre question...",
+        send: "Envoyer",
+        voiceTitle: "Appel audio IA web",
+        voiceText: "Cliquez, parlez, puis écoutez la réponse de l'assistant. Le micro reste dans votre navigateur.",
+        voiceStart: "Démarrer l'appel audio",
+        voiceStop: "Terminer",
+        voiceNote: "Pas un vrai appel téléphonique : conversation audio dans le navigateur.",
+        fallbackReply: "Je commencerais par cartographier l'offre, la friction de page, les preuves, les relances et la mesure hebdomadaire. Ensuite on choisit le plus petit système à construire.",
+        error: "L'assistant ne peut pas répondre maintenant. Réessayez dans un instant.",
+      },
     },
     contact: {
       eyebrow: "Travailler avec Ahmed",
@@ -1297,6 +1358,36 @@ const translations = {
         fallbackLabel: "معاينة محلية",
         cta: "استعمل هذا كخريطة أولية، ثم احجز مكالمة تشخيص لبناء النظام الحقيقي.",
       },
+      liveAssistant: {
+        badge: "مساعد IA مباشر",
+        title: "تحدث مع مساعد النمو الخاص بأحمد.",
+        text: "اكتب سؤالا أو ابدأ محادثة صوتية عبر المتصفح. يجيب المساعد بمنطق النظام: العرض، المحتوى، الاكتساب، الأتمتة والقياس.",
+        statusReady: "جاهز للدردشة",
+        statusThinking: "يحلل النظام...",
+        statusListening: "يستمع الآن...",
+        statusSpeaking: "يرد صوتيا...",
+        statusUnsupported: "الإدخال الصوتي غير مدعوم في هذا المتصفح",
+        modeLabel: "وضع مساعد IA",
+        modes: ["Chat", "Audio call"],
+        greeting: "مرحبا، أنا مساعد النمو الخاص بأحمد. ما العائق الذي تريد تحليله؟",
+        assistantLabel: "المساعد",
+        youLabel: "أنت",
+        quickLabel: "أسئلة سريعة",
+        quickPrompts: [
+          "لماذا لا يتحول الزوار إلى طلبات؟",
+          "كيف أؤتمت متابعة العملاء؟",
+          "ما نظام الذكاء الاصطناعي الذي يحتاجه فريقي؟",
+        ],
+        placeholder: "اكتب سؤالك...",
+        send: "إرسال",
+        voiceTitle: "مكالمة صوتية IA عبر الويب",
+        voiceText: "اضغط، تحدث، ثم استمع إلى رد المساعد. الميكروفون يبقى داخل المتصفح.",
+        voiceStart: "ابدأ المكالمة الصوتية",
+        voiceStop: "إنهاء",
+        voiceNote: "ليست مكالمة هاتفية: هذه محادثة صوتية داخل المتصفح.",
+        fallbackReply: "سأبدأ برسم العرض، احتكاك الصفحة، الدليل، المتابعة والقياس الأسبوعي. بعدها نختار أصغر نظام يجب بناؤه أولا.",
+        error: "لا يستطيع المساعد الرد الآن. حاول مرة أخرى بعد قليل.",
+      },
     },
     contact: {
       eyebrow: "اعمل مع أحمد",
@@ -1702,6 +1793,11 @@ let activeCallStep = 0;
 let callerDemoTimer = null;
 let activeWhatsappScenario = "lead";
 let callerVoiceEnabled = true;
+let activeAssistantMode = "chat";
+let assistantHistory = [];
+let voiceRecognition = null;
+let isVoiceSessionActive = false;
+let voiceRestartTimer = null;
 
 const speechLanguageMap = {
   en: "en-US",
@@ -1717,6 +1813,7 @@ const stopSpeech = () => {
   }
 
   document.querySelector(".caller-demo")?.classList.remove("is-speaking");
+  document.querySelector(".ai-live-card")?.classList.remove("is-speaking");
 };
 
 const speakCallStep = (step) => {
@@ -1740,6 +1837,46 @@ const speakCallStep = (step) => {
   utterance.onstart = () => document.querySelector(".caller-demo")?.classList.add("is-speaking");
   utterance.onend = () => document.querySelector(".caller-demo")?.classList.remove("is-speaking");
   utterance.onerror = () => document.querySelector(".caller-demo")?.classList.remove("is-speaking");
+  window.speechSynthesis.speak(utterance);
+  window.speechSynthesis.resume?.();
+};
+
+const speakAssistantReply = (text) => {
+  if (!text || !canUseSpeech()) {
+    return;
+  }
+
+  stopSpeech();
+  const card = document.querySelector(".ai-live-card");
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.lang = speechLanguageMap[currentLanguage] || speechLanguageMap.fr;
+  utterance.rate = currentLanguage === "ar" ? 0.88 : 0.94;
+  utterance.pitch = 1;
+  const voice = window.speechSynthesis
+    .getVoices()
+    .find((item) => item.lang.toLowerCase().startsWith(utterance.lang.slice(0, 2).toLowerCase()));
+
+  if (voice) {
+    utterance.voice = voice;
+  }
+
+  utterance.onstart = () => {
+    card?.classList.add("is-speaking");
+    setLiveAssistantStatus(getCopy(), "speaking");
+  };
+  utterance.onend = () => {
+    card?.classList.remove("is-speaking");
+    setLiveAssistantStatus(getCopy(), "ready");
+
+    if (activeAssistantMode === "voice" && isVoiceSessionActive) {
+      window.clearTimeout(voiceRestartTimer);
+      voiceRestartTimer = window.setTimeout(() => startVoiceAssistant(), 520);
+    }
+  };
+  utterance.onerror = () => {
+    card?.classList.remove("is-speaking");
+    setLiveAssistantStatus(getCopy(), "ready");
+  };
   window.speechSynthesis.speak(utterance);
   window.speechSynthesis.resume?.();
 };
@@ -2050,6 +2187,285 @@ const runGrowthDiagnostic = async (event) => {
   }
 };
 
+const getLiveAssistantCopy = (copy = getCopy()) => copy.demoLab?.liveAssistant;
+
+const setLiveAssistantStatus = (copy, status = "ready") => {
+  const liveCopy = getLiveAssistantCopy(copy);
+  const statusText = document.querySelector(".ai-live-status strong");
+  const card = document.querySelector(".ai-live-card");
+
+  if (!liveCopy || !statusText) {
+    return;
+  }
+
+  const statusMap = {
+    ready: liveCopy.statusReady,
+    thinking: liveCopy.statusThinking,
+    listening: liveCopy.statusListening,
+    speaking: liveCopy.statusSpeaking,
+    unsupported: liveCopy.statusUnsupported,
+  };
+
+  statusText.textContent = statusMap[status] || liveCopy.statusReady;
+  card?.classList.toggle("is-thinking", status === "thinking");
+  card?.classList.toggle("is-listening", status === "listening");
+  card?.classList.toggle("is-speaking", status === "speaking");
+};
+
+const renderAssistantSuggestions = (suggestions, copy = getCopy()) => {
+  const liveCopy = getLiveAssistantCopy(copy);
+  const prompts = Array.isArray(suggestions) && suggestions.length ? suggestions : liveCopy?.quickPrompts;
+
+  if (!liveCopy || !Array.isArray(prompts)) {
+    return;
+  }
+
+  document.querySelectorAll(".ai-quick-prompts button").forEach((button, index) => {
+    const prompt = prompts[index] || liveCopy.quickPrompts?.[index] || "";
+    button.textContent = prompt;
+    button.hidden = !prompt;
+  });
+};
+
+const appendAssistantMessage = (role, text, copy = getCopy()) => {
+  const log = document.querySelector(".ai-chat-log");
+  const liveCopy = getLiveAssistantCopy(copy);
+
+  if (!log || !liveCopy || !text) {
+    return;
+  }
+
+  const item = document.createElement("div");
+  item.className = `ai-message ${role === "user" ? "user" : "assistant"}`;
+  const label = document.createElement("span");
+  label.textContent = role === "user" ? liveCopy.youLabel : liveCopy.assistantLabel;
+  const body = document.createElement("p");
+  body.textContent = text;
+  item.append(label, body);
+  log.append(item);
+  log.scrollTop = log.scrollHeight;
+};
+
+const resetAssistantGreeting = (copy = getCopy()) => {
+  const log = document.querySelector(".ai-chat-log");
+  const liveCopy = getLiveAssistantCopy(copy);
+
+  if (!log || !liveCopy) {
+    return;
+  }
+
+  log.textContent = "";
+  appendAssistantMessage("assistant", liveCopy.greeting, copy);
+};
+
+const setAssistantMode = (mode = "chat") => {
+  const nextMode = mode === "voice" ? "voice" : "chat";
+
+  if (nextMode === "chat" && activeAssistantMode === "voice" && isVoiceSessionActive) {
+    stopVoiceAssistant();
+  }
+
+  activeAssistantMode = nextMode;
+
+  document.querySelectorAll(".ai-live-toolbar button").forEach((button) => {
+    const isActive = button.dataset.aiMode === activeAssistantMode;
+    button.classList.toggle("is-active", isActive);
+    button.setAttribute("aria-pressed", String(isActive));
+  });
+
+  document.querySelector(".ai-live-card")?.classList.toggle("is-voice-mode", activeAssistantMode === "voice");
+};
+
+const getSpeechRecognitionConstructor = () => window.webkitSpeechRecognition || window.SpeechRecognition;
+
+const requestAssistantReply = async (message, mode = activeAssistantMode) => {
+  const copy = getCopy();
+  const liveCopy = getLiveAssistantCopy(copy);
+  const card = document.querySelector(".ai-live-card");
+  const submit = document.querySelector(".ai-chat-submit");
+
+  if (!liveCopy || !message) {
+    return;
+  }
+
+  setLiveAssistantStatus(copy, "thinking");
+  card?.classList.add("is-thinking");
+  if (submit) {
+    submit.disabled = true;
+  }
+
+  const controller = new AbortController();
+  const timeout = window.setTimeout(() => controller.abort(), 16000);
+
+  try {
+    const response = await fetch("/api/ai-assistant", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        language: currentLanguage,
+        mode,
+        message,
+        history: assistantHistory.slice(-maxAssistantHistoryItems),
+      }),
+      signal: controller.signal,
+    });
+
+    if (!response.ok) {
+      throw new Error(`Assistant request failed: ${response.status}`);
+    }
+
+    const data = await response.json();
+    const reply = data.reply || liveCopy.fallbackReply;
+    assistantHistory.push({ role: "assistant", text: reply });
+    assistantHistory = assistantHistory.slice(-maxAssistantHistoryItems);
+    appendAssistantMessage("assistant", reply, copy);
+    renderAssistantSuggestions(data.suggestions, copy);
+
+    if (mode === "voice" && canUseSpeech()) {
+      speakAssistantReply(reply);
+    } else {
+      setLiveAssistantStatus(copy, "ready");
+    }
+  } catch (error) {
+    appendAssistantMessage("assistant", liveCopy.error, copy);
+    setLiveAssistantStatus(copy, "ready");
+  } finally {
+    window.clearTimeout(timeout);
+    card?.classList.remove("is-thinking");
+    if (submit) {
+      submit.disabled = false;
+    }
+  }
+};
+
+const submitAssistantMessage = (message, mode = activeAssistantMode) => {
+  const normalizedMessage = String(message || "").trim();
+  if (!normalizedMessage) {
+    return;
+  }
+
+  const copy = getCopy();
+  assistantHistory.push({ role: "user", text: normalizedMessage });
+  assistantHistory = assistantHistory.slice(-maxAssistantHistoryItems);
+  appendAssistantMessage("user", normalizedMessage, copy);
+  requestAssistantReply(normalizedMessage, mode);
+};
+
+const handleAssistantSubmit = (event) => {
+  event.preventDefault();
+  const input = event.currentTarget.querySelector('input[name="message"]');
+  const message = input?.value || "";
+
+  if (input) {
+    input.value = "";
+  }
+
+  submitAssistantMessage(message, "chat");
+};
+
+const startVoiceAssistant = () => {
+  const copy = getCopy();
+  const liveCopy = getLiveAssistantCopy(copy);
+  const Recognition = getSpeechRecognitionConstructor();
+  const card = document.querySelector(".ai-live-card");
+
+  window.clearTimeout(voiceRestartTimer);
+  voiceRestartTimer = null;
+  setAssistantMode("voice");
+
+  if (!Recognition || !canUseSpeech() || !liveCopy) {
+    setLiveAssistantStatus(copy, "unsupported");
+    appendAssistantMessage("assistant", liveCopy?.statusUnsupported || "", copy);
+    return;
+  }
+
+  stopSpeech();
+  if (voiceRecognition) {
+    voiceRecognition.abort();
+  }
+
+  voiceRecognition = new Recognition();
+  voiceRecognition.lang = speechLanguageMap[currentLanguage] || speechLanguageMap.fr;
+  voiceRecognition.continuous = false;
+  voiceRecognition.interimResults = false;
+  voiceRecognition.maxAlternatives = 1;
+  isVoiceSessionActive = true;
+
+  voiceRecognition.onstart = () => {
+    card?.classList.add("is-listening");
+    setLiveAssistantStatus(copy, "listening");
+  };
+
+  voiceRecognition.onresult = (event) => {
+    const transcript = event.results?.[0]?.[0]?.transcript || "";
+    if (transcript) {
+      submitAssistantMessage(transcript, "voice");
+    }
+  };
+
+  voiceRecognition.onerror = () => {
+    isVoiceSessionActive = false;
+    card?.classList.remove("is-listening");
+    setLiveAssistantStatus(copy, "ready");
+  };
+
+  voiceRecognition.onend = () => {
+    card?.classList.remove("is-listening");
+  };
+
+  try {
+    voiceRecognition.start();
+  } catch (error) {
+    isVoiceSessionActive = false;
+    card?.classList.remove("is-listening");
+    setLiveAssistantStatus(copy, "unsupported");
+  }
+};
+
+const stopVoiceAssistant = () => {
+  isVoiceSessionActive = false;
+  window.clearTimeout(voiceRestartTimer);
+  voiceRestartTimer = null;
+
+  if (voiceRecognition) {
+    voiceRecognition.abort();
+    voiceRecognition = null;
+  }
+
+  stopSpeech();
+  document.querySelector(".ai-live-card")?.classList.remove("is-listening", "is-speaking", "is-thinking");
+  setLiveAssistantStatus(getCopy(), "ready");
+};
+
+const renderLiveAssistant = (copy) => {
+  const liveCopy = getLiveAssistantCopy(copy);
+  if (!liveCopy) {
+    return;
+  }
+
+  setText(".ai-live-badge", liveCopy.badge);
+  setText(".ai-live-copy h3", liveCopy.title);
+  setText(".ai-live-copy p", liveCopy.text);
+  setAttribute(".ai-live-toolbar", "aria-label", liveCopy.modeLabel);
+  setAllText(".ai-live-toolbar button", liveCopy.modes);
+  setAttribute(".ai-quick-prompts", "aria-label", liveCopy.quickLabel);
+  setAllText(".ai-quick-prompts button", liveCopy.quickPrompts);
+  setAttribute('.ai-chat-form input[name="message"]', "placeholder", liveCopy.placeholder);
+  setText(".ai-chat-submit", liveCopy.send);
+  setText(".ai-voice-panel > strong", liveCopy.voiceTitle);
+  setText(".ai-voice-text", liveCopy.voiceText);
+  setText(".ai-voice-start", liveCopy.voiceStart);
+  setText(".ai-voice-stop", liveCopy.voiceStop);
+  setText(".ai-voice-note", liveCopy.voiceNote);
+  renderAssistantSuggestions(liveCopy.quickPrompts, copy);
+  setLiveAssistantStatus(copy, "ready");
+  setAssistantMode(activeAssistantMode);
+
+  if (assistantHistory.length === 0) {
+    resetAssistantGreeting(copy);
+  }
+};
+
 const renderDemoLab = (copy) => {
   if (!copy.demoLab) {
     return;
@@ -2105,6 +2521,7 @@ const renderDemoLab = (copy) => {
   setText(".whatsapp-demo-cta", copy.demoLab.whatsapp.cta);
   renderWhatsappScenario(copy, activeWhatsappScenario);
   setDiagnosticFields(copy);
+  renderLiveAssistant(copy);
 };
 
 const setInlineWithStatusDot = (selector, value) => {
@@ -2500,6 +2917,36 @@ document.querySelectorAll(".whatsapp-scenarios button").forEach((button) => {
 });
 
 document.querySelector(".ai-diagnostic-form")?.addEventListener("submit", runGrowthDiagnostic);
+document.querySelector(".ai-chat-form")?.addEventListener("submit", handleAssistantSubmit);
+
+document.addEventListener("click", (event) => {
+  const voiceStart = event.target.closest(".ai-voice-start");
+  if (voiceStart) {
+    startVoiceAssistant();
+    return;
+  }
+
+  const voiceStop = event.target.closest(".ai-voice-stop");
+  if (voiceStop) {
+    stopVoiceAssistant();
+    return;
+  }
+
+  const modeButton = event.target.closest(".ai-live-toolbar button");
+  if (modeButton) {
+    setAssistantMode(modeButton.dataset.aiMode);
+    return;
+  }
+
+  const promptButton = event.target.closest(".ai-quick-prompts button");
+  if (promptButton) {
+    const input = document.querySelector('.ai-chat-form input[name="message"]');
+    if (input) {
+      input.value = promptButton.textContent.trim();
+      input.focus();
+    }
+  }
+});
 
 const scrollFocusTargets = [
   ...document.querySelectorAll(

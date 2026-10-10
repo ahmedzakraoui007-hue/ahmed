@@ -636,6 +636,44 @@
           <div class="ai-diagnostic-result" aria-live="polite"><span>Result</span><p>The diagnostic will appear here after your message.</p></div>
         </article>
 
+        <article class="ai-live-card" aria-labelledby="aiLiveTitle">
+          <div class="ai-live-copy">
+            <span class="demo-type ai-live-badge">Live AI assistant</span>
+            <h3 id="aiLiveTitle">Talk with Ahmed's Growth assistant.</h3>
+            <p>Ask a question or start a web audio exchange. The assistant answers through the system lens: offer, content, acquisition, automation, and measurement.</p>
+            <div class="ai-live-status" aria-live="polite">
+              <span class="ai-live-status-dot"></span>
+              <strong>Ready for chat</strong>
+            </div>
+          </div>
+          <div class="ai-live-console">
+            <div class="ai-live-toolbar" role="group" aria-label="AI assistant mode">
+              <button class="is-active" type="button" data-ai-mode="chat" aria-pressed="true">Chat</button>
+              <button type="button" data-ai-mode="voice" aria-pressed="false">Audio call</button>
+            </div>
+            <div class="ai-chat-log" aria-live="polite"><div class="ai-message assistant"><span>Assistant</span><p>Hi, I’m Ahmed’s Growth assistant. What bottleneck should we analyze?</p></div></div>
+            <div class="ai-quick-prompts" aria-label="Quick questions">
+              <button type="button">Why are my visitors not converting?</button>
+              <button type="button">How can I automate my leads?</button>
+              <button type="button">What AI system does my team need?</button>
+            </div>
+            <form class="ai-chat-form">
+              <input type="text" name="message" maxlength="420" placeholder="Write your question..." autocomplete="off" required="">
+              <button class="button primary ai-chat-submit" type="submit">Send</button>
+            </form>
+          </div>
+          <div class="ai-voice-panel">
+            <div class="ai-voice-orb" aria-hidden="true"><span></span><span></span><span></span></div>
+            <strong>Web AI audio call</strong>
+            <p class="ai-voice-text">Click, speak, then listen to the assistant reply. Your microphone stays in the browser.</p>
+            <div class="ai-voice-actions">
+              <button class="button primary ai-voice-start" type="button">Start audio call</button>
+              <button class="button secondary ai-voice-stop" type="button">End</button>
+            </div>
+            <small class="ai-voice-note">Not a phone call: this is browser audio conversation.</small>
+          </div>
+        </article>
+
         <p class="demo-lab-note">MVP preview: no real call or WhatsApp message is sent. The diagnostic only uses the text you type.</p>
       </section>
 
@@ -733,6 +771,7 @@
 
     <a class="floating-cta" href="https://wa.me/21654302654" target="_blank" rel="noreferrer">WhatsApp</a>
     <script src="/script.js"></script>
+
 
 
 

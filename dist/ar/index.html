@@ -636,6 +636,44 @@
           <div class="ai-diagnostic-result" aria-live="polite"><span>النتيجة</span><p>سيظهر التشخيص هنا بعد رسالتك.</p></div>
         </article>
 
+        <article class="ai-live-card" aria-labelledby="aiLiveTitle">
+          <div class="ai-live-copy">
+            <span class="demo-type ai-live-badge">مساعد IA مباشر</span>
+            <h3 id="aiLiveTitle">تحدث مع مساعد النمو الخاص بأحمد.</h3>
+            <p>اكتب سؤالا أو ابدأ محادثة صوتية عبر المتصفح. يجيب المساعد بمنطق النظام: العرض، المحتوى، الاكتساب، الأتمتة والقياس.</p>
+            <div class="ai-live-status" aria-live="polite">
+              <span class="ai-live-status-dot"></span>
+              <strong>جاهز للدردشة</strong>
+            </div>
+          </div>
+          <div class="ai-live-console">
+            <div class="ai-live-toolbar" role="group" aria-label="وضع مساعد IA">
+              <button class="is-active" type="button" data-ai-mode="chat" aria-pressed="true">Chat</button>
+              <button type="button" data-ai-mode="voice" aria-pressed="false">Audio call</button>
+            </div>
+            <div class="ai-chat-log" aria-live="polite"><div class="ai-message assistant"><span>المساعد</span><p>مرحبا، أنا مساعد النمو الخاص بأحمد. ما العائق الذي تريد تحليله؟</p></div></div>
+            <div class="ai-quick-prompts" aria-label="أسئلة سريعة">
+              <button type="button">لماذا لا يتحول الزوار إلى طلبات؟</button>
+              <button type="button">كيف أؤتمت متابعة العملاء؟</button>
+              <button type="button">ما نظام الذكاء الاصطناعي الذي يحتاجه فريقي؟</button>
+            </div>
+            <form class="ai-chat-form">
+              <input type="text" name="message" maxlength="420" placeholder="اكتب سؤالك..." autocomplete="off" required="">
+              <button class="button primary ai-chat-submit" type="submit">إرسال</button>
+            </form>
+          </div>
+          <div class="ai-voice-panel">
+            <div class="ai-voice-orb" aria-hidden="true"><span></span><span></span><span></span></div>
+            <strong>مكالمة صوتية IA عبر الويب</strong>
+            <p class="ai-voice-text">اضغط، تحدث، ثم استمع إلى رد المساعد. الميكروفون يبقى داخل المتصفح.</p>
+            <div class="ai-voice-actions">
+              <button class="button primary ai-voice-start" type="button">ابدأ المكالمة الصوتية</button>
+              <button class="button secondary ai-voice-stop" type="button">إنهاء</button>
+            </div>
+            <small class="ai-voice-note">ليست مكالمة هاتفية: هذه محادثة صوتية داخل المتصفح.</small>
+          </div>
+        </article>
+
         <p class="demo-lab-note">معاينة MVP: لا مكالمة حقيقية ولا رسالة WhatsApp. التشخيص يستخدم فقط النص الذي تكتبه.</p>
       </section>
 
@@ -733,6 +771,7 @@
 
     <a class="floating-cta" href="https://wa.me/21654302654" target="_blank" rel="noreferrer">WhatsApp</a>
     <script src="/script.js"></script>
+
 
 
 
