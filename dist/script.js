@@ -112,6 +112,14 @@ const translations = {
       ],
       proof: ["Learn", "Build", "Measure"],
     },
+    paths: {
+      aria: "Choose the right path",
+      cards: [
+        ["Build path", "Build my system", "Diagnostic, Sprint, or monthly growth support."],
+        ["Learn path", "Learn for free", "AI bootcamp, quizzes, resources, and checkpoints."],
+        ["Try it", "Test the AI demos", "AI chat, web audio call, and instant diagnostic."],
+      ],
+    },
     marquee: [
       "SMEs",
       "Startups",
@@ -572,6 +580,14 @@ const translations = {
       ],
       proof: ["Apprendre", "Construire", "Mesurer"],
     },
+    paths: {
+      aria: "Choisir le bon parcours",
+      cards: [
+        ["Build path", "Construire mon système", "Diagnostic, Sprint ou accompagnement mensuel."],
+        ["Learn path", "Apprendre gratuitement", "Bootcamp IA, quiz, ressources et checkpoints."],
+        ["Try it", "Tester les démos IA", "Chat IA, appel audio web et diagnostic instantané."],
+      ],
+    },
     marquee: [
       "PME",
       "Startups",
@@ -1031,6 +1047,14 @@ const translations = {
         ["Learn", "أكاديمية مجانية"],
       ],
       proof: ["تعلم", "ابن", "قس"],
+    },
+    paths: {
+      aria: "اختر المسار المناسب",
+      cards: [
+        ["Build path", "ابن نظام النمو", "تشخيص، Sprint أو مرافقة شهرية للنمو."],
+        ["Learn path", "تعلّم مجانا", "بوتكامب ذكاء اصطناعي، اختبارات، موارد و checkpoints."],
+        ["Try it", "جرّب ديموهات IA", "دردشة IA، مكالمة صوتية ويب وتشخيص فوري."],
+      ],
     },
     marquee: [
       "الشركات الصغيرة والمتوسطة",
@@ -2690,6 +2714,13 @@ const applyLanguage = (language, shouldPersist = true) => {
   setText(".system-card-b small", copy.hero.cards[1][0]);
   setText(".system-card-b strong", copy.hero.cards[1][1]);
   setAllText(".hero-proof strong", copy.hero.proof);
+  setAttribute(".path-chooser", "aria-label", copy.paths.aria);
+  copy.paths.cards.forEach((card, index) => {
+    const cardNumber = index + 1;
+    setText(`.path-card:nth-child(${cardNumber}) span`, card[0]);
+    setText(`.path-card:nth-child(${cardNumber}) strong`, card[1]);
+    setText(`.path-card:nth-child(${cardNumber}) small`, card[2]);
+  });
   setAllText(".marquee span", copy.marquee);
 
   setAttribute(".scroll-hook", "aria-label", copy.aria.hook);
@@ -2950,7 +2981,7 @@ document.addEventListener("click", (event) => {
 
 const scrollFocusTargets = [
   ...document.querySelectorAll(
-    ".sales-flow article, .offer-card, .system-node, .sprint-steps article, .work-impact article, .work-card, .proof-card, .training-card, .home-bootcamp-preview, .demo-card",
+    ".path-card, .sales-flow article, .offer-card, .system-node, .sprint-steps article, .work-impact article, .work-card, .proof-card, .training-card, .home-bootcamp-preview, .demo-card",
   ),
 ];
 

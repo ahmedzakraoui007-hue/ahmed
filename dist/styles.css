@@ -9120,3 +9120,269 @@ html[dir="rtl"] .scroll-story {
     padding-inline: 8px;
   }
 }
+
+/* God-mode UX polish */
+.hero {
+  min-height: min(880px, 100svh);
+}
+
+.hero-grid {
+  grid-template-rows: minmax(500px, 720px) auto;
+  padding-top: 104px;
+  padding-bottom: 36px;
+}
+
+.hero-proof article {
+  min-height: 78px;
+  padding: 14px;
+  border-radius: 17px;
+}
+
+.hero-proof strong {
+  margin-top: 8px;
+  font-size: 1.05rem;
+}
+
+.hero-copy::after {
+  content: "";
+  display: block;
+  width: min(480px, 78%);
+  height: 1px;
+  margin-top: 28px;
+  background: linear-gradient(90deg, rgba(255, 90, 20, 0.78), rgba(31, 143, 135, 0.36), transparent);
+}
+
+.path-chooser {
+  position: relative;
+  z-index: 7;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: -38px;
+  margin-bottom: clamp(26px, 4vw, 48px);
+}
+
+.path-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 138px;
+  padding: 18px;
+  border: 1px solid rgba(8, 8, 6, 0.12);
+  border-radius: 20px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.86), rgba(255, 250, 240, 0.74)),
+    var(--paper);
+  box-shadow: 0 20px 70px rgba(8, 8, 6, 0.1);
+  transition: transform 0.24s ease, border-color 0.24s ease, box-shadow 0.24s ease;
+}
+
+.path-card::after {
+  content: "";
+  position: absolute;
+  inset: auto 18px 16px;
+  height: 2px;
+  border-radius: 99px;
+  background: linear-gradient(90deg, var(--orange), rgba(31, 143, 135, 0.72));
+  transform: scaleX(0.36);
+  transform-origin: left;
+  opacity: 0.38;
+  transition: transform 0.24s ease, opacity 0.24s ease;
+}
+
+.path-card:hover,
+.path-card:focus-visible {
+  transform: translateY(-5px);
+  border-color: rgba(255, 90, 20, 0.38);
+  box-shadow: 0 26px 80px rgba(8, 8, 6, 0.14);
+  outline: none;
+}
+
+.path-card:hover::after,
+.path-card:focus-visible::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.path-card span {
+  display: inline-flex;
+  width: fit-content;
+  margin-bottom: 14px;
+  padding: 7px 10px;
+  border: 1px solid rgba(255, 90, 20, 0.22);
+  border-radius: 999px;
+  color: var(--orange);
+  font-size: 0.72rem;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+.path-card strong {
+  display: block;
+  color: var(--ink);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(1.22rem, 1.7vw, 1.6rem);
+  line-height: 1.02;
+}
+
+.path-card small {
+  display: block;
+  max-width: 28rem;
+  margin-top: 10px;
+  color: rgba(8, 8, 6, 0.62);
+  font-size: 0.9rem;
+  font-weight: 760;
+  line-height: 1.42;
+}
+
+.path-card-build {
+  border-color: rgba(255, 90, 20, 0.34);
+  background:
+    radial-gradient(circle at 84% 12%, rgba(255, 90, 20, 0.24), transparent 34%),
+    linear-gradient(135deg, #13130f, #222118);
+}
+
+.path-card-build strong,
+.path-card-build small {
+  color: var(--paper);
+}
+
+.path-card-build small {
+  color: rgba(255, 250, 240, 0.68);
+}
+
+.path-card-demo {
+  background:
+    radial-gradient(circle at 88% 12%, rgba(31, 143, 135, 0.24), transparent 34%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.88), rgba(245, 236, 223, 0.82));
+}
+
+.marquee {
+  opacity: 0.98;
+}
+
+.sales-engine,
+.scroll-hook,
+.services,
+.ugc-section,
+.sprint,
+.proof,
+.selected-work,
+.training,
+.home-bootcamp,
+.demo-lab,
+.contact {
+  position: relative;
+}
+
+.sales-head,
+.section-head,
+.selected-work .section-head,
+.contact-copy {
+  text-wrap: balance;
+}
+
+.offer-card,
+.proof-card,
+.work-card,
+.training-card,
+.home-bootcamp,
+.demo-lab,
+.contact-panel {
+  box-shadow: 0 24px 80px rgba(8, 8, 6, 0.1);
+}
+
+.work-impact article,
+.offer-card,
+.proof-card,
+.path-card {
+  will-change: transform;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus,
+.ai-chat-form input:focus,
+.ai-diagnostic-form textarea:focus,
+.ai-diagnostic-form select:focus {
+  border-color: rgba(255, 90, 20, 0.72);
+  box-shadow: 0 0 0 4px rgba(255, 90, 20, 0.13);
+  outline: none;
+}
+
+@supports (content-visibility: auto) {
+  .sales-engine,
+  .scroll-hook,
+  .services,
+  .ugc-section,
+  .sprint,
+  .proof,
+  .selected-work,
+  .training,
+  .home-bootcamp,
+  .demo-lab,
+  .contact,
+  .site-footer {
+    content-visibility: auto;
+    contain-intrinsic-size: 760px;
+  }
+}
+
+@media (max-width: 1040px) {
+  .path-chooser {
+    grid-template-columns: 1fr;
+    margin-top: -24px;
+  }
+
+  .path-card {
+    min-height: 116px;
+  }
+}
+
+@media (max-width: 720px) {
+  .hero {
+    min-height: auto;
+  }
+
+  .hero-grid {
+    padding-bottom: 30px;
+  }
+
+  .hero-copy::before {
+    content: "";
+    display: block;
+    width: 72px;
+    height: 72px;
+    margin-bottom: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 22px;
+    background:
+      linear-gradient(180deg, transparent 56%, rgba(8, 8, 6, 0.34)),
+      url("/assets/ahmed-hero.webp") center 18% / cover;
+    box-shadow: 0 18px 48px rgba(0, 0, 0, 0.26);
+  }
+
+  .hero-copy::after {
+    width: 100%;
+    margin-top: 22px;
+  }
+
+  .portrait-system,
+  .hero-proof {
+    display: none;
+  }
+
+  .path-chooser {
+    width: min(100% - 28px, 430px);
+    margin-top: -4px;
+    margin-bottom: 24px;
+  }
+
+  .path-card {
+    padding: 16px;
+    border-radius: 17px;
+  }
+
+  .path-card small {
+    font-size: 0.86rem;
+  }
+}
